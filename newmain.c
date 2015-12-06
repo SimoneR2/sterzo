@@ -192,45 +192,52 @@ void configurazione_iniziale(void) {
 
     LATE = 0x00;
     TRISE = 0xFF;
-    
+
     //debug sequence ------
-    PORTC = 0xff;         //
-    delay_ms(100);        //
-    PORTC = 0x00;         //   
-    delay_ms(100);        //   
-    PORTC = 0xff;         //
-    delay_ms(100);        //
-    PORTC = 0x00;         //
-    delay_ms(100);        //
+    PORTC = 0xff; //
+    delay_ms(100); //
+    PORTC = 0x00; //   
+    delay_ms(100); //   
+    PORTC = 0xff; //
+    delay_ms(100); //
+    PORTC = 0x00; //
+    delay_ms(100); //
     //----------------------
-    
     CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
     RCONbits.IPEN = 1; //abilita priorità interrupt
+
+    //azzeramento flag
     PIR3bits.RXB1IF = 0; //azzera flag interrupt can bus buffer1
     PIR3bits.RXB0IF = 0; //azzera flag interrupt can bus buffer0
-    PIE3bits.RXB1IE = 1; //abilita interrupt ricezione can bus buffer1
-    PIE3bits.RXB0IE = 1; //abilita interrupt ricezione can bus buffer0
+    INTCONbits.TMR0IF = 0; //azzera flag timer0
+    PIR2bits.TMR3IF = 0; //resetta flag interrupt timer 3
+
+    //configurazione priorità
     IPR3bits.RXB1IP = 0; //interrupt bassa priorità per can
     IPR3bits.RXB0IP = 0; //interrupt bassa priorità per can
+    INTCON2bits.TMR0IP = 1; //interrupt alta priorità timer0
+    IPR2bits.TMR3IP = 0; //interrupt bassa priorità timer 3
+
+    //Enable interrupts
+    PIE3bits.RXB1IE = 1; //abilita interrupt ricezione can bus buffer1
+    PIE3bits.RXB0IE = 1; //abilita interrupt ricezione can bus buffer0
+    INTCONbits.TMR0IE = 1; //abilita interrupt timer0
+    PIE2bits.TMR3IE = 1; //abilita interrupt timer 3
     INTCONbits.GIEH = 1; //abilita interrupt alta priorità
     INTCONbits.GIEL = 1; //abilita interrupt bassa priorità periferiche
-    INTCON2bits.INTEDG0 = 1; //interrupt su fronte di salita
-    INTCON2bits.TMR0IP = 1; //interrupt alta priorità timer0
-    INTCONbits.TMR0IF = 0;
-    INTCONbits.TMR0IE = 1;
+
     //debug sequence ------    
-    PORTC = 0xff;         //
-    delay_ms(100);        //
-    PORTC = 0x00;         //
+    PORTC = 0xff; //
+    delay_ms(100); //
+    PORTC = 0x00; //
     //---------------------
+
     T0CON = 0x80; //imposta timer0, prescaler 1:2
-    //impostazione timer3 per contatore
-    T3CON = 0x01; //abilita timer
-    PIR2bits.TMR3IF = 0; //resetta flag interrupt timer 3
-    IPR2bits.TMR3IP = 0; //interrupt bassa priorità timer 3
+
+    //impostazione timer3 per contatore (interrput ogni 10ms)
     TMR3H = 0x63;
     TMR3L = 0xC0;
-    PIE2bits.TMR3IE = 1; //abilita interrupt timer 3
+    T3CON = 0x01; //abilita timer
 
     //impostazione porte
 
