@@ -41,9 +41,9 @@ unsigned long previousTimeCounter = 0;
 unsigned long duty_cycle = 0; //da controllare
 int calibration = 0;
 unsigned long timer = 0;
-unsigned int timer1 = 0;
+unsigned int Ton = 0;
 unsigned int ADCResult = 0;
-unsigned int periodo = 0;
+unsigned int Toff = 0;
 int errore = 0;
 int correzione = 0;
 int potenza = 2;
@@ -58,11 +58,11 @@ __interrupt(high_priority) void ISR_alta(void) {
     PORTCbits.RC0 = ~PORTCbits.RC0;
     T0CONbits.TMR0ON = 0;
     if (PORTCbits.RC0 == 1) {
-        WriteTimer0(timer1);
+        WriteTimer0(Ton);
         T0CONbits.TMR0ON = 1;
     }
     if (PORTCbits.RC0 == 0) {
-        WriteTimer0(periodo);
+        WriteTimer0(Toff);
         T0CONbits.TMR0ON = 1;
     }
 
@@ -118,7 +118,7 @@ int main(void) {
     TMR0H = 0xdd;
     TMR0L = 0xa0;
     T0CONbits.TMR0ON = 1;
-    periodo = 0x4588;
+    Toff = 0x4588;
     while (1) {
         calibrazione();
         if (timeCounter - previousTimeCounter > 2) {
@@ -139,9 +139,9 @@ int main(void) {
         }
         if (PORTCbits.RC0 == 0) {
             timer = (((duty_cycle * 700) / 90) + 800) *2;
-            timer1 = 65536 - timer;
-            periodo = 20000 - (timer / 2);
-            periodo = (65536 - (periodo * 2));
+            Ton = 65536 - timer;
+            Toff = 20000 - (timer / 2);
+            Toff = (65536 - (Toff * 2));
         }
         if (remote_frame == 1) {
             send_data();
