@@ -138,10 +138,10 @@ int main(void) {
             previousTimeCounter = timeCounter;
         }
         if (PORTCbits.RC0 == 0) {
-            timer = (((duty_cycle * 700) / 90) + 800) / 0.5;
+            timer = (((duty_cycle * 700) / 90) + 800) *2;
             timer1 = 65536 - timer;
-            periodo = 20000 - (timer * 0.5);
-            periodo = (65536 - (periodo / 0.5));
+            periodo = 20000 - (timer / 2);
+            periodo = (65536 - (periodo * 2));
         }
         if (remote_frame == 1) {
             send_data();
@@ -238,9 +238,6 @@ void configurazione_iniziale(void) {
     TMR3H = 0x63;
     TMR3L = 0xC0;
     T3CON = 0x01; //abilita timer
-
-    //impostazione porte
-
     OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH1 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_2ANA); //re2
 }
 
