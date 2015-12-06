@@ -1,0 +1,2059 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\sterzo.production.obj
+intcodelo CODE 0 18 18 14E 1
+cinit CODE 0 375C 375C 66 1
+intcode_body CODE 0 3540 3540 B2 1
+text0 CODE 0 2256 2256 48C 1
+text1 CODE 0 3808 3808 3E 1
+text2 CODE 0 C70 C70 78C 1
+text3 CODE 0 391A 391A 24 1
+text4 CODE 0 32E0 32E0 E6 1
+text5 CODE 0 3846 3846 3A 1
+text6 CODE 0 38B8 38B8 36 1
+text7 CODE 0 35F2 35F2 7C 1
+text8 CODE 0 300E 300E 1C6 1
+text9 CODE 0 2AA2 2AA2 39E 1
+text10 CODE 0 16A 16A B06 1
+text11 CODE 0 393E 393E 16 1
+text12 CODE 0 37C2 37C2 46 1
+text13 CODE 0 366E 366E 78 1
+text14 CODE 0 396A 396A 12 1
+text15 CODE 0 39B6 39B6 4 1
+text16 CODE 0 398E 398E C 1
+text17 CODE 0 38EE 38EE 2C 1
+text18 CODE 0 2E40 2E40 1CE 1
+text19 CODE 0 36E6 36E6 76 1
+text20 CODE 0 3484 3484 BC 1
+text21 CODE 0 31D4 31D4 10C 1
+text22 CODE 0 3880 3880 38 1
+text23 CODE 0 1DB0 1DB0 4A6 1
+text24 CODE 0 26E2 26E2 3C0 1
+text25 CODE 0 1908 1908 4A8 1
+text26 CODE 0 33C6 33C6 BE 1
+text27 CODE 0 399A 399A C 1
+text28 CODE 0 39A6 39A6 C 1
+text30 CODE 0 13FC 13FC 50C 1
+text31 CODE 0 3954 3954 16 1
+text33 CODE 0 397C 397C 12 1
+nvBANK0 BANK0 1 EA EA 2 1
+idataCOMRAM CODE 0 39B2 39B2 4 1
+cstackCOMRAM COMRAM 1 21 21 1F 1
+cstackBANK0 BANK0 1 60 60 59 1
+cstackBANK1 BANK1 1 100 100 24 1
+temp COMRAM 1 45 45 1 1
+bitbssCOMRAM COMRAM 1 220 44 1 1
+bssBANK0 BANK0 1 B9 B9 2E 1
+intcode CODE 0 8 8 E 1
+idataBANK0 CODE 0 39BA 39BA 3 1
+dataBANK0 BANK0 1 E7 E7 3 1
+dataCOMRAM COMRAM 1 40 40 4 1
+bssCOMRAM COMRAM 1 1 1 20 1
+$C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+idloc IDLOC 0 200000 200000 8 1
+reset_vec CODE 0 0 0 4 1
+end_init CODE 0 166 166 4 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM EC-FF 1
+RAM 124-2FF 1
+SFR D00-FFF 1
+BANK0 EC-FF 1
+BANK1 124-1FF 1
+BANK2 200-2FF 1
+CONST 4-7 1
+CONST 16-17 1
+CONST 39BD-3FFF 1
+STACK 124-2FF 1
+SMALLCONST 39BD-3FFF 1
+CODE 4-7 1
+CODE 16-17 1
+CODE 39BD-3FFF 1
+BIGRAM 46-5F 1
+BIGRAM EC-FF 1
+BIGRAM 124-2FF 1
+COMRAM 46-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 39BD-3FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\sterzo.production.obj
+18 intcodelo CODE >1130:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+18 intcodelo CODE >75:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+5E intcodelo CODE >76:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+66 intcodelo CODE >77:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+70 intcodelo CODE >78:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+7C intcodelo CODE >79:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+82 intcodelo CODE >80:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+92 intcodelo CODE >81:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+9C intcodelo CODE >83:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+AA intcodelo CODE >84:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+AE intcodelo CODE >85:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+BE intcodelo CODE >86:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+C2 intcodelo CODE >88:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+D2 intcodelo CODE >89:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+D6 intcodelo CODE >92:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+E4 intcodelo CODE >94:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+E8 intcodelo CODE >95:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+F0 intcodelo CODE >96:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+100 intcodelo CODE >99:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+102 intcodelo CODE >100:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+104 intcodelo CODE >102:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+108 intcodelo CODE >103:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+114 intcodelo CODE >104:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+118 intcodelo CODE >105:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+11C intcodelo CODE >106:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+11E intcodelo CODE >108:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+8 intcode CODE >1166:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8 intcode CODE >57:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+397C text33 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c
+397C text33 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c
+3984 text33 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c
+3988 text33 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c
+398C text33 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c
+3540 intcode_body CODE >57:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3572 intcode_body CODE >58:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+358E intcode_body CODE >59:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3590 intcode_body CODE >60:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3594 intcode_body CODE >61:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+35A0 intcode_body CODE >62:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+35A2 intcode_body CODE >64:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+35A6 intcode_body CODE >65:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+35B2 intcode_body CODE >66:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+35B4 intcode_body CODE >69:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+35B6 intcode_body CODE >70:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3954 text31 CODE >1163:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3954 text31 CODE >1165:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+13FC text30 CODE >528:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+13FC text30 CODE >531:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1400 text30 CODE >533:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1402 text30 CODE >534:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1404 text30 CODE >536:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1406 text30 CODE >537:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1408 text30 CODE >540:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+140E text30 CODE >542:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+141E text30 CODE >543:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+142E text30 CODE >544:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+143E text30 CODE >545:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+144E text30 CODE >546:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+145E text30 CODE >547:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+146E text30 CODE >548:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+147E text30 CODE >549:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+148E text30 CODE >550:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+149E text30 CODE >552:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+14B8 text30 CODE >554:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+14CC text30 CODE >556:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+14E6 text30 CODE >558:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+14EC text30 CODE >560:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+151E text30 CODE >561:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+152A text30 CODE >562:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1572 text30 CODE >563:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1574 text30 CODE >566:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1596 text30 CODE >567:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+15C6 text30 CODE >569:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+15CC text30 CODE >570:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+15E4 text30 CODE >571:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+15EA text30 CODE >572:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1602 text30 CODE >573:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1608 text30 CODE >574:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1620 text30 CODE >575:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1626 text30 CODE >576:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+163E text30 CODE >577:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1644 text30 CODE >578:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+165C text30 CODE >580:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+168E text30 CODE >583:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1692 text30 CODE >584:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1694 text30 CODE >585:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1694 text30 CODE >587:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1698 text30 CODE >589:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+16A8 text30 CODE >590:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+16B8 text30 CODE >591:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+16C8 text30 CODE >592:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+16D8 text30 CODE >593:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+16E8 text30 CODE >594:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+16F8 text30 CODE >595:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1708 text30 CODE >596:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1718 text30 CODE >597:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1728 text30 CODE >599:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1740 text30 CODE >601:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1752 text30 CODE >603:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+176A text30 CODE >605:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+176E text30 CODE >607:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+17A0 text30 CODE >608:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+17AA text30 CODE >609:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+17F2 text30 CODE >610:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+17F4 text30 CODE >613:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1816 text30 CODE >614:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1846 text30 CODE >616:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+184A text30 CODE >617:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1862 text30 CODE >618:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1866 text30 CODE >619:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+187E text30 CODE >620:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1882 text30 CODE >621:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+189A text30 CODE >622:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+189E text30 CODE >623:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+18B6 text30 CODE >624:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+18BA text30 CODE >625:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+18D2 text30 CODE >627:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1904 text30 CODE >630:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1906 text30 CODE >632:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+39A6 text28 CODE >1127:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+39A6 text28 CODE >1129:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+399A text27 CODE >1119:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+399A text27 CODE >1121:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+33C6 text26 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+33C6 text26 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+33CC text26 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+33D2 text26 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+33DC text26 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+33E2 text26 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+33E8 text26 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+33F2 text26 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+33F8 text26 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+3402 text26 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+340E text26 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+3414 text26 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+3416 text26 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+341E text26 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+3422 text26 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+3428 text26 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+3430 text26 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+3444 text26 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+3454 text26 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+3458 text26 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+3460 text26 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+3466 text26 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+3470 text26 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+347A text26 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\awdiv.c
+1908 text25 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1908 text25 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1912 text25 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+191C text25 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1922 text25 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1926 text25 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1930 text25 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1938 text25 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+194A text25 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+194E text25 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1954 text25 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1966 text25 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1970 text25 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+197C text25 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1980 text25 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+198A text25 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1990 text25 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1994 text25 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+199E text25 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+19A6 text25 CODE >59:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+19B8 text25 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+19BC text25 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+19C2 text25 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+19D4 text25 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+19E0 text25 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+19E6 text25 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+19EC text25 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+19F0 text25 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+19F4 text25 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+19F8 text25 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+19FC text25 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A00 text25 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A04 text25 CODE >87:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A08 text25 CODE >88:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A0C text25 CODE >89:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A10 text25 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A14 text25 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A18 text25 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A1C text25 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A20 text25 CODE >94:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A24 text25 CODE >95:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A28 text25 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A2E text25 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A72 text25 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1A90 text25 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1AA2 text25 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1AA6 text25 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1AA8 text25 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1AA8 text25 CODE >109:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1AAE text25 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1ABA text25 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1ABC text25 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1AC2 text25 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1AC8 text25 CODE >116:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1ACC text25 CODE >118:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1AD8 text25 CODE >119:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1ADC text25 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1ADC text25 CODE >120:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1AE8 text25 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1AE8 text25 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1AEE text25 CODE >127:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1AF8 text25 CODE >128:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B0C text25 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B2C text25 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B32 text25 CODE >135:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B38 text25 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B48 text25 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B4A text25 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B50 text25 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B56 text25 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B5A text25 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B66 text25 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B6A text25 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B6C text25 CODE >153:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1B9C text25 CODE >154:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1C18 text25 CODE >155:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1C1E text25 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1C22 text25 CODE >157:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1C2C text25 CODE >158:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1C3A text25 CODE >160:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1C3C text25 CODE >162:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1C5C text25 CODE >163:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1C5C text25 CODE >166:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1C7A text25 CODE >167:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1C8E text25 CODE >172:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1C9A text25 CODE >173:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CA0 text25 CODE >174:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CA4 text25 CODE >176:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CAA text25 CODE >177:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CB0 text25 CODE >180:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CB6 text25 CODE >182:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CC0 text25 CODE >183:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CC4 text25 CODE >171:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CCA text25 CODE >192:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CD0 text25 CODE >193:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CD6 text25 CODE >194:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CE2 text25 CODE >195:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CE4 text25 CODE >198:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CEA text25 CODE >199:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CF0 text25 CODE >202:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CF0 text25 CODE >203:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1CFA text25 CODE >204:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D08 text25 CODE >205:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D0E text25 CODE >206:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D3A text25 CODE >207:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D42 text25 CODE >208:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D46 text25 CODE >215:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D58 text25 CODE >216:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D6A text25 CODE >218:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D74 text25 CODE >219:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D7A text25 CODE >225:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D80 text25 CODE >226:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D84 text25 CODE >227:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D86 text25 CODE >230:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D8A text25 CODE >232:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D94 text25 CODE >233:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D9A text25 CODE >234:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+1D9E text25 CODE >236:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
+26E2 text24 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+26E2 text24 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+26EC text24 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+26F6 text24 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+26FC text24 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2700 text24 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+270A text24 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2712 text24 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2724 text24 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2728 text24 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+272E text24 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2740 text24 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+274A text24 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2754 text24 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+275A text24 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+275E text24 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2768 text24 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2770 text24 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2782 text24 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2786 text24 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+278C text24 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+279E text24 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+27B2 text24 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+27C4 text24 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+27CE text24 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+27E0 text24 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+27EA text24 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+27FC text24 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+280E text24 CODE >88:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2850 text24 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2860 text24 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2872 text24 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2884 text24 CODE >95:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+288A text24 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+288C text24 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2896 text24 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+28A2 text24 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+28AE text24 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+28B4 text24 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+28B8 text24 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+28B8 text24 CODE >105:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+28C4 text24 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+28E8 text24 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+28EC text24 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+290C text24 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2910 text24 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2910 text24 CODE >118:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2918 text24 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+292C text24 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2930 text24 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2932 text24 CODE >127:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+293E text24 CODE >128:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2944 text24 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2948 text24 CODE >130:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2948 text24 CODE >131:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2954 text24 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+295C text24 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2962 text24 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2968 text24 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+296E text24 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+29A8 text24 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+29AA text24 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+29B0 text24 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+29B6 text24 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+29B6 text24 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+29C0 text24 CODE >150:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+29CE text24 CODE >151:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+29D4 text24 CODE >152:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A00 text24 CODE >153:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A06 text24 CODE >158:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A1A text24 CODE >159:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A22 text24 CODE >160:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A34 text24 CODE >164:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A48 text24 CODE >165:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A52 text24 CODE >166:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A64 text24 CODE >168:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A6A text24 CODE >172:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A6E text24 CODE >174:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A74 text24 CODE >175:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A78 text24 CODE >176:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A7A text24 CODE >179:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A7E text24 CODE >181:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A88 text24 CODE >182:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+2A90 text24 CODE >183:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+1DB0 text23 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1DB0 text23 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1DBA text23 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1DC4 text23 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1DCA text23 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1DCE text23 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1DD8 text23 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1DE0 text23 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1DF2 text23 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1DF6 text23 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1DF8 text23 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E0A text23 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E14 text23 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E1E text23 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E24 text23 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E28 text23 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E32 text23 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E3A text23 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E4C text23 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E50 text23 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E52 text23 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E64 text23 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E64 text23 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E78 text23 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E8C text23 CODE >95:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1E9C text23 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1EAA text23 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1EB8 text23 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1EC8 text23 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1ED8 text23 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1EE8 text23 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1EF8 text23 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1F08 text23 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1F18 text23 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1F28 text23 CODE >105:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1F38 text23 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1F54 text23 CODE >107:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1F64 text23 CODE >108:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1F80 text23 CODE >109:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1F90 text23 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1FA0 text23 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1FBC text23 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1FCC text23 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1FE8 text23 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+1FF8 text23 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2014 text23 CODE >116:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2024 text23 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+206C text23 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+20B0 text23 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+20C0 text23 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+20E8 text23 CODE >152:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+20EA text23 CODE >153:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+20F6 text23 CODE >154:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+20FC text23 CODE >155:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2100 text23 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2100 text23 CODE >157:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+210C text23 CODE >158:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2114 text23 CODE >152:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+211A text23 CODE >163:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2120 text23 CODE >164:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2126 text23 CODE >165:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2160 text23 CODE >166:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2162 text23 CODE >169:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2168 text23 CODE >170:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+216E text23 CODE >173:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+216E text23 CODE >174:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2178 text23 CODE >175:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2186 text23 CODE >176:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+218C text23 CODE >177:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+21B8 text23 CODE >178:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+21BE text23 CODE >183:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+21D2 text23 CODE >184:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+21E4 text23 CODE >187:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+21F8 text23 CODE >188:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+220A text23 CODE >190:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2210 text23 CODE >191:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2212 text23 CODE >192:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2212 text23 CODE >194:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2216 text23 CODE >195:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2228 text23 CODE >196:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+222E text23 CODE >197:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2232 text23 CODE >199:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+223C text23 CODE >201:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+2244 text23 CODE >203:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
+3880 text22 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\flneg.c
+3880 text22 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\flneg.c
+3894 text22 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\flneg.c
+38A6 text22 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\flneg.c
+31D4 text21 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+31D4 text21 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+31E6 text21 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+31FA text21 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+3226 text21 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+322A text21 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+323C text21 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+3242 text21 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+3248 text21 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+3254 text21 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+3268 text21 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+3274 text21 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+327A text21 CODE >59:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+327C text21 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+3284 text21 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+3298 text21 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+32A4 text21 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+32A8 text21 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+32B2 text21 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+32BC text21 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+32CE text21 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\fltol.c
+3484 text20 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+3484 text20 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+3496 text20 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+34AA text20 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+34B0 text20 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+34B2 text20 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+34BE text20 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+34C2 text20 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+34C8 text20 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+34D4 text20 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+34F8 text20 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+3518 text20 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+351C text20 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+3528 text20 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+352E text20 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+352E text20 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+353E text20 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+36E6 text19 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
+36E6 text19 CODE >119:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
+36F8 text19 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
+36FE text19 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
+371E text19 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
+372A text19 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
+3736 text19 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
+374A text19 CODE >128:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
+375A text19 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
+2E40 text18 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2E44 text18 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2E54 text18 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2E88 text18 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2E8A text18 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2E8A text18 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2E9A text18 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2EAE text18 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2EC2 text18 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2EC8 text18 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2ECA text18 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2ECE text18 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2EDA text18 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2F18 text18 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2F1C text18 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2F2A text18 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2F36 text18 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2F36 text18 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2F74 text18 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2F78 text18 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2F84 text18 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2F92 text18 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2F98 text18 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2FAA text18 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2FB0 text18 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2FE8 text18 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2FF8 text18 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+2FFC text18 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\xxtofl.c
+38EE text17 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\abs.c
+38EE text17 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\abs.c
+38F4 text17 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\abs.c
+3910 text17 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\abs.c
+3918 text17 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\abs.c
+398E text16 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcbusy.c
+398E text16 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcbusy.c
+39B6 text15 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c
+39B6 text15 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c
+39B8 text15 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c
+396A text14 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcread.c
+396A text14 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcread.c
+366E text13 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+366E text13 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+3678 text13 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+3684 text13 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+368A text13 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+368C text13 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+3694 text13 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+3698 text13 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+369E text13 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+36A6 text13 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+36BA text13 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+36CA text13 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+36CE text13 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+36D6 text13 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+36DC text13 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+36DC text13 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+36E4 text13 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+37C2 text12 CODE >173:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+37C2 text12 CODE >174:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+37C6 text12 CODE >175:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+37D0 text12 CODE >176:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+37DC text12 CODE >177:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3806 text12 CODE >178:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+393E text11 CODE >206:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3942 text11 CODE >208:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3946 text11 CODE >210:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+16A text10 CODE >748:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+16E text10 CODE >752:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+180 text10 CODE >754:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+184 text10 CODE >756:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1B8 text10 CODE >757:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1C6 text10 CODE >758:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1CA text10 CODE >760:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1F2 text10 CODE >761:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+224 text10 CODE >762:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+228 text10 CODE >765:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+238 text10 CODE >767:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+23C text10 CODE >769:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+270 text10 CODE >770:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+27E text10 CODE >771:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+282 text10 CODE >773:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2AA text10 CODE >774:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DC text10 CODE >775:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2E0 text10 CODE >778:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2F2 text10 CODE >780:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2F6 text10 CODE >782:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+32A text10 CODE >783:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+338 text10 CODE >784:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+33C text10 CODE >786:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+364 text10 CODE >787:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+396 text10 CODE >788:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+39A text10 CODE >791:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3AC text10 CODE >793:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3B0 text10 CODE >795:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3E4 text10 CODE >796:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3F2 text10 CODE >797:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3F6 text10 CODE >799:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+41E text10 CODE >800:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+450 text10 CODE >801:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+454 text10 CODE >804:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+466 text10 CODE >806:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+46A text10 CODE >808:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+49E text10 CODE >809:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+4AC text10 CODE >810:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+4B0 text10 CODE >812:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+4D8 text10 CODE >813:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+50A text10 CODE >814:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+50E text10 CODE >817:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+520 text10 CODE >819:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+524 text10 CODE >821:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+558 text10 CODE >822:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+566 text10 CODE >823:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+56A text10 CODE >825:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+592 text10 CODE >826:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+5C4 text10 CODE >827:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+5C8 text10 CODE >831:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+5DC text10 CODE >833:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+5E0 text10 CODE >835:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+5EE text10 CODE >836:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+5F2 text10 CODE >838:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+61A text10 CODE >839:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+64A text10 CODE >840:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+64E text10 CODE >842:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+654 text10 CODE >843:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+65A text10 CODE >844:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+65A text10 CODE >845:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+65E text10 CODE >847:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+664 text10 CODE >848:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+66A text10 CODE >849:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+66A text10 CODE >850:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+66E text10 CODE >852:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+674 text10 CODE >853:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+67A text10 CODE >854:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+67A text10 CODE >855:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+67E text10 CODE >857:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+684 text10 CODE >858:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+68A text10 CODE >859:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+68A text10 CODE >860:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+68E text10 CODE >862:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+694 text10 CODE >863:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+69A text10 CODE >864:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+69A text10 CODE >865:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+69E text10 CODE >867:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+6D2 text10 CODE >868:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+6E0 text10 CODE >869:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+6E4 text10 CODE >872:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+6F6 text10 CODE >874:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+6FA text10 CODE >876:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+708 text10 CODE >877:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+70C text10 CODE >879:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+734 text10 CODE >880:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+764 text10 CODE >881:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+768 text10 CODE >883:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+76E text10 CODE >884:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+774 text10 CODE >885:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+774 text10 CODE >886:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+778 text10 CODE >888:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+77E text10 CODE >889:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+784 text10 CODE >890:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+784 text10 CODE >891:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+788 text10 CODE >893:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+78E text10 CODE >894:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+794 text10 CODE >895:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+794 text10 CODE >896:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+798 text10 CODE >898:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+79E text10 CODE >899:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+7A4 text10 CODE >900:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+7A4 text10 CODE >901:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+7A8 text10 CODE >903:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+7AE text10 CODE >904:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+7B4 text10 CODE >905:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+7B4 text10 CODE >906:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+7B8 text10 CODE >908:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+7EC text10 CODE >909:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+7FA text10 CODE >910:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+7FE text10 CODE >914:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+812 text10 CODE >916:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+816 text10 CODE >918:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+824 text10 CODE >919:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+828 text10 CODE >921:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+850 text10 CODE >922:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+880 text10 CODE >923:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+884 text10 CODE >925:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+88A text10 CODE >926:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+890 text10 CODE >927:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+890 text10 CODE >928:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+894 text10 CODE >930:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+89A text10 CODE >931:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8A0 text10 CODE >932:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8A0 text10 CODE >933:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8A4 text10 CODE >935:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8AA text10 CODE >936:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8B0 text10 CODE >937:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8B0 text10 CODE >938:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8B4 text10 CODE >940:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8BA text10 CODE >941:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8C0 text10 CODE >942:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8C0 text10 CODE >943:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8C4 text10 CODE >945:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8CA text10 CODE >946:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8D0 text10 CODE >947:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8D0 text10 CODE >948:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+8D4 text10 CODE >950:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+908 text10 CODE >951:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+916 text10 CODE >952:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+91A text10 CODE >955:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+92E text10 CODE >957:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+932 text10 CODE >959:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+940 text10 CODE >960:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+944 text10 CODE >962:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+96C text10 CODE >963:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+99C text10 CODE >964:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9A0 text10 CODE >966:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9A6 text10 CODE >967:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9AC text10 CODE >968:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9AC text10 CODE >969:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9B0 text10 CODE >971:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9B6 text10 CODE >972:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9BC text10 CODE >973:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9BC text10 CODE >974:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9C0 text10 CODE >976:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9C6 text10 CODE >977:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9CC text10 CODE >978:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9CC text10 CODE >979:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9D0 text10 CODE >981:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9D6 text10 CODE >982:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9DC text10 CODE >983:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9DC text10 CODE >984:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9E0 text10 CODE >986:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9E6 text10 CODE >987:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9EC text10 CODE >988:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9EC text10 CODE >989:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+9F0 text10 CODE >991:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+A24 text10 CODE >992:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+A32 text10 CODE >993:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+A36 text10 CODE >996:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+A4A text10 CODE >998:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+A4E text10 CODE >1000:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+A5C text10 CODE >1001:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+A60 text10 CODE >1003:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+A88 text10 CODE >1004:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AB8 text10 CODE >1005:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+ABC text10 CODE >1007:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AC2 text10 CODE >1008:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AC8 text10 CODE >1009:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AC8 text10 CODE >1010:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+ACC text10 CODE >1012:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AD2 text10 CODE >1013:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AD8 text10 CODE >1014:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AD8 text10 CODE >1015:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+ADC text10 CODE >1017:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AE2 text10 CODE >1018:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AE8 text10 CODE >1019:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AE8 text10 CODE >1020:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AEC text10 CODE >1022:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AF2 text10 CODE >1023:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AF8 text10 CODE >1024:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AF8 text10 CODE >1025:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+AFC text10 CODE >1027:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+B02 text10 CODE >1028:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+B08 text10 CODE >1029:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+B08 text10 CODE >1030:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+B0C text10 CODE >1032:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+B40 text10 CODE >1033:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+B4E text10 CODE >1034:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+B52 text10 CODE >1037:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+B66 text10 CODE >1039:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+B6A text10 CODE >1041:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+B78 text10 CODE >1042:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+B7C text10 CODE >1044:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+BA4 text10 CODE >1045:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+BD4 text10 CODE >1046:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+BD8 text10 CODE >1048:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+BDE text10 CODE >1049:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+BE4 text10 CODE >1050:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+BE4 text10 CODE >1051:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+BE8 text10 CODE >1053:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+BEE text10 CODE >1054:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+BF4 text10 CODE >1055:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+BF4 text10 CODE >1056:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+BF8 text10 CODE >1058:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+BFE text10 CODE >1059:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C04 text10 CODE >1060:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C04 text10 CODE >1061:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C08 text10 CODE >1063:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C0E text10 CODE >1064:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C14 text10 CODE >1065:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C14 text10 CODE >1066:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C18 text10 CODE >1068:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C1E text10 CODE >1069:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C24 text10 CODE >1070:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C24 text10 CODE >1071:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C28 text10 CODE >1073:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C5C text10 CODE >1074:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C6A text10 CODE >1075:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2AA2 text9 CODE >640:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2AA6 text9 CODE >643:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2AB6 text9 CODE >645:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2AEA text9 CODE >646:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2AF8 text9 CODE >647:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2AFC text9 CODE >649:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2B24 text9 CODE >650:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2B56 text9 CODE >651:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2B5A text9 CODE >654:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2B6C text9 CODE >656:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2BA0 text9 CODE >657:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2BAE text9 CODE >658:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2BB2 text9 CODE >660:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2BDA text9 CODE >661:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2C0C text9 CODE >662:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2C10 text9 CODE >665:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2C22 text9 CODE >667:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2C30 text9 CODE >668:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2C34 text9 CODE >670:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2C5C text9 CODE >671:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2C8C text9 CODE >672:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2C90 text9 CODE >674:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2C96 text9 CODE >675:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2C9C text9 CODE >676:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2C9C text9 CODE >677:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CA0 text9 CODE >679:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CA6 text9 CODE >680:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CAC text9 CODE >681:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CAC text9 CODE >682:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CB0 text9 CODE >684:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CB6 text9 CODE >685:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CBC text9 CODE >686:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CBC text9 CODE >687:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CC0 text9 CODE >689:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CC6 text9 CODE >690:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CCC text9 CODE >691:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CCC text9 CODE >692:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CD0 text9 CODE >694:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CD6 text9 CODE >695:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CDC text9 CODE >696:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CDC text9 CODE >697:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2CE0 text9 CODE >699:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2D14 text9 CODE >700:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2D22 text9 CODE >701:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2D26 text9 CODE >704:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2D3A text9 CODE >706:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2D48 text9 CODE >707:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2D4C text9 CODE >709:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2D74 text9 CODE >710:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DA4 text9 CODE >711:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DA8 text9 CODE >713:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DAE text9 CODE >714:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DB4 text9 CODE >715:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DB4 text9 CODE >716:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DB8 text9 CODE >718:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DBE text9 CODE >719:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DC4 text9 CODE >720:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DC4 text9 CODE >721:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DC8 text9 CODE >723:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DCE text9 CODE >724:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DD4 text9 CODE >725:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DD4 text9 CODE >726:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DD8 text9 CODE >728:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DDE text9 CODE >729:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DE4 text9 CODE >730:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DE4 text9 CODE >731:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DE8 text9 CODE >733:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DEE text9 CODE >734:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DF4 text9 CODE >735:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DF4 text9 CODE >736:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2DF8 text9 CODE >738:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2E2C text9 CODE >739:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+2E3A text9 CODE >740:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+300E text8 CODE >218:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3012 text8 CODE >223:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3018 text8 CODE >225:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+301C text8 CODE >226:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3020 text8 CODE >227:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3024 text8 CODE >229:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3030 text8 CODE >230:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3036 text8 CODE >231:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+303C text8 CODE >233:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3042 text8 CODE >234:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+304E text8 CODE >235:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3054 text8 CODE >237:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3058 text8 CODE >238:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+305A text8 CODE >240:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+305E text8 CODE >241:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3060 text8 CODE >243:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3066 text8 CODE >245:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+306A text8 CODE >246:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+306C text8 CODE >251:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3074 text8 CODE >252:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+307E text8 CODE >253:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3080 text8 CODE >255:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3084 text8 CODE >259:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+30A2 text8 CODE >260:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+30C0 text8 CODE >263:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+30C2 text8 CODE >266:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+30CA text8 CODE >270:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+30CA text8 CODE >271:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+30CE text8 CODE >272:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+30D2 text8 CODE >273:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+30D4 text8 CODE >274:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+30D4 text8 CODE >275:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+30D8 text8 CODE >276:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+30DE text8 CODE >278:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+30E0 text8 CODE >263:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3124 text8 CODE >280:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3140 text8 CODE >281:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+315C text8 CODE >282:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3178 text8 CODE >283:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3194 text8 CODE >284:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+31B0 text8 CODE >285:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+31CC text8 CODE >287:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+31D2 text8 CODE >289:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+35F2 text7 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+35F6 text7 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+35FA text7 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+35FE text7 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+3608 text7 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+3626 text7 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+365E text7 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+3664 text7 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+3666 text7 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+3668 text7 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+366A text7 CODE >87:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+366A text7 CODE >88:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+366C text7 CODE >89:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+38B8 text6 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+38B8 text6 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+38C8 text6 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+38D6 text6 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+38E4 text6 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+3846 text5 CODE >61:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+3846 text5 CODE >73:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+3862 text5 CODE >75:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+3864 text5 CODE >85:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+386A text5 CODE >88:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+3872 text5 CODE >75:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+3872 text5 CODE >89:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+32E0 text4 CODE >180:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+32E0 text4 CODE >181:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+32E4 text4 CODE >182:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+32E8 text4 CODE >184:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+32EC text4 CODE >185:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+32F0 text4 CODE >187:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+32F4 text4 CODE >188:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+32F8 text4 CODE >190:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+32FC text4 CODE >191:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3300 text4 CODE >193:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3304 text4 CODE >194:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3306 text4 CODE >196:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3308 text4 CODE >197:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3316 text4 CODE >198:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+331A text4 CODE >199:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3328 text4 CODE >200:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+332A text4 CODE >201:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3338 text4 CODE >202:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+333C text4 CODE >203:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+334A text4 CODE >204:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+336E text4 CODE >205:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3370 text4 CODE >206:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3372 text4 CODE >207:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3374 text4 CODE >208:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3376 text4 CODE >209:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3378 text4 CODE >210:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+337A text4 CODE >211:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+337C text4 CODE >212:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+337E text4 CODE >213:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3380 text4 CODE >214:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3382 text4 CODE >215:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3384 text4 CODE >216:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3386 text4 CODE >217:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3388 text4 CODE >218:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+338A text4 CODE >219:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3398 text4 CODE >220:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+339C text4 CODE >221:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+33A0 text4 CODE >223:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+33A4 text4 CODE >224:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+33A6 text4 CODE >225:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+33A8 text4 CODE >226:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+33AC text4 CODE >227:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+33B0 text4 CODE >228:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+33B2 text4 CODE >232:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+33C4 text4 CODE >233:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+391A text3 CODE >1154:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+391A text3 CODE >1156:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C70 text2 CODE >294:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C70 text2 CODE >298:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C76 text2 CODE >299:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C7A text2 CODE >300:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C80 text2 CODE >301:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C86 text2 CODE >302:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C86 text2 CODE >303:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C8A text2 CODE >305:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C90 text2 CODE >308:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+C9E text2 CODE >309:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+CA2 text2 CODE >311:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+CCA text2 CODE >312:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+CFA text2 CODE >313:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+CFE text2 CODE >315:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D04 text2 CODE >316:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D08 text2 CODE >318:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D0E text2 CODE >319:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D12 text2 CODE >320:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D18 text2 CODE >321:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D1C text2 CODE >322:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D22 text2 CODE >323:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D26 text2 CODE >324:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D2C text2 CODE >325:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D30 text2 CODE >326:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D36 text2 CODE >327:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D3A text2 CODE >329:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D6E text2 CODE >330:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D7C text2 CODE >331:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D80 text2 CODE >332:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D82 text2 CODE >334:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D82 text2 CODE >337:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+D86 text2 CODE >339:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+DBA text2 CODE >340:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+DC8 text2 CODE >341:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+DCC text2 CODE >343:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+DF4 text2 CODE >344:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E26 text2 CODE >345:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E30 text2 CODE >346:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E34 text2 CODE >349:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E3A text2 CODE >350:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E40 text2 CODE >351:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E40 text2 CODE >352:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E44 text2 CODE >353:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E4A text2 CODE >354:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E50 text2 CODE >355:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E50 text2 CODE >356:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E54 text2 CODE >358:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E62 text2 CODE >359:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E76 text2 CODE >360:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E8A text2 CODE >361:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+E9E text2 CODE >362:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+EB2 text2 CODE >363:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+EC6 text2 CODE >364:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+EDA text2 CODE >365:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+EEE text2 CODE >367:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+EF2 text2 CODE >368:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+EF4 text2 CODE >369:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+EF4 text2 CODE >373:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+EFA text2 CODE >374:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+EFE text2 CODE >376:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F04 text2 CODE >377:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F0A text2 CODE >378:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F0A text2 CODE >379:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F0E text2 CODE >381:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F14 text2 CODE >383:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F22 text2 CODE >384:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F26 text2 CODE >386:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F4E text2 CODE >387:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F7E text2 CODE >388:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F82 text2 CODE >390:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F88 text2 CODE >391:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F8C text2 CODE >393:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F92 text2 CODE >394:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F96 text2 CODE >395:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+F9C text2 CODE >396:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+FA0 text2 CODE >397:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+FA6 text2 CODE >398:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+FAA text2 CODE >399:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+FB0 text2 CODE >400:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+FB4 text2 CODE >401:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+FBA text2 CODE >402:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+FBE text2 CODE >404:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+FF2 text2 CODE >405:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1000 text2 CODE >406:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1004 text2 CODE >407:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1006 text2 CODE >409:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1006 text2 CODE >412:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+100A text2 CODE >414:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+103E text2 CODE >415:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+104C text2 CODE >416:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1050 text2 CODE >418:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1078 text2 CODE >419:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10AA text2 CODE >420:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10B4 text2 CODE >421:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10B8 text2 CODE >424:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10BE text2 CODE >425:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10C4 text2 CODE >426:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10C4 text2 CODE >427:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10C8 text2 CODE >428:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10CE text2 CODE >429:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10D4 text2 CODE >430:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10D4 text2 CODE >431:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10D8 text2 CODE >433:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10E6 text2 CODE >434:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+10FA text2 CODE >435:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+110E text2 CODE >436:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1122 text2 CODE >437:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1136 text2 CODE >438:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+114A text2 CODE >439:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+115E text2 CODE >440:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1172 text2 CODE >442:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1176 text2 CODE >444:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1178 text2 CODE >445:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1178 text2 CODE >449:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+117E text2 CODE >450:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1182 text2 CODE >452:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1188 text2 CODE >453:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+118E text2 CODE >454:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+118E text2 CODE >455:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1192 text2 CODE >457:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1198 text2 CODE >459:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+11A6 text2 CODE >460:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+11AA text2 CODE >462:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+11D2 text2 CODE >463:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1202 text2 CODE >464:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1206 text2 CODE >466:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+120C text2 CODE >467:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1210 text2 CODE >469:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1216 text2 CODE >470:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+121A text2 CODE >471:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1220 text2 CODE >472:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1224 text2 CODE >473:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+122A text2 CODE >474:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+122E text2 CODE >475:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1234 text2 CODE >476:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1238 text2 CODE >477:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+123E text2 CODE >478:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1242 text2 CODE >480:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1276 text2 CODE >481:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1284 text2 CODE >482:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1288 text2 CODE >483:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+128A text2 CODE >485:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+128A text2 CODE >488:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+128E text2 CODE >490:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+12C2 text2 CODE >491:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+12D0 text2 CODE >492:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+12D4 text2 CODE >494:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+12FC text2 CODE >495:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+132E text2 CODE >496:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1338 text2 CODE >497:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+133C text2 CODE >500:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1342 text2 CODE >501:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1348 text2 CODE >502:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1348 text2 CODE >503:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+134C text2 CODE >504:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1352 text2 CODE >505:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1358 text2 CODE >506:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1358 text2 CODE >507:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+135C text2 CODE >509:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+136A text2 CODE >510:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+137E text2 CODE >511:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+1392 text2 CODE >512:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+13A6 text2 CODE >513:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+13BA text2 CODE >514:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+13CE text2 CODE >515:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+13E2 text2 CODE >516:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+13F6 text2 CODE >518:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+13FA text2 CODE >520:K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+3808 text1 CODE >158:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3808 text1 CODE >159:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3812 text1 CODE >160:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3816 text1 CODE >163:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+3842 text1 CODE >169:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2256 text0 CODE >110:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2256 text0 CODE >111:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+225A text0 CODE >113:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+225C text0 CODE >114:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+226A text0 CODE >115:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+226E text0 CODE >116:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+227C text0 CODE >118:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2280 text0 CODE >119:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2284 text0 CODE >120:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2286 text0 CODE >121:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+228E text0 CODE >123:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2292 text0 CODE >124:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+22F6 text0 CODE >125:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2320 text0 CODE >126:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2334 text0 CODE >127:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+237C text0 CODE >128:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2390 text0 CODE >129:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+239E text0 CODE >131:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+23E0 text0 CODE >132:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2424 text0 CODE >133:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2424 text0 CODE >134:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2458 text0 CODE >135:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+24B0 text0 CODE >138:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+24C0 text0 CODE >140:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+24C4 text0 CODE >141:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2588 text0 CODE >142:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+25A2 text0 CODE >143:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+2634 text0 CODE >144:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+26C4 text0 CODE >146:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+26C6 text0 CODE >147:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+26CA text0 CODE >149:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+26DE text0 CODE >150:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+26E0 text0 CODE >122:D:\DOCUMENTI LUIGINO\tesina\sterzo\newmain.c
+375C cinit CODE >1468:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+375C cinit CODE >1470:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+375C cinit CODE >1473:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+375C cinit CODE >1583:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3760 cinit CODE >1584:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3762 cinit CODE >1585:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3762 cinit CODE >1586:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3764 cinit CODE >1587:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3766 cinit CODE >1588:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3768 cinit CODE >1591:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+376A cinit CODE >1594:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+376E cinit CODE >1595:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3770 cinit CODE >1596:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3770 cinit CODE >1597:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3772 cinit CODE >1598:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3774 cinit CODE >1599:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3776 cinit CODE >1604:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3778 cinit CODE >1605:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+377A cinit CODE >1606:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+377C cinit CODE >1607:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+377E cinit CODE >1608:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3780 cinit CODE >1609:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3782 cinit CODE >1610:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3784 cinit CODE >1611:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3788 cinit CODE >1612:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+378A cinit CODE >1613:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+378E cinit CODE >1614:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3790 cinit CODE >1615:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3794 cinit CODE >1619:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3796 cinit CODE >1620:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+3798 cinit CODE >1621:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+379A cinit CODE >1622:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+379C cinit CODE >1623:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+379E cinit CODE >1624:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37A0 cinit CODE >1625:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37A4 cinit CODE >1626:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37A8 cinit CODE >1627:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37A8 cinit CODE >1628:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37AA cinit CODE >1629:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37AE cinit CODE >1630:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37B0 cinit CODE >1631:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37B2 cinit CODE >1632:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37B4 cinit CODE >1638:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37B4 cinit CODE >1640:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37B6 cinit CODE >1641:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37B8 cinit CODE >1643:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37BA cinit CODE >1644:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37BC cinit CODE >1645:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+37BE cinit CODE >1646:C:\Users\LUIGINO\AppData\Local\Temp\sfec.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___awdiv@counter 77 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\sterzo.production.obj
+CANSetMask@mask 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+CANSetMask@tamp 7D 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+CANSetMask@type 77 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\sterzo.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hspace_1 221 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+CANSetMask@numBuffer 7C 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\sterzo.production.obj
+__end_of_ISR_bassa 166 0 CODE 0 intcodelo dist/default/production\sterzo.production.obj
+_RXM0EIDH F1A 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXM0EIDL F1B 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXM0SIDH F18 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXM0SIDL F19 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXM1EIDH F1E 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXM1EIDL F1F 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXM1SIDH F1C 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXM1SIDL F1D 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\sterzo.production.obj
+__size_of_ISR_bassa 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__end_of_WriteTimer0 398E 0 CODE 0 text33 dist/default/production\sterzo.production.obj
+_RXB1DLCbits F55 0 ABS 0 - dist/default/production\sterzo.production.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\sterzo.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of_CANInitialize 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_id CD 0 BANK0 1 bssBANK0 dist/default/production\sterzo.production.obj
+WriteTimer0@timer0 60 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+?_abs 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\sterzo.production.obj
+_LATA F89 0 ABS 0 - dist/default/production\sterzo.production.obj
+_LATB F8A 0 ABS 0 - dist/default/production\sterzo.production.obj
+_LATC F8B 0 ABS 0 - dist/default/production\sterzo.production.obj
+_LATD F8C 0 ABS 0 - dist/default/production\sterzo.production.obj
+_LATE F8D 0 ABS 0 - dist/default/production\sterzo.production.obj
+___sp 0 0 STACK 2 stack C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+_main 2256 0 CODE 0 text0 dist/default/production\sterzo.production.obj
+abs@a 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+btemp 45 0 COMRAM 1 temp dist/default/production\sterzo.production.obj
+__end_of_ConvertADC 39BA 0 CODE 0 text15 dist/default/production\sterzo.production.obj
+start 166 0 CODE 0 init C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+___flmul@aexp AB 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___flmul@bexp AC 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___flmul@prod AD 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___flmul@sign A6 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___flmul@temp B1 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_CANisTxReady 391A 0 CODE 0 text3 dist/default/production\sterzo.production.obj
+__size_of___fladd 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of___fldiv 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of___flmul 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of___flneg 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of___fltol 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1DLCbits F35 0 ABS 0 - dist/default/production\sterzo.production.obj
+__end_of_CANSetMask 2E40 0 CODE 0 text9 dist/default/production\sterzo.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\sterzo.production.obj
+_ISR_bassa 18 0 CODE 0 intcodelo dist/default/production\sterzo.production.obj
+?___lmul 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+?___wmul 7B 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+CANOperationMode@mode 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\sterzo.production.obj
+_BusyADC 398E 0 CODE 0 text16 dist/default/production\sterzo.production.obj
+_RXM1SIDLbits F1D 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hpowerup 166 0 CODE 0 powerup dist/default/production\sterzo.production.obj
+_RXB0DLCbits F65 0 ABS 0 - dist/default/production\sterzo.production.obj
+_CANisRxReady$2920 21 0 COMRAM 1 cstackCOMRAM dist/default/production\sterzo.production.obj
+__pbitbssCOMRAM 220 -1DC COMRAM 1 bitbssCOMRAM dist/default/production\sterzo.production.obj
+_T0CONbits FD5 0 ABS 0 - dist/default/production\sterzo.production.obj
+__end_of_CANInitialize 31D4 0 CODE 0 text8 dist/default/production\sterzo.production.obj
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\sterzo.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+intlevel0 0 0 CODE 0 text C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+intlevel1 0 0 CODE 0 text C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+intlevel2 0 0 CODE 0 text C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+intlevel3 0 0 CODE 0 text C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\sterzo.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\sterzo.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0DLCbits F45 0 ABS 0 - dist/default/production\sterzo.production.obj
+CANSetFilter@filter 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__size_of_ISR_alta 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\sterzo.production.obj
+__size_of_CANisTxReady 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+___awdiv@sign 78 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\sterzo.production.obj
+_COMSTATbits F74 0 ABS 0 - dist/default/production\sterzo.production.obj
+__pidataCOMRAM 39B2 0 CODE 0 idataCOMRAM dist/default/production\sterzo.production.obj
+___wmul@multiplicand 7D 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_ADCON0 FC2 0 ABS 0 - dist/default/production\sterzo.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/default/production\sterzo.production.obj
+_ADCON2 FC0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_ADRESH FC4 0 ABS 0 - dist/default/production\sterzo.production.obj
+_ADRESL FC3 0 ABS 0 - dist/default/production\sterzo.production.obj
+_calibration 9 0 COMRAM 1 bssCOMRAM dist/default/production\sterzo.production.obj
+___awdiv@dividend 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_currentSteering E7 0 BANK0 1 dataBANK0 dist/default/production\sterzo.production.obj
+CANSetFilter@tamp 7D 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+CANSetFilter@type 77 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+__end_of_send_data 3846 0 CODE 0 text1 dist/default/production\sterzo.production.obj
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\sterzo.production.obj
+_CANCON F6F 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of_ReadADC 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of_send_data 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\sterzo.production.obj
+__end_of___lmul 375C 0 CODE 0 text19 dist/default/production\sterzo.production.obj
+__end_of___wmul 38EE 0 CODE 0 text6 dist/default/production\sterzo.production.obj
+__end_of_CANisTxReady 393E 0 CODE 0 text3 dist/default/production\sterzo.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\sterzo.production.obj
+_TXB0DLC F45 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1DLC F35 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2DLC F25 0 ABS 0 - dist/default/production\sterzo.production.obj
+_data_array DF 0 BANK0 1 bssBANK0 dist/default/production\sterzo.production.obj
+___fldiv@aexp B2 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___fldiv@bexp B1 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___fldiv@sign A6 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\sterzo.production.obj
+__LnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\sterzo.production.obj
+__Hintcodelo 166 0 CODE 0 intcodelo dist/default/production\sterzo.production.obj
+___awdiv@divisor 75 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__end_of___awdiv 3484 0 CODE 0 text26 dist/default/production\sterzo.production.obj
+__end_of___fladd 1DB0 0 CODE 0 text25 dist/default/production\sterzo.production.obj
+__end_of___fldiv 2AA2 0 CODE 0 text24 dist/default/production\sterzo.production.obj
+__end_of___flmul 2256 0 CODE 0 text23 dist/default/production\sterzo.production.obj
+__end_of___flneg 38B8 0 CODE 0 text22 dist/default/production\sterzo.production.obj
+__end_of___fltol 32E0 0 CODE 0 text21 dist/default/production\sterzo.production.obj
+CANInitialize@flags 85 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__end_of___lldiv 3540 0 CODE 0 text20 dist/default/production\sterzo.production.obj
+__end_of___lwdiv 36E6 0 CODE 0 text13 dist/default/production\sterzo.production.obj
+_send_data 3808 0 CODE 0 text1 dist/default/production\sterzo.production.obj
+__size_of_CANsendMessage 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__CFG_BOREN$BOHW 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_ISR_alta 8 0 CODE 0 intcode dist/default/production\sterzo.production.obj
+___lwdiv@quotient 77 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\sterzo.production.obj
+___fladd@a 104 0 BANK1 1 cstackBANK1 dist/default/production\sterzo.production.obj
+___fladd@b 100 0 BANK1 1 cstackBANK1 dist/default/production\sterzo.production.obj
+___fldiv@a 9E 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___fldiv@b 9A 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___flmul@a 9E 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___flmul@b 9A 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_CANisRXwarningON 39A6 0 CODE 0 text28 dist/default/production\sterzo.production.obj
+__size_of_WriteTimer0 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__end_of_ISR_alta 35F2 0 CODE 0 intcode_body dist/default/production\sterzo.production.obj
+_INTCON2bits FF1 0 ABS 0 - dist/default/production\sterzo.production.obj
+___lldiv@counter 8B 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\sterzo.production.obj
+_CANSetFilter 16A 0 CODE 0 text10 dist/default/production\sterzo.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1SIDLbits F32 0 ABS 0 - dist/default/production\sterzo.production.obj
+_configurazione_iniziale 32E0 0 CODE 0 text4 dist/default/production\sterzo.production.obj
+start_initialization 375C 0 CODE 0 cinit dist/default/production\sterzo.production.obj
+__CFG_PBADEN$ON 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\sterzo.production.obj
+__end_of_configurazione_iniziale 33C6 0 CODE 0 text4 dist/default/production\sterzo.production.obj
+CANInitialize@FilterConfig1 8B 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+CANInitialize@FilterConfig2 8C 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___lldiv@dividend 7F 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+CANSetFilter@numBuffer 7C 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_CANisTXwarningON 399A 0 CODE 0 text27 dist/default/production\sterzo.production.obj
+___rparam_used 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_clock_counter_reference EA 0 BANK0 1 nvBANK0 dist/default/production\sterzo.production.obj
+_RXB0D0 F66 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB0D1 F67 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB0D2 F68 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB0D3 F69 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB0D4 F6A 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB0D5 F6B 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB0D6 F6C 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB0D7 F6D 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1D0 F56 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1D1 F57 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1D2 F58 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1D3 F59 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1D4 F5A 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1D5 F5B 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1D6 F5C 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1D7 F5D 0 ABS 0 - dist/default/production\sterzo.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__pcstackBANK1 100 0 BANK1 1 cstackBANK1 dist/default/production\sterzo.production.obj
+_RXF4SIDLbits F11 0 ABS 0 - dist/default/production\sterzo.production.obj
+_IPR2bits FA2 0 ABS 0 - dist/default/production\sterzo.production.obj
+_IPR3bits FA5 0 ABS 0 - dist/default/production\sterzo.production.obj
+CANInitialize@phaseSeg1 81 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+CANInitialize@phaseSeg2 82 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__size_of_ConvertADC 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0D0 F46 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0D1 F47 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0D2 F48 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0D3 F49 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0D4 F4A 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0D5 F4B 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0D6 F4C 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0D7 F4D 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1D0 F36 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1D1 F37 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1D2 F38 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1D3 F39 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1D4 F3A 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1D5 F3B 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1D6 F3C 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1D7 F3D 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2D0 F26 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2D1 F27 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2D2 F28 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2D3 F29 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2D4 F2A 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2D5 F2B 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2D6 F2C 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2D7 F2D 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of_CANSetMask 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__end_of_ReadADC 397C 0 CODE 0 text14 dist/default/production\sterzo.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\sterzo.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\sterzo.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\sterzo.production.obj
+__size_of_CANSetFilter 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\sterzo.production.obj
+__Hconst 0 0 CODE 0 const dist/default/production\sterzo.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\sterzo.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\sterzo.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\sterzo.production.obj
+__Hparam 0 0 BANK0 1 param0 dist/default/production\sterzo.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\sterzo.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\sterzo.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\sterzo.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\sterzo.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\sterzo.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\sterzo.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\sterzo.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\sterzo.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\sterzo.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\sterzo.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\sterzo.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\sterzo.production.obj
+__size_of_OpenADC 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+___lwdiv@counter 79 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__size_of___xxtofl 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\sterzo.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\sterzo.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+___xxtofl@arg 96 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___xxtofl@exp 95 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___xxtofl@val 8C 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\sterzo.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\sterzo.production.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+CANInitialize@BRP 84 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+CANInitialize@SJW 83 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_limiteDx B 0 COMRAM 1 bssCOMRAM dist/default/production\sterzo.production.obj
+_limiteSx 40 0 COMRAM 1 dataCOMRAM dist/default/production\sterzo.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\sterzo.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\sterzo.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\sterzo.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\sterzo.production.obj
+__Lconst 0 0 CODE 0 const dist/default/production\sterzo.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\sterzo.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\sterzo.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\sterzo.production.obj
+__Lparam 0 0 BANK0 1 param0 dist/default/production\sterzo.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\sterzo.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\sterzo.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\sterzo.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\sterzo.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\sterzo.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\sterzo.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\sterzo.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\sterzo.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\sterzo.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\sterzo.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\sterzo.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\sterzo.production.obj
+_RXF2SIDLbits F09 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\sterzo.production.obj
+___flmul@grs A7 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\sterzo.production.obj
+_PORTAbits F80 0 ABS 0 - dist/default/production\sterzo.production.obj
+_PORTCbits F82 0 ABS 0 - dist/default/production\sterzo.production.obj
+_calibrazione 37C2 0 CODE 0 text12 dist/default/production\sterzo.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\sterzo.production.obj
+delay_ms@value_ms 81 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_CANisRxReady 3954 0 CODE 0 text31 dist/default/production\sterzo.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\sterzo.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\sterzo.production.obj
+__Hinit 166 0 CODE 0 init dist/default/production\sterzo.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\sterzo.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\sterzo.production.obj
+__Htemp 46 0 COMRAM 1 temp dist/default/production\sterzo.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\sterzo.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\sterzo.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\sterzo.production.obj
+__Linit 166 0 CODE 0 init dist/default/production\sterzo.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\sterzo.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\sterzo.production.obj
+__Ltemp 45 0 COMRAM 1 temp dist/default/production\sterzo.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\sterzo.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__pnvBANK0 EA 0 BANK0 1 nvBANK0 dist/default/production\sterzo.production.obj
+__end_of_CANSetFilter C70 0 CODE 0 text10 dist/default/production\sterzo.production.obj
+__end_of_CANisRXwarningON 39B2 0 CODE 0 text28 dist/default/production\sterzo.production.obj
+___lmul 36E6 0 CODE 0 text19 dist/default/production\sterzo.production.obj
+___wmul 38B8 0 CODE 0 text6 dist/default/production\sterzo.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\sterzo.production.obj
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\sterzo.production.obj
+_RXB0SIDLbits F62 0 ABS 0 - dist/default/production\sterzo.production.obj
+int$flags 45 0 COMRAM 1 temp dist/default/production\sterzo.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\sterzo.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\sterzo.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\sterzo.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\sterzo.production.obj
+__S1 124 0 ABS 0 - dist/default/production\sterzo.production.obj
+__S2 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_abs 38EE 0 CODE 0 text17 dist/default/production\sterzo.production.obj
+_msg 12 0 COMRAM 1 bssCOMRAM dist/default/production\sterzo.production.obj
+_CANisTxReady$2918 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__size_of_CANisRXwarningON 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of_CANreceiveMessage 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__end_of_CANisTXwarningON 39A6 0 CODE 0 text27 dist/default/production\sterzo.production.obj
+_currentSteering_array C1 0 BANK0 1 bssBANK0 dist/default/production\sterzo.production.obj
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\sterzo.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\sterzo.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\sterzo.production.obj
+_errore DD 0 BANK0 1 bssBANK0 dist/default/production\sterzo.production.obj
+__size_of_CANisTXwarningON 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF0SIDLbits F01 0 ABS 0 - dist/default/production\sterzo.production.obj
+___xxtofl 2E40 0 CODE 0 text18 dist/default/production\sterzo.production.obj
+__end_of_abs 391A 0 CODE 0 text17 dist/default/production\sterzo.production.obj
+__Hparam0 0 0 BANK0 1 param0 dist/default/production\sterzo.production.obj
+int_func 3540 0 CODE 0 intcode_body dist/default/production\sterzo.production.obj
+__size_of_BusyADC 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+OpenADC@config2 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 dist/default/production\sterzo.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\sterzo.production.obj
+___lldiv@divisor 83 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_duty_cycle C9 0 BANK0 1 bssBANK0 dist/default/production\sterzo.production.obj
+__size_of_calibrazione 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hramtop 300 0 RAM 0 ramtop dist/default/production\sterzo.production.obj
+__size_of_CANisRxReady 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__end_of___xxtofl 300E 0 CODE 0 text18 dist/default/production\sterzo.production.obj
+__pdataBANK0 E7 0 BANK0 1 dataBANK0 dist/default/production\sterzo.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\sterzo.production.obj
+__size_of___lmul 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\sterzo.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\sterzo.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\sterzo.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\sterzo.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\sterzo.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\sterzo.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\sterzo.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\sterzo.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\sterzo.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production\sterzo.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\sterzo.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\sterzo.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production\sterzo.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production\sterzo.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production\sterzo.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production\sterzo.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production\sterzo.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production\sterzo.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production\sterzo.production.obj
+__Htext28 0 0 ABS 0 text28 dist/default/production\sterzo.production.obj
+__Htext30 0 0 ABS 0 text30 dist/default/production\sterzo.production.obj
+__Htext31 0 0 ABS 0 text31 dist/default/production\sterzo.production.obj
+__Htext33 0 0 ABS 0 text33 dist/default/production\sterzo.production.obj
+__CFG_BBSIZ$1024 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+CANsendMessage@identifier 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/production\sterzo.production.obj
+_PIE2bits FA0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_PIE3bits FA3 0 ABS 0 - dist/default/production\sterzo.production.obj
+__end_of_OpenADC 366E 0 CODE 0 text7 dist/default/production\sterzo.production.obj
+_timeCounter 5 0 COMRAM 1 bssCOMRAM dist/default/production\sterzo.production.obj
+___fladd@signs 110 0 BANK1 1 cstackBANK1 dist/default/production\sterzo.production.obj
+__ptext10 16A 0 CODE 0 text10 dist/default/production\sterzo.production.obj
+__ptext11 393E 0 CODE 0 text11 dist/default/production\sterzo.production.obj
+__ptext12 37C2 0 CODE 0 text12 dist/default/production\sterzo.production.obj
+__ptext13 366E 0 CODE 0 text13 dist/default/production\sterzo.production.obj
+__ptext14 396A 0 CODE 0 text14 dist/default/production\sterzo.production.obj
+__ptext15 39B6 0 CODE 0 text15 dist/default/production\sterzo.production.obj
+__ptext16 398E 0 CODE 0 text16 dist/default/production\sterzo.production.obj
+__ptext17 38EE 0 CODE 0 text17 dist/default/production\sterzo.production.obj
+__ptext18 2E40 0 CODE 0 text18 dist/default/production\sterzo.production.obj
+__ptext19 36E6 0 CODE 0 text19 dist/default/production\sterzo.production.obj
+__ptext20 3484 0 CODE 0 text20 dist/default/production\sterzo.production.obj
+__ptext21 31D4 0 CODE 0 text21 dist/default/production\sterzo.production.obj
+__ptext22 3880 0 CODE 0 text22 dist/default/production\sterzo.production.obj
+__ptext23 1DB0 0 CODE 0 text23 dist/default/production\sterzo.production.obj
+__ptext24 26E2 0 CODE 0 text24 dist/default/production\sterzo.production.obj
+__ptext25 1908 0 CODE 0 text25 dist/default/production\sterzo.production.obj
+__ptext26 33C6 0 CODE 0 text26 dist/default/production\sterzo.production.obj
+__ptext27 399A 0 CODE 0 text27 dist/default/production\sterzo.production.obj
+__ptext28 39A6 0 CODE 0 text28 dist/default/production\sterzo.production.obj
+__ptext30 13FC 0 CODE 0 text30 dist/default/production\sterzo.production.obj
+__ptext31 3954 0 CODE 0 text31 dist/default/production\sterzo.production.obj
+__ptext33 397C 0 CODE 0 text33 dist/default/production\sterzo.production.obj
+___awdiv 33C6 0 CODE 0 text26 dist/default/production\sterzo.production.obj
+___fladd 1908 0 CODE 0 text25 dist/default/production\sterzo.production.obj
+___fldiv 26E2 0 CODE 0 text24 dist/default/production\sterzo.production.obj
+___flmul 1DB0 0 CODE 0 text23 dist/default/production\sterzo.production.obj
+___flneg 3880 0 CODE 0 text22 dist/default/production\sterzo.production.obj
+___fltol 31D4 0 CODE 0 text21 dist/default/production\sterzo.production.obj
+__pintcode_body 3540 0 CODE 0 intcode_body dist/default/production\sterzo.production.obj
+___lldiv 3484 0 CODE 0 text20 dist/default/production\sterzo.production.obj
+___lwdiv 366E 0 CODE 0 text13 dist/default/production\sterzo.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\sterzo.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\sterzo.production.obj
+__end_of_calibrazione 3808 0 CODE 0 text12 dist/default/production\sterzo.production.obj
+___lmul@multiplier 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__CFG_BORV$3 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__end_of_CANisRxReady 396A 0 CODE 0 text31 dist/default/production\sterzo.production.obj
+_WriteTimer0 397C 0 CODE 0 text33 dist/default/production\sterzo.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\sterzo.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\sterzo.production.obj
+_RXB0CON F60 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB0DLC F65 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1CON F50 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1DLC F55 0 ABS 0 - dist/default/production\sterzo.production.obj
+WriteTimer0@timer 62 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___wmul@multiplier 7B 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+OpenADC@portconfig 74 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___fldiv@grs AD 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___fldiv@rem A7 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_RXM0SIDLbits F19 0 ABS 0 - dist/default/production\sterzo.production.obj
+OpenADC@config 77 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\sterzo.production.obj
+___lwdiv@divisor 75 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\sterzo.production.obj
+___fldiv@new_exp AB 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_timer1 F 0 COMRAM 1 bssCOMRAM dist/default/production\sterzo.production.obj
+stackhi 2FF 0 ABS 0 - C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+stacklo 124 0 ABS 0 - C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\sterzo.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\sterzo.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\sterzo.production.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\sterzo.production.obj
+___fladd@grs 113 0 BANK1 1 cstackBANK1 dist/default/production\sterzo.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+CANsendMessage@flags 7A 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_delay_quartz_frequency_value E8 0 BANK0 1 dataBANK0 dist/default/production\sterzo.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\sterzo.production.obj
+_theorySteering 11 0 COMRAM 1 bssCOMRAM dist/default/production\sterzo.production.obj
+__HbitbssCOMRAM 0 0 ABS 0 bitbssCOMRAM dist/default/production\sterzo.production.obj
+_previousTimeCounter D1 0 BANK0 1 bssBANK0 dist/default/production\sterzo.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\sterzo.production.obj
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 dist/default/production\sterzo.production.obj
+CANInitialize@propSeg 8A 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_CANsendMessage C70 0 CODE 0 text2 dist/default/production\sterzo.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production\sterzo.production.obj
+_PIR2bits FA1 0 ABS 0 - dist/default/production\sterzo.production.obj
+_PIR3bits FA4 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Lend_init 166 0 CODE 0 end_init dist/default/production\sterzo.production.obj
+CANsendMessage@dataLength 79 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__size_of_delay_ms 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\sterzo.production.obj
+___fltol@exp1 B8 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_TXB2CONbits F20 0 ABS 0 - dist/default/production\sterzo.production.obj
+end_of_initialization 37B4 0 CODE 0 cinit dist/default/production\sterzo.production.obj
+__end_of_CANreceiveMessage 1908 0 CODE 0 text30 dist/default/production\sterzo.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\sterzo.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\sterzo.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RCONbits FD0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__end_of_BusyADC 399A 0 CODE 0 text16 dist/default/production\sterzo.production.obj
+__CFG_OSC$HS 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+___awdiv@quotient 79 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+?___awdiv 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+___lwdiv@dividend 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+?___fladd 100 0 BANK1 1 cstackBANK1 dist/default/production\sterzo.production.obj
+?___fldiv 9A 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+?___flmul 9A 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+?___flneg B3 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+?___fltol 114 0 BANK1 1 cstackBANK1 dist/default/production\sterzo.production.obj
+__Lparam0 0 0 BANK0 1 param0 dist/default/production\sterzo.production.obj
+?___lldiv 7F 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+?___lwdiv 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\sterzo.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\sterzo.production.obj
+_RXB1CONbits F50 0 ABS 0 - dist/default/production\sterzo.production.obj
+_ReadADC 396A 0 CODE 0 text14 dist/default/production\sterzo.production.obj
+__Lramtop 300 0 RAM 0 ramtop dist/default/production\sterzo.production.obj
+_TXB2SIDLbits F22 0 ABS 0 - dist/default/production\sterzo.production.obj
+_BRGCON1 F70 0 ABS 0 - dist/default/production\sterzo.production.obj
+_BRGCON2 F71 0 ABS 0 - dist/default/production\sterzo.production.obj
+_BRGCON3 F72 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0EIDH F43 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0EIDL F44 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0SIDH F41 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB0SIDL F42 0 ABS 0 - dist/default/production\sterzo.production.obj
+__pcinit 375C 0 CODE 0 cinit dist/default/production\sterzo.production.obj
+_TXB1EIDH F33 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1EIDL F34 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1SIDH F31 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB1SIDL F32 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2EIDH F23 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2EIDL F24 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2SIDH F21 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TXB2SIDL F22 0 ABS 0 - dist/default/production\sterzo.production.obj
+___flneg@f1 B3 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__ptext0 2256 0 CODE 0 text0 dist/default/production\sterzo.production.obj
+__ptext1 3808 0 CODE 0 text1 dist/default/production\sterzo.production.obj
+__ptext2 C70 0 CODE 0 text2 dist/default/production\sterzo.production.obj
+__ptext3 391A 0 CODE 0 text3 dist/default/production\sterzo.production.obj
+__ptext4 32E0 0 CODE 0 text4 dist/default/production\sterzo.production.obj
+__ptext5 3846 0 CODE 0 text5 dist/default/production\sterzo.production.obj
+__ptext6 38B8 0 CODE 0 text6 dist/default/production\sterzo.production.obj
+__ptext7 35F2 0 CODE 0 text7 dist/default/production\sterzo.production.obj
+__ptext8 300E 0 CODE 0 text8 dist/default/production\sterzo.production.obj
+__ptext9 2AA2 0 CODE 0 text9 dist/default/production\sterzo.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\sterzo.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\sterzo.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\sterzo.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\sterzo.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\sterzo.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\sterzo.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\sterzo.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\sterzo.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\sterzo.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production\sterzo.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\sterzo.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\sterzo.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production\sterzo.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production\sterzo.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production\sterzo.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production\sterzo.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production\sterzo.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production\sterzo.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production\sterzo.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/production\sterzo.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/production\sterzo.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/production\sterzo.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/production\sterzo.production.obj
+_periodo D 0 COMRAM 1 bssCOMRAM dist/default/production\sterzo.production.obj
+__ramtop 300 0 RAM 0 ramtop C:\Users\LUIGINO\AppData\Local\Temp\sfec.obj
+_CANOperationMode 393E 0 CODE 0 text11 dist/default/production\sterzo.production.obj
+__Lpowerup 166 0 CODE 0 powerup dist/default/production\sterzo.production.obj
+?___xxtofl 8C 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\sterzo.production.obj
+_TXB1CONbits F30 0 ABS 0 - dist/default/production\sterzo.production.obj
+___fladd@aexp 111 0 BANK1 1 cstackBANK1 dist/default/production\sterzo.production.obj
+___fladd@bexp 112 0 BANK1 1 cstackBANK1 dist/default/production\sterzo.production.obj
+_TXERRCNT F76 0 ABS 0 - dist/default/production\sterzo.production.obj
+_BRGCON2bits F71 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of_configurazione_iniziale 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_counter_array B9 0 BANK0 1 bssBANK0 dist/default/production\sterzo.production.obj
+_BRGCON3bits F72 0 ABS 0 - dist/default/production\sterzo.production.obj
+___fltol@sign1 B7 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_RXF5SIDLbits F15 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\sterzo.production.obj
+CANreceiveMessage@error 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\sterzo.production.obj
+__end_of_CANsendMessage 13FC 0 CODE 0 text2 dist/default/production\sterzo.production.obj
+___fltol@f1 114 0 BANK1 1 cstackBANK1 dist/default/production\sterzo.production.obj
+___param_bank 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB0CONbits F60 0 ABS 0 - dist/default/production\sterzo.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\sterzo.production.obj
+__end_of__initialization 37B4 0 CODE 0 cinit dist/default/production\sterzo.production.obj
+_remote_frame 220 -1DC COMRAM 1 bitbssCOMRAM dist/default/production\sterzo.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_delay_ms 3846 0 CODE 0 text5 dist/default/production\sterzo.production.obj
+_CANInitialize 300E 0 CODE 0 text8 dist/default/production\sterzo.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\sterzo.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__pidataBANK0 39BA 0 CODE 0 idataBANK0 dist/default/production\sterzo.production.obj
+_pastSteering E9 0 BANK0 1 dataBANK0 dist/default/production\sterzo.production.obj
+_TXB0SIDLbits F42 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\sterzo.production.obj
+___lmul@product 7B 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__end_of_delay_ms 3880 0 CODE 0 text5 dist/default/production\sterzo.production.obj
+___lmul@multiplicand 77 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__pintcodelo 18 0 CODE 0 intcodelo dist/default/production\sterzo.production.obj
+_TXB0CONbits F40 0 ABS 0 - dist/default/production\sterzo.production.obj
+_potenza 42 0 COMRAM 1 dataCOMRAM dist/default/production\sterzo.production.obj
+___lldiv@quotient 87 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__pcstackCOMRAM 21 0 COMRAM 1 cstackCOMRAM dist/default/production\sterzo.production.obj
+?_ReadADC 73 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Hend_init 16A 0 CODE 0 end_init dist/default/production\sterzo.production.obj
+CANreceiveMessage@tamp 2C 0 COMRAM 1 cstackCOMRAM dist/default/production\sterzo.production.obj
+_RXF3SIDLbits F0D 0 ABS 0 - dist/default/production\sterzo.production.obj
+CANreceiveMessage@msg 21 0 COMRAM 1 cstackCOMRAM dist/default/production\sterzo.production.obj
+__end_of_main 26E2 0 CODE 0 text0 dist/default/production\sterzo.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\sterzo.production.obj
+_CANCONbits F6F 0 ABS 0 - dist/default/production\sterzo.production.obj
+_CANreceiveMessage 13FC 0 CODE 0 text30 dist/default/production\sterzo.production.obj
+_CANSTAT F6E 0 ABS 0 - dist/default/production\sterzo.production.obj
+_PORTC F82 0 ABS 0 - dist/default/production\sterzo.production.obj
+_T0CON FD5 0 ABS 0 - dist/default/production\sterzo.production.obj
+_T3CON FB1 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TMR0H FD7 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TMR0L FD6 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TMR3H FB3 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TMR3L FB2 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production\sterzo.production.obj
+_TRISE F96 0 ABS 0 - dist/default/production\sterzo.production.obj
+_correzione DB 0 BANK0 1 bssBANK0 dist/default/production\sterzo.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\sterzo.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\sterzo.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\sterzo.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\sterzo.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\sterzo.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\sterzo.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\sterzo.production.obj
+_RXB0EIDH F63 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB0EIDL F64 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB0SIDH F61 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB0SIDL F62 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1EIDH F53 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1EIDL F54 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1SIDH F51 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXB1SIDL F52 0 ABS 0 - dist/default/production\sterzo.production.obj
+_ConvertADC 39B6 0 CODE 0 text15 dist/default/production\sterzo.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+_timer D5 0 BANK0 1 bssBANK0 dist/default/production\sterzo.production.obj
+_RXB1SIDLbits F52 0 ABS 0 - dist/default/production\sterzo.production.obj
+_CANSetMask 2AA2 0 CODE 0 text9 dist/default/production\sterzo.production.obj
+__size_of_abs 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\sterzo.production.obj
+__LbitbssCOMRAM 0 0 ABS 0 bitbssCOMRAM dist/default/production\sterzo.production.obj
+__initialization 375C 0 CODE 0 cinit dist/default/production\sterzo.production.obj
+___xxtofl@sign 94 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__pbssBANK0 B9 0 BANK0 1 bssBANK0 dist/default/production\sterzo.production.obj
+CANsendMessage@data 77 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+CANsendMessage@tamp 7F 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+_OpenADC 35F2 0 CODE 0 text7 dist/default/production\sterzo.production.obj
+__pdataCOMRAM 40 0 COMRAM 1 dataCOMRAM dist/default/production\sterzo.production.obj
+_RXF0EIDH F02 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF0EIDL F03 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF0SIDH F00 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF0SIDL F01 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF1EIDH F06 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF1EIDL F07 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXERRCNT F75 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF1SIDH F04 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF1SIDL F05 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF2EIDH F0A 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF2EIDL F0B 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF2SIDH F08 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF2SIDL F09 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF3EIDH F0E 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF3EIDL F0F 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF3SIDH F0C 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF3SIDL F0D 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF4EIDH F12 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF4EIDL F13 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF4SIDH F10 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF4SIDL F11 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF5EIDH F16 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF5EIDL F17 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF5SIDH F14 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF5SIDL F15 0 ABS 0 - dist/default/production\sterzo.production.obj
+_ADCResult D9 0 BANK0 1 bssBANK0 dist/default/production\sterzo.production.obj
+_counter 1 0 COMRAM 1 bssCOMRAM dist/default/production\sterzo.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\sterzo.production.obj
+___wmul@product 7F 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\sterzo.production.obj
+__end_of_CANOperationMode 3954 0 CODE 0 text11 dist/default/production\sterzo.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\sterzo.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\sterzo.production.obj
+__Hintcode 16 0 CODE 0 intcode dist/default/production\sterzo.production.obj
+_TXB2DLCbits F25 0 ABS 0 - dist/default/production\sterzo.production.obj
+_RXF1SIDLbits F05 0 ABS 0 - dist/default/production\sterzo.production.obj
+__size_of_CANOperationMode 0 0 ABS 0 - dist/default/production\sterzo.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcodelo 0 18 18 39A5 1
+idloc 0 200000 200000 8 1
+cstackBANK0 1 60 60 8C 1
+cstackBANK1 1 100 100 24 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 E 1
+bssCOMRAM 1 1 1 45 1
+config 0 300000 300000 E 1

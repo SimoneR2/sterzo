@@ -110,10 +110,10 @@ __interrupt(low_priority) void ISR_bassa(void) {
 int main(void) {
     configurazione_iniziale();
     //debug sequence ---
-    PORTC = 0xFF;    //
-    delay_ms(100);   //
-    PORTC = 0x00;    //
-    delay_ms(100);   //
+    PORTC = 0xFF; //
+    delay_ms(100); //
+    PORTC = 0x00; //
+    delay_ms(100); //
     //------------------
     TMR0H = 0xdd;
     TMR0L = 0xa0;
@@ -124,7 +124,7 @@ int main(void) {
         if (timeCounter - previousTimeCounter > 2) {
             errore = pastSteering - currentSteering;
             errore = abs(errore);
-            correzione = ((errore/15)*(errore/15)); //potenza di due (la libreria dà errore)
+            correzione = ((errore / 15)*(errore / 15)); //potenza di due (la libreria dà errore)
             if (correzione < 1) {
                 duty_cycle = currentSteering;
             }
@@ -192,15 +192,18 @@ void configurazione_iniziale(void) {
 
     LATE = 0x00;
     TRISE = 0xFF;
-
-    PORTC = 0xff;
-    delay_ms(100);
-    PORTC = 0x00;
-    delay_ms(100);
-    PORTC = 0xff;
-    delay_ms(100);
-    PORTC = 0x00;
-    delay_ms(100);
+    
+    //debug sequence ------
+    PORTC = 0xff;         //
+    delay_ms(100);        //
+    PORTC = 0x00;         //   
+    delay_ms(100);        //   
+    PORTC = 0xff;         //
+    delay_ms(100);        //
+    PORTC = 0x00;         //
+    delay_ms(100);        //
+    //----------------------
+    
     CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
     RCONbits.IPEN = 1; //abilita priorità interrupt
     PIR3bits.RXB1IF = 0; //azzera flag interrupt can bus buffer1
@@ -215,9 +218,11 @@ void configurazione_iniziale(void) {
     INTCON2bits.TMR0IP = 1; //interrupt alta priorità timer0
     INTCONbits.TMR0IF = 0;
     INTCONbits.TMR0IE = 1;
-    PORTC = 0xff;
-    delay_ms(100);
-    PORTC = 0x00;
+    //debug sequence ------    
+    PORTC = 0xff;         //
+    delay_ms(100);        //
+    PORTC = 0x00;         //
+    //---------------------
     T0CON = 0x80; //imposta timer0, prescaler 1:2
     //impostazione timer3 per contatore
     T3CON = 0x01; //abilita timer

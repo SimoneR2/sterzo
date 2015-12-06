@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\sterzo.X.production.hex">
+  <executable name="dist/default/production\sterzo.production.hex">
     <memory name="program">
       <units>bytes</units>
       <length>16384</length>
-      <used>14661</used>
-      <free>1723</free>
+      <used>14775</used>
+      <free>1609</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>768</length>
-      <used>242</used>
-      <free>526</free>
+      <used>245</used>
+      <free>523</free>
     </memory>
   </executable>
 </project>
