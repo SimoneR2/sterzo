@@ -13,11 +13,14 @@
 #include <pwm.h>
 #include "timers.h"
 #include "adc.h"
-//#include <pic18f4480.h>
+#include "math.h"
+#include "stdlib.h"
+
 #define _XTAL_FREQ 16000000
 #define Steering_info 0b10000000000000000000000000000
 #define Steering_change 0b00000000000000000000000000011
 #define emergency 0b00000000000000000000000000001
+
 void configurazione_iniziale(void);
 void send_data(void);
 void calibrazione(void);
@@ -40,9 +43,10 @@ int calibration = 0;
 unsigned long timer = 0;
 unsigned int timer1 = 0;
 unsigned int ADCResult = 0;
-unsigned char valore = 0;
-unsigned valore1 = 0;
 unsigned int periodo = 0;
+int errore = 0;
+int correzione = 0;
+int potenza = 2;
 BYTE counter_array [8] = 0;
 BYTE currentSteering_array [8] = 0;
 BYTE data_array [8] = 0;
@@ -90,7 +94,7 @@ __interrupt(low_priority) void ISR_bassa(void) {
                 theorySteering = msg.data[0];
                 currentSteering = theorySteering + calibration; //aggiunta calibrazione
                 previousTimeCounter = timeCounter;
-                     }
+            }
         }
         PIR3bits.RXB0IF = 0;
         PIR3bits.RXB1IF = 0;
@@ -105,46 +109,32 @@ __interrupt(low_priority) void ISR_bassa(void) {
 
 int main(void) {
     configurazione_iniziale();
-    PORTC = 0xFF;
-    delay_ms(100);
-    PORTC = 0x00;
-    delay_ms(100);
-
+    //debug sequence ---
+    PORTC = 0xFF;    //
+    delay_ms(100);   //
+    PORTC = 0x00;    //
+    delay_ms(100);   //
+    //------------------
     TMR0H = 0xdd;
     TMR0L = 0xa0;
     T0CONbits.TMR0ON = 1;
     periodo = 0x4588;
     while (1) {
-        
         calibrazione();
         if (timeCounter - previousTimeCounter > 2) {
-            if (currentSteering - pastSteering >0){
-            if (currentSteering - pastSteering > 50) {
-                duty_cycle = duty_cycle + 20;
-            } else {
-                if (currentSteering - pastSteering > 20) {
-                    duty_cycle = duty_cycle + 5;
-                } else {
-                    if (currentSteering - pastSteering < 5) {
-                        duty_cycle = currentSteering;
-                    }
-                }
+            errore = pastSteering - currentSteering;
+            errore = abs(errore);
+            correzione = ((errore/15)*(errore/15)); //potenza di due (la libreria dà errore)
+            if (correzione < 1) {
+                duty_cycle = currentSteering;
             }
+            if ((pastSteering - currentSteering) > 0) {
+                duty_cycle = duty_cycle + correzione;
             }
-            else{
-            if (pastSteering - currentSteering > 50) {
-                duty_cycle = duty_cycle - 20;
-            } else {
-                if (pastSteering - currentSteering > 20) {
-                    duty_cycle = duty_cycle - 5;
-                } else {
-                    if (pastSteering - currentSteering < 5) {
-                        duty_cycle = currentSteering;
-                    }
-                }
+            if ((pastSteering - currentSteering) < 0) {
+                duty_cycle = duty_cycle - correzione;
             }
-            }
-            pastSteering = duty_cycle;
+
             previousTimeCounter = timeCounter;
         }
         if (PORTCbits.RC0 == 0) {
