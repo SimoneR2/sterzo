@@ -58,10 +58,6 @@ __interrupt(high_priority) void ISR_alta(void) {
     PORTCbits.RC0 = ~PORTCbits.RC0;
     T0CONbits.TMR0ON = 0;
     if (PORTCbits.RC0 == 1) {
-        timer = (((duty_cycle * 700) / 90) + 800) *2;
-        Ton = 65536 - timer;
-        Toff = 20000 - (timer / 2);
-        Toff = (65536 - (Toff * 2));
         WriteTimer0(Ton);
         T0CONbits.TMR0ON = 1;
     }
@@ -125,33 +121,39 @@ int main(void) {
     Toff = 0x4588;
     while (1) {
         calibrazione();
-        if (timeCounter - previousTimeCounter > 2) {
+        if (timeCounter - previousTimeCounter > 1) {
             errore = pastSteering - currentSteering;
             errore = abs(errore); //modulo di "errore"
-            correzione = ((errore / 15)*(errore / 15)); //potenza di due (la libreria dà errore)
-            if (correzione < 1) {
+            if (errore > 2) {
+                correzione = ((errore / 15)*(errore / 15)); //potenza di due (la libreria dà errore)
+                if (correzione < 1) {
+                    duty_cycle = currentSteering;
+                } else if ((pastSteering - currentSteering) < 0) { //sterzo verso Dx
+                    duty_cycle = duty_cycle + correzione;
+                } else if ((pastSteering - currentSteering) > 0) { //sterzo verso Sx
+                    duty_cycle = duty_cycle - correzione;
+                }
+            } else {
                 duty_cycle = currentSteering;
             }
-            if ((pastSteering - currentSteering) > 0) { //sterzo verso Dx
-                duty_cycle = duty_cycle + correzione;
-            }
-            if ((pastSteering - currentSteering) < 0) { //sterzo verso Sx
-                duty_cycle = duty_cycle - correzione;
-            }
-
             previousTimeCounter = timeCounter;
         }
-
-        if (remote_frame == 1) {
-            send_data();
+        if (PORTCbits.RC0 == 0) {
+            timer = (((duty_cycle * 700) / 90) + 800) *2;
+            Ton = 65536 - timer;
+            Toff = 20000 - (timer / 2);
+            Toff = (65536 - (Toff * 2));
         }
-        if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
-            PORTAbits.RA5 = 1;
-        }
-        //if ((timeCounter - previousTimeCounter) > 100) {
-        //     PORTAbits.RA5 = 1;
-        //  }
     }
+    if (remote_frame == 1) {
+        send_data();
+    }
+    if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
+        PORTAbits.RA5 = 1;
+    }
+    //if ((timeCounter - previousTimeCounter) > 100) {
+    //     PORTAbits.RA5 = 1;
+    //  }
 }
 
 void send_data(void) {
