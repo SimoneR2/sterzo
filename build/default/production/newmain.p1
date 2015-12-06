@@ -1,12 +1,12 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"207 K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"207 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 [c E16838 0 32 64 96 128 .. ]
 [n E16838 CAN_OP_MODE CAN_OP_MODE_NORMAL CAN_OP_MODE_SLEEP CAN_OP_MODE_LOOP CAN_OP_MODE_LISTEN CAN_OP_MODE_CONFIG  ]
 "27382 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
 [v _CANCON `Vuc ~T0 @X0 0 e@3951 ]
 "27274
 [v _CANSTAT `Vuc ~T0 @X0 0 e@3950 ]
-"219 K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"219 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 [c E16844 255 1 255 254 2 255 253 4 255 251 8 255 247 16 255 239 96 255 223 191 159 .. ]
 [n E16844 CAN_CONFIG_FLAGS CAN_CONFIG_DEFAULT CAN_CONFIG_PHSEG2_PRG_BIT CAN_CONFIG_PHSEG2_PRG_ON CAN_CONFIG_PHSEG2_PRG_OFF CAN_CONFIG_LINE_FILTER_BIT CAN_CONFIG_LINE_FILTER_ON CAN_CONFIG_LINE_FILTER_OFF CAN_CONFIG_SAMPLE_BIT CAN_CONFIG_SAMPLE_ONCE CAN_CONFIG_SAMPLE_THRICE CAN_CONFIG_MSG_TYPE_BIT CAN_CONFIG_STD_MSG CAN_CONFIG_XTD_MSG CAN_CONFIG_DBL_BUFFER_BIT CAN_CONFIG_DBL_BUFFER_ON CAN_CONFIG_DBL_BUFFER_OFF CAN_CONFIG_MSG_BITS CAN_CONFIG_ALL_MSG CAN_CONFIG_VALID_XTD_MSG CAN_CONFIG_VALID_STD_MSG CAN_CONFIG_ALL_VALID_MSG  ]
 "27485 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
@@ -85,7 +85,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _RXB0CONbits `VS1638 ~T0 @X0 0 e@3936 ]
 "24434
 [v _RXB1CON `Vuc ~T0 @X0 0 e@3920 ]
-"259 K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"259 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 [c E16878 1 2 .. ]
 [n E16878 CAN_MASK CAN_MASK_B1 CAN_MASK_B2  ]
 "179
@@ -416,7 +416,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TXB2D6 `Vuc ~T0 @X0 0 e@3884 ]
 "21451
 [v _TXB2D7 `Vuc ~T0 @X0 0 e@3885 ]
-"53 K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"53 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 [s S2155 `ul 1 `uc -> 8 `i `uc 1 `uc 1 `uc 1 ]
 [n S2155 . identifier data type length RTR ]
 "27692 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
@@ -448,7 +448,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1735 . . . . . . . . . ]
 "27732
 [v _COMSTATbits `VS1735 ~T0 @X0 0 e@3956 ]
-"534 K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"534 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 [c E16888 1 2 .. ]
 [n E16888 CAN_RX_ERRORS CAN_RX_BUFFER_1_OVFL CAN_RX_BUFFER_2_OVFL  ]
 "24440 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
@@ -1171,26 +1171,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S2071 . . . . . . . . ]
 "33961
 [v _RCONbits `VS2071 ~T0 @X0 0 e@4048 ]
-"31144
-[s S1909 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1909 . RXB0IE RXB1IE TXB0IE TXB1IE TXB2IE ERRIE WAKIE IRXIE ]
-"31154
-[s S1910 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
-[n S1910 . FIFOWMIE RXBnIE . TXBnIE ]
-"31160
-[s S1911 :1 `uc 1 ]
-[n S1911 . FIFOMWIE ]
-"31163
-[s S1912 :1 `uc 1 :1 `uc 1 ]
-[n S1912 . . RXBNIE ]
-"31167
-[s S1913 :4 `uc 1 :1 `uc 1 ]
-[n S1913 . . TXBNIE ]
-"31143
-[u S1908 `S1909 1 `S1910 1 `S1911 1 `S1912 1 `S1913 1 ]
-[n S1908 . . . . . . ]
-"31172
-[v _PIE3bits `VS1908 ~T0 @X0 0 e@4003 ]
 "31352
 [s S1920 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1920 . RXB0IP RXB1IP TXB0IP TXB1IP TXB2IP ERRIP WAKIP IRXIP ]
@@ -1222,10 +1202,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S2107 . . . . ]
 "34867
 [v _INTCON2bits `VS2107 ~T0 @X0 0 e@4081 ]
-"34422
-[v _T0CON `Vuc ~T0 @X0 0 e@4053 ]
-"32074
-[v _T3CON `Vuc ~T0 @X0 0 e@4017 ]
 "31079
 [s S1906 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1906 . ECCP1IP TMR3IP HLVDIP BCLIP EEIP . CMIP OSCFIP ]
@@ -1237,6 +1213,26 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1905 . . . ]
 "31094
 [v _IPR2bits `VS1905 ~T0 @X0 0 e@4002 ]
+"31144
+[s S1909 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1909 . RXB0IE RXB1IE TXB0IE TXB1IE TXB2IE ERRIE WAKIE IRXIE ]
+"31154
+[s S1910 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S1910 . FIFOWMIE RXBnIE . TXBnIE ]
+"31160
+[s S1911 :1 `uc 1 ]
+[n S1911 . FIFOMWIE ]
+"31163
+[s S1912 :1 `uc 1 :1 `uc 1 ]
+[n S1912 . . RXBNIE ]
+"31167
+[s S1913 :4 `uc 1 :1 `uc 1 ]
+[n S1913 . . TXBNIE ]
+"31143
+[u S1908 `S1909 1 `S1910 1 `S1911 1 `S1912 1 `S1913 1 ]
+[n S1908 . . . . . . ]
+"31172
+[v _PIE3bits `VS1908 ~T0 @X0 0 e@4003 ]
 "30949
 [s S1900 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1900 . ECCP1IE TMR3IE HLVDIE BCLIE EEIE . CMIE OSCFIE ]
@@ -1248,6 +1244,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1899 . . . ]
 "30964
 [v _PIE2bits `VS1899 ~T0 @X0 0 e@4000 ]
+"34422
+[v _T0CON `Vuc ~T0 @X0 0 e@4053 ]
+"32074
+[v _T3CON `Vuc ~T0 @X0 0 e@4017 ]
 "2040 C:\Program Files (x86)\Microchip\xc8\v1.35\include\plib\adc.h
 [v _OpenADC `(v ~T0 @X0 0 ef3`uc`uc`uc ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
@@ -16609,7 +16609,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;inc\CANlib.h: 190: BYTE CANgetRXerrorCount (void);
 [; ;inc\CANlib.h: 192: BYTE CANisBusOFF (void);
 [; ;inc\CANlib.h: 193: void CANAbortMessages (void);
-"206 K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"206 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 [v _CANOperationMode `(v ~T0 @X0 1 ef1`E16838 ]
 "207
 {
@@ -18984,12 +18984,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;inc\delay.h: 74: void delay_ms (unsigned int value_ms);
 [; ;inc\delay.h: 88: void delay_s (unsigned char value_s);
 [; ;inc\delay.h: 102: void delay_set_quartz (unsigned char frequency);
-"49 K:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+"49 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
 [v _delay_quartz_frequency_value `Vuc ~T0 @X0 1 e ]
 [i _delay_quartz_frequency_value
--> -> 16 `i `uc
+-> -> 20 `i `uc
 ]
-[; ;src\delay.c: 49: volatile unsigned char delay_quartz_frequency_value = 16;
+[; ;src\delay.c: 49: volatile unsigned char delay_quartz_frequency_value = 20;
 "50
 [v _clock_counter_reference `Vui ~T0 @X0 1 e ]
 [i _clock_counter_reference
@@ -19233,11 +19233,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 ]
 [; ;newmain.c: 43: unsigned long timer = 0;
 "44
-[v _timer1 `ui ~T0 @X0 1 e ]
-[i _timer1
+[v _Ton `ui ~T0 @X0 1 e ]
+[i _Ton
 -> -> 0 `i `ui
 ]
-[; ;newmain.c: 44: unsigned int timer1 = 0;
+[; ;newmain.c: 44: unsigned int Ton = 0;
 "45
 [v _ADCResult `ui ~T0 @X0 1 e ]
 [i _ADCResult
@@ -19245,11 +19245,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 ]
 [; ;newmain.c: 45: unsigned int ADCResult = 0;
 "46
-[v _periodo `ui ~T0 @X0 1 e ]
-[i _periodo
+[v _Toff `ui ~T0 @X0 1 e ]
+[i _Toff
 -> -> 0 `i `ui
 ]
-[; ;newmain.c: 46: unsigned int periodo = 0;
+[; ;newmain.c: 46: unsigned int Toff = 0;
 "47
 [v _errore `i ~T0 @X0 1 e ]
 [i _errore
@@ -19309,9 +19309,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "60
 [e $ ! == -> . . _PORTCbits 0 0 `i -> 1 `i 2355  ]
 {
-[; ;newmain.c: 61: WriteTimer0(timer1);
+[; ;newmain.c: 61: WriteTimer0(Ton);
 "61
-[e ( _WriteTimer0 (1 _timer1 ]
+[e ( _WriteTimer0 (1 _Ton ]
 [; ;newmain.c: 62: T0CONbits.TMR0ON = 1;
 "62
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
@@ -19323,9 +19323,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "64
 [e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 2356  ]
 {
-[; ;newmain.c: 65: WriteTimer0(periodo);
+[; ;newmain.c: 65: WriteTimer0(Toff);
 "65
-[e ( _WriteTimer0 (1 _periodo ]
+[e ( _WriteTimer0 (1 _Toff ]
 [; ;newmain.c: 66: T0CONbits.TMR0ON = 1;
 "66
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
@@ -19490,9 +19490,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;newmain.c: 120: T0CONbits.TMR0ON = 1;
 "120
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
-[; ;newmain.c: 121: periodo = 0x4588;
+[; ;newmain.c: 121: Toff = 0x4588;
 "121
-[e = _periodo -> -> 17800 `i `ui ]
+[e = _Toff -> -> 17800 `i `ui ]
 [; ;newmain.c: 122: while (1) {
 "122
 [e :U 2368 ]
@@ -19510,7 +19510,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;newmain.c: 126: errore = abs(errore);
 "126
 [e = _errore ( _abs (1 _errore ]
-[; ;newmain.c: 127: correzione = ((errore/15)*(errore/15));
+[; ;newmain.c: 127: correzione = ((errore / 15)*(errore / 15));
 "127
 [e = _correzione * / _errore -> 15 `i / _errore -> 15 `i ]
 [; ;newmain.c: 128: if (correzione < 1) {
@@ -19524,9 +19524,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 }
 [e :U 2371 ]
 [; ;newmain.c: 130: }
-[; ;newmain.c: 131: if ((pastSteering - currentSteering) > 0) {
+[; ;newmain.c: 131: if ((pastSteering - currentSteering) < 0) {
 "131
-[e $ ! > - -> _pastSteering `i -> _currentSteering `i -> 0 `i 2372  ]
+[e $ ! < - -> _pastSteering `i -> _currentSteering `i -> 0 `i 2372  ]
 {
 [; ;newmain.c: 132: duty_cycle = duty_cycle + correzione;
 "132
@@ -19535,9 +19535,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 }
 [e :U 2372 ]
 [; ;newmain.c: 133: }
-[; ;newmain.c: 134: if ((pastSteering - currentSteering) < 0) {
+[; ;newmain.c: 134: if ((pastSteering - currentSteering) > 0) {
 "134
-[e $ ! < - -> _pastSteering `i -> _currentSteering `i -> 0 `i 2373  ]
+[e $ ! > - -> _pastSteering `i -> _currentSteering `i -> 0 `i 2373  ]
 {
 [; ;newmain.c: 135: duty_cycle = duty_cycle - correzione;
 "135
@@ -19546,6 +19546,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 }
 [e :U 2373 ]
 [; ;newmain.c: 136: }
+[; ;newmain.c: 137: pastSteering = duty_cycle;
+"137
+[e = _pastSteering -> _duty_cycle `uc ]
 [; ;newmain.c: 138: previousTimeCounter = timeCounter;
 "138
 [e = _previousTimeCounter _timeCounter ]
@@ -19557,18 +19560,18 @@ Version 3.2 HI-TECH Software Intermediate Code
 "140
 [e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 2374  ]
 {
-[; ;newmain.c: 141: timer = (((duty_cycle * 700) / 90) + 800) / 0.5;
+[; ;newmain.c: 141: timer = (((duty_cycle * 700) / 90) + 800) *2;
 "141
-[e = _timer -> / -> + / * _duty_cycle -> -> -> 700 `i `l `ul -> -> -> 90 `i `l `ul -> -> -> 800 `i `l `ul `d .0.5 `ul ]
-[; ;newmain.c: 142: timer1 = 65536 - timer;
+[e = _timer * + / * _duty_cycle -> -> -> 700 `i `l `ul -> -> -> 90 `i `l `ul -> -> -> 800 `i `l `ul -> -> -> 2 `i `l `ul ]
+[; ;newmain.c: 142: Ton = 65536 - timer;
 "142
-[e = _timer1 -> - -> -> 65536 `l `ul _timer `ui ]
-[; ;newmain.c: 143: periodo = 20000 - (timer * 0.5);
+[e = _Ton -> - -> -> 65536 `l `ul _timer `ui ]
+[; ;newmain.c: 143: Toff = 20000 - (timer / 2);
 "143
-[e = _periodo -> - -> -> 20000 `i `d * -> _timer `d .0.5 `ui ]
-[; ;newmain.c: 144: periodo = (65536 - (periodo / 0.5));
+[e = _Toff -> - -> -> -> 20000 `i `l `ul / _timer -> -> -> 2 `i `l `ul `ui ]
+[; ;newmain.c: 144: Toff = (65536 - (Toff * 2));
 "144
-[e = _periodo -> - -> -> 65536 `l `d / -> _periodo `d .0.5 `ui ]
+[e = _Toff -> - -> 65536 `l -> * _Toff -> -> 2 `i `ui `l `ui ]
 "145
 }
 [e :U 2374 ]
@@ -19701,106 +19704,103 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;newmain.c: 194: TRISE = 0xFF;
 "194
 [e = _TRISE -> -> 255 `i `uc ]
-[; ;newmain.c: 196: PORTC = 0xff;
-"196
-[e = _PORTC -> -> 255 `i `uc ]
-[; ;newmain.c: 197: delay_ms(100);
+[; ;newmain.c: 197: PORTC = 0xff;
 "197
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 198: PORTC = 0x00;
+[e = _PORTC -> -> 255 `i `uc ]
+[; ;newmain.c: 198: delay_ms(100);
 "198
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;newmain.c: 199: delay_ms(100);
+[e ( _delay_ms (1 -> -> 100 `i `ui ]
+[; ;newmain.c: 199: PORTC = 0x00;
 "199
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 200: PORTC = 0xff;
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;newmain.c: 200: delay_ms(100);
 "200
-[e = _PORTC -> -> 255 `i `uc ]
-[; ;newmain.c: 201: delay_ms(100);
+[e ( _delay_ms (1 -> -> 100 `i `ui ]
+[; ;newmain.c: 201: PORTC = 0xff;
 "201
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 202: PORTC = 0x00;
-"202
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;newmain.c: 203: delay_ms(100);
-"203
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 204: CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
-"204
-[e ( _CANInitialize (4 , , , , , -> -> 4 `i `uc -> -> 6 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc -> -> 3 `i `uc -> & & & -> . `E16844 6 `i -> . `E16844 8 `i -> . `E16844 20 `i -> . `E16844 14 `i `E16844 ]
-[; ;newmain.c: 205: RCONbits.IPEN = 1;
-"205
-[e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
-[; ;newmain.c: 206: PIR3bits.RXB1IF = 0;
-"206
-[e = . . _PIR3bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 207: PIR3bits.RXB0IF = 0;
-"207
-[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[; ;newmain.c: 208: PIE3bits.RXB1IE = 1;
-"208
-[e = . . _PIE3bits 0 1 -> -> 1 `i `uc ]
-[; ;newmain.c: 209: PIE3bits.RXB0IE = 1;
-"209
-[e = . . _PIE3bits 0 0 -> -> 1 `i `uc ]
-[; ;newmain.c: 210: IPR3bits.RXB1IP = 0;
-"210
-[e = . . _IPR3bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 211: IPR3bits.RXB0IP = 0;
-"211
-[e = . . _IPR3bits 0 0 -> -> 0 `i `uc ]
-[; ;newmain.c: 212: INTCONbits.GIEH = 1;
-"212
-[e = . . _INTCONbits 2 7 -> -> 1 `i `uc ]
-[; ;newmain.c: 213: INTCONbits.GIEL = 1;
-"213
-[e = . . _INTCONbits 2 6 -> -> 1 `i `uc ]
-[; ;newmain.c: 214: INTCON2bits.INTEDG0 = 1;
-"214
-[e = . . _INTCON2bits 1 6 -> -> 1 `i `uc ]
-[; ;newmain.c: 215: INTCON2bits.TMR0IP = 1;
-"215
-[e = . . _INTCON2bits 1 2 -> -> 1 `i `uc ]
-[; ;newmain.c: 216: INTCONbits.TMR0IF = 0;
-"216
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;newmain.c: 217: INTCONbits.TMR0IE = 1;
-"217
-[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-[; ;newmain.c: 218: PORTC = 0xff;
-"218
 [e = _PORTC -> -> 255 `i `uc ]
-[; ;newmain.c: 219: delay_ms(100);
-"219
+[; ;newmain.c: 202: delay_ms(100);
+"202
 [e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 220: PORTC = 0x00;
-"220
+[; ;newmain.c: 203: PORTC = 0x00;
+"203
 [e = _PORTC -> -> 0 `i `uc ]
-[; ;newmain.c: 221: T0CON = 0x80;
-"221
-[e = _T0CON -> -> 128 `i `uc ]
-[; ;newmain.c: 223: T3CON = 0x01;
-"223
-[e = _T3CON -> -> 1 `i `uc ]
-[; ;newmain.c: 224: PIR2bits.TMR3IF = 0;
-"224
+[; ;newmain.c: 204: delay_ms(100);
+"204
+[e ( _delay_ms (1 -> -> 100 `i `ui ]
+[; ;newmain.c: 206: CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
+"206
+[e ( _CANInitialize (4 , , , , , -> -> 4 `i `uc -> -> 6 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc -> -> 3 `i `uc -> & & & -> . `E16844 6 `i -> . `E16844 8 `i -> . `E16844 20 `i -> . `E16844 14 `i `E16844 ]
+[; ;newmain.c: 207: RCONbits.IPEN = 1;
+"207
+[e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
+[; ;newmain.c: 210: PIR3bits.RXB1IF = 0;
+"210
+[e = . . _PIR3bits 0 1 -> -> 0 `i `uc ]
+[; ;newmain.c: 211: PIR3bits.RXB0IF = 0;
+"211
+[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
+[; ;newmain.c: 212: INTCONbits.TMR0IF = 0;
+"212
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[; ;newmain.c: 213: PIR2bits.TMR3IF = 0;
+"213
 [e = . . _PIR2bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 225: IPR2bits.TMR3IP = 0;
-"225
+[; ;newmain.c: 216: IPR3bits.RXB1IP = 0;
+"216
+[e = . . _IPR3bits 0 1 -> -> 0 `i `uc ]
+[; ;newmain.c: 217: IPR3bits.RXB0IP = 0;
+"217
+[e = . . _IPR3bits 0 0 -> -> 0 `i `uc ]
+[; ;newmain.c: 218: INTCON2bits.TMR0IP = 1;
+"218
+[e = . . _INTCON2bits 1 2 -> -> 1 `i `uc ]
+[; ;newmain.c: 219: IPR2bits.TMR3IP = 0;
+"219
 [e = . . _IPR2bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 226: TMR3H = 0x63;
-"226
-[e = _TMR3H -> -> 99 `i `uc ]
-[; ;newmain.c: 227: TMR3L = 0xC0;
-"227
-[e = _TMR3L -> -> 192 `i `uc ]
-[; ;newmain.c: 228: PIE2bits.TMR3IE = 1;
-"228
+[; ;newmain.c: 222: PIE3bits.RXB1IE = 1;
+"222
+[e = . . _PIE3bits 0 1 -> -> 1 `i `uc ]
+[; ;newmain.c: 223: PIE3bits.RXB0IE = 1;
+"223
+[e = . . _PIE3bits 0 0 -> -> 1 `i `uc ]
+[; ;newmain.c: 224: INTCONbits.TMR0IE = 1;
+"224
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+[; ;newmain.c: 225: PIE2bits.TMR3IE = 1;
+"225
 [e = . . _PIE2bits 0 1 -> -> 1 `i `uc ]
-[; ;newmain.c: 232: OpenADC(0b11011111 & 0b11111111 & 0b11111101, 0b10001111 & 0b11111100 & 0b01111111, 0b11111101);
+[; ;newmain.c: 226: INTCONbits.GIEH = 1;
+"226
+[e = . . _INTCONbits 2 7 -> -> 1 `i `uc ]
+[; ;newmain.c: 227: INTCONbits.GIEL = 1;
+"227
+[e = . . _INTCONbits 2 6 -> -> 1 `i `uc ]
+[; ;newmain.c: 230: PORTC = 0xff;
+"230
+[e = _PORTC -> -> 255 `i `uc ]
+[; ;newmain.c: 231: delay_ms(100);
+"231
+[e ( _delay_ms (1 -> -> 100 `i `ui ]
+[; ;newmain.c: 232: PORTC = 0x00;
 "232
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;newmain.c: 235: T0CON = 0x80;
+"235
+[e = _T0CON -> -> 128 `i `uc ]
+[; ;newmain.c: 238: TMR3H = 0x63;
+"238
+[e = _TMR3H -> -> 99 `i `uc ]
+[; ;newmain.c: 239: TMR3L = 0xC0;
+"239
+[e = _TMR3L -> -> 192 `i `uc ]
+[; ;newmain.c: 240: T3CON = 0x01;
+"240
+[e = _T3CON -> -> 1 `i `uc ]
+[; ;newmain.c: 241: OpenADC(0b11011111 & 0b11111111 & 0b11111101, 0b10001111 & 0b11111100 & 0b01111111, 0b11111101);
+"241
 [e ( _OpenADC (3 , , -> & & -> 223 `i -> 255 `i -> 253 `i `uc -> & & -> 143 `i -> 252 `i -> 127 `i `uc -> -> 253 `i `uc ]
-[; ;newmain.c: 233: }
-"233
+[; ;newmain.c: 242: }
+"242
 [e :UE 2384 ]
 }

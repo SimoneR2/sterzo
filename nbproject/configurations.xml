@@ -60,7 +60,7 @@
         <property key="asmlist" value="true"/>
         <property key="define-macros" value=""/>
         <property key="extra-include-directories"
-                  value="K:\Tesina\LaurTec_PIC_libraries_v_3.3.0\src;K:\Tesina\LaurTec_PIC_libraries_v_3.3.0\inc;K:\Tesina\LaurTec_PIC_libraries_v_3.3.0"/>
+                  value="C:\Asus WebStorage\simone.righetti97@gmail.com\MySyncFolder\Tesina\LaurTec_PIC_libraries_v_3.3.0\src;C:\Asus WebStorage\simone.righetti97@gmail.com\MySyncFolder\Tesina\LaurTec_PIC_libraries_v_3.3.0\inc;C:\Asus WebStorage\simone.righetti97@gmail.com\MySyncFolder\Tesina"/>
         <property key="identifier-length" value="255"/>
         <property key="operation-mode" value="free"/>
         <property key="opt-xc8-compiler-strict_ansi" value="false"/>

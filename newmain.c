@@ -93,7 +93,7 @@ __interrupt(low_priority) void ISR_bassa(void) {
                 //pastSteering = currentSteering;
                 theorySteering = msg.data[0];
                 currentSteering = theorySteering + calibration; //aggiunta calibrazione
-                previousTimeCounter = timeCounter;
+               // previousTimeCounter = timeCounter;
             }
         }
         PIR3bits.RXB0IF = 0;
@@ -128,13 +128,13 @@ int main(void) {
             if (correzione < 1) {
                 duty_cycle = currentSteering;
             }
-            if ((pastSteering - currentSteering) > 0) {
+            if ((pastSteering - currentSteering) < 0) {
                 duty_cycle = duty_cycle + correzione;
             }
-            if ((pastSteering - currentSteering) < 0) {
+            if ((pastSteering - currentSteering) > 0) {
                 duty_cycle = duty_cycle - correzione;
             }
-
+            pastSteering = duty_cycle;
             previousTimeCounter = timeCounter;
         }
         if (PORTCbits.RC0 == 0) {
