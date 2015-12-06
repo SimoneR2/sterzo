@@ -1,20 +1,12 @@
 Version 3.2 HI-TECH Software Intermediate Code
-<<<<<<< HEAD
-"207 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
-=======
 "207 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
->>>>>>> origin/master
 [c E16838 0 32 64 96 128 .. ]
 [n E16838 CAN_OP_MODE CAN_OP_MODE_NORMAL CAN_OP_MODE_SLEEP CAN_OP_MODE_LOOP CAN_OP_MODE_LISTEN CAN_OP_MODE_CONFIG  ]
 "27382 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
 [v _CANCON `Vuc ~T0 @X0 0 e@3951 ]
 "27274
 [v _CANSTAT `Vuc ~T0 @X0 0 e@3950 ]
-<<<<<<< HEAD
-"219 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
-=======
 "219 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
->>>>>>> origin/master
 [c E16844 255 1 255 254 2 255 253 4 255 251 8 255 247 16 255 239 96 255 223 191 159 .. ]
 [n E16844 CAN_CONFIG_FLAGS CAN_CONFIG_DEFAULT CAN_CONFIG_PHSEG2_PRG_BIT CAN_CONFIG_PHSEG2_PRG_ON CAN_CONFIG_PHSEG2_PRG_OFF CAN_CONFIG_LINE_FILTER_BIT CAN_CONFIG_LINE_FILTER_ON CAN_CONFIG_LINE_FILTER_OFF CAN_CONFIG_SAMPLE_BIT CAN_CONFIG_SAMPLE_ONCE CAN_CONFIG_SAMPLE_THRICE CAN_CONFIG_MSG_TYPE_BIT CAN_CONFIG_STD_MSG CAN_CONFIG_XTD_MSG CAN_CONFIG_DBL_BUFFER_BIT CAN_CONFIG_DBL_BUFFER_ON CAN_CONFIG_DBL_BUFFER_OFF CAN_CONFIG_MSG_BITS CAN_CONFIG_ALL_MSG CAN_CONFIG_VALID_XTD_MSG CAN_CONFIG_VALID_STD_MSG CAN_CONFIG_ALL_VALID_MSG  ]
 "27485 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
@@ -93,11 +85,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _RXB0CONbits `VS1638 ~T0 @X0 0 e@3936 ]
 "24434
 [v _RXB1CON `Vuc ~T0 @X0 0 e@3920 ]
-<<<<<<< HEAD
-"259 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
-=======
 "259 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
->>>>>>> origin/master
 [c E16878 1 2 .. ]
 [n E16878 CAN_MASK CAN_MASK_B1 CAN_MASK_B2  ]
 "179
@@ -428,11 +416,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TXB2D6 `Vuc ~T0 @X0 0 e@3884 ]
 "21451
 [v _TXB2D7 `Vuc ~T0 @X0 0 e@3885 ]
-<<<<<<< HEAD
-"53 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
-=======
 "53 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
->>>>>>> origin/master
 [s S2155 `ul 1 `uc -> 8 `i `uc 1 `uc 1 `uc 1 ]
 [n S2155 . identifier data type length RTR ]
 "27692 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
@@ -464,11 +448,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1735 . . . . . . . . . ]
 "27732
 [v _COMSTATbits `VS1735 ~T0 @X0 0 e@3956 ]
-<<<<<<< HEAD
-"534 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
-=======
 "534 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
->>>>>>> origin/master
 [c E16888 1 2 .. ]
 [n E16888 CAN_RX_ERRORS CAN_RX_BUFFER_1_OVFL CAN_RX_BUFFER_2_OVFL  ]
 "24440 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
@@ -1095,17 +1075,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
 "24 newmain.c
 [v _configurazione_iniziale `(v ~T0 @X0 0 ef ]
-"28386 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
-[v _PORTC `Vuc ~T0 @X0 0 e@3970 ]
-"34509
-[v _TMR0H `Vuc ~T0 @X0 0 e@4055 ]
-"34503
-[v _TMR0L `Vuc ~T0 @X0 0 e@4054 ]
-"26 newmain.c
+"26
 [v _calibrazione `(v ~T0 @X0 0 ef ]
-"92 C:\Program Files (x86)\Microchip\xc8\v1.35\include\stdlib.h
-[v _abs `(i ~T0 @X0 0 ef1`i ]
-"25 newmain.c
+"25
 [v _send_data `(v ~T0 @X0 0 ef ]
 "28009 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
 [s S1752 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -16629,11 +16601,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;inc\CANlib.h: 190: BYTE CANgetRXerrorCount (void);
 [; ;inc\CANlib.h: 192: BYTE CANisBusOFF (void);
 [; ;inc\CANlib.h: 193: void CANAbortMessages (void);
-<<<<<<< HEAD
-"206 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
-=======
 "206 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
->>>>>>> origin/master
 [v _CANOperationMode `(v ~T0 @X0 1 ef1`E16838 ]
 "207
 {
@@ -19008,16 +18976,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;inc\delay.h: 74: void delay_ms (unsigned int value_ms);
 [; ;inc\delay.h: 88: void delay_s (unsigned char value_s);
 [; ;inc\delay.h: 102: void delay_set_quartz (unsigned char frequency);
-<<<<<<< HEAD
-"49 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
-=======
 "49 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
->>>>>>> origin/master
 [v _delay_quartz_frequency_value `Vuc ~T0 @X0 1 e ]
 [i _delay_quartz_frequency_value
--> -> 20 `i `uc
+-> -> 16 `i `uc
 ]
-[; ;src\delay.c: 49: volatile unsigned char delay_quartz_frequency_value = 20;
+[; ;src\delay.c: 49: volatile unsigned char delay_quartz_frequency_value = 16;
 "50
 [v _clock_counter_reference `Vui ~T0 @X0 1 e ]
 [i _clock_counter_reference
@@ -19191,809 +19155,527 @@ Version 3.2 HI-TECH Software Intermediate Code
 "31
 [v _limiteDx `ui ~T0 @X0 1 e ]
 [i _limiteDx
--> -> 0 `i `ui
+-> -> 120 `i `ui
 ]
-[; ;newmain.c: 31: unsigned int limiteDx = 0;
-"32
-[v _limiteSx `ui ~T0 @X0 1 e ]
-[i _limiteSx
--> -> 180 `i `ui
-]
-[; ;newmain.c: 32: unsigned int limiteSx = 180;
-"34
+[; ;newmain.c: 31: unsigned int limiteDx = 120;
+"33
 [v _currentSteering `uc ~T0 @X0 1 e ]
 [i _currentSteering
 -> -> 180 `i `uc
 ]
-[; ;newmain.c: 34: char currentSteering = 180;
-"35
+[; ;newmain.c: 33: char currentSteering = 180;
+"34
 [v _pastSteering `uc ~T0 @X0 1 e ]
 [i _pastSteering
 -> -> 1 `i `uc
 ]
-[; ;newmain.c: 35: char pastSteering = 1;
-"36
+[; ;newmain.c: 34: char pastSteering = 1;
+"35
 [v _theorySteering `uc ~T0 @X0 1 e ]
 [i _theorySteering
 -> -> 0 `i `uc
 ]
-[; ;newmain.c: 36: unsigned char theorySteering = 0;
-"37
+[; ;newmain.c: 35: char theorySteering = 0;
+"36
 [v _counter `ul ~T0 @X0 1 e ]
 [i _counter
 -> -> -> 0 `i `l `ul
 ]
-[; ;newmain.c: 37: unsigned long counter = 0;
-"38
+[; ;newmain.c: 36: unsigned long counter = 0;
+"37
 [v _id `ul ~T0 @X0 1 e ]
 [i _id
 -> -> -> 0 `i `l `ul
 ]
-[; ;newmain.c: 38: unsigned long id = 0;
-"39
+[; ;newmain.c: 37: unsigned long id = 0;
+"38
 [v _timeCounter `ul ~T0 @X0 1 e ]
 [i _timeCounter
 -> -> -> 0 `i `l `ul
 ]
-[; ;newmain.c: 39: unsigned long timeCounter = 0;
-"40
+[; ;newmain.c: 38: unsigned long timeCounter = 0;
+"39
 [v _previousTimeCounter `ul ~T0 @X0 1 e ]
 [i _previousTimeCounter
 -> -> -> 0 `i `l `ul
 ]
-[; ;newmain.c: 40: unsigned long previousTimeCounter = 0;
-"41
+[; ;newmain.c: 39: unsigned long previousTimeCounter = 0;
+"40
 [v _duty_cycle `ul ~T0 @X0 1 e ]
 [i _duty_cycle
 -> -> -> 0 `i `l `ul
 ]
-[; ;newmain.c: 41: unsigned long duty_cycle = 0;
-"42
+[; ;newmain.c: 40: unsigned long duty_cycle = 0;
+"41
 [v _calibration `i ~T0 @X0 1 e ]
 [i _calibration
 -> 0 `i
 ]
-[; ;newmain.c: 42: int calibration = 0;
-"43
+[; ;newmain.c: 41: int calibration = 0;
+"42
 [v _timer `ul ~T0 @X0 1 e ]
 [i _timer
 -> -> -> 0 `i `l `ul
 ]
-[; ;newmain.c: 43: unsigned long timer = 0;
-"44
+[; ;newmain.c: 42: unsigned long timer = 0;
+"43
 [v _Ton `ui ~T0 @X0 1 e ]
 [i _Ton
 -> -> 0 `i `ui
 ]
-[; ;newmain.c: 44: unsigned int Ton = 0;
-"45
+[; ;newmain.c: 43: unsigned int Ton = 0;
+"44
 [v _ADCResult `ui ~T0 @X0 1 e ]
 [i _ADCResult
 -> -> 0 `i `ui
 ]
-[; ;newmain.c: 45: unsigned int ADCResult = 0;
-"46
+[; ;newmain.c: 44: unsigned int ADCResult = 0;
+"45
 [v _Toff `ui ~T0 @X0 1 e ]
 [i _Toff
 -> -> 0 `i `ui
 ]
-[; ;newmain.c: 46: unsigned int Toff = 0;
-"47
+[; ;newmain.c: 45: unsigned int Toff = 0;
+"46
 [v _errore `i ~T0 @X0 1 e ]
 [i _errore
 -> 0 `i
 ]
-[; ;newmain.c: 47: int errore = 0;
-"48
+[; ;newmain.c: 46: int errore = 0;
+"47
 [v _correzione `i ~T0 @X0 1 e ]
 [i _correzione
 -> 0 `i
 ]
-[; ;newmain.c: 48: int correzione = 0;
-"49
+[; ;newmain.c: 47: int correzione = 0;
+"48
 [v _potenza `i ~T0 @X0 1 e ]
 [i _potenza
 -> 2 `i
 ]
-[; ;newmain.c: 49: int potenza = 2;
-"50
+[; ;newmain.c: 48: int potenza = 2;
+"49
 [v _counter_array `uc ~T0 @X0 -> 8 `i e ]
 [i _counter_array
 :U ..
 -> -> 0 `i `uc
 ..
 ]
-[; ;newmain.c: 50: BYTE counter_array [8] = 0;
-"51
+[; ;newmain.c: 49: BYTE counter_array [8] = 0;
+"50
 [v _currentSteering_array `uc ~T0 @X0 -> 8 `i e ]
 [i _currentSteering_array
 :U ..
 -> -> 0 `i `uc
 ..
 ]
-[; ;newmain.c: 51: BYTE currentSteering_array [8] = 0;
-"52
+[; ;newmain.c: 50: BYTE currentSteering_array [8] = 0;
+"51
 [v _data_array `uc ~T0 @X0 -> 8 `i e ]
 [i _data_array
 :U ..
 -> -> 0 `i `uc
 ..
 ]
-[; ;newmain.c: 52: BYTE data_array [8] = 0;
-[v F17254 `(v ~T0 @X0 1 tf ]
-"57
-[v _ISR_alta `IF17254 ~T51 @X0 1 e ]
+[; ;newmain.c: 51: BYTE data_array [8] = 0;
+[v F17253 `(v ~T0 @X0 1 tf ]
+"56
+[v _ISR_alta `IF17253 ~T51 @X0 1 e ]
 {
-[; ;newmain.c: 57: __attribute__((interrupt("__high_priority"))) void ISR_alta(void) {
+[; ;newmain.c: 56: __attribute__((interrupt("__high_priority"))) void ISR_alta(void) {
 [e :U _ISR_alta ]
 [f ]
-[; ;newmain.c: 58: PORTCbits.RC0 = ~PORTCbits.RC0;
-"58
+[; ;newmain.c: 57: PORTCbits.RC0 = ~PORTCbits.RC0;
+"57
 [e = . . _PORTCbits 0 0 -> ~ -> . . _PORTCbits 0 0 `i `uc ]
-[; ;newmain.c: 59: T0CONbits.TMR0ON = 0;
-"59
+[; ;newmain.c: 58: T0CONbits.TMR0ON = 0;
+"58
 [e = . . _T0CONbits 0 5 -> -> 0 `i `uc ]
-[; ;newmain.c: 60: if (PORTCbits.RC0 == 1) {
-"60
+[; ;newmain.c: 59: if (PORTCbits.RC0 == 1) {
+"59
 [e $ ! == -> . . _PORTCbits 0 0 `i -> 1 `i 2355  ]
 {
-[; ;newmain.c: 61: WriteTimer0(Ton);
-"61
+[; ;newmain.c: 60: WriteTimer0(Ton);
+"60
 [e ( _WriteTimer0 (1 _Ton ]
-[; ;newmain.c: 62: T0CONbits.TMR0ON = 1;
-"62
+[; ;newmain.c: 61: T0CONbits.TMR0ON = 1;
+"61
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
-"63
+"62
 }
 [e :U 2355 ]
-[; ;newmain.c: 63: }
-[; ;newmain.c: 64: if (PORTCbits.RC0 == 0) {
-"64
+[; ;newmain.c: 62: }
+[; ;newmain.c: 63: if (PORTCbits.RC0 == 0) {
+"63
 [e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 2356  ]
 {
-[; ;newmain.c: 65: WriteTimer0(Toff);
-"65
+[; ;newmain.c: 64: WriteTimer0(Toff);
+"64
 [e ( _WriteTimer0 (1 _Toff ]
-[; ;newmain.c: 66: T0CONbits.TMR0ON = 1;
-"66
+[; ;newmain.c: 65: T0CONbits.TMR0ON = 1;
+"65
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
-"67
+"66
 }
 [e :U 2356 ]
-[; ;newmain.c: 67: }
-[; ;newmain.c: 69: INTCONbits.TMR0IF = 0;
-"69
+[; ;newmain.c: 66: }
+[; ;newmain.c: 68: INTCONbits.TMR0IF = 0;
+"68
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;newmain.c: 70: }
-"70
+[; ;newmain.c: 69: }
+"69
 [e :UE 2354 ]
 }
-[v F17257 `(v ~T0 @X0 1 tf ]
-"75
-[v _ISR_bassa `IF17257 ~T52 @X0 1 e ]
+[v F17256 `(v ~T0 @X0 1 tf ]
+"74
+[v _ISR_bassa `IF17256 ~T52 @X0 1 e ]
 {
-[; ;newmain.c: 75: __attribute__((interrupt("__low_priority"))) void ISR_bassa(void) {
+[; ;newmain.c: 74: __attribute__((interrupt("__low_priority"))) void ISR_bassa(void) {
 [e :U _ISR_bassa ]
 [f ]
-[; ;newmain.c: 76: if ((PIR3bits.RXB0IF == 1) || (PIR3bits.RXB1IF == 1)) {
-"76
+[; ;newmain.c: 75: if ((PIR3bits.RXB0IF == 1) || (PIR3bits.RXB1IF == 1)) {
+"75
 [e $ ! || == -> . . _PIR3bits 0 0 `i -> 1 `i == -> . . _PIR3bits 0 1 `i -> 1 `i 2358  ]
 {
-[; ;newmain.c: 77: if (CANisRxReady()) {
-"77
+[; ;newmain.c: 76: if (CANisRxReady()) {
+"76
 [e $ ! != -> ( _CANisRxReady ..  `i -> -> -> 0 `i `uc `i 2359  ]
 {
-[; ;newmain.c: 78: CANreceiveMessage(&msg);
-"78
+[; ;newmain.c: 77: CANreceiveMessage(&msg);
+"77
 [e ( _CANreceiveMessage (1 &U _msg ]
-[; ;newmain.c: 79: if (msg.RTR == 1) {
-"79
+[; ;newmain.c: 78: if (msg.RTR == 1) {
+"78
 [e $ ! == -> . _msg 4 `i -> 1 `i 2360  ]
 {
-[; ;newmain.c: 80: id = msg.identifier;
-"80
+[; ;newmain.c: 79: id = msg.identifier;
+"79
 [e = _id . _msg 0 ]
-[; ;newmain.c: 81: remote_frame = msg.RTR;
-"81
+[; ;newmain.c: 80: remote_frame = msg.RTR;
+"80
 [e = _remote_frame -> . _msg 4 `b ]
-"82
+"81
 }
 [e :U 2360 ]
-[; ;newmain.c: 82: }
-[; ;newmain.c: 83: if (msg.identifier == 0b10000000000000000000000000000) {
-"83
+[; ;newmain.c: 81: }
+[; ;newmain.c: 82: if (msg.identifier == 0b10000000000000000000000000000) {
+"82
 [e $ ! == . _msg 0 -> -> 268435456 `l `ul 2361  ]
 {
-[; ;newmain.c: 84: data_array[0] = theorySteering;
-"84
+[; ;newmain.c: 83: data_array[0] = theorySteering;
+"83
 [e = *U + &U _data_array * -> -> -> 0 `i `ui `ux -> -> # *U &U _data_array `ui `ux _theorySteering ]
-[; ;newmain.c: 85: if (theorySteering <= limiteDx) {
 "85
-[e $ ! <= -> _theorySteering `ui _limiteDx 2362  ]
-{
-[; ;newmain.c: 86: theorySteering = limiteDx;
-"86
-[e = _theorySteering -> _limiteDx `uc ]
-"87
-}
-[e :U 2362 ]
-[; ;newmain.c: 87: }
-[; ;newmain.c: 88: if (theorySteering >= limiteSx) {
-"88
-[e $ ! >= -> _theorySteering `ui _limiteSx 2363  ]
-{
-[; ;newmain.c: 89: theorySteering = limiteSx;
-"89
-[e = _theorySteering -> _limiteSx `uc ]
-"90
-}
-[e :U 2363 ]
-"91
 }
 [e :U 2361 ]
-[; ;newmain.c: 90: }
-[; ;newmain.c: 91: }
-[; ;newmain.c: 92: if (msg.identifier == 0b00000000000000000000000000011) {
-"92
-[e $ ! == . _msg 0 -> -> -> 3 `i `l `ul 2364  ]
+[; ;newmain.c: 85: }
+[; ;newmain.c: 86: if (msg.identifier == 0b00000000000000000000000000110) {
+"86
+[e $ ! == . _msg 0 -> -> -> 6 `i `l `ul 2362  ]
 {
-[; ;newmain.c: 94: theorySteering = msg.data[0];
-"94
+[; ;newmain.c: 88: theorySteering = msg.data[0];
+"88
 [e = _theorySteering *U + &U . _msg 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _msg 1 `ui `ux ]
-[; ;newmain.c: 95: currentSteering = theorySteering + calibration;
-"95
+[; ;newmain.c: 89: currentSteering = theorySteering + calibration;
+"89
 [e = _currentSteering -> + -> _theorySteering `i _calibration `uc ]
-[; ;newmain.c: 96: previousTimeCounter = timeCounter;
-"96
-[e = _previousTimeCounter _timeCounter ]
-"97
+[; ;newmain.c: 90: currentSteering = (limiteDx*currentSteering)/180;
+"90
+[e = _currentSteering -> / * _limiteDx -> _currentSteering `ui -> -> 180 `i `ui `uc ]
+"91
 }
-[e :U 2364 ]
-"98
+[e :U 2362 ]
+"92
 }
 [e :U 2359 ]
-[; ;newmain.c: 97: }
-[; ;newmain.c: 98: }
-[; ;newmain.c: 99: PIR3bits.RXB0IF = 0;
-"99
+[; ;newmain.c: 91: }
+[; ;newmain.c: 92: }
+[; ;newmain.c: 93: PIR3bits.RXB0IF = 0;
+"93
 [e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[; ;newmain.c: 100: PIR3bits.RXB1IF = 0;
-"100
+[; ;newmain.c: 94: PIR3bits.RXB1IF = 0;
+"94
 [e = . . _PIR3bits 0 1 -> -> 0 `i `uc ]
-"101
+"95
 }
 [e :U 2358 ]
-[; ;newmain.c: 101: }
-[; ;newmain.c: 102: if (PIR2bits.TMR3IF) {
-"102
-[e $ ! != -> . . _PIR2bits 0 1 `i -> -> -> 0 `i `Vuc `i 2365  ]
+[; ;newmain.c: 95: }
+[; ;newmain.c: 96: if (PIR2bits.TMR3IF) {
+"96
+[e $ ! != -> . . _PIR2bits 0 1 `i -> -> -> 0 `i `Vuc `i 2363  ]
 {
-[; ;newmain.c: 103: timeCounter++;
-"103
+[; ;newmain.c: 97: timeCounter++;
+"97
 [e ++ _timeCounter -> -> -> 1 `i `l `ul ]
-[; ;newmain.c: 104: TMR3H = 0x63;
-"104
+[; ;newmain.c: 98: TMR3H = 0x63;
+"98
 [e = _TMR3H -> -> 99 `i `uc ]
-[; ;newmain.c: 105: TMR3L = 0xC0;
-"105
+[; ;newmain.c: 99: TMR3L = 0xC0;
+"99
 [e = _TMR3L -> -> 192 `i `uc ]
-[; ;newmain.c: 106: PIR2bits.TMR3IF = 0;
-"106
+[; ;newmain.c: 100: PIR2bits.TMR3IF = 0;
+"100
 [e = . . _PIR2bits 0 1 -> -> 0 `i `uc ]
-"107
+"101
 }
-[e :U 2365 ]
-[; ;newmain.c: 107: }
-[; ;newmain.c: 108: }
-"108
+[e :U 2363 ]
+[; ;newmain.c: 101: }
+[; ;newmain.c: 102: }
+"102
 [e :UE 2357 ]
 }
-"110
+"104
 [v _main `(i ~T0 @X0 1 ef ]
 {
-[; ;newmain.c: 110: int main(void) {
+[; ;newmain.c: 104: int main(void) {
 [e :U _main ]
 [f ]
-[; ;newmain.c: 111: configurazione_iniziale();
-"111
+[; ;newmain.c: 105: configurazione_iniziale();
+"105
 [e ( _configurazione_iniziale ..  ]
-[; ;newmain.c: 113: PORTC = 0xFF;
-"113
-[e = _PORTC -> -> 255 `i `uc ]
-[; ;newmain.c: 114: delay_ms(100);
-"114
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 115: PORTC = 0x00;
-"115
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;newmain.c: 116: delay_ms(100);
-"116
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 118: TMR0H = 0xdd;
-"118
-[e = _TMR0H -> -> 221 `i `uc ]
-[; ;newmain.c: 119: TMR0L = 0xa0;
-"119
-[e = _TMR0L -> -> 160 `i `uc ]
-[; ;newmain.c: 120: T0CONbits.TMR0ON = 1;
-"120
+[; ;newmain.c: 106: timer = (((0 * 700) / 90) + 800) *2;
+"106
+[e = _timer -> -> * + / * -> 0 `i -> 700 `i -> 90 `i -> 800 `i -> 2 `i `l `ul ]
+[; ;newmain.c: 107: Ton = 65536 - timer;
+"107
+[e = _Ton -> - -> -> 65536 `l `ul _timer `ui ]
+[; ;newmain.c: 108: Toff = 20000 - (timer / 2);
+"108
+[e = _Toff -> - -> -> -> 20000 `i `l `ul / _timer -> -> -> 2 `i `l `ul `ui ]
+[; ;newmain.c: 109: Toff = (65536 - (Toff * 2));
+"109
+[e = _Toff -> - -> 65536 `l -> * _Toff -> -> 2 `i `ui `l `ui ]
+[; ;newmain.c: 110: WriteTimer0(Ton);
+"110
+[e ( _WriteTimer0 (1 _Ton ]
+[; ;newmain.c: 111: T0CONbits.TMR0ON = 1;
+"111
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
-[; ;newmain.c: 121: Toff = 0x4588;
-"121
+[; ;newmain.c: 112: Toff = 0x4588;
+"112
 [e = _Toff -> -> 17800 `i `ui ]
-[; ;newmain.c: 122: while (1) {
-"122
-[e :U 2368 ]
+[; ;newmain.c: 113: while (1) {
+"113
+[e :U 2366 ]
 {
-[; ;newmain.c: 123: calibrazione();
-"123
+[; ;newmain.c: 114: calibrazione();
+"114
 [e ( _calibrazione ..  ]
-[; ;newmain.c: 124: if (timeCounter - previousTimeCounter > 10) {
-"124
-[e $ ! > - _timeCounter _previousTimeCounter -> -> -> 10 `i `l `ul 2370  ]
-{
-[; ;newmain.c: 125: errore = pastSteering - currentSteering;
-"125
-[e = _errore - -> _pastSteering `i -> _currentSteering `i ]
-[; ;newmain.c: 126: errore = abs(errore);
-"126
-[e = _errore ( _abs (1 _errore ]
-<<<<<<< HEAD
-[; ;newmain.c: 127: correzione = ((errore / 15)*(errore / 15));
-=======
-[; ;newmain.c: 127: if (errore > 2) {
->>>>>>> origin/master
-"127
-[e $ ! > _errore -> 2 `i 2371  ]
-{
-[; ;newmain.c: 128: correzione = ((errore / 15)*(errore / 15));
-"128
-[e = _correzione * / _errore -> 15 `i / _errore -> 15 `i ]
-[; ;newmain.c: 129: if (correzione < 1) {
-"129
-[e $ ! < _correzione -> 1 `i 2372  ]
-{
-[; ;newmain.c: 130: duty_cycle = currentSteering;
-"130
-<<<<<<< HEAD
-}
-[e :U 2371 ]
-[; ;newmain.c: 130: }
-[; ;newmain.c: 131: if ((pastSteering - currentSteering) < 0) {
-"131
-[e $ ! < - -> _pastSteering `i -> _currentSteering `i -> 0 `i 2372  ]
-=======
+[; ;newmain.c: 115: duty_cycle = currentSteering;
+"115
 [e = _duty_cycle -> _currentSteering `ul ]
-"131
-}
-[; ;newmain.c: 131: } else if ((pastSteering - currentSteering) < 0) {
-[e $U 2373  ]
-[e :U 2372 ]
-[e $ ! < - -> _pastSteering `i -> _currentSteering `i -> 0 `i 2374  ]
->>>>>>> origin/master
+[; ;newmain.c: 146: if (PORTCbits.RC0 == 0) {
+"146
+[e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 2368  ]
 {
-[; ;newmain.c: 132: duty_cycle = duty_cycle + correzione;
-"132
-[e = _duty_cycle + _duty_cycle -> -> _correzione `l `ul ]
-"133
+[; ;newmain.c: 147: timer = (((duty_cycle * 700) / 90) + 800) *2;
+"147
+[e = _timer * + / * _duty_cycle -> -> -> 700 `i `l `ul -> -> -> 90 `i `l `ul -> -> -> 800 `i `l `ul -> -> -> 2 `i `l `ul ]
+[; ;newmain.c: 148: Ton = 65536 - timer;
+"148
+[e = _Ton -> - -> -> 65536 `l `ul _timer `ui ]
+[; ;newmain.c: 149: Toff = 20000 - (timer / 2);
+"149
+[e = _Toff -> - -> -> -> 20000 `i `l `ul / _timer -> -> -> 2 `i `l `ul `ui ]
+[; ;newmain.c: 150: Toff = (65536 - (Toff * 2));
+"150
+[e = _Toff -> - -> 65536 `l -> * _Toff -> -> 2 `i `ui `l `ui ]
+"151
 }
-<<<<<<< HEAD
-[e :U 2372 ]
-[; ;newmain.c: 133: }
-[; ;newmain.c: 134: if ((pastSteering - currentSteering) > 0) {
-"134
-[e $ ! > - -> _pastSteering `i -> _currentSteering `i -> 0 `i 2373  ]
-=======
-[; ;newmain.c: 133: } else if ((pastSteering - currentSteering) > 0) {
-[e $U 2375  ]
-[e :U 2374 ]
-[e $ ! > - -> _pastSteering `i -> _currentSteering `i -> 0 `i 2376  ]
->>>>>>> origin/master
+[e :U 2368 ]
+"152
+}
+[e :U 2365 ]
+"113
+[e $U 2366  ]
+[e :U 2367 ]
+[; ;newmain.c: 151: }
+[; ;newmain.c: 152: }
+[; ;newmain.c: 153: if (remote_frame == 1) {
+"153
+[e $ ! == -> _remote_frame `i -> 1 `i 2369  ]
 {
-[; ;newmain.c: 134: duty_cycle = duty_cycle - correzione;
-"134
-[e = _duty_cycle - _duty_cycle -> -> _correzione `l `ul ]
-"135
+[; ;newmain.c: 154: send_data();
+"154
+[e ( _send_data ..  ]
+"155
 }
-[e :U 2376 ]
-"136
-[e :U 2375 ]
-[e :U 2373 ]
-<<<<<<< HEAD
-[; ;newmain.c: 136: }
-[; ;newmain.c: 137: pastSteering = duty_cycle;
-"137
-[e = _pastSteering -> _duty_cycle `uc ]
-[; ;newmain.c: 138: previousTimeCounter = timeCounter;
-=======
-}
-[; ;newmain.c: 135: }
-[; ;newmain.c: 136: } else {
-[e $U 2377  ]
-[e :U 2371 ]
+[e :U 2369 ]
+[; ;newmain.c: 155: }
+[; ;newmain.c: 156: if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
+"156
+[e $ ! || == -> ( _CANisTXwarningON ..  `i -> 1 `i == -> ( _CANisRXwarningON ..  `i -> 1 `i 2370  ]
 {
-[; ;newmain.c: 137: duty_cycle = currentSteering;
-"137
-[e = _duty_cycle -> _currentSteering `ul ]
->>>>>>> origin/master
-"138
-}
-[e :U 2377 ]
-[; ;newmain.c: 138: }
-[; ;newmain.c: 139: previousTimeCounter = timeCounter;
-"139
-[e = _previousTimeCounter _timeCounter ]
-"140
+[; ;newmain.c: 157: PORTAbits.RA5 = 1;
+"157
+[e = . . _PORTAbits 0 5 -> -> 1 `i `uc ]
+"158
 }
 [e :U 2370 ]
-<<<<<<< HEAD
-[; ;newmain.c: 139: }
-[; ;newmain.c: 140: if (PORTCbits.RC0 == 0) {
-"140
-[e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 2374  ]
-{
-[; ;newmain.c: 141: timer = (((duty_cycle * 700) / 90) + 800) *2;
-"141
-[e = _timer * + / * _duty_cycle -> -> -> 700 `i `l `ul -> -> -> 90 `i `l `ul -> -> -> 800 `i `l `ul -> -> -> 2 `i `l `ul ]
-[; ;newmain.c: 142: Ton = 65536 - timer;
-"142
-[e = _Ton -> - -> -> 65536 `l `ul _timer `ui ]
-[; ;newmain.c: 143: Toff = 20000 - (timer / 2);
-"143
-[e = _Toff -> - -> -> -> 20000 `i `l `ul / _timer -> -> -> 2 `i `l `ul `ui ]
-[; ;newmain.c: 144: Toff = (65536 - (Toff * 2));
-"144
-[e = _Toff -> - -> 65536 `l -> * _Toff -> -> 2 `i `ui `l `ui ]
-=======
-[; ;newmain.c: 140: }
-[; ;newmain.c: 141: if (PORTCbits.RC0 == 0) {
-"141
-[e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 2378  ]
-{
-[; ;newmain.c: 142: timer = (((duty_cycle * 700) / 90) + 800) *2;
-"142
-[e = _timer * + / * _duty_cycle -> -> -> 700 `i `l `ul -> -> -> 90 `i `l `ul -> -> -> 800 `i `l `ul -> -> -> 2 `i `l `ul ]
-[; ;newmain.c: 143: Ton = 65536 - timer;
-"143
-[e = _Ton -> - -> -> 65536 `l `ul _timer `ui ]
-[; ;newmain.c: 144: Toff = 20000 - (timer / 2);
-"144
-[e = _Toff -> - -> -> -> 20000 `i `l `ul / _timer -> -> -> 2 `i `l `ul `ui ]
-[; ;newmain.c: 145: Toff = (65536 - (Toff * 2));
->>>>>>> origin/master
-"145
-[e = _Toff -> - -> 65536 `l -> * _Toff -> -> 2 `i `ui `l `ui ]
-"146
+[; ;newmain.c: 158: }
+[; ;newmain.c: 162: }
+"162
+[e :UE 2364 ]
 }
-[e :U 2378 ]
-"147
-}
-[e :U 2367 ]
-"122
-[e $U 2368  ]
-[e :U 2369 ]
-[; ;newmain.c: 146: }
-[; ;newmain.c: 147: }
-[; ;newmain.c: 148: if (remote_frame == 1) {
-"148
-[e $ ! == -> _remote_frame `i -> 1 `i 2379  ]
-{
-[; ;newmain.c: 149: send_data();
-"149
-[e ( _send_data ..  ]
-"150
-}
-[e :U 2379 ]
-[; ;newmain.c: 150: }
-[; ;newmain.c: 151: if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
-"151
-[e $ ! || == -> ( _CANisTXwarningON ..  `i -> 1 `i == -> ( _CANisRXwarningON ..  `i -> 1 `i 2380  ]
-{
-[; ;newmain.c: 152: PORTAbits.RA5 = 1;
-"152
-[e = . . _PORTAbits 0 5 -> -> 1 `i `uc ]
-"153
-}
-[e :U 2380 ]
-[; ;newmain.c: 153: }
-[; ;newmain.c: 157: }
-"157
-[e :UE 2366 ]
-}
-"159
+"164
 [v _send_data `(v ~T0 @X0 1 ef ]
 {
-[; ;newmain.c: 159: void send_data(void) {
+[; ;newmain.c: 164: void send_data(void) {
 [e :U _send_data ]
 [f ]
-[; ;newmain.c: 160: if (CANisTxReady()) {
-"160
-[e $ ! != -> ( _CANisTxReady ..  `i -> -> -> 0 `i `uc `i 2382  ]
+[; ;newmain.c: 165: if (CANisTxReady()) {
+"165
+[e $ ! != -> ( _CANisTxReady ..  `i -> -> -> 0 `i `uc `i 2372  ]
 {
-[; ;newmain.c: 161: if (remote_frame == 1) {
-"161
-[e $ ! == -> _remote_frame `i -> 1 `i 2383  ]
+[; ;newmain.c: 166: if (remote_frame == 1) {
+"166
+[e $ ! == -> _remote_frame `i -> 1 `i 2373  ]
 {
-[; ;newmain.c: 163: CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG &
-[; ;newmain.c: 164: CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
-"164
-[e ( _CANsendMessage (4 , , , _id &U _data_array -> -> 8 `i `uc -> & & -> . `E16844 11 `i -> . `E16866 10 `i -> . `E16866 1 `i `E16866 ]
+[; ;newmain.c: 168: CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG &
+[; ;newmain.c: 169: CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
 "169
-}
-[e :U 2383 ]
-[; ;newmain.c: 169: }
-[; ;newmain.c: 170: remote_frame = 0;
-"170
-[e = _remote_frame -> -> 0 `i `b ]
-"171
-}
-[e :U 2382 ]
-[; ;newmain.c: 171: }
-[; ;newmain.c: 172: }
-"172
-[e :UE 2381 ]
-}
+[e ( _CANsendMessage (4 , , , _id &U _data_array -> -> 8 `i `uc -> & & -> . `E16844 11 `i -> . `E16866 10 `i -> . `E16866 1 `i `E16866 ]
 "174
+}
+[e :U 2373 ]
+[; ;newmain.c: 174: }
+[; ;newmain.c: 175: remote_frame = 0;
+"175
+[e = _remote_frame -> -> 0 `i `b ]
+"176
+}
+[e :U 2372 ]
+[; ;newmain.c: 176: }
+[; ;newmain.c: 177: }
+"177
+[e :UE 2371 ]
+}
+"179
 [v _calibrazione `(v ~T0 @X0 1 ef ]
 {
-[; ;newmain.c: 174: void calibrazione(void) {
+[; ;newmain.c: 179: void calibrazione(void) {
 [e :U _calibrazione ]
 [f ]
-[; ;newmain.c: 175: ConvertADC();
-"175
+[; ;newmain.c: 180: ConvertADC();
+"180
 [e ( _ConvertADC ..  ]
-[; ;newmain.c: 176: while (BusyADC());
-"176
-[e $U 2385  ]
-[e :U 2386 ]
-[e :U 2385 ]
-[e $ != -> ( _BusyADC ..  `i -> -> -> 0 `i `uc `i 2386  ]
-[e :U 2387 ]
-[; ;newmain.c: 177: ADCResult = ReadADC();
-"177
-[e = _ADCResult -> ( _ReadADC ..  `ui ]
-[; ;newmain.c: 178: calibration = (ADCResult - 511) / 45;
-"178
-[e = _calibration -> / - _ADCResult -> -> 511 `i `ui -> -> 45 `i `ui `i ]
-[; ;newmain.c: 179: }
-"179
-[e :UE 2384 ]
-}
+[; ;newmain.c: 181: while (BusyADC());
 "181
+[e $U 2375  ]
+[e :U 2376 ]
+[e :U 2375 ]
+[e $ != -> ( _BusyADC ..  `i -> -> -> 0 `i `uc `i 2376  ]
+[e :U 2377 ]
+[; ;newmain.c: 182: ADCResult = ReadADC();
+"182
+[e = _ADCResult -> ( _ReadADC ..  `ui ]
+[; ;newmain.c: 183: calibration = (ADCResult - 511) / 45;
+"183
+[e = _calibration -> / - _ADCResult -> -> 511 `i `ui -> -> 45 `i `ui `i ]
+[; ;newmain.c: 184: }
+"184
+[e :UE 2374 ]
+}
+"186
 [v _configurazione_iniziale `(v ~T0 @X0 1 ef ]
 {
-[; ;newmain.c: 181: void configurazione_iniziale(void) {
+[; ;newmain.c: 186: void configurazione_iniziale(void) {
 [e :U _configurazione_iniziale ]
 [f ]
-[; ;newmain.c: 182: LATA = 0x00;
-"182
+[; ;newmain.c: 187: LATA = 0x00;
+"187
 [e = _LATA -> -> 0 `i `uc ]
-[; ;newmain.c: 183: TRISA = 0b11111100;
-"183
-[e = _TRISA -> -> 252 `i `uc ]
-[; ;newmain.c: 185: LATB = 0x00;
-"185
-[e = _LATB -> -> 0 `i `uc ]
-[; ;newmain.c: 186: TRISB = 0b11111011;
-"186
-[e = _TRISB -> -> 251 `i `uc ]
-[; ;newmain.c: 188: LATC = 0x00;
+[; ;newmain.c: 188: TRISA = 0b11111100;
 "188
-[e = _LATC -> -> 0 `i `uc ]
-[; ;newmain.c: 189: TRISC = 0x00;
-"189
-[e = _TRISC -> -> 0 `i `uc ]
-[; ;newmain.c: 191: LATD = 0x00;
+[e = _TRISA -> -> 252 `i `uc ]
+[; ;newmain.c: 190: LATB = 0x00;
+"190
+[e = _LATB -> -> 0 `i `uc ]
+[; ;newmain.c: 191: TRISB = 0b11111011;
 "191
-[e = _LATD -> -> 0 `i `uc ]
-[; ;newmain.c: 192: TRISD = 0x00;
-"192
-[e = _TRISD -> -> 0 `i `uc ]
-[; ;newmain.c: 194: LATE = 0x00;
+[e = _TRISB -> -> 251 `i `uc ]
+[; ;newmain.c: 193: LATC = 0x00;
+"193
+[e = _LATC -> -> 0 `i `uc ]
+[; ;newmain.c: 194: TRISC = 0x00;
 "194
-[e = _LATE -> -> 0 `i `uc ]
-[; ;newmain.c: 195: TRISE = 0xFF;
-"195
-[e = _TRISE -> -> 255 `i `uc ]
-<<<<<<< HEAD
-[; ;newmain.c: 197: PORTC = 0xff;
+[e = _TRISC -> -> 0 `i `uc ]
+[; ;newmain.c: 196: LATD = 0x00;
+"196
+[e = _LATD -> -> 0 `i `uc ]
+[; ;newmain.c: 197: TRISD = 0x00;
 "197
-[e = _PORTC -> -> 255 `i `uc ]
-[; ;newmain.c: 198: delay_ms(100);
-"198
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 199: PORTC = 0x00;
+[e = _TRISD -> -> 0 `i `uc ]
+[; ;newmain.c: 199: LATE = 0x00;
 "199
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;newmain.c: 200: delay_ms(100);
+[e = _LATE -> -> 0 `i `uc ]
+[; ;newmain.c: 200: TRISE = 0xFF;
 "200
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 201: PORTC = 0xff;
-"201
-[e = _PORTC -> -> 255 `i `uc ]
-[; ;newmain.c: 202: delay_ms(100);
+[e = _TRISE -> -> 255 `i `uc ]
+[; ;newmain.c: 202: CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
 "202
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 203: PORTC = 0x00;
+[e ( _CANInitialize (4 , , , , , -> -> 4 `i `uc -> -> 6 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc -> -> 3 `i `uc -> & & & -> . `E16844 6 `i -> . `E16844 8 `i -> . `E16844 20 `i -> . `E16844 14 `i `E16844 ]
+[; ;newmain.c: 203: RCONbits.IPEN = 1;
 "203
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;newmain.c: 204: delay_ms(100);
-"204
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 206: CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
+[e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
+[; ;newmain.c: 206: PIR3bits.RXB1IF = 0;
 "206
-[e ( _CANInitialize (4 , , , , , -> -> 4 `i `uc -> -> 6 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc -> -> 3 `i `uc -> & & & -> . `E16844 6 `i -> . `E16844 8 `i -> . `E16844 20 `i -> . `E16844 14 `i `E16844 ]
-[; ;newmain.c: 207: RCONbits.IPEN = 1;
-"207
-[e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
-[; ;newmain.c: 210: PIR3bits.RXB1IF = 0;
-"210
 [e = . . _PIR3bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 211: PIR3bits.RXB0IF = 0;
-"211
-[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[; ;newmain.c: 212: INTCONbits.TMR0IF = 0;
-"212
-[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;newmain.c: 213: PIR2bits.TMR3IF = 0;
-"213
-[e = . . _PIR2bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 216: IPR3bits.RXB1IP = 0;
-"216
-[e = . . _IPR3bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 217: IPR3bits.RXB0IP = 0;
-"217
-[e = . . _IPR3bits 0 0 -> -> 0 `i `uc ]
-[; ;newmain.c: 218: INTCON2bits.TMR0IP = 1;
-"218
-[e = . . _INTCON2bits 1 2 -> -> 1 `i `uc ]
-[; ;newmain.c: 219: IPR2bits.TMR3IP = 0;
-"219
-[e = . . _IPR2bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 222: PIE3bits.RXB1IE = 1;
-"222
-[e = . . _PIE3bits 0 1 -> -> 1 `i `uc ]
-[; ;newmain.c: 223: PIE3bits.RXB0IE = 1;
-"223
-[e = . . _PIE3bits 0 0 -> -> 1 `i `uc ]
-[; ;newmain.c: 224: INTCONbits.TMR0IE = 1;
-"224
-[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-[; ;newmain.c: 225: PIE2bits.TMR3IE = 1;
-"225
-[e = . . _PIE2bits 0 1 -> -> 1 `i `uc ]
-[; ;newmain.c: 226: INTCONbits.GIEH = 1;
-"226
-[e = . . _INTCONbits 2 7 -> -> 1 `i `uc ]
-[; ;newmain.c: 227: INTCONbits.GIEL = 1;
-"227
-[e = . . _INTCONbits 2 6 -> -> 1 `i `uc ]
-[; ;newmain.c: 230: PORTC = 0xff;
-"230
-[e = _PORTC -> -> 255 `i `uc ]
-[; ;newmain.c: 231: delay_ms(100);
-"231
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 232: PORTC = 0x00;
-"232
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;newmain.c: 235: T0CON = 0x80;
-"235
-[e = _T0CON -> -> 128 `i `uc ]
-[; ;newmain.c: 238: TMR3H = 0x63;
-"238
-[e = _TMR3H -> -> 99 `i `uc ]
-[; ;newmain.c: 239: TMR3L = 0xC0;
-"239
-[e = _TMR3L -> -> 192 `i `uc ]
-[; ;newmain.c: 240: T3CON = 0x01;
-"240
-[e = _T3CON -> -> 1 `i `uc ]
-[; ;newmain.c: 241: OpenADC(0b11011111 & 0b11111111 & 0b11111101, 0b10001111 & 0b11111100 & 0b01111111, 0b11111101);
-"241
-[e ( _OpenADC (3 , , -> & & -> 223 `i -> 255 `i -> 253 `i `uc -> & & -> 143 `i -> 252 `i -> 127 `i `uc -> -> 253 `i `uc ]
-[; ;newmain.c: 242: }
-"242
-[e :UE 2384 ]
-=======
-[; ;newmain.c: 198: PORTC = 0xff;
-"198
-[e = _PORTC -> -> 255 `i `uc ]
-[; ;newmain.c: 199: delay_ms(100);
-"199
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 200: PORTC = 0x00;
-"200
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;newmain.c: 201: delay_ms(100);
-"201
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 202: PORTC = 0xff;
-"202
-[e = _PORTC -> -> 255 `i `uc ]
-[; ;newmain.c: 203: delay_ms(100);
-"203
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 204: PORTC = 0x00;
-"204
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;newmain.c: 205: delay_ms(100);
-"205
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 207: CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
+[; ;newmain.c: 207: PIR3bits.RXB0IF = 0;
 "207
-[e ( _CANInitialize (4 , , , , , -> -> 4 `i `uc -> -> 6 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc -> -> 3 `i `uc -> & & & -> . `E16844 6 `i -> . `E16844 8 `i -> . `E16844 20 `i -> . `E16844 14 `i `E16844 ]
-[; ;newmain.c: 208: RCONbits.IPEN = 1;
+[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
+[; ;newmain.c: 208: INTCONbits.TMR0IF = 0;
 "208
-[e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
-[; ;newmain.c: 211: PIR3bits.RXB1IF = 0;
-"211
-[e = . . _PIR3bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 212: PIR3bits.RXB0IF = 0;
-"212
-[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[; ;newmain.c: 213: INTCONbits.TMR0IF = 0;
-"213
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;newmain.c: 214: PIR2bits.TMR3IF = 0;
-"214
+[; ;newmain.c: 209: PIR2bits.TMR3IF = 0;
+"209
 [e = . . _PIR2bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 217: IPR3bits.RXB1IP = 0;
-"217
+[; ;newmain.c: 212: IPR3bits.RXB1IP = 0;
+"212
 [e = . . _IPR3bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 218: IPR3bits.RXB0IP = 0;
-"218
+[; ;newmain.c: 213: IPR3bits.RXB0IP = 0;
+"213
 [e = . . _IPR3bits 0 0 -> -> 0 `i `uc ]
-[; ;newmain.c: 219: INTCON2bits.TMR0IP = 1;
-"219
+[; ;newmain.c: 214: INTCON2bits.TMR0IP = 1;
+"214
 [e = . . _INTCON2bits 1 2 -> -> 1 `i `uc ]
-[; ;newmain.c: 220: IPR2bits.TMR3IP = 0;
-"220
+[; ;newmain.c: 215: IPR2bits.TMR3IP = 0;
+"215
 [e = . . _IPR2bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 223: PIE3bits.RXB1IE = 1;
-"223
+[; ;newmain.c: 218: PIE3bits.RXB1IE = 1;
+"218
 [e = . . _PIE3bits 0 1 -> -> 1 `i `uc ]
-[; ;newmain.c: 224: PIE3bits.RXB0IE = 1;
-"224
+[; ;newmain.c: 219: PIE3bits.RXB0IE = 1;
+"219
 [e = . . _PIE3bits 0 0 -> -> 1 `i `uc ]
-[; ;newmain.c: 225: INTCONbits.TMR0IE = 1;
-"225
+[; ;newmain.c: 220: INTCONbits.TMR0IE = 1;
+"220
 [e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-[; ;newmain.c: 226: PIE2bits.TMR3IE = 1;
-"226
+[; ;newmain.c: 221: PIE2bits.TMR3IE = 1;
+"221
 [e = . . _PIE2bits 0 1 -> -> 1 `i `uc ]
-[; ;newmain.c: 227: INTCONbits.GIEH = 1;
-"227
+[; ;newmain.c: 222: INTCONbits.GIEH = 1;
+"222
 [e = . . _INTCONbits 2 7 -> -> 1 `i `uc ]
-[; ;newmain.c: 228: INTCONbits.GIEL = 1;
-"228
+[; ;newmain.c: 223: INTCONbits.GIEL = 1;
+"223
 [e = . . _INTCONbits 2 6 -> -> 1 `i `uc ]
-[; ;newmain.c: 231: PORTC = 0xff;
-"231
-[e = _PORTC -> -> 255 `i `uc ]
-[; ;newmain.c: 232: delay_ms(100);
-"232
-[e ( _delay_ms (1 -> -> 100 `i `ui ]
-[; ;newmain.c: 233: PORTC = 0x00;
-"233
-[e = _PORTC -> -> 0 `i `uc ]
-[; ;newmain.c: 236: T0CON = 0x80;
-"236
+[; ;newmain.c: 226: T0CON = 0x80;
+"226
 [e = _T0CON -> -> 128 `i `uc ]
-[; ;newmain.c: 239: TMR3H = 0x63;
-"239
+[; ;newmain.c: 229: TMR3H = 0x63;
+"229
 [e = _TMR3H -> -> 99 `i `uc ]
-[; ;newmain.c: 240: TMR3L = 0xC0;
-"240
+[; ;newmain.c: 230: TMR3L = 0xC0;
+"230
 [e = _TMR3L -> -> 192 `i `uc ]
-[; ;newmain.c: 241: T3CON = 0x01;
-"241
+[; ;newmain.c: 231: T3CON = 0x01;
+"231
 [e = _T3CON -> -> 1 `i `uc ]
-[; ;newmain.c: 242: OpenADC(0b11011111 & 0b11111111 & 0b11111101, 0b10001111 & 0b11111100 & 0b01111111, 0b11111101);
-"242
+[; ;newmain.c: 232: OpenADC(0b11011111 & 0b11111111 & 0b11111101, 0b10001111 & 0b11111100 & 0b01111111, 0b11111101);
+"232
 [e ( _OpenADC (3 , , -> & & -> 223 `i -> 255 `i -> 253 `i `uc -> & & -> 143 `i -> 252 `i -> 127 `i `uc -> -> 253 `i `uc ]
-[; ;newmain.c: 243: }
-"243
-[e :UE 2388 ]
->>>>>>> origin/master
+[; ;newmain.c: 233: }
+"233
+[e :UE 2378 ]
 }
