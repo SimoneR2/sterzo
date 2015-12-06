@@ -136,7 +136,6 @@ int main(void) {
             } else {
                 duty_cycle = currentSteering;
             }
-<<<<<<< HEAD
             if ((pastSteering - currentSteering) < 0) {
                 duty_cycle = duty_cycle + correzione;
             }
@@ -144,8 +143,6 @@ int main(void) {
                 duty_cycle = duty_cycle - correzione;
             }
             pastSteering = duty_cycle;
-=======
->>>>>>> origin/master
             previousTimeCounter = timeCounter;
         }
         if (PORTCbits.RC0 == 0) {
