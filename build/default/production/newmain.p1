@@ -1,12 +1,20 @@
 Version 3.2 HI-TECH Software Intermediate Code
+<<<<<<< HEAD
 "207 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+=======
+"207 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+>>>>>>> origin/master
 [c E16838 0 32 64 96 128 .. ]
 [n E16838 CAN_OP_MODE CAN_OP_MODE_NORMAL CAN_OP_MODE_SLEEP CAN_OP_MODE_LOOP CAN_OP_MODE_LISTEN CAN_OP_MODE_CONFIG  ]
 "27382 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
 [v _CANCON `Vuc ~T0 @X0 0 e@3951 ]
 "27274
 [v _CANSTAT `Vuc ~T0 @X0 0 e@3950 ]
+<<<<<<< HEAD
 "219 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+=======
+"219 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+>>>>>>> origin/master
 [c E16844 255 1 255 254 2 255 253 4 255 251 8 255 247 16 255 239 96 255 223 191 159 .. ]
 [n E16844 CAN_CONFIG_FLAGS CAN_CONFIG_DEFAULT CAN_CONFIG_PHSEG2_PRG_BIT CAN_CONFIG_PHSEG2_PRG_ON CAN_CONFIG_PHSEG2_PRG_OFF CAN_CONFIG_LINE_FILTER_BIT CAN_CONFIG_LINE_FILTER_ON CAN_CONFIG_LINE_FILTER_OFF CAN_CONFIG_SAMPLE_BIT CAN_CONFIG_SAMPLE_ONCE CAN_CONFIG_SAMPLE_THRICE CAN_CONFIG_MSG_TYPE_BIT CAN_CONFIG_STD_MSG CAN_CONFIG_XTD_MSG CAN_CONFIG_DBL_BUFFER_BIT CAN_CONFIG_DBL_BUFFER_ON CAN_CONFIG_DBL_BUFFER_OFF CAN_CONFIG_MSG_BITS CAN_CONFIG_ALL_MSG CAN_CONFIG_VALID_XTD_MSG CAN_CONFIG_VALID_STD_MSG CAN_CONFIG_ALL_VALID_MSG  ]
 "27485 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
@@ -85,7 +93,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _RXB0CONbits `VS1638 ~T0 @X0 0 e@3936 ]
 "24434
 [v _RXB1CON `Vuc ~T0 @X0 0 e@3920 ]
+<<<<<<< HEAD
 "259 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+=======
+"259 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+>>>>>>> origin/master
 [c E16878 1 2 .. ]
 [n E16878 CAN_MASK CAN_MASK_B1 CAN_MASK_B2  ]
 "179
@@ -416,7 +428,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TXB2D6 `Vuc ~T0 @X0 0 e@3884 ]
 "21451
 [v _TXB2D7 `Vuc ~T0 @X0 0 e@3885 ]
+<<<<<<< HEAD
 "53 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+=======
+"53 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+>>>>>>> origin/master
 [s S2155 `ul 1 `uc -> 8 `i `uc 1 `uc 1 `uc 1 ]
 [n S2155 . identifier data type length RTR ]
 "27692 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
@@ -448,7 +464,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1735 . . . . . . . . . ]
 "27732
 [v _COMSTATbits `VS1735 ~T0 @X0 0 e@3956 ]
+<<<<<<< HEAD
 "534 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+=======
+"534 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+>>>>>>> origin/master
 [c E16888 1 2 .. ]
 [n E16888 CAN_RX_ERRORS CAN_RX_BUFFER_1_OVFL CAN_RX_BUFFER_2_OVFL  ]
 "24440 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
@@ -16609,7 +16629,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;inc\CANlib.h: 190: BYTE CANgetRXerrorCount (void);
 [; ;inc\CANlib.h: 192: BYTE CANisBusOFF (void);
 [; ;inc\CANlib.h: 193: void CANAbortMessages (void);
+<<<<<<< HEAD
 "206 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+=======
+"206 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+>>>>>>> origin/master
 [v _CANOperationMode `(v ~T0 @X0 1 ef1`E16838 ]
 "207
 {
@@ -18984,7 +19008,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;inc\delay.h: 74: void delay_ms (unsigned int value_ms);
 [; ;inc\delay.h: 88: void delay_s (unsigned char value_s);
 [; ;inc\delay.h: 102: void delay_set_quartz (unsigned char frequency);
+<<<<<<< HEAD
 "49 C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+=======
+"49 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+>>>>>>> origin/master
 [v _delay_quartz_frequency_value `Vuc ~T0 @X0 1 e ]
 [i _delay_quartz_frequency_value
 -> -> 20 `i `uc
@@ -19500,9 +19528,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;newmain.c: 123: calibrazione();
 "123
 [e ( _calibrazione ..  ]
-[; ;newmain.c: 124: if (timeCounter - previousTimeCounter > 2) {
+[; ;newmain.c: 124: if (timeCounter - previousTimeCounter > 10) {
 "124
-[e $ ! > - _timeCounter _previousTimeCounter -> -> -> 2 `i `l `ul 2370  ]
+[e $ ! > - _timeCounter _previousTimeCounter -> -> -> 10 `i `l `ul 2370  ]
 {
 [; ;newmain.c: 125: errore = pastSteering - currentSteering;
 "125
@@ -19510,51 +19538,95 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;newmain.c: 126: errore = abs(errore);
 "126
 [e = _errore ( _abs (1 _errore ]
+<<<<<<< HEAD
 [; ;newmain.c: 127: correzione = ((errore / 15)*(errore / 15));
+=======
+[; ;newmain.c: 127: if (errore > 2) {
+>>>>>>> origin/master
 "127
-[e = _correzione * / _errore -> 15 `i / _errore -> 15 `i ]
-[; ;newmain.c: 128: if (correzione < 1) {
-"128
-[e $ ! < _correzione -> 1 `i 2371  ]
+[e $ ! > _errore -> 2 `i 2371  ]
 {
-[; ;newmain.c: 129: duty_cycle = currentSteering;
+[; ;newmain.c: 128: correzione = ((errore / 15)*(errore / 15));
+"128
+[e = _correzione * / _errore -> 15 `i / _errore -> 15 `i ]
+[; ;newmain.c: 129: if (correzione < 1) {
 "129
-[e = _duty_cycle -> _currentSteering `ul ]
+[e $ ! < _correzione -> 1 `i 2372  ]
+{
+[; ;newmain.c: 130: duty_cycle = currentSteering;
 "130
+<<<<<<< HEAD
 }
 [e :U 2371 ]
 [; ;newmain.c: 130: }
 [; ;newmain.c: 131: if ((pastSteering - currentSteering) < 0) {
 "131
 [e $ ! < - -> _pastSteering `i -> _currentSteering `i -> 0 `i 2372  ]
+=======
+[e = _duty_cycle -> _currentSteering `ul ]
+"131
+}
+[; ;newmain.c: 131: } else if ((pastSteering - currentSteering) < 0) {
+[e $U 2373  ]
+[e :U 2372 ]
+[e $ ! < - -> _pastSteering `i -> _currentSteering `i -> 0 `i 2374  ]
+>>>>>>> origin/master
 {
 [; ;newmain.c: 132: duty_cycle = duty_cycle + correzione;
 "132
 [e = _duty_cycle + _duty_cycle -> -> _correzione `l `ul ]
 "133
 }
+<<<<<<< HEAD
 [e :U 2372 ]
 [; ;newmain.c: 133: }
 [; ;newmain.c: 134: if ((pastSteering - currentSteering) > 0) {
 "134
 [e $ ! > - -> _pastSteering `i -> _currentSteering `i -> 0 `i 2373  ]
+=======
+[; ;newmain.c: 133: } else if ((pastSteering - currentSteering) > 0) {
+[e $U 2375  ]
+[e :U 2374 ]
+[e $ ! > - -> _pastSteering `i -> _currentSteering `i -> 0 `i 2376  ]
+>>>>>>> origin/master
 {
-[; ;newmain.c: 135: duty_cycle = duty_cycle - correzione;
-"135
+[; ;newmain.c: 134: duty_cycle = duty_cycle - correzione;
+"134
 [e = _duty_cycle - _duty_cycle -> -> _correzione `l `ul ]
-"136
+"135
 }
+[e :U 2376 ]
+"136
+[e :U 2375 ]
 [e :U 2373 ]
+<<<<<<< HEAD
 [; ;newmain.c: 136: }
 [; ;newmain.c: 137: pastSteering = duty_cycle;
 "137
 [e = _pastSteering -> _duty_cycle `uc ]
 [; ;newmain.c: 138: previousTimeCounter = timeCounter;
+=======
+}
+[; ;newmain.c: 135: }
+[; ;newmain.c: 136: } else {
+[e $U 2377  ]
+[e :U 2371 ]
+{
+[; ;newmain.c: 137: duty_cycle = currentSteering;
+"137
+[e = _duty_cycle -> _currentSteering `ul ]
+>>>>>>> origin/master
 "138
-[e = _previousTimeCounter _timeCounter ]
+}
+[e :U 2377 ]
+[; ;newmain.c: 138: }
+[; ;newmain.c: 139: previousTimeCounter = timeCounter;
 "139
+[e = _previousTimeCounter _timeCounter ]
+"140
 }
 [e :U 2370 ]
+<<<<<<< HEAD
 [; ;newmain.c: 139: }
 [; ;newmain.c: 140: if (PORTCbits.RC0 == 0) {
 "140
@@ -19572,138 +19644,158 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;newmain.c: 144: Toff = (65536 - (Toff * 2));
 "144
 [e = _Toff -> - -> 65536 `l -> * _Toff -> -> 2 `i `ui `l `ui ]
+=======
+[; ;newmain.c: 140: }
+[; ;newmain.c: 141: if (PORTCbits.RC0 == 0) {
+"141
+[e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 2378  ]
+{
+[; ;newmain.c: 142: timer = (((duty_cycle * 700) / 90) + 800) *2;
+"142
+[e = _timer * + / * _duty_cycle -> -> -> 700 `i `l `ul -> -> -> 90 `i `l `ul -> -> -> 800 `i `l `ul -> -> -> 2 `i `l `ul ]
+[; ;newmain.c: 143: Ton = 65536 - timer;
+"143
+[e = _Ton -> - -> -> 65536 `l `ul _timer `ui ]
+[; ;newmain.c: 144: Toff = 20000 - (timer / 2);
+"144
+[e = _Toff -> - -> -> -> 20000 `i `l `ul / _timer -> -> -> 2 `i `l `ul `ui ]
+[; ;newmain.c: 145: Toff = (65536 - (Toff * 2));
+>>>>>>> origin/master
 "145
-}
-[e :U 2374 ]
-[; ;newmain.c: 145: }
-[; ;newmain.c: 146: if (remote_frame == 1) {
+[e = _Toff -> - -> 65536 `l -> * _Toff -> -> 2 `i `ui `l `ui ]
 "146
-[e $ ! == -> _remote_frame `i -> 1 `i 2375  ]
-{
-[; ;newmain.c: 147: send_data();
+}
+[e :U 2378 ]
 "147
-[e ( _send_data ..  ]
-"148
-}
-[e :U 2375 ]
-[; ;newmain.c: 148: }
-[; ;newmain.c: 149: if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
-"149
-[e $ ! || == -> ( _CANisTXwarningON ..  `i -> 1 `i == -> ( _CANisRXwarningON ..  `i -> 1 `i 2376  ]
-{
-[; ;newmain.c: 150: PORTAbits.RA5 = 1;
-"150
-[e = . . _PORTAbits 0 5 -> -> 1 `i `uc ]
-"151
-}
-[e :U 2376 ]
-"155
 }
 [e :U 2367 ]
 "122
 [e $U 2368  ]
 [e :U 2369 ]
-[; ;newmain.c: 151: }
-[; ;newmain.c: 155: }
-[; ;newmain.c: 156: }
-"156
-[e :UE 2366 ]
-}
-"158
-[v _send_data `(v ~T0 @X0 1 ef ]
-{
-[; ;newmain.c: 158: void send_data(void) {
-[e :U _send_data ]
-[f ]
-[; ;newmain.c: 159: if (CANisTxReady()) {
-"159
-[e $ ! != -> ( _CANisTxReady ..  `i -> -> -> 0 `i `uc `i 2378  ]
-{
-[; ;newmain.c: 160: if (remote_frame == 1) {
-"160
+[; ;newmain.c: 146: }
+[; ;newmain.c: 147: }
+[; ;newmain.c: 148: if (remote_frame == 1) {
+"148
 [e $ ! == -> _remote_frame `i -> 1 `i 2379  ]
 {
-[; ;newmain.c: 162: CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG &
-[; ;newmain.c: 163: CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
-"163
-[e ( _CANsendMessage (4 , , , _id &U _data_array -> -> 8 `i `uc -> & & -> . `E16844 11 `i -> . `E16866 10 `i -> . `E16866 1 `i `E16866 ]
-"168
+[; ;newmain.c: 149: send_data();
+"149
+[e ( _send_data ..  ]
+"150
 }
 [e :U 2379 ]
-[; ;newmain.c: 168: }
-[; ;newmain.c: 169: remote_frame = 0;
+[; ;newmain.c: 150: }
+[; ;newmain.c: 151: if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
+"151
+[e $ ! || == -> ( _CANisTXwarningON ..  `i -> 1 `i == -> ( _CANisRXwarningON ..  `i -> 1 `i 2380  ]
+{
+[; ;newmain.c: 152: PORTAbits.RA5 = 1;
+"152
+[e = . . _PORTAbits 0 5 -> -> 1 `i `uc ]
+"153
+}
+[e :U 2380 ]
+[; ;newmain.c: 153: }
+[; ;newmain.c: 157: }
+"157
+[e :UE 2366 ]
+}
+"159
+[v _send_data `(v ~T0 @X0 1 ef ]
+{
+[; ;newmain.c: 159: void send_data(void) {
+[e :U _send_data ]
+[f ]
+[; ;newmain.c: 160: if (CANisTxReady()) {
+"160
+[e $ ! != -> ( _CANisTxReady ..  `i -> -> -> 0 `i `uc `i 2382  ]
+{
+[; ;newmain.c: 161: if (remote_frame == 1) {
+"161
+[e $ ! == -> _remote_frame `i -> 1 `i 2383  ]
+{
+[; ;newmain.c: 163: CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG &
+[; ;newmain.c: 164: CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
+"164
+[e ( _CANsendMessage (4 , , , _id &U _data_array -> -> 8 `i `uc -> & & -> . `E16844 11 `i -> . `E16866 10 `i -> . `E16866 1 `i `E16866 ]
 "169
-[e = _remote_frame -> -> 0 `i `b ]
+}
+[e :U 2383 ]
+[; ;newmain.c: 169: }
+[; ;newmain.c: 170: remote_frame = 0;
 "170
-}
-[e :U 2378 ]
-[; ;newmain.c: 170: }
-[; ;newmain.c: 171: }
+[e = _remote_frame -> -> 0 `i `b ]
 "171
-[e :UE 2377 ]
 }
-"173
+[e :U 2382 ]
+[; ;newmain.c: 171: }
+[; ;newmain.c: 172: }
+"172
+[e :UE 2381 ]
+}
+"174
 [v _calibrazione `(v ~T0 @X0 1 ef ]
 {
-[; ;newmain.c: 173: void calibrazione(void) {
+[; ;newmain.c: 174: void calibrazione(void) {
 [e :U _calibrazione ]
 [f ]
-[; ;newmain.c: 174: ConvertADC();
-"174
-[e ( _ConvertADC ..  ]
-[; ;newmain.c: 175: while (BusyADC());
+[; ;newmain.c: 175: ConvertADC();
 "175
-[e $U 2381  ]
-[e :U 2382 ]
-[e :U 2381 ]
-[e $ != -> ( _BusyADC ..  `i -> -> -> 0 `i `uc `i 2382  ]
-[e :U 2383 ]
-[; ;newmain.c: 176: ADCResult = ReadADC();
+[e ( _ConvertADC ..  ]
+[; ;newmain.c: 176: while (BusyADC());
 "176
-[e = _ADCResult -> ( _ReadADC ..  `ui ]
-[; ;newmain.c: 177: calibration = (ADCResult - 511) / 45;
+[e $U 2385  ]
+[e :U 2386 ]
+[e :U 2385 ]
+[e $ != -> ( _BusyADC ..  `i -> -> -> 0 `i `uc `i 2386  ]
+[e :U 2387 ]
+[; ;newmain.c: 177: ADCResult = ReadADC();
 "177
-[e = _calibration -> / - _ADCResult -> -> 511 `i `ui -> -> 45 `i `ui `i ]
-[; ;newmain.c: 178: }
+[e = _ADCResult -> ( _ReadADC ..  `ui ]
+[; ;newmain.c: 178: calibration = (ADCResult - 511) / 45;
 "178
-[e :UE 2380 ]
+[e = _calibration -> / - _ADCResult -> -> 511 `i `ui -> -> 45 `i `ui `i ]
+[; ;newmain.c: 179: }
+"179
+[e :UE 2384 ]
 }
-"180
+"181
 [v _configurazione_iniziale `(v ~T0 @X0 1 ef ]
 {
-[; ;newmain.c: 180: void configurazione_iniziale(void) {
+[; ;newmain.c: 181: void configurazione_iniziale(void) {
 [e :U _configurazione_iniziale ]
 [f ]
-[; ;newmain.c: 181: LATA = 0x00;
-"181
-[e = _LATA -> -> 0 `i `uc ]
-[; ;newmain.c: 182: TRISA = 0b11111100;
+[; ;newmain.c: 182: LATA = 0x00;
 "182
+[e = _LATA -> -> 0 `i `uc ]
+[; ;newmain.c: 183: TRISA = 0b11111100;
+"183
 [e = _TRISA -> -> 252 `i `uc ]
-[; ;newmain.c: 184: LATB = 0x00;
-"184
-[e = _LATB -> -> 0 `i `uc ]
-[; ;newmain.c: 185: TRISB = 0b11111011;
+[; ;newmain.c: 185: LATB = 0x00;
 "185
+[e = _LATB -> -> 0 `i `uc ]
+[; ;newmain.c: 186: TRISB = 0b11111011;
+"186
 [e = _TRISB -> -> 251 `i `uc ]
-[; ;newmain.c: 187: LATC = 0x00;
-"187
-[e = _LATC -> -> 0 `i `uc ]
-[; ;newmain.c: 188: TRISC = 0x00;
+[; ;newmain.c: 188: LATC = 0x00;
 "188
+[e = _LATC -> -> 0 `i `uc ]
+[; ;newmain.c: 189: TRISC = 0x00;
+"189
 [e = _TRISC -> -> 0 `i `uc ]
-[; ;newmain.c: 190: LATD = 0x00;
-"190
-[e = _LATD -> -> 0 `i `uc ]
-[; ;newmain.c: 191: TRISD = 0x00;
+[; ;newmain.c: 191: LATD = 0x00;
 "191
+[e = _LATD -> -> 0 `i `uc ]
+[; ;newmain.c: 192: TRISD = 0x00;
+"192
 [e = _TRISD -> -> 0 `i `uc ]
-[; ;newmain.c: 193: LATE = 0x00;
-"193
-[e = _LATE -> -> 0 `i `uc ]
-[; ;newmain.c: 194: TRISE = 0xFF;
+[; ;newmain.c: 194: LATE = 0x00;
 "194
+[e = _LATE -> -> 0 `i `uc ]
+[; ;newmain.c: 195: TRISE = 0xFF;
+"195
 [e = _TRISE -> -> 255 `i `uc ]
+<<<<<<< HEAD
 [; ;newmain.c: 197: PORTC = 0xff;
 "197
 [e = _PORTC -> -> 255 `i `uc ]
@@ -19803,4 +19895,105 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;newmain.c: 242: }
 "242
 [e :UE 2384 ]
+=======
+[; ;newmain.c: 198: PORTC = 0xff;
+"198
+[e = _PORTC -> -> 255 `i `uc ]
+[; ;newmain.c: 199: delay_ms(100);
+"199
+[e ( _delay_ms (1 -> -> 100 `i `ui ]
+[; ;newmain.c: 200: PORTC = 0x00;
+"200
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;newmain.c: 201: delay_ms(100);
+"201
+[e ( _delay_ms (1 -> -> 100 `i `ui ]
+[; ;newmain.c: 202: PORTC = 0xff;
+"202
+[e = _PORTC -> -> 255 `i `uc ]
+[; ;newmain.c: 203: delay_ms(100);
+"203
+[e ( _delay_ms (1 -> -> 100 `i `ui ]
+[; ;newmain.c: 204: PORTC = 0x00;
+"204
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;newmain.c: 205: delay_ms(100);
+"205
+[e ( _delay_ms (1 -> -> 100 `i `ui ]
+[; ;newmain.c: 207: CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
+"207
+[e ( _CANInitialize (4 , , , , , -> -> 4 `i `uc -> -> 6 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc -> -> 3 `i `uc -> & & & -> . `E16844 6 `i -> . `E16844 8 `i -> . `E16844 20 `i -> . `E16844 14 `i `E16844 ]
+[; ;newmain.c: 208: RCONbits.IPEN = 1;
+"208
+[e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
+[; ;newmain.c: 211: PIR3bits.RXB1IF = 0;
+"211
+[e = . . _PIR3bits 0 1 -> -> 0 `i `uc ]
+[; ;newmain.c: 212: PIR3bits.RXB0IF = 0;
+"212
+[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
+[; ;newmain.c: 213: INTCONbits.TMR0IF = 0;
+"213
+[e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
+[; ;newmain.c: 214: PIR2bits.TMR3IF = 0;
+"214
+[e = . . _PIR2bits 0 1 -> -> 0 `i `uc ]
+[; ;newmain.c: 217: IPR3bits.RXB1IP = 0;
+"217
+[e = . . _IPR3bits 0 1 -> -> 0 `i `uc ]
+[; ;newmain.c: 218: IPR3bits.RXB0IP = 0;
+"218
+[e = . . _IPR3bits 0 0 -> -> 0 `i `uc ]
+[; ;newmain.c: 219: INTCON2bits.TMR0IP = 1;
+"219
+[e = . . _INTCON2bits 1 2 -> -> 1 `i `uc ]
+[; ;newmain.c: 220: IPR2bits.TMR3IP = 0;
+"220
+[e = . . _IPR2bits 0 1 -> -> 0 `i `uc ]
+[; ;newmain.c: 223: PIE3bits.RXB1IE = 1;
+"223
+[e = . . _PIE3bits 0 1 -> -> 1 `i `uc ]
+[; ;newmain.c: 224: PIE3bits.RXB0IE = 1;
+"224
+[e = . . _PIE3bits 0 0 -> -> 1 `i `uc ]
+[; ;newmain.c: 225: INTCONbits.TMR0IE = 1;
+"225
+[e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
+[; ;newmain.c: 226: PIE2bits.TMR3IE = 1;
+"226
+[e = . . _PIE2bits 0 1 -> -> 1 `i `uc ]
+[; ;newmain.c: 227: INTCONbits.GIEH = 1;
+"227
+[e = . . _INTCONbits 2 7 -> -> 1 `i `uc ]
+[; ;newmain.c: 228: INTCONbits.GIEL = 1;
+"228
+[e = . . _INTCONbits 2 6 -> -> 1 `i `uc ]
+[; ;newmain.c: 231: PORTC = 0xff;
+"231
+[e = _PORTC -> -> 255 `i `uc ]
+[; ;newmain.c: 232: delay_ms(100);
+"232
+[e ( _delay_ms (1 -> -> 100 `i `ui ]
+[; ;newmain.c: 233: PORTC = 0x00;
+"233
+[e = _PORTC -> -> 0 `i `uc ]
+[; ;newmain.c: 236: T0CON = 0x80;
+"236
+[e = _T0CON -> -> 128 `i `uc ]
+[; ;newmain.c: 239: TMR3H = 0x63;
+"239
+[e = _TMR3H -> -> 99 `i `uc ]
+[; ;newmain.c: 240: TMR3L = 0xC0;
+"240
+[e = _TMR3L -> -> 192 `i `uc ]
+[; ;newmain.c: 241: T3CON = 0x01;
+"241
+[e = _T3CON -> -> 1 `i `uc ]
+[; ;newmain.c: 242: OpenADC(0b11011111 & 0b11111111 & 0b11111101, 0b10001111 & 0b11111100 & 0b01111111, 0b11111101);
+"242
+[e ( _OpenADC (3 , , -> & & -> 223 `i -> 255 `i -> 253 `i `uc -> & & -> 143 `i -> 252 `i -> 127 `i `uc -> -> 253 `i `uc ]
+[; ;newmain.c: 243: }
+"243
+[e :UE 2388 ]
+>>>>>>> origin/master
 }

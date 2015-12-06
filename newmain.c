@@ -121,13 +121,22 @@ int main(void) {
     Toff = 0x4588;
     while (1) {
         calibrazione();
-        if (timeCounter - previousTimeCounter > 2) {
+        if (timeCounter - previousTimeCounter > 1) {
             errore = pastSteering - currentSteering;
-            errore = abs(errore);
-            correzione = ((errore / 15)*(errore / 15)); //potenza di due (la libreria dà errore)
-            if (correzione < 1) {
+            errore = abs(errore); //modulo di "errore"
+            if (errore > 2) {
+                correzione = ((errore / 15)*(errore / 15)); //potenza di due (la libreria dà errore)
+                if (correzione < 1) {
+                    duty_cycle = currentSteering;
+                } else if ((pastSteering - currentSteering) < 0) { //sterzo verso Dx
+                    duty_cycle = duty_cycle + correzione;
+                } else if ((pastSteering - currentSteering) > 0) { //sterzo verso Sx
+                    duty_cycle = duty_cycle - correzione;
+                }
+            } else {
                 duty_cycle = currentSteering;
             }
+<<<<<<< HEAD
             if ((pastSteering - currentSteering) < 0) {
                 duty_cycle = duty_cycle + correzione;
             }
@@ -135,6 +144,8 @@ int main(void) {
                 duty_cycle = duty_cycle - correzione;
             }
             pastSteering = duty_cycle;
+=======
+>>>>>>> origin/master
             previousTimeCounter = timeCounter;
         }
         if (PORTCbits.RC0 == 0) {
@@ -143,16 +154,16 @@ int main(void) {
             Toff = 20000 - (timer / 2);
             Toff = (65536 - (Toff * 2));
         }
-        if (remote_frame == 1) {
-            send_data();
-        }
-        if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
-            PORTAbits.RA5 = 1;
-        }
-        //if ((timeCounter - previousTimeCounter) > 100) {
-        //     PORTAbits.RA5 = 1;
-        //  }
     }
+    if (remote_frame == 1) {
+        send_data();
+    }
+    if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
+        PORTAbits.RA5 = 1;
+    }
+    //if ((timeCounter - previousTimeCounter) > 100) {
+    //     PORTAbits.RA5 = 1;
+    //  }
 }
 
 void send_data(void) {

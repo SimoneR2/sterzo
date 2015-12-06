@@ -19365,7 +19365,11 @@ extern __nonreentrant void _delay3(unsigned char);
 
 #pragma config EBTRB = OFF
 
+<<<<<<< HEAD
 # 49 "C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+=======
+# 49 "F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+>>>>>>> origin/master
 typedef unsigned char BYTE;
 
 
@@ -20416,7 +20420,11 @@ BYTE CANisRxReady (void)
 return (RXB0CONbits.RXFUL || RXB1CONbits.RXFUL);
 }
 
+<<<<<<< HEAD
 # 74 "C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\delay.h"
+=======
+# 74 "F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\delay.h"
+>>>>>>> origin/master
 void delay_ms (unsigned int value_ms);
 
 # 88
@@ -20425,8 +20433,13 @@ void delay_s (unsigned char value_s);
 # 102
 void delay_set_quartz (unsigned char frequency);
 
+<<<<<<< HEAD
 # 49 "C:/Asus WebStorage/simone.righetti97@gmail.com/MySyncFolder/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c"
 volatile unsigned char delay_quartz_frequency_value = 20;
+=======
+# 49 "F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c"
+volatile unsigned char delay_quartz_frequency_value = 16;
+>>>>>>> origin/master
 volatile unsigned int clock_counter_reference = 0;
 
 # 61
@@ -20661,9 +20674,10 @@ T0CONbits.TMR0ON = 1;
 Toff = 0x4588;
 while (1) {
 calibrazione();
-if (timeCounter - previousTimeCounter > 2) {
+if (timeCounter - previousTimeCounter > 10) {
 errore = pastSteering - currentSteering;
 errore = abs(errore);
+<<<<<<< HEAD
 correzione = ((errore / 15)*(errore / 15));
 if (correzione < 1) {
 duty_cycle = currentSteering;
@@ -20675,6 +20689,20 @@ if ((pastSteering - currentSteering) > 0) {
 duty_cycle = duty_cycle - correzione;
 }
 pastSteering = duty_cycle;
+=======
+if (errore > 2) {
+correzione = ((errore / 15)*(errore / 15));
+if (correzione < 1) {
+duty_cycle = currentSteering;
+} else if ((pastSteering - currentSteering) < 0) {
+duty_cycle = duty_cycle + correzione;
+} else if ((pastSteering - currentSteering) > 0) {
+duty_cycle = duty_cycle - correzione;
+}
+} else {
+duty_cycle = currentSteering;
+}
+>>>>>>> origin/master
 previousTimeCounter = timeCounter;
 }
 if (PORTCbits.RC0 == 0) {
@@ -20682,6 +20710,10 @@ timer = (((duty_cycle * 700) / 90) + 800) *2;
 Ton = 65536 - timer;
 Toff = 20000 - (timer / 2);
 Toff = (65536 - (Toff * 2));
+<<<<<<< HEAD
+=======
+}
+>>>>>>> origin/master
 }
 if (remote_frame == 1) {
 send_data();
@@ -20692,7 +20724,6 @@ PORTAbits.RA5 = 1;
 
 
 
-}
 }
 
 void send_data(void) {

@@ -1,6 +1,10 @@
 
 Memory Summary:
+<<<<<<< HEAD
     Program space        used  28A1h ( 10401) of  4000h bytes   ( 63.5%)
+=======
+    Program space        used  286Bh ( 10347) of  4000h bytes   ( 63.2%)
+>>>>>>> origin/master
     Data space           used    ADh (   173) of   300h bytes   ( 22.5%)
     Configuration bits   used     7h (     7) of     7h words   (100.0%)
     EEPROM space         used     0h (     0) of   100h bytes   (  0.0%)
