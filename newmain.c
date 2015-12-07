@@ -81,13 +81,13 @@ __interrupt(low_priority) void ISR_bassa(void) {
             }
             if (msg.identifier == Steering_info) {
                 data_array[0] = theorySteering;
-                
+
             }
             if (msg.identifier == Steering_change) {
                 //pastSteering = currentSteering;
                 theorySteering = msg.data[0];
                 currentSteering = theorySteering + calibration; //aggiunta calibrazione
-                currentSteering = (limiteDx*currentSteering)/180;
+                currentSteering = (limiteDx * currentSteering) / 180;
             }
         }
         PIR3bits.RXB0IF = 0;
@@ -103,46 +103,40 @@ __interrupt(low_priority) void ISR_bassa(void) {
 
 int main(void) {
     configurazione_iniziale();
-    timer = (((0 * 700) / 90) + 800) *2;
-    Ton = 65536 - timer;
-    Toff = 20000 - (timer / 2);
-    Toff = (65536 - (Toff * 2));
-    WriteTimer0(Ton);
-    T0CONbits.TMR0ON = 1;
-    Toff = 0x4588;
+
     while (1) {
         calibrazione();
         duty_cycle = currentSteering;
-//        if (timeCounter - previousTimeCounter > 5) {
-//            errore = pastSteering - currentSteering;
-//            errore = abs(errore); //modulo di "errore"
-//            if (errore > 2) {
-//                correzione = ((errore / 15)*(errore / 15)); //potenza di due (la libreria dà errore)
-//                if (correzione < 1) {
-//                    if (pastSteering-currentSteering>10){
-//                    duty_cycle = pastSteering+1;
-//                    }
-//                    else {
-//                        duty_cycle = currentSteering;
-//                    }
-//                    }
-//                } else if ((pastSteering - currentSteering) < 0) { //sterzo verso Dx
-//                    duty_cycle = duty_cycle + correzione;
-//                } else if ((pastSteering - currentSteering) > 0) { //sterzo verso Sx
-//                    duty_cycle = duty_cycle - correzione;
-//                }
-//            } else {
-//                duty_cycle = currentSteering;
-//            }
-////            if ((pastSteering - currentSteering) < 0) {
-////                duty_cycle = duty_cycle + correzione;
-////            }
-////            if ((pastSteering - currentSteering) > 0) {
-////                duty_cycle = duty_cycle - correzione;
-////            }
-//            pastSteering = duty_cycle;
-//            previousTimeCounter = timeCounter;
-//        }
+        //        if (timeCounter - previousTimeCounter > 5) {
+        //            errore = pastSteering - currentSteering;
+        //            errore = abs(errore); //modulo di "errore"
+        //            if (errore > 2) {
+        //                correzione = ((errore / 15)*(errore / 15)); //potenza di due (la libreria dà errore)
+        //                if (correzione < 1) {
+        //                    if (pastSteering-currentSteering>10){
+        //                    duty_cycle = pastSteering+1;
+        //                    }
+        //                    else {
+        //                        duty_cycle = currentSteering;
+        //                    }
+        //                    }
+        //                } else if ((pastSteering - currentSteering) < 0) { //sterzo verso Dx
+        //                    duty_cycle = duty_cycle + correzione;
+        //                } else if ((pastSteering - currentSteering) > 0) { //sterzo verso Sx
+        //                    duty_cycle = duty_cycle - correzione;
+        //                }
+        //            } else {
+        //                duty_cycle = currentSteering;
+        //            }
+        ////            if ((pastSteering - currentSteering) < 0) {
+        ////                duty_cycle = duty_cycle + correzione;
+        ////            }
+        ////            if ((pastSteering - currentSteering) > 0) {
+        ////                duty_cycle = duty_cycle - correzione;
+        ////            }
+        //            pastSteering = duty_cycle;
+        //            previousTimeCounter = timeCounter;
+        //        }
         if (PORTCbits.RC0 == 0) {
             timer = (((duty_cycle * 700) / 90) + 800) *2;
             Ton = 65536 - timer;
@@ -184,20 +178,7 @@ void calibrazione(void) { //lettura ADC calibrazione
 }
 
 void configurazione_iniziale(void) {
-    LATA = 0x00;
-    TRISA = 0b11111100;
 
-    LATB = 0x00;
-    TRISB = 0b11111011;
-
-    LATC = 0x00;
-    TRISC = 0x00;
-
-    LATD = 0x00;
-    TRISD = 0x00;
-
-    LATE = 0x00;
-    TRISE = 0xFF;
 
     CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
     RCONbits.IPEN = 1; //abilita priorità interrupt
@@ -230,5 +211,30 @@ void configurazione_iniziale(void) {
     TMR3L = 0xC0;
     T3CON = 0x01; //abilita timer
     OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH1 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_2ANA); //re2
+
+    //impostazione periodo timer prima volta
+    timer = (((0 * 700) / 90) + 800) *2;
+    Ton = 65536 - timer;
+    Toff = 20000 - (timer / 2);
+    Toff = (65536 - (Toff * 2));
+    WriteTimer0(Ton);
+    T0CONbits.TMR0ON = 1;
+    Toff = 0x4588;
+
+    //impostazione uscite/ingressi
+    LATA = 0x00;
+    TRISA = 0b11111100;
+
+    LATB = 0x00;
+    TRISB = 0b11111011;
+
+    LATC = 0x00;
+    TRISC = 0x00;
+
+    LATD = 0x00;
+    TRISD = 0x00;
+
+    LATE = 0x00;
+    TRISE = 0xFF;
 }
 
