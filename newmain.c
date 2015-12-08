@@ -211,6 +211,9 @@ void calibrazione(void) { //lettura ADC calibrazione
 
 void configurazione_iniziale(void) {
 
+    //==========================================================================
+    //configurazione CAN BUS
+    //==========================================================================
     CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
         
     //==========================================================================
