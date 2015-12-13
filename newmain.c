@@ -45,6 +45,7 @@ CANmessage msg;
 
 unsigned int limiteDx = 120; //da variare per limitare l'angolo di sterzata
 bit remote_frame = 0;
+bit noChange = 0; //tiene fermo il servo finchè non arriva la prima impostazione
 char currentSteering = 180;
 char pastSteering = 1;
 char theorySteering = 0;
@@ -70,18 +71,20 @@ BYTE data_array [8] = 0;
 //==============================================================================
 
 __interrupt(high_priority) void ISR_alta(void) {
-    PORTCbits.RC0 = ~PORTCbits.RC0;
-    T0CONbits.TMR0ON = 0;
-    if (PORTCbits.RC0 == 1) { //Ton
-        WriteTimer0(Ton);
-        T0CONbits.TMR0ON = 1;
+    if (noChange == 1) {
+        PORTCbits.RC0 = ~PORTCbits.RC0;
+        T0CONbits.TMR0ON = 0;
+        if (PORTCbits.RC0 == 1) { //Ton
+            WriteTimer0(Ton);
+            T0CONbits.TMR0ON = 1;
+        }
+        if (PORTCbits.RC0 == 0) { //Toff
+            WriteTimer0(Toff);
+            T0CONbits.TMR0ON = 1;
+        }
     }
-    if (PORTCbits.RC0 == 0) { //Toff
-        WriteTimer0(Toff);
-        T0CONbits.TMR0ON = 1;
-    }
-
-    INTCONbits.TMR0IF = 0; //reset flag
+        INTCONbits.TMR0IF = 0; //reset flag
+    
 }
 //==============================================================================
 //ISR Bassa priorità (gestione can bus)
@@ -89,7 +92,7 @@ __interrupt(high_priority) void ISR_alta(void) {
 
 __interrupt(low_priority) void ISR_bassa(void) {
     if ((PIR3bits.RXB0IF == 1) || (PIR3bits.RXB1IF == 1)) { //se arriva messaggio sul CAN BUS
-        if (CANisRxReady()) { 
+        if (CANisRxReady()) {
             CANreceiveMessage(&msg);
             if (msg.RTR == 1) {
                 id = msg.identifier;
@@ -104,10 +107,11 @@ __interrupt(low_priority) void ISR_bassa(void) {
                 theorySteering = msg.data[0];
                 currentSteering = theorySteering + calibration; //aggiunta calibrazione
                 currentSteering = (limiteDx * currentSteering) / 180;
+                noChange = 1;
             }
         }
         PIR3bits.RXB0IF = 0; //reset flag
-        PIR3bits.RXB1IF = 0;
+        PIR3bits.RXB1IF = 0; //reset flag
     }
     if (PIR2bits.TMR3IF) { //conteggio timer3 per contatore
         timeCounter++;
@@ -123,40 +127,9 @@ __interrupt(low_priority) void ISR_bassa(void) {
 
 int main(void) {
     configurazione_iniziale();
-
     while (1) {
         calibrazione();
         duty_cycle = currentSteering;
-        //        if (timeCounter - previousTimeCounter > 5) {
-        //            errore = pastSteering - currentSteering;
-        //            errore = abs(errore); //modulo di "errore"
-        //            if (errore > 2) {
-        //                correzione = ((errore / 15)*(errore / 15)); //potenza di due (la libreria dà errore)
-        //                if (correzione < 1) {
-        //                    if (pastSteering-currentSteering>10){
-        //                    duty_cycle = pastSteering+1;
-        //                    }
-        //                    else {
-        //                        duty_cycle = currentSteering;
-        //                    }
-        //                    }
-        //                } else if ((pastSteering - currentSteering) < 0) { //sterzo verso Dx
-        //                    duty_cycle = duty_cycle + correzione;
-        //                } else if ((pastSteering - currentSteering) > 0) { //sterzo verso Sx
-        //                    duty_cycle = duty_cycle - correzione;
-        //                }
-        //            } else {
-        //                duty_cycle = currentSteering;
-        //            }
-        ////            if ((pastSteering - currentSteering) < 0) {
-        ////                duty_cycle = duty_cycle + correzione;
-        ////            }
-        ////            if ((pastSteering - currentSteering) > 0) {
-        ////                duty_cycle = duty_cycle - correzione;
-        ////            }
-        //            pastSteering = duty_cycle;
-        //            previousTimeCounter = timeCounter;
-        //        }
         if (PORTCbits.RC0 == 0) {
             timer = (((duty_cycle * 700) / 90) + 800) *2;
             Ton = 65536 - timer;
@@ -215,7 +188,7 @@ void configurazione_iniziale(void) {
     //configurazione CAN BUS
     //==========================================================================
     CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
-        
+
     //==========================================================================
     //azzeramento flag
     //==========================================================================
@@ -259,14 +232,15 @@ void configurazione_iniziale(void) {
     //==========================================================================
     //impostazione periodo timer prima volta
     //==========================================================================
-    timer = (((0 * 700) / 90) + 800) *2;
-    Ton = 65536 - timer;
-    Toff = 20000 - (timer / 2);
-    Toff = (65536 - (Toff * 2));
-    WriteTimer0(Ton);
-    T0CONbits.TMR0ON = 1;
-    Toff = 0x4588;
 
+    //timer = (((0 * 700) / 90) + 800) *2;
+    //Ton = 65536 - timer;
+    //Toff = 20000 - (timer / 2);
+    //Toff = (65536 - (Toff * 2));
+    //WriteTimer0(Ton);
+    T0CONbits.TMR0ON = 1;
+    //Toff = 0x4588;
+    PORTCbits.RC0 = 0;
     //==========================================================================
     //impostazione uscite/ingressi
     //==========================================================================
