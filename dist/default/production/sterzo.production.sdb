@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 18F4480 ]
 [d frameptr 4065 ]
-"207 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"207 D:\Personali Gianlorenzo\Documenti/Scuola/Triennio/Tesina/can\CANlib.h
 [e E16838 CAN_OP_MODE `uc
 CAN_OP_MODE_NORMAL 0
 CAN_OP_MODE_SLEEP 32
@@ -68,44 +68,9 @@ CAN_NORMAL_TX_FRAME 191
 CAN_RX_BUFFER_1_OVFL 1
 CAN_RX_BUFFER_2_OVFL 2
 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\float.c
-[v ___ftpack __ftpack `(f  1 e 4 0 ]
-"86 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftadd.c
-[v ___ftadd __ftadd `(f  1 e 4 0 ]
-"54 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftdiv.c
-[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
-"62 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftmul.c
-[v ___ftmul __ftmul `(f  1 e 4 0 ]
-"20 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\ftsub.c
-[v ___ftsub __ftsub `(f  1 e 4 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
-[v ___lldiv __lldiv `(ul  1 e 4 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-[v i1___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"10 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcadd.c
-[v ___fladd __fladd `(d  1 e 4 0 ]
-"245
-[v ___flsub __flsub `(d  1 e 4 0 ]
-"11 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcdiv.c
-[v ___fldiv __fldiv `(d  1 e 4 0 ]
-"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\sprcmul.c
-[v ___flmul __flmul `(d  1 e 4 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
-[v ___wmul __wmul `(ui  1 e 2 0 ]
-"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
-[v ___lmul __lmul `(ul  1 e 4 0 ]
-"26 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcbusy.c
-[v _BusyADC BusyADC `(uc  1 e 1 0 ]
-"22 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c
-[v _ConvertADC ConvertADC `(v  1 e 0 0 ]
-"68 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
-[v _OpenADC OpenADC `(v  1 e 0 0 ]
-"24 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcread.c
-[v _ReadADC ReadADC `(i  1 e 2 0 ]
-"16 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c
-[v _WriteTimer0 WriteTimer0 `(v  1 e 0 0 ]
-"206 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"61 D:\Personali Gianlorenzo\Documenti/Scuola/Triennio/sistemi/4^/PIC/librerie/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+[v _delay_ms delay_ms `(v  1 e 0 0 ]
+"206 D:\Personali Gianlorenzo\Documenti/Scuola/Triennio/Tesina/can\CANlib.h
 [v _CANOperationMode CANOperationMode `(v  1 e 0 0 ]
 "218
 [v _CANInitialize CANInitialize `(v  1 e 0 0 ]
@@ -125,21 +90,91 @@ CAN_RX_BUFFER_2_OVFL 2
 [v _CANisTxReady CANisTxReady `(uc  1 e 1 0 ]
 "1163
 [v _CANisRxReady CANisRxReady `(uc  1 e 1 0 ]
-"61 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
-[v _delay_ms delay_ms `(v  1 e 0 0 ]
-"73 C:\Users\Simone\Documents\GitHub\sterzo\newmain.c
+"72 D:\Personali Gianlorenzo\Documenti\GitHub\sterzo\newmain.c
 [v _ISR_alta ISR_alta `IIH(v  1 e 0 0 ]
-"93
+"92
 [v _ISR_bassa ISR_bassa `IIL(v  1 e 0 0 ]
-"128
+"124
 [v _main main `(i  1 e 2 0 ]
-"155
+"151
 [v _send_data send_data `(v  1 e 0 0 ]
-"174
+"170
 [v _calibrazione calibrazione `(v  1 e 0 0 ]
-"185
+"181
 [v _configurazione_iniziale configurazione_iniziale `(v  1 e 0 0 ]
-"16255 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
+"62 P:\Programmi\Microchip\xc8\v1.35\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 P:\Programmi\Microchip\xc8\v1.35\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 P:\Programmi\Microchip\xc8\v1.35\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 P:\Programmi\Microchip\xc8\v1.35\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"20 P:\Programmi\Microchip\xc8\v1.35\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"8 P:\Programmi\Microchip\xc8\v1.35\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 P:\Programmi\Microchip\xc8\v1.35\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+[v i1___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"10 P:\Programmi\Microchip\xc8\v1.35\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 P:\Programmi\Microchip\xc8\v1.35\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 P:\Programmi\Microchip\xc8\v1.35\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 P:\Programmi\Microchip\xc8\v1.35\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 P:\Programmi\Microchip\xc8\v1.35\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"26 P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcbusy.c
+[v _BusyADC BusyADC `(uc  1 e 1 0 ]
+"22 P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c
+[v _ConvertADC ConvertADC `(v  1 e 0 0 ]
+"68 P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+[v _OpenADC OpenADC `(v  1 e 0 0 ]
+"24 P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcread.c
+[v _ReadADC ReadADC `(i  1 e 2 0 ]
+"16 P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c
+[v _WriteTimer0 WriteTimer0 `(v  1 e 0 0 ]
+"49 D:\Personali Gianlorenzo\Documenti/Scuola/Triennio/sistemi/4^/PIC/librerie/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+[v _delay_quartz_frequency_value delay_quartz_frequency_value `VEuc  1 e 1 0 ]
+"50
+[v _clock_counter_reference clock_counter_reference `VEui  1 e 2 0 ]
+[s S853 . 15 `ul 1 identifier 4 0 `[8]uc 1 data 8 4 `uc 1 type 1 12 `uc 1 length 1 13 `uc 1 RTR 1 14 ]
+"39 D:\Personali Gianlorenzo\Documenti\GitHub\sterzo\newmain.c
+[v _msg msg `S853  1 e 15 0 ]
+"45
+[v _limiteDx limiteDx `ui  1 e 2 0 ]
+"46
+[v _remote_frame remote_frame `b  1 e 0 0 ]
+"47
+[v _noChange noChange `b  1 e 0 0 ]
+"48
+[v _currentSteering currentSteering `uc  1 e 1 0 ]
+"50
+[v _theorySteering theorySteering `uc  1 e 1 0 ]
+"52
+[v _id id `ul  1 e 4 0 ]
+"53
+[v _timeCounter timeCounter `ul  1 e 4 0 ]
+"55
+[v _duty_cycle duty_cycle `ul  1 e 4 0 ]
+"56
+[v _calibration calibration `i  1 e 2 0 ]
+"57
+[v _timer timer `ul  1 e 4 0 ]
+"58
+[v _Ton Ton `ui  1 e 2 0 ]
+"59
+[v _ADCResult ADCResult `ui  1 e 2 0 ]
+"60
+[v _Toff Toff `ui  1 e 2 0 ]
+"66
+[v _data_array data_array `[8]uc  1 e 8 0 ]
+"16255 P:\Programmi\Microchip\xc8\v1.35\include\pic18f4480.h
 [v _RXF0SIDH RXF0SIDH `VEuc  1 e 1 @3840 ]
 "16387
 [v _RXF0SIDL RXF0SIDL `VEuc  1 e 1 @3841 ]
@@ -1487,52 +1522,17 @@ CAN_RX_BUFFER_2_OVFL 2
 "34968
 "34968
 [v _INTCONbits INTCONbits `VES2121  1 e 1 @4082 ]
-"49 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
-[v _delay_quartz_frequency_value delay_quartz_frequency_value `VEuc  1 e 1 0 ]
-"50
-[v _clock_counter_reference clock_counter_reference `VEui  1 e 2 0 ]
-[s S853 . 15 `ul 1 identifier 4 0 `[8]uc 1 data 8 4 `uc 1 type 1 12 `uc 1 length 1 13 `uc 1 RTR 1 14 ]
-"40 C:\Users\Simone\Documents\GitHub\sterzo\newmain.c
-[v _msg msg `S853  1 e 15 0 ]
-"46
-[v _limiteDx limiteDx `ui  1 e 2 0 ]
-"47
-[v _remote_frame remote_frame `b  1 e 0 0 ]
-"48
-[v _noChange noChange `b  1 e 0 0 ]
-"49
-[v _currentSteering currentSteering `uc  1 e 1 0 ]
-"51
-[v _theorySteering theorySteering `uc  1 e 1 0 ]
-"53
-[v _id id `ul  1 e 4 0 ]
-"54
-[v _timeCounter timeCounter `ul  1 e 4 0 ]
-"56
-[v _duty_cycle duty_cycle `ul  1 e 4 0 ]
-"57
-[v _calibration calibration `i  1 e 2 0 ]
-"58
-[v _timer timer `ul  1 e 4 0 ]
-"59
-[v _Ton Ton `ui  1 e 2 0 ]
-"60
-[v _ADCResult ADCResult `ui  1 e 2 0 ]
-"61
-[v _Toff Toff `ui  1 e 2 0 ]
-"67
-[v _data_array data_array `[8]uc  1 e 8 0 ]
-"128
+"124 D:\Personali Gianlorenzo\Documenti\GitHub\sterzo\newmain.c
 [v _main main `(i  1 e 2 0 ]
 {
-"149
+"145
 } 0
-"155
+"151
 [v _send_data send_data `(v  1 e 0 0 ]
 {
-"168
+"164
 } 0
-"294 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"294 D:\Personali Gianlorenzo\Documenti/Scuola/Triennio/Tesina/can\CANlib.h
 [v _CANsendMessage CANsendMessage `(v  1 e 0 0 ]
 {
 "296
@@ -1549,12 +1549,12 @@ CAN_RX_BUFFER_2_OVFL 2
 {
 "1157
 } 0
-"185 C:\Users\Simone\Documents\GitHub\sterzo\newmain.c
+"181 D:\Personali Gianlorenzo\Documenti\GitHub\sterzo\newmain.c
 [v _configurazione_iniziale configurazione_iniziale `(v  1 e 0 0 ]
 {
-"261
+"257
 } 0
-"68 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+"68 P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
 [v _OpenADC OpenADC `(v  1 e 0 0 ]
 {
 [v OpenADC@config config `uc  1 a 1 wreg ]
@@ -1567,7 +1567,7 @@ CAN_RX_BUFFER_2_OVFL 2
 [v OpenADC@config config `uc  1 a 1 23 ]
 "89
 } 0
-"218 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"218 D:\Personali Gianlorenzo\Documenti/Scuola/Triennio/Tesina/can\CANlib.h
 [v _CANInitialize CANInitialize `(v  1 e 0 0 ]
 {
 [v CANInitialize@propSeg propSeg `uc  1 a 1 wreg ]
@@ -1623,12 +1623,12 @@ CAN_RX_BUFFER_2_OVFL 2
 [v CANOperationMode@mode mode `E16838  1 a 1 19 ]
 "211
 } 0
-"174 C:\Users\Simone\Documents\GitHub\sterzo\newmain.c
+"170 D:\Personali Gianlorenzo\Documenti\GitHub\sterzo\newmain.c
 [v _calibrazione calibrazione `(v  1 e 0 0 ]
 {
-"179
+"175
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+"8 P:\Programmi\Microchip\xc8\v1.35\sources\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 "11
@@ -1640,22 +1640,22 @@ CAN_RX_BUFFER_2_OVFL 2
 [v ___lwdiv@divisor divisor `ui  1 p 2 21 ]
 "31
 } 0
-"24 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcread.c
+"24 P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcread.c
 [v _ReadADC ReadADC `(i  1 e 2 0 ]
 {
 "27
 } 0
-"22 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c
+"22 P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c
 [v _ConvertADC ConvertADC `(v  1 e 0 0 ]
 {
 "25
 } 0
-"26 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcbusy.c
+"26 P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcbusy.c
 [v _BusyADC BusyADC `(uc  1 e 1 0 ]
 {
 "29
 } 0
-"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
+"15 P:\Programmi\Microchip\xc8\v1.35\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 {
 "17
@@ -1665,7 +1665,7 @@ CAN_RX_BUFFER_2_OVFL 2
 [v ___lmul@multiplicand multiplicand `ul  1 p 4 23 ]
 "129
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
+"8 P:\Programmi\Microchip\xc8\v1.35\sources\common\lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
 {
 "11
@@ -1677,7 +1677,7 @@ CAN_RX_BUFFER_2_OVFL 2
 [v ___lldiv@divisor divisor `ul  1 p 4 35 ]
 "31
 } 0
-"1119 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"1119 D:\Personali Gianlorenzo\Documenti/Scuola/Triennio/Tesina/can\CANlib.h
 [v _CANisTXwarningON CANisTXwarningON `(uc  1 e 1 0 ]
 {
 "1122
@@ -1687,12 +1687,12 @@ CAN_RX_BUFFER_2_OVFL 2
 {
 "1130
 } 0
-"93 C:\Users\Simone\Documents\GitHub\sterzo\newmain.c
+"92 D:\Personali Gianlorenzo\Documenti\GitHub\sterzo\newmain.c
 [v _ISR_bassa ISR_bassa `IIL(v  1 e 0 0 ]
 {
-"122
+"118
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
+"8 P:\Programmi\Microchip\xc8\v1.35\sources\common\lwdiv.c
 [v i1___lwdiv __lwdiv `(ui  1 e 2 0 ]
 {
 [v i1___lwdiv@quotient __lwdiv `ui  1 a 2 10 ]
@@ -1701,7 +1701,7 @@ CAN_RX_BUFFER_2_OVFL 2
 [v i1___lwdiv@divisor divisor `ui  1 p 2 8 ]
 "31
 } 0
-"15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
+"15 P:\Programmi\Microchip\xc8\v1.35\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
 {
 "17
@@ -1711,7 +1711,7 @@ CAN_RX_BUFFER_2_OVFL 2
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"528 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"528 D:\Personali Gianlorenzo\Documenti/Scuola/Triennio/Tesina/can\CANlib.h
 [v _CANreceiveMessage CANreceiveMessage `(uc  1 e 1 0 ]
 {
 "530
@@ -1728,12 +1728,12 @@ CAN_RX_BUFFER_2_OVFL 2
 {
 "1166
 } 0
-"73 C:\Users\Simone\Documents\GitHub\sterzo\newmain.c
+"72 D:\Personali Gianlorenzo\Documenti\GitHub\sterzo\newmain.c
 [v _ISR_alta ISR_alta `IIH(v  1 e 0 0 ]
 {
-"88
+"87
 } 0
-"16 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c
+"16 P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c
 [v _WriteTimer0 WriteTimer0 `(v  1 e 0 0 ]
 {
 [u S3387 Timers 2 `ui 1 lt 2 0 `[2]uc 1 bt 2 0 ]

@@ -1,15 +1,15 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"207 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"207 ../../Scuola/Triennio/Tesina/can\CANlib.h
 [c E16838 0 32 64 96 128 .. ]
 [n E16838 CAN_OP_MODE CAN_OP_MODE_NORMAL CAN_OP_MODE_SLEEP CAN_OP_MODE_LOOP CAN_OP_MODE_LISTEN CAN_OP_MODE_CONFIG  ]
-"27382 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
+"27382 P:\Programmi\Microchip\xc8\v1.35\include\pic18f4480.h
 [v _CANCON `Vuc ~T0 @X0 0 e@3951 ]
 "27274
 [v _CANSTAT `Vuc ~T0 @X0 0 e@3950 ]
-"219 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"219 ../../Scuola/Triennio/Tesina/can\CANlib.h
 [c E16844 255 1 255 254 2 255 253 4 255 251 8 255 247 16 255 239 96 255 223 191 159 .. ]
 [n E16844 CAN_CONFIG_FLAGS CAN_CONFIG_DEFAULT CAN_CONFIG_PHSEG2_PRG_BIT CAN_CONFIG_PHSEG2_PRG_ON CAN_CONFIG_PHSEG2_PRG_OFF CAN_CONFIG_LINE_FILTER_BIT CAN_CONFIG_LINE_FILTER_ON CAN_CONFIG_LINE_FILTER_OFF CAN_CONFIG_SAMPLE_BIT CAN_CONFIG_SAMPLE_ONCE CAN_CONFIG_SAMPLE_THRICE CAN_CONFIG_MSG_TYPE_BIT CAN_CONFIG_STD_MSG CAN_CONFIG_XTD_MSG CAN_CONFIG_DBL_BUFFER_BIT CAN_CONFIG_DBL_BUFFER_ON CAN_CONFIG_DBL_BUFFER_OFF CAN_CONFIG_MSG_BITS CAN_CONFIG_ALL_MSG CAN_CONFIG_VALID_XTD_MSG CAN_CONFIG_VALID_STD_MSG CAN_CONFIG_ALL_VALID_MSG  ]
-"27485 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
+"27485 P:\Programmi\Microchip\xc8\v1.35\include\pic18f4480.h
 [v _BRGCON1 `Vuc ~T0 @X0 0 e@3952 ]
 "27546
 [v _BRGCON2 `Vuc ~T0 @X0 0 e@3953 ]
@@ -85,7 +85,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _RXB0CONbits `VS1638 ~T0 @X0 0 e@3936 ]
 "24434
 [v _RXB1CON `Vuc ~T0 @X0 0 e@3920 ]
-"259 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"259 ../../Scuola/Triennio/Tesina/can\CANlib.h
 [c E16878 1 2 .. ]
 [n E16878 CAN_MASK CAN_MASK_B1 CAN_MASK_B2  ]
 "179
@@ -98,7 +98,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "295
 [c E16866 3 252 253 254 255 8 247 255 64 255 191 .. ]
 [n E16866 CAN_TX_MSG_FLAGS CAN_TX_PRIORITY_MASK CAN_TX_PRIORITY_0 CAN_TX_PRIORITY_1 CAN_TX_PRIORITY_2 CAN_TX_PRIORITY_3 CAN_TX_FRAME_MASK CAN_TX_STD_FRAME CAN_TX_XTD_FRAME CAN_TX_RTR_MASK CAN_REMOTE_TX_FRAME CAN_NORMAL_TX_FRAME  ]
-"23071 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
+"23071 P:\Programmi\Microchip\xc8\v1.35\include\pic18f4480.h
 [s S1478 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1478 . TXPRI0 TXPRI1 . TXREQ TXERR TXLARB TXABT TXBIF ]
 "23081
@@ -416,10 +416,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TXB2D6 `Vuc ~T0 @X0 0 e@3884 ]
 "21451
 [v _TXB2D7 `Vuc ~T0 @X0 0 e@3885 ]
-"53 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"53 ../../Scuola/Triennio/Tesina/can\CANlib.h
 [s S2155 `ul 1 `uc -> 8 `i `uc 1 `uc 1 `uc 1 ]
 [n S2155 . identifier data type length RTR ]
-"27692 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
+"27692 P:\Programmi\Microchip\xc8\v1.35\include\pic18f4480.h
 [s S1736 :7 `uc 1 :1 `uc 1 ]
 [n S1736 . . RXB0OVFL_NOT_FIFOEMPTY ]
 "27696
@@ -448,10 +448,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1735 . . . . . . . . . ]
 "27732
 [v _COMSTATbits `VS1735 ~T0 @X0 0 e@3956 ]
-"534 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+"534 ../../Scuola/Triennio/Tesina/can\CANlib.h
 [c E16888 1 2 .. ]
 [n E16888 CAN_RX_ERRORS CAN_RX_BUFFER_1_OVFL CAN_RX_BUFFER_2_OVFL  ]
-"24440 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
+"24440 P:\Programmi\Microchip\xc8\v1.35\include\pic18f4480.h
 [s S1554 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1554 . FILHIT0 FILHIT1 FILHIT2 RXRTRRO_FILHIT3 FILHIT4 RXM0_RTRRO RXM1 RXFUL ]
 "24450
@@ -978,12 +978,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 "27811
 [v _RXERRCNT `Vuc ~T0 @X0 0 e@3957 ]
 [v F16824 `(v ~T0 @X0 1 tf1`ul ]
-"152 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18.h
+"152 P:\Programmi\Microchip\xc8\v1.35\include\pic18.h
 [v __delay `JF16824 ~T0 @X0 0 e ]
 [p i __delay ]
 [t ~ __interrupt__ s ]
 [t T51 __interrupt__ __high_priority ]
-"28392 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
+"28392 P:\Programmi\Microchip\xc8\v1.35\include\pic18f4480.h
 [s S1768 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1768 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
 "28402
@@ -1017,9 +1017,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S2095 . . . ]
 "34443
 [v _T0CONbits `VS2095 ~T0 @X0 0 e@4053 ]
-"121 C:\Program Files (x86)\Microchip\xc8\v1.35\include\plib\timers.h
+"121 P:\Programmi\Microchip\xc8\v1.35\include\plib\timers.h
 [v _WriteTimer0 `(v ~T0 @X0 0 ef1`ui ]
-"34922 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
+"34922 P:\Programmi\Microchip\xc8\v1.35\include\pic18f4480.h
 [s S2112 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S2112 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
 "34932
@@ -1073,13 +1073,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 "32208
 [v _TMR3L `Vuc ~T0 @X0 0 e@4018 ]
 [p mainexit ]
-"37 newmain.c
+"36 newmain.c
 [v _configurazione_iniziale `(v ~T0 @X0 0 ef ]
-"39
-[v _calibrazione `(v ~T0 @X0 0 ef ]
 "38
+[v _calibrazione `(v ~T0 @X0 0 ef ]
+"37
 [v _send_data `(v ~T0 @X0 0 ef ]
-"28009 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
+"28009 P:\Programmi\Microchip\xc8\v1.35\include\pic18f4480.h
 [s S1752 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1752 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
 "28019
@@ -1111,13 +1111,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S1751 . . . . . . . . . . ]
 "28064
 [v _PORTAbits `VS1751 ~T0 @X0 0 e@3968 ]
-"2016 C:\Program Files (x86)\Microchip\xc8\v1.35\include\plib\adc.h
+"2016 P:\Programmi\Microchip\xc8\v1.35\include\plib\adc.h
 [v _ConvertADC `(v ~T0 @X0 0 ef ]
 "2014
 [v _BusyADC `(uc ~T0 @X0 0 ef ]
 "2026
 [v _ReadADC `(i ~T0 @X0 0 ef ]
-"31352 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
+"31352 P:\Programmi\Microchip\xc8\v1.35\include\pic18f4480.h
 [s S1920 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1920 . RXB0IP RXB1IP TXB0IP TXB1IP TXB2IP ERRIP WAKIP IRXIP ]
 "31362
@@ -1220,9 +1220,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _T0CON `Vuc ~T0 @X0 0 e@4053 ]
 "32074
 [v _T3CON `Vuc ~T0 @X0 0 e@4017 ]
-"2040 C:\Program Files (x86)\Microchip\xc8\v1.35\include\plib\adc.h
+"2040 P:\Programmi\Microchip\xc8\v1.35\include\plib\adc.h
 [v _OpenADC `(v ~T0 @X0 0 ef3`uc`uc`uc ]
-"28961 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
+"28961 P:\Programmi\Microchip\xc8\v1.35\include\pic18f4480.h
 [v _LATA `Vuc ~T0 @X0 0 e@3977 ]
 "29591
 [v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
@@ -1246,7 +1246,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f4480.h: 49: extern volatile unsigned char RXF6SIDH @ 0xD60;
-"51 C:\Program Files (x86)\Microchip\xc8\v1.35\include\pic18f4480.h
+"51 P:\Programmi\Microchip\xc8\v1.35\include\pic18f4480.h
 [; ;pic18f4480.h: 51: asm("RXF6SIDH equ 0D60h");
 [; <" RXF6SIDH equ 0D60h ;# ">
 [; ;pic18f4480.h: 54: typedef union {
@@ -16511,118 +16511,118 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p x EBTR1=OFF ]
 "58
 [p x EBTRB=OFF ]
-[; ;inc\CANlib.h: 49: typedef unsigned char BYTE;
-[; ;inc\CANlib.h: 52: typedef struct
-[; ;inc\CANlib.h: 53: {
-[; ;inc\CANlib.h: 54: unsigned long identifier;
-[; ;inc\CANlib.h: 55: BYTE data[8];
-[; ;inc\CANlib.h: 56: BYTE type;
-[; ;inc\CANlib.h: 57: BYTE length;
-[; ;inc\CANlib.h: 58: BYTE RTR;
-[; ;inc\CANlib.h: 60: } CANmessage;
-[; ;inc\CANlib.h: 67: enum CAN_OP_MODE
-[; ;inc\CANlib.h: 68: {
-[; ;inc\CANlib.h: 69: CAN_OP_MODE_NORMAL = 0b00000000,
-[; ;inc\CANlib.h: 70: CAN_OP_MODE_SLEEP = 0b00100000,
-[; ;inc\CANlib.h: 71: CAN_OP_MODE_LOOP = 0b01000000,
-[; ;inc\CANlib.h: 72: CAN_OP_MODE_LISTEN = 0b01100000,
-[; ;inc\CANlib.h: 73: CAN_OP_MODE_CONFIG = 0b10000000
-[; ;inc\CANlib.h: 74: };
-[; ;inc\CANlib.h: 80: enum CAN_CONFIG_FLAGS
-[; ;inc\CANlib.h: 81: {
-[; ;inc\CANlib.h: 82: CAN_CONFIG_DEFAULT = 0b11111111,
-[; ;inc\CANlib.h: 84: CAN_CONFIG_PHSEG2_PRG_BIT = 0b00000001,
-[; ;inc\CANlib.h: 85: CAN_CONFIG_PHSEG2_PRG_ON = 0b11111111,
-[; ;inc\CANlib.h: 86: CAN_CONFIG_PHSEG2_PRG_OFF = 0b11111110,
-[; ;inc\CANlib.h: 88: CAN_CONFIG_LINE_FILTER_BIT = 0b00000010,
-[; ;inc\CANlib.h: 89: CAN_CONFIG_LINE_FILTER_ON = 0b11111111,
-[; ;inc\CANlib.h: 90: CAN_CONFIG_LINE_FILTER_OFF = 0b11111101,
-[; ;inc\CANlib.h: 92: CAN_CONFIG_SAMPLE_BIT = 0b00000100,
-[; ;inc\CANlib.h: 93: CAN_CONFIG_SAMPLE_ONCE = 0b11111111,
-[; ;inc\CANlib.h: 94: CAN_CONFIG_SAMPLE_THRICE = 0b11111011,
-[; ;inc\CANlib.h: 96: CAN_CONFIG_MSG_TYPE_BIT = 0b00001000,
-[; ;inc\CANlib.h: 97: CAN_CONFIG_STD_MSG = 0b11111111,
-[; ;inc\CANlib.h: 98: CAN_CONFIG_XTD_MSG = 0b11110111,
-[; ;inc\CANlib.h: 100: CAN_CONFIG_DBL_BUFFER_BIT = 0b00010000,
-[; ;inc\CANlib.h: 101: CAN_CONFIG_DBL_BUFFER_ON = 0b11111111,
-[; ;inc\CANlib.h: 102: CAN_CONFIG_DBL_BUFFER_OFF = 0b11101111,
-[; ;inc\CANlib.h: 104: CAN_CONFIG_MSG_BITS = 0b01100000,
-[; ;inc\CANlib.h: 105: CAN_CONFIG_ALL_MSG = 0b11111111,
-[; ;inc\CANlib.h: 106: CAN_CONFIG_VALID_XTD_MSG = 0b11011111,
-[; ;inc\CANlib.h: 107: CAN_CONFIG_VALID_STD_MSG = 0b10111111,
-[; ;inc\CANlib.h: 108: CAN_CONFIG_ALL_VALID_MSG = 0b10011111
-[; ;inc\CANlib.h: 109: };
-[; ;inc\CANlib.h: 116: enum CAN_TX_MSG_FLAGS
-[; ;inc\CANlib.h: 117: {
-[; ;inc\CANlib.h: 118: CAN_TX_PRIORITY_MASK= 0b00000011,
-[; ;inc\CANlib.h: 119: CAN_TX_PRIORITY_0 = 0b11111100,
-[; ;inc\CANlib.h: 120: CAN_TX_PRIORITY_1 = 0b11111101,
-[; ;inc\CANlib.h: 121: CAN_TX_PRIORITY_2 = 0b11111110,
-[; ;inc\CANlib.h: 122: CAN_TX_PRIORITY_3 = 0b11111111,
-[; ;inc\CANlib.h: 124: CAN_TX_FRAME_MASK = 0b00001000,
-[; ;inc\CANlib.h: 125: CAN_TX_STD_FRAME = 0b11110111,
-[; ;inc\CANlib.h: 126: CAN_TX_XTD_FRAME = 0b11111111,
-[; ;inc\CANlib.h: 128: CAN_TX_RTR_MASK = 0b01000000,
-[; ;inc\CANlib.h: 129: CAN_REMOTE_TX_FRAME = 0b11111111,
-[; ;inc\CANlib.h: 130: CAN_NORMAL_TX_FRAME = 0b10111111
-[; ;inc\CANlib.h: 132: };
-[; ;inc\CANlib.h: 138: enum CAN_MASK
-[; ;inc\CANlib.h: 139: {
-[; ;inc\CANlib.h: 140: CAN_MASK_B1 = 1,
-[; ;inc\CANlib.h: 141: CAN_MASK_B2 = 2,
-[; ;inc\CANlib.h: 142: };
-[; ;inc\CANlib.h: 148: enum CAN_FILTER
-[; ;inc\CANlib.h: 149: {
-[; ;inc\CANlib.h: 150: CAN_FILTER_B1_F1,
-[; ;inc\CANlib.h: 151: CAN_FILTER_B1_F2,
-[; ;inc\CANlib.h: 152: CAN_FILTER_B2_F1,
-[; ;inc\CANlib.h: 153: CAN_FILTER_B2_F2,
-[; ;inc\CANlib.h: 154: CAN_FILTER_B2_F3,
-[; ;inc\CANlib.h: 155: CAN_FILTER_B2_F4
-[; ;inc\CANlib.h: 156: };
-[; ;inc\CANlib.h: 162: enum CAN_RX_ERRORS
-[; ;inc\CANlib.h: 163: {
-[; ;inc\CANlib.h: 164: CAN_RX_BUFFER_1_OVFL = 0b00000001,
-[; ;inc\CANlib.h: 165: CAN_RX_BUFFER_2_OVFL = 0b00000010
-[; ;inc\CANlib.h: 166: };
-[; ;inc\CANlib.h: 173: void CANOperationMode (enum CAN_OP_MODE mode);
-[; ;inc\CANlib.h: 174: void CANInitialize (BYTE propSeg, BYTE phaseSeg1, BYTE phaseSeg2,BYTE SJW, BYTE BRP, enum CAN_CONFIG_FLAGS flags);
-[; ;inc\CANlib.h: 176: void CANsendMessage (unsigned long identifier, BYTE *data, BYTE dataLength, enum CAN_TX_MSG_FLAGS flags);
-[; ;inc\CANlib.h: 177: BYTE CANreceiveMessage (CANmessage *msg);
-[; ;inc\CANlib.h: 179: void CANSetMask(enum CAN_MASK code, unsigned long val, enum CAN_CONFIG_FLAGS type);
-[; ;inc\CANlib.h: 180: void CANSetFilter(enum CAN_FILTER code, unsigned long val, enum CAN_CONFIG_FLAGS type);
-[; ;inc\CANlib.h: 182: BYTE CANisTxReady (void);
-[; ;inc\CANlib.h: 183: BYTE CANisRxReady (void);
-[; ;inc\CANlib.h: 185: BYTE CANisTXpassive (void);
-[; ;inc\CANlib.h: 186: BYTE CANisRXpassive (void);
-[; ;inc\CANlib.h: 187: BYTE CANisTXwarningON (void);
-[; ;inc\CANlib.h: 188: BYTE CANisRXwarningON (void);
-[; ;inc\CANlib.h: 189: BYTE CANgetTXerrorCount (void);
-[; ;inc\CANlib.h: 190: BYTE CANgetRXerrorCount (void);
-[; ;inc\CANlib.h: 192: BYTE CANisBusOFF (void);
-[; ;inc\CANlib.h: 193: void CANAbortMessages (void);
-"206 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+[; ;can\CANlib.h: 49: typedef unsigned char BYTE;
+[; ;can\CANlib.h: 52: typedef struct
+[; ;can\CANlib.h: 53: {
+[; ;can\CANlib.h: 54: unsigned long identifier;
+[; ;can\CANlib.h: 55: BYTE data[8];
+[; ;can\CANlib.h: 56: BYTE type;
+[; ;can\CANlib.h: 57: BYTE length;
+[; ;can\CANlib.h: 58: BYTE RTR;
+[; ;can\CANlib.h: 60: } CANmessage;
+[; ;can\CANlib.h: 67: enum CAN_OP_MODE
+[; ;can\CANlib.h: 68: {
+[; ;can\CANlib.h: 69: CAN_OP_MODE_NORMAL = 0b00000000,
+[; ;can\CANlib.h: 70: CAN_OP_MODE_SLEEP = 0b00100000,
+[; ;can\CANlib.h: 71: CAN_OP_MODE_LOOP = 0b01000000,
+[; ;can\CANlib.h: 72: CAN_OP_MODE_LISTEN = 0b01100000,
+[; ;can\CANlib.h: 73: CAN_OP_MODE_CONFIG = 0b10000000
+[; ;can\CANlib.h: 74: };
+[; ;can\CANlib.h: 80: enum CAN_CONFIG_FLAGS
+[; ;can\CANlib.h: 81: {
+[; ;can\CANlib.h: 82: CAN_CONFIG_DEFAULT = 0b11111111,
+[; ;can\CANlib.h: 84: CAN_CONFIG_PHSEG2_PRG_BIT = 0b00000001,
+[; ;can\CANlib.h: 85: CAN_CONFIG_PHSEG2_PRG_ON = 0b11111111,
+[; ;can\CANlib.h: 86: CAN_CONFIG_PHSEG2_PRG_OFF = 0b11111110,
+[; ;can\CANlib.h: 88: CAN_CONFIG_LINE_FILTER_BIT = 0b00000010,
+[; ;can\CANlib.h: 89: CAN_CONFIG_LINE_FILTER_ON = 0b11111111,
+[; ;can\CANlib.h: 90: CAN_CONFIG_LINE_FILTER_OFF = 0b11111101,
+[; ;can\CANlib.h: 92: CAN_CONFIG_SAMPLE_BIT = 0b00000100,
+[; ;can\CANlib.h: 93: CAN_CONFIG_SAMPLE_ONCE = 0b11111111,
+[; ;can\CANlib.h: 94: CAN_CONFIG_SAMPLE_THRICE = 0b11111011,
+[; ;can\CANlib.h: 96: CAN_CONFIG_MSG_TYPE_BIT = 0b00001000,
+[; ;can\CANlib.h: 97: CAN_CONFIG_STD_MSG = 0b11111111,
+[; ;can\CANlib.h: 98: CAN_CONFIG_XTD_MSG = 0b11110111,
+[; ;can\CANlib.h: 100: CAN_CONFIG_DBL_BUFFER_BIT = 0b00010000,
+[; ;can\CANlib.h: 101: CAN_CONFIG_DBL_BUFFER_ON = 0b11111111,
+[; ;can\CANlib.h: 102: CAN_CONFIG_DBL_BUFFER_OFF = 0b11101111,
+[; ;can\CANlib.h: 104: CAN_CONFIG_MSG_BITS = 0b01100000,
+[; ;can\CANlib.h: 105: CAN_CONFIG_ALL_MSG = 0b11111111,
+[; ;can\CANlib.h: 106: CAN_CONFIG_VALID_XTD_MSG = 0b11011111,
+[; ;can\CANlib.h: 107: CAN_CONFIG_VALID_STD_MSG = 0b10111111,
+[; ;can\CANlib.h: 108: CAN_CONFIG_ALL_VALID_MSG = 0b10011111
+[; ;can\CANlib.h: 109: };
+[; ;can\CANlib.h: 116: enum CAN_TX_MSG_FLAGS
+[; ;can\CANlib.h: 117: {
+[; ;can\CANlib.h: 118: CAN_TX_PRIORITY_MASK= 0b00000011,
+[; ;can\CANlib.h: 119: CAN_TX_PRIORITY_0 = 0b11111100,
+[; ;can\CANlib.h: 120: CAN_TX_PRIORITY_1 = 0b11111101,
+[; ;can\CANlib.h: 121: CAN_TX_PRIORITY_2 = 0b11111110,
+[; ;can\CANlib.h: 122: CAN_TX_PRIORITY_3 = 0b11111111,
+[; ;can\CANlib.h: 124: CAN_TX_FRAME_MASK = 0b00001000,
+[; ;can\CANlib.h: 125: CAN_TX_STD_FRAME = 0b11110111,
+[; ;can\CANlib.h: 126: CAN_TX_XTD_FRAME = 0b11111111,
+[; ;can\CANlib.h: 128: CAN_TX_RTR_MASK = 0b01000000,
+[; ;can\CANlib.h: 129: CAN_REMOTE_TX_FRAME = 0b11111111,
+[; ;can\CANlib.h: 130: CAN_NORMAL_TX_FRAME = 0b10111111
+[; ;can\CANlib.h: 132: };
+[; ;can\CANlib.h: 138: enum CAN_MASK
+[; ;can\CANlib.h: 139: {
+[; ;can\CANlib.h: 140: CAN_MASK_B1 = 1,
+[; ;can\CANlib.h: 141: CAN_MASK_B2 = 2,
+[; ;can\CANlib.h: 142: };
+[; ;can\CANlib.h: 148: enum CAN_FILTER
+[; ;can\CANlib.h: 149: {
+[; ;can\CANlib.h: 150: CAN_FILTER_B1_F1,
+[; ;can\CANlib.h: 151: CAN_FILTER_B1_F2,
+[; ;can\CANlib.h: 152: CAN_FILTER_B2_F1,
+[; ;can\CANlib.h: 153: CAN_FILTER_B2_F2,
+[; ;can\CANlib.h: 154: CAN_FILTER_B2_F3,
+[; ;can\CANlib.h: 155: CAN_FILTER_B2_F4
+[; ;can\CANlib.h: 156: };
+[; ;can\CANlib.h: 162: enum CAN_RX_ERRORS
+[; ;can\CANlib.h: 163: {
+[; ;can\CANlib.h: 164: CAN_RX_BUFFER_1_OVFL = 0b00000001,
+[; ;can\CANlib.h: 165: CAN_RX_BUFFER_2_OVFL = 0b00000010
+[; ;can\CANlib.h: 166: };
+[; ;can\CANlib.h: 173: void CANOperationMode (enum CAN_OP_MODE mode);
+[; ;can\CANlib.h: 174: void CANInitialize (BYTE propSeg, BYTE phaseSeg1, BYTE phaseSeg2,BYTE SJW, BYTE BRP, enum CAN_CONFIG_FLAGS flags);
+[; ;can\CANlib.h: 176: void CANsendMessage (unsigned long identifier, BYTE *data, BYTE dataLength, enum CAN_TX_MSG_FLAGS flags);
+[; ;can\CANlib.h: 177: BYTE CANreceiveMessage (CANmessage *msg);
+[; ;can\CANlib.h: 179: void CANSetMask(enum CAN_MASK code, unsigned long val, enum CAN_CONFIG_FLAGS type);
+[; ;can\CANlib.h: 180: void CANSetFilter(enum CAN_FILTER code, unsigned long val, enum CAN_CONFIG_FLAGS type);
+[; ;can\CANlib.h: 182: BYTE CANisTxReady (void);
+[; ;can\CANlib.h: 183: BYTE CANisRxReady (void);
+[; ;can\CANlib.h: 185: BYTE CANisTXpassive (void);
+[; ;can\CANlib.h: 186: BYTE CANisRXpassive (void);
+[; ;can\CANlib.h: 187: BYTE CANisTXwarningON (void);
+[; ;can\CANlib.h: 188: BYTE CANisRXwarningON (void);
+[; ;can\CANlib.h: 189: BYTE CANgetTXerrorCount (void);
+[; ;can\CANlib.h: 190: BYTE CANgetRXerrorCount (void);
+[; ;can\CANlib.h: 192: BYTE CANisBusOFF (void);
+[; ;can\CANlib.h: 193: void CANAbortMessages (void);
+"206 ../../Scuola/Triennio/Tesina/can\CANlib.h
 [v _CANOperationMode `(v ~T0 @X0 1 ef1`E16838 ]
 "207
 {
-[; ;inc\CANlib.h: 206: void CANOperationMode (enum CAN_OP_MODE mode)
-[; ;inc\CANlib.h: 207: {
+[; ;can\CANlib.h: 206: void CANOperationMode (enum CAN_OP_MODE mode)
+[; ;can\CANlib.h: 207: {
 [e :U _CANOperationMode ]
 "206
 [v _mode `E16838 ~T0 @X0 1 r1 ]
 "207
 [f ]
-[; ;inc\CANlib.h: 208: CANCON = mode;
+[; ;can\CANlib.h: 208: CANCON = mode;
 "208
 [e = _CANCON -> _mode `uc ]
-[; ;inc\CANlib.h: 210: while((CANSTAT & 0b11100000) != mode );
+[; ;can\CANlib.h: 210: while((CANSTAT & 0b11100000) != mode );
 "210
 [e $U 2157  ]
 [e :U 2158 ]
 [e :U 2157 ]
 [e $ != & -> _CANSTAT `i -> 224 `i -> _mode `i 2158  ]
 [e :U 2159 ]
-[; ;inc\CANlib.h: 211: }
+[; ;can\CANlib.h: 211: }
 "211
 [e :UE 2156 ]
 }
@@ -16630,8 +16630,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANInitialize `(v ~T0 @X0 1 ef6`uc`uc`uc`uc`uc`E16844 ]
 "219
 {
-[; ;inc\CANlib.h: 218: void CANInitialize (BYTE propSeg, BYTE phaseSeg1, BYTE phaseSeg2,BYTE SJW, BYTE BRP, enum CAN_CONFIG_FLAGS flags)
-[; ;inc\CANlib.h: 219: {
+[; ;can\CANlib.h: 218: void CANInitialize (BYTE propSeg, BYTE phaseSeg1, BYTE phaseSeg2,BYTE SJW, BYTE BRP, enum CAN_CONFIG_FLAGS flags)
+[; ;can\CANlib.h: 219: {
 [e :U _CANInitialize ]
 "218
 [v _propSeg `uc ~T0 @X0 1 r1 ]
@@ -16646,126 +16646,126 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _FilterConfig1 `uc ~T0 @X0 1 a ]
 "221
 [v _FilterConfig2 `uc ~T0 @X0 1 a ]
-[; ;inc\CANlib.h: 220: BYTE FilterConfig1;
-[; ;inc\CANlib.h: 221: BYTE FilterConfig2;
-[; ;inc\CANlib.h: 223: CANOperationMode(CAN_OP_MODE_CONFIG);
+[; ;can\CANlib.h: 220: BYTE FilterConfig1;
+[; ;can\CANlib.h: 221: BYTE FilterConfig2;
+[; ;can\CANlib.h: 223: CANOperationMode(CAN_OP_MODE_CONFIG);
 "223
 [e ( _CANOperationMode (1 . `E16838 4 ]
-[; ;inc\CANlib.h: 225: BRGCON1 = 0x00;
+[; ;can\CANlib.h: 225: BRGCON1 = 0x00;
 "225
 [e = _BRGCON1 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 226: BRGCON2 = 0x00;
+[; ;can\CANlib.h: 226: BRGCON2 = 0x00;
 "226
 [e = _BRGCON2 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 227: BRGCON3 = 0x00;
+[; ;can\CANlib.h: 227: BRGCON3 = 0x00;
 "227
 [e = _BRGCON3 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 229: SJW= SJW << 6;
+[; ;can\CANlib.h: 229: SJW= SJW << 6;
 "229
 [e = _SJW -> << -> _SJW `i -> 6 `i `uc ]
-[; ;inc\CANlib.h: 230: BRGCON1 |= SJW;
+[; ;can\CANlib.h: 230: BRGCON1 |= SJW;
 "230
 [e =| _BRGCON1 _SJW ]
-[; ;inc\CANlib.h: 231: BRGCON1 |= BRP;
+[; ;can\CANlib.h: 231: BRGCON1 |= BRP;
 "231
 [e =| _BRGCON1 _BRP ]
-[; ;inc\CANlib.h: 233: BRGCON2 |= propSeg;
+[; ;can\CANlib.h: 233: BRGCON2 |= propSeg;
 "233
 [e =| _BRGCON2 _propSeg ]
-[; ;inc\CANlib.h: 234: phaseSeg1 = phaseSeg1 <<3;
+[; ;can\CANlib.h: 234: phaseSeg1 = phaseSeg1 <<3;
 "234
 [e = _phaseSeg1 -> << -> _phaseSeg1 `i -> 3 `i `uc ]
-[; ;inc\CANlib.h: 235: BRGCON2 |= phaseSeg1;
+[; ;can\CANlib.h: 235: BRGCON2 |= phaseSeg1;
 "235
 [e =| _BRGCON2 _phaseSeg1 ]
-[; ;inc\CANlib.h: 237: if ( !(flags & CAN_CONFIG_SAMPLE_BIT) )
+[; ;can\CANlib.h: 237: if ( !(flags & CAN_CONFIG_SAMPLE_BIT) )
 "237
 [e $ ! ! != & -> _flags `i -> . `E16844 7 `i -> 0 `i 2161  ]
-[; ;inc\CANlib.h: 238: BRGCON2bits.SAM= 1;
+[; ;can\CANlib.h: 238: BRGCON2bits.SAM= 1;
 "238
 [e = . . _BRGCON2bits 0 6 -> -> 1 `i `uc ]
 [e :U 2161 ]
-[; ;inc\CANlib.h: 240: if ( flags & CAN_CONFIG_PHSEG2_PRG_BIT )
+[; ;can\CANlib.h: 240: if ( flags & CAN_CONFIG_PHSEG2_PRG_BIT )
 "240
 [e $ ! != & -> _flags `i -> . `E16844 1 `i -> 0 `i 2162  ]
-[; ;inc\CANlib.h: 241: BRGCON2bits.SEG2PHTS = 1;
+[; ;can\CANlib.h: 241: BRGCON2bits.SEG2PHTS = 1;
 "241
 [e = . . _BRGCON2bits 1 1 -> -> 1 `i `uc ]
 [e :U 2162 ]
-[; ;inc\CANlib.h: 243: BRGCON3 |= phaseSeg2;
+[; ;can\CANlib.h: 243: BRGCON3 |= phaseSeg2;
 "243
 [e =| _BRGCON3 _phaseSeg2 ]
-[; ;inc\CANlib.h: 245: if ( flags & CAN_CONFIG_LINE_FILTER_BIT )
+[; ;can\CANlib.h: 245: if ( flags & CAN_CONFIG_LINE_FILTER_BIT )
 "245
 [e $ ! != & -> _flags `i -> . `E16844 4 `i -> 0 `i 2163  ]
-[; ;inc\CANlib.h: 246: BRGCON3bits.WAKFIL = 1;
+[; ;can\CANlib.h: 246: BRGCON3bits.WAKFIL = 1;
 "246
 [e = . . _BRGCON3bits 0 4 -> -> 1 `i `uc ]
 [e :U 2163 ]
-[; ;inc\CANlib.h: 251: RXB0CON = flags & CAN_CONFIG_MSG_BITS;
+[; ;can\CANlib.h: 251: RXB0CON = flags & CAN_CONFIG_MSG_BITS;
 "251
 [e = _RXB0CON -> & -> _flags `i -> . `E16844 16 `i `uc ]
-[; ;inc\CANlib.h: 252: if ( (flags & CAN_CONFIG_DBL_BUFFER_BIT)== CAN_CONFIG_DBL_BUFFER_ON )
+[; ;can\CANlib.h: 252: if ( (flags & CAN_CONFIG_DBL_BUFFER_BIT)== CAN_CONFIG_DBL_BUFFER_ON )
 "252
 [e $ ! == & -> _flags `i -> . `E16844 13 `i -> . `E16844 14 `i 2164  ]
-[; ;inc\CANlib.h: 253: RXB0CONbits.RXB0DBEN = 1;
+[; ;can\CANlib.h: 253: RXB0CONbits.RXB0DBEN = 1;
 "253
 [e = . . _RXB0CONbits 1 2 -> -> 1 `i `uc ]
 [e :U 2164 ]
-[; ;inc\CANlib.h: 255: RXB1CON = RXB0CON;
+[; ;can\CANlib.h: 255: RXB1CON = RXB0CON;
 "255
 [e = _RXB1CON _RXB0CON ]
-[; ;inc\CANlib.h: 259: CANSetMask (CAN_MASK_B1, 0x00000000, CAN_CONFIG_XTD_MSG);
+[; ;can\CANlib.h: 259: CANSetMask (CAN_MASK_B1, 0x00000000, CAN_CONFIG_XTD_MSG);
 "259
 [e ( _CANSetMask (3 , , . `E16878 0 -> -> -> 0 `i `l `ul . `E16844 12 ]
-[; ;inc\CANlib.h: 260: CANSetMask (CAN_MASK_B2, 0x00000000, CAN_CONFIG_XTD_MSG);
+[; ;can\CANlib.h: 260: CANSetMask (CAN_MASK_B2, 0x00000000, CAN_CONFIG_XTD_MSG);
 "260
 [e ( _CANSetMask (3 , , . `E16878 1 -> -> -> 0 `i `l `ul . `E16844 12 ]
-[; ;inc\CANlib.h: 263: switch( (flags & CAN_CONFIG_MSG_BITS) | ~CAN_CONFIG_MSG_BITS )
+[; ;can\CANlib.h: 263: switch( (flags & CAN_CONFIG_MSG_BITS) | ~CAN_CONFIG_MSG_BITS )
 "263
 [e $U 2166  ]
-[; ;inc\CANlib.h: 264: {
+[; ;can\CANlib.h: 264: {
 "264
 {
-[; ;inc\CANlib.h: 265: case CAN_CONFIG_VALID_XTD_MSG:
+[; ;can\CANlib.h: 265: case CAN_CONFIG_VALID_XTD_MSG:
 "265
 [e :U 2167 ]
-[; ;inc\CANlib.h: 266: FilterConfig1 = CAN_CONFIG_XTD_MSG;
+[; ;can\CANlib.h: 266: FilterConfig1 = CAN_CONFIG_XTD_MSG;
 "266
 [e = _FilterConfig1 -> . `E16844 12 `uc ]
-[; ;inc\CANlib.h: 267: FilterConfig2 = CAN_CONFIG_XTD_MSG;
+[; ;can\CANlib.h: 267: FilterConfig2 = CAN_CONFIG_XTD_MSG;
 "267
 [e = _FilterConfig2 -> . `E16844 12 `uc ]
-[; ;inc\CANlib.h: 268: break;
+[; ;can\CANlib.h: 268: break;
 "268
 [e $U 2165  ]
-[; ;inc\CANlib.h: 270: case CAN_CONFIG_VALID_STD_MSG:
+[; ;can\CANlib.h: 270: case CAN_CONFIG_VALID_STD_MSG:
 "270
 [e :U 2168 ]
-[; ;inc\CANlib.h: 271: FilterConfig1 = CAN_CONFIG_STD_MSG;
+[; ;can\CANlib.h: 271: FilterConfig1 = CAN_CONFIG_STD_MSG;
 "271
 [e = _FilterConfig1 -> . `E16844 11 `uc ]
-[; ;inc\CANlib.h: 272: FilterConfig2 = CAN_CONFIG_STD_MSG;
+[; ;can\CANlib.h: 272: FilterConfig2 = CAN_CONFIG_STD_MSG;
 "272
 [e = _FilterConfig2 -> . `E16844 11 `uc ]
-[; ;inc\CANlib.h: 273: break;
+[; ;can\CANlib.h: 273: break;
 "273
 [e $U 2165  ]
-[; ;inc\CANlib.h: 274: default:
+[; ;can\CANlib.h: 274: default:
 "274
 [e :U 2169 ]
-[; ;inc\CANlib.h: 275: FilterConfig1 = CAN_CONFIG_STD_MSG;
+[; ;can\CANlib.h: 275: FilterConfig1 = CAN_CONFIG_STD_MSG;
 "275
 [e = _FilterConfig1 -> . `E16844 11 `uc ]
-[; ;inc\CANlib.h: 276: FilterConfig2 = CAN_CONFIG_XTD_MSG;
+[; ;can\CANlib.h: 276: FilterConfig2 = CAN_CONFIG_XTD_MSG;
 "276
 [e = _FilterConfig2 -> . `E16844 12 `uc ]
-[; ;inc\CANlib.h: 277: break;
+[; ;can\CANlib.h: 277: break;
 "277
 [e $U 2165  ]
 "278
 }
-[; ;inc\CANlib.h: 278: }
+[; ;can\CANlib.h: 278: }
 [e $U 2165  ]
 "263
 [e :U 2166 ]
@@ -16774,28 +16774,28 @@ Version 3.2 HI-TECH Software Intermediate Code
  2169 ]
 "278
 [e :U 2165 ]
-[; ;inc\CANlib.h: 280: CANSetFilter(CAN_FILTER_B1_F1, 0, FilterConfig1);
+[; ;can\CANlib.h: 280: CANSetFilter(CAN_FILTER_B1_F1, 0, FilterConfig1);
 "280
 [e ( _CANSetFilter (3 , , . `E16881 0 -> -> -> 0 `i `l `ul -> _FilterConfig1 `E16844 ]
-[; ;inc\CANlib.h: 281: CANSetFilter(CAN_FILTER_B1_F2, 0, FilterConfig1);
+[; ;can\CANlib.h: 281: CANSetFilter(CAN_FILTER_B1_F2, 0, FilterConfig1);
 "281
 [e ( _CANSetFilter (3 , , . `E16881 1 -> -> -> 0 `i `l `ul -> _FilterConfig1 `E16844 ]
-[; ;inc\CANlib.h: 282: CANSetFilter(CAN_FILTER_B2_F1, 0, FilterConfig2);
+[; ;can\CANlib.h: 282: CANSetFilter(CAN_FILTER_B2_F1, 0, FilterConfig2);
 "282
 [e ( _CANSetFilter (3 , , . `E16881 2 -> -> -> 0 `i `l `ul -> _FilterConfig2 `E16844 ]
-[; ;inc\CANlib.h: 283: CANSetFilter(CAN_FILTER_B2_F2, 0, FilterConfig2);
+[; ;can\CANlib.h: 283: CANSetFilter(CAN_FILTER_B2_F2, 0, FilterConfig2);
 "283
 [e ( _CANSetFilter (3 , , . `E16881 3 -> -> -> 0 `i `l `ul -> _FilterConfig2 `E16844 ]
-[; ;inc\CANlib.h: 284: CANSetFilter(CAN_FILTER_B2_F3, 0, FilterConfig2);
+[; ;can\CANlib.h: 284: CANSetFilter(CAN_FILTER_B2_F3, 0, FilterConfig2);
 "284
 [e ( _CANSetFilter (3 , , . `E16881 4 -> -> -> 0 `i `l `ul -> _FilterConfig2 `E16844 ]
-[; ;inc\CANlib.h: 285: CANSetFilter(CAN_FILTER_B2_F4, 0, FilterConfig2);
+[; ;can\CANlib.h: 285: CANSetFilter(CAN_FILTER_B2_F4, 0, FilterConfig2);
 "285
 [e ( _CANSetFilter (3 , , . `E16881 5 -> -> -> 0 `i `l `ul -> _FilterConfig2 `E16844 ]
-[; ;inc\CANlib.h: 287: CANOperationMode(CAN_OP_MODE_NORMAL);
+[; ;can\CANlib.h: 287: CANOperationMode(CAN_OP_MODE_NORMAL);
 "287
 [e ( _CANOperationMode (1 . `E16838 0 ]
-[; ;inc\CANlib.h: 289: }
+[; ;can\CANlib.h: 289: }
 "289
 [e :UE 2160 ]
 }
@@ -16803,8 +16803,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANsendMessage `(v ~T0 @X0 1 ef4`ul`*uc`uc`E16866 ]
 "295
 {
-[; ;inc\CANlib.h: 294: void CANsendMessage (unsigned long identifier, BYTE *data, BYTE dataLength, enum CAN_TX_MSG_FLAGS flags)
-[; ;inc\CANlib.h: 295: {
+[; ;can\CANlib.h: 294: void CANsendMessage (unsigned long identifier, BYTE *data, BYTE dataLength, enum CAN_TX_MSG_FLAGS flags)
+[; ;can\CANlib.h: 295: {
 [e :U _CANsendMessage ]
 "294
 [v _identifier `ul ~T0 @X0 1 r1 ]
@@ -16815,584 +16815,584 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 "296
 [v _tamp `ul ~T0 @X0 1 a ]
-[; ;inc\CANlib.h: 296: unsigned long tamp;
-[; ;inc\CANlib.h: 298: if (TXB0CONbits.TXREQ == 0)
+[; ;can\CANlib.h: 296: unsigned long tamp;
+[; ;can\CANlib.h: 298: if (TXB0CONbits.TXREQ == 0)
 "298
 [e $ ! == -> . . _TXB0CONbits 0 3 `i -> 0 `i 2171  ]
-[; ;inc\CANlib.h: 299: { TXB0DLC = dataLength;
+[; ;can\CANlib.h: 299: { TXB0DLC = dataLength;
 "299
 {
 [e = _TXB0DLC _dataLength ]
-[; ;inc\CANlib.h: 300: if (0b01000000 & flags)
+[; ;can\CANlib.h: 300: if (0b01000000 & flags)
 "300
 [e $ ! != & -> 64 `i -> _flags `i -> 0 `i 2172  ]
-[; ;inc\CANlib.h: 301: TXB0DLCbits.TXRTR = 0x01;
+[; ;can\CANlib.h: 301: TXB0DLCbits.TXRTR = 0x01;
 "301
 [e = . . _TXB0DLCbits 0 5 -> -> 1 `i `uc ]
 [e $U 2173  ]
 "302
 [e :U 2172 ]
-[; ;inc\CANlib.h: 302: else
-[; ;inc\CANlib.h: 303: TXB0DLCbits.TXRTR = 0x00;
+[; ;can\CANlib.h: 302: else
+[; ;can\CANlib.h: 303: TXB0DLCbits.TXRTR = 0x00;
 "303
 [e = . . _TXB0DLCbits 0 5 -> -> 0 `i `uc ]
 [e :U 2173 ]
-[; ;inc\CANlib.h: 305: if (CAN_TX_FRAME_MASK & flags)
+[; ;can\CANlib.h: 305: if (CAN_TX_FRAME_MASK & flags)
 "305
 [e $ ! != & -> . `E16866 5 `i -> _flags `i -> 0 `i 2174  ]
-[; ;inc\CANlib.h: 306: {
+[; ;can\CANlib.h: 306: {
 "306
 {
-[; ;inc\CANlib.h: 308: tamp = identifier & 0x000000FF;
+[; ;can\CANlib.h: 308: tamp = identifier & 0x000000FF;
 "308
 [e = _tamp & _identifier -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 309: TXB0EIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 309: TXB0EIDL = (unsigned char) tamp;
 "309
 [e = _TXB0EIDL -> _tamp `uc ]
-[; ;inc\CANlib.h: 311: tamp = identifier & 0x0000FF00;
+[; ;can\CANlib.h: 311: tamp = identifier & 0x0000FF00;
 "311
 [e = _tamp & _identifier -> -> 65280 `ui `ul ]
-[; ;inc\CANlib.h: 312: tamp = tamp >> 8;
+[; ;can\CANlib.h: 312: tamp = tamp >> 8;
 "312
 [e = _tamp >> _tamp -> 8 `i ]
-[; ;inc\CANlib.h: 313: TXB0EIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 313: TXB0EIDH = (unsigned char) tamp;
 "313
 [e = _TXB0EIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 315: TXB0SIDL = 0x00;
+[; ;can\CANlib.h: 315: TXB0SIDL = 0x00;
 "315
 [e = _TXB0SIDL -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 316: TXB0SIDLbits.EXIDE = 0x01;
+[; ;can\CANlib.h: 316: TXB0SIDLbits.EXIDE = 0x01;
 "316
 [e = . . _TXB0SIDLbits 0 3 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 318: if (identifier & 0x00010000)
+[; ;can\CANlib.h: 318: if (identifier & 0x00010000)
 "318
 [e $ ! != & _identifier -> -> 65536 `l `ul -> -> 0 `i `ul 2175  ]
-[; ;inc\CANlib.h: 319: TXB0SIDLbits.EID16 = 0x01;
+[; ;can\CANlib.h: 319: TXB0SIDLbits.EID16 = 0x01;
 "319
 [e = . . _TXB0SIDLbits 0 0 -> -> 1 `i `uc ]
 [e :U 2175 ]
-[; ;inc\CANlib.h: 320: if (identifier & 0x00020000)
+[; ;can\CANlib.h: 320: if (identifier & 0x00020000)
 "320
 [e $ ! != & _identifier -> -> 131072 `l `ul -> -> 0 `i `ul 2176  ]
-[; ;inc\CANlib.h: 321: TXB0SIDLbits.EID17 = 0x01;
+[; ;can\CANlib.h: 321: TXB0SIDLbits.EID17 = 0x01;
 "321
 [e = . . _TXB0SIDLbits 0 1 -> -> 1 `i `uc ]
 [e :U 2176 ]
-[; ;inc\CANlib.h: 322: if (identifier & 0x00040000)
+[; ;can\CANlib.h: 322: if (identifier & 0x00040000)
 "322
 [e $ ! != & _identifier -> -> 262144 `l `ul -> -> 0 `i `ul 2177  ]
-[; ;inc\CANlib.h: 323: TXB0SIDLbits.SID0 = 0x01;
+[; ;can\CANlib.h: 323: TXB0SIDLbits.SID0 = 0x01;
 "323
 [e = . . _TXB0SIDLbits 0 5 -> -> 1 `i `uc ]
 [e :U 2177 ]
-[; ;inc\CANlib.h: 324: if (identifier & 0x00080000)
+[; ;can\CANlib.h: 324: if (identifier & 0x00080000)
 "324
 [e $ ! != & _identifier -> -> 524288 `l `ul -> -> 0 `i `ul 2178  ]
-[; ;inc\CANlib.h: 325: TXB0SIDLbits.SID1 = 0x01;
+[; ;can\CANlib.h: 325: TXB0SIDLbits.SID1 = 0x01;
 "325
 [e = . . _TXB0SIDLbits 0 6 -> -> 1 `i `uc ]
 [e :U 2178 ]
-[; ;inc\CANlib.h: 326: if (identifier & 0x00100000)
+[; ;can\CANlib.h: 326: if (identifier & 0x00100000)
 "326
 [e $ ! != & _identifier -> -> 1048576 `l `ul -> -> 0 `i `ul 2179  ]
-[; ;inc\CANlib.h: 327: TXB0SIDLbits.SID2 = 0x01;
+[; ;can\CANlib.h: 327: TXB0SIDLbits.SID2 = 0x01;
 "327
 [e = . . _TXB0SIDLbits 0 7 -> -> 1 `i `uc ]
 [e :U 2179 ]
-[; ;inc\CANlib.h: 329: tamp = (identifier >> 21);
+[; ;can\CANlib.h: 329: tamp = (identifier >> 21);
 "329
 [e = _tamp >> _identifier -> 21 `i ]
-[; ;inc\CANlib.h: 330: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 330: tamp = tamp & 0x000000FF;
 "330
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 331: TXB0SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 331: TXB0SIDH = (unsigned char) tamp;
 "331
 [e = _TXB0SIDH -> _tamp `uc ]
 "332
 }
-[; ;inc\CANlib.h: 332: }
+[; ;can\CANlib.h: 332: }
 [e $U 2180  ]
 "334
 [e :U 2174 ]
-[; ;inc\CANlib.h: 334: else
-[; ;inc\CANlib.h: 336: {
+[; ;can\CANlib.h: 334: else
+[; ;can\CANlib.h: 336: {
 "336
 {
-[; ;inc\CANlib.h: 337: TXB0SIDLbits.EXIDE = 0x00;
+[; ;can\CANlib.h: 337: TXB0SIDLbits.EXIDE = 0x00;
 "337
 [e = . . _TXB0SIDLbits 0 3 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 339: tamp = (identifier >> 3);
+[; ;can\CANlib.h: 339: tamp = (identifier >> 3);
 "339
 [e = _tamp >> _identifier -> 3 `i ]
-[; ;inc\CANlib.h: 340: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 340: tamp = tamp & 0x000000FF;
 "340
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 341: TXB0SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 341: TXB0SIDH = (unsigned char) tamp;
 "341
 [e = _TXB0SIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 343: tamp = identifier & 0x00000007;
+[; ;can\CANlib.h: 343: tamp = identifier & 0x00000007;
 "343
 [e = _tamp & _identifier -> -> -> 7 `i `l `ul ]
-[; ;inc\CANlib.h: 344: tamp = tamp << 5;
+[; ;can\CANlib.h: 344: tamp = tamp << 5;
 "344
 [e = _tamp << _tamp -> 5 `i ]
-[; ;inc\CANlib.h: 345: TXB0SIDL = TXB0SIDL & 0b00011111;
+[; ;can\CANlib.h: 345: TXB0SIDL = TXB0SIDL & 0b00011111;
 "345
 [e = _TXB0SIDL -> & -> _TXB0SIDL `i -> 31 `i `uc ]
-[; ;inc\CANlib.h: 346: TXB0SIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 346: TXB0SIDL = (unsigned char) tamp;
 "346
 [e = _TXB0SIDL -> _tamp `uc ]
 "347
 }
 [e :U 2180 ]
-[; ;inc\CANlib.h: 347: }
-[; ;inc\CANlib.h: 349: if (0b00000001 & flags)
+[; ;can\CANlib.h: 347: }
+[; ;can\CANlib.h: 349: if (0b00000001 & flags)
 "349
 [e $ ! != & -> 1 `i -> _flags `i -> 0 `i 2181  ]
-[; ;inc\CANlib.h: 350: TXB0CONbits.TXPRI0 = 0x01;
+[; ;can\CANlib.h: 350: TXB0CONbits.TXPRI0 = 0x01;
 "350
 [e = . . _TXB0CONbits 0 0 -> -> 1 `i `uc ]
 [e $U 2182  ]
 "351
 [e :U 2181 ]
-[; ;inc\CANlib.h: 351: else
-[; ;inc\CANlib.h: 352: TXB0CONbits.TXPRI0 = 0x00;
+[; ;can\CANlib.h: 351: else
+[; ;can\CANlib.h: 352: TXB0CONbits.TXPRI0 = 0x00;
 "352
 [e = . . _TXB0CONbits 0 0 -> -> 0 `i `uc ]
 [e :U 2182 ]
-[; ;inc\CANlib.h: 353: if (0b00000010 & flags)
+[; ;can\CANlib.h: 353: if (0b00000010 & flags)
 "353
 [e $ ! != & -> 2 `i -> _flags `i -> 0 `i 2183  ]
-[; ;inc\CANlib.h: 354: TXB0CONbits.TXPRI1 = 0x01;
+[; ;can\CANlib.h: 354: TXB0CONbits.TXPRI1 = 0x01;
 "354
 [e = . . _TXB0CONbits 0 1 -> -> 1 `i `uc ]
 [e $U 2184  ]
 "355
 [e :U 2183 ]
-[; ;inc\CANlib.h: 355: else
-[; ;inc\CANlib.h: 356: TXB0CONbits.TXPRI1 = 0x00;
+[; ;can\CANlib.h: 355: else
+[; ;can\CANlib.h: 356: TXB0CONbits.TXPRI1 = 0x00;
 "356
 [e = . . _TXB0CONbits 0 1 -> -> 0 `i `uc ]
 [e :U 2184 ]
-[; ;inc\CANlib.h: 358: TXB0D0 = data[0];
+[; ;can\CANlib.h: 358: TXB0D0 = data[0];
 "358
 [e = _TXB0D0 *U + _data * -> -> 0 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 359: TXB0D1 = data[1];
+[; ;can\CANlib.h: 359: TXB0D1 = data[1];
 "359
 [e = _TXB0D1 *U + _data * -> -> 1 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 360: TXB0D2 = data[2];
+[; ;can\CANlib.h: 360: TXB0D2 = data[2];
 "360
 [e = _TXB0D2 *U + _data * -> -> 2 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 361: TXB0D3 = data[3];
+[; ;can\CANlib.h: 361: TXB0D3 = data[3];
 "361
 [e = _TXB0D3 *U + _data * -> -> 3 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 362: TXB0D4 = data[4];
+[; ;can\CANlib.h: 362: TXB0D4 = data[4];
 "362
 [e = _TXB0D4 *U + _data * -> -> 4 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 363: TXB0D5 = data[5];
+[; ;can\CANlib.h: 363: TXB0D5 = data[5];
 "363
 [e = _TXB0D5 *U + _data * -> -> 5 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 364: TXB0D6 = data[6];
+[; ;can\CANlib.h: 364: TXB0D6 = data[6];
 "364
 [e = _TXB0D6 *U + _data * -> -> 6 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 365: TXB0D7 = data[7];
+[; ;can\CANlib.h: 365: TXB0D7 = data[7];
 "365
 [e = _TXB0D7 *U + _data * -> -> 7 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 367: TXB0CONbits.TXREQ = 0x01;
+[; ;can\CANlib.h: 367: TXB0CONbits.TXREQ = 0x01;
 "367
 [e = . . _TXB0CONbits 0 3 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 368: return;
+[; ;can\CANlib.h: 368: return;
 "368
 [e $UE 2170  ]
 "369
 }
 [e :U 2171 ]
-[; ;inc\CANlib.h: 369: }
-[; ;inc\CANlib.h: 373: if (TXB1CONbits.TXREQ == 0)
+[; ;can\CANlib.h: 369: }
+[; ;can\CANlib.h: 373: if (TXB1CONbits.TXREQ == 0)
 "373
 [e $ ! == -> . . _TXB1CONbits 0 3 `i -> 0 `i 2185  ]
-[; ;inc\CANlib.h: 374: { TXB1DLC = dataLength;
+[; ;can\CANlib.h: 374: { TXB1DLC = dataLength;
 "374
 {
 [e = _TXB1DLC _dataLength ]
-[; ;inc\CANlib.h: 376: if (0b01000000 & flags)
+[; ;can\CANlib.h: 376: if (0b01000000 & flags)
 "376
 [e $ ! != & -> 64 `i -> _flags `i -> 0 `i 2186  ]
-[; ;inc\CANlib.h: 377: TXB1DLCbits.TXRTR = 0x01;
+[; ;can\CANlib.h: 377: TXB1DLCbits.TXRTR = 0x01;
 "377
 [e = . . _TXB1DLCbits 0 5 -> -> 1 `i `uc ]
 [e $U 2187  ]
 "378
 [e :U 2186 ]
-[; ;inc\CANlib.h: 378: else
-[; ;inc\CANlib.h: 379: TXB1DLCbits.TXRTR = 0x00;
+[; ;can\CANlib.h: 378: else
+[; ;can\CANlib.h: 379: TXB1DLCbits.TXRTR = 0x00;
 "379
 [e = . . _TXB1DLCbits 0 5 -> -> 0 `i `uc ]
 [e :U 2187 ]
-[; ;inc\CANlib.h: 381: if (CAN_TX_FRAME_MASK & flags)
+[; ;can\CANlib.h: 381: if (CAN_TX_FRAME_MASK & flags)
 "381
 [e $ ! != & -> . `E16866 5 `i -> _flags `i -> 0 `i 2188  ]
-[; ;inc\CANlib.h: 382: {
+[; ;can\CANlib.h: 382: {
 "382
 {
-[; ;inc\CANlib.h: 383: tamp = identifier & 0x000000FF;
+[; ;can\CANlib.h: 383: tamp = identifier & 0x000000FF;
 "383
 [e = _tamp & _identifier -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 384: TXB1EIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 384: TXB1EIDL = (unsigned char) tamp;
 "384
 [e = _TXB1EIDL -> _tamp `uc ]
-[; ;inc\CANlib.h: 386: tamp = identifier & 0x0000FF00;
+[; ;can\CANlib.h: 386: tamp = identifier & 0x0000FF00;
 "386
 [e = _tamp & _identifier -> -> 65280 `ui `ul ]
-[; ;inc\CANlib.h: 387: tamp = tamp >> 8;
+[; ;can\CANlib.h: 387: tamp = tamp >> 8;
 "387
 [e = _tamp >> _tamp -> 8 `i ]
-[; ;inc\CANlib.h: 388: TXB1EIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 388: TXB1EIDH = (unsigned char) tamp;
 "388
 [e = _TXB1EIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 390: TXB1SIDL = 0x00;
+[; ;can\CANlib.h: 390: TXB1SIDL = 0x00;
 "390
 [e = _TXB1SIDL -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 391: TXB1SIDLbits.EXIDE = 0x01;
+[; ;can\CANlib.h: 391: TXB1SIDLbits.EXIDE = 0x01;
 "391
 [e = . . _TXB1SIDLbits 0 3 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 393: if (identifier & 0x00010000)
+[; ;can\CANlib.h: 393: if (identifier & 0x00010000)
 "393
 [e $ ! != & _identifier -> -> 65536 `l `ul -> -> 0 `i `ul 2189  ]
-[; ;inc\CANlib.h: 394: TXB1SIDLbits.EID16 = 0x01;
+[; ;can\CANlib.h: 394: TXB1SIDLbits.EID16 = 0x01;
 "394
 [e = . . _TXB1SIDLbits 0 0 -> -> 1 `i `uc ]
 [e :U 2189 ]
-[; ;inc\CANlib.h: 395: if (identifier & 0x00020000)
+[; ;can\CANlib.h: 395: if (identifier & 0x00020000)
 "395
 [e $ ! != & _identifier -> -> 131072 `l `ul -> -> 0 `i `ul 2190  ]
-[; ;inc\CANlib.h: 396: TXB1SIDLbits.EID17 = 0x01;
+[; ;can\CANlib.h: 396: TXB1SIDLbits.EID17 = 0x01;
 "396
 [e = . . _TXB1SIDLbits 0 1 -> -> 1 `i `uc ]
 [e :U 2190 ]
-[; ;inc\CANlib.h: 397: if (identifier & 0x00040000)
+[; ;can\CANlib.h: 397: if (identifier & 0x00040000)
 "397
 [e $ ! != & _identifier -> -> 262144 `l `ul -> -> 0 `i `ul 2191  ]
-[; ;inc\CANlib.h: 398: TXB1SIDLbits.SID0 = 0x01;
+[; ;can\CANlib.h: 398: TXB1SIDLbits.SID0 = 0x01;
 "398
 [e = . . _TXB1SIDLbits 0 5 -> -> 1 `i `uc ]
 [e :U 2191 ]
-[; ;inc\CANlib.h: 399: if (identifier & 0x00080000)
+[; ;can\CANlib.h: 399: if (identifier & 0x00080000)
 "399
 [e $ ! != & _identifier -> -> 524288 `l `ul -> -> 0 `i `ul 2192  ]
-[; ;inc\CANlib.h: 400: TXB1SIDLbits.SID1 = 0x01;
+[; ;can\CANlib.h: 400: TXB1SIDLbits.SID1 = 0x01;
 "400
 [e = . . _TXB1SIDLbits 0 6 -> -> 1 `i `uc ]
 [e :U 2192 ]
-[; ;inc\CANlib.h: 401: if (identifier & 0x00100000)
+[; ;can\CANlib.h: 401: if (identifier & 0x00100000)
 "401
 [e $ ! != & _identifier -> -> 1048576 `l `ul -> -> 0 `i `ul 2193  ]
-[; ;inc\CANlib.h: 402: TXB1SIDLbits.SID2 = 0x01;
+[; ;can\CANlib.h: 402: TXB1SIDLbits.SID2 = 0x01;
 "402
 [e = . . _TXB1SIDLbits 0 7 -> -> 1 `i `uc ]
 [e :U 2193 ]
-[; ;inc\CANlib.h: 404: tamp = (identifier >> 21);
+[; ;can\CANlib.h: 404: tamp = (identifier >> 21);
 "404
 [e = _tamp >> _identifier -> 21 `i ]
-[; ;inc\CANlib.h: 405: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 405: tamp = tamp & 0x000000FF;
 "405
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 406: TXB1SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 406: TXB1SIDH = (unsigned char) tamp;
 "406
 [e = _TXB1SIDH -> _tamp `uc ]
 "407
 }
-[; ;inc\CANlib.h: 407: }
+[; ;can\CANlib.h: 407: }
 [e $U 2194  ]
 "409
 [e :U 2188 ]
-[; ;inc\CANlib.h: 409: else
-[; ;inc\CANlib.h: 411: {
+[; ;can\CANlib.h: 409: else
+[; ;can\CANlib.h: 411: {
 "411
 {
-[; ;inc\CANlib.h: 412: TXB1SIDLbits.EXIDE = 0x00;
+[; ;can\CANlib.h: 412: TXB1SIDLbits.EXIDE = 0x00;
 "412
 [e = . . _TXB1SIDLbits 0 3 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 414: tamp = (identifier >> 3);
+[; ;can\CANlib.h: 414: tamp = (identifier >> 3);
 "414
 [e = _tamp >> _identifier -> 3 `i ]
-[; ;inc\CANlib.h: 415: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 415: tamp = tamp & 0x000000FF;
 "415
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 416: TXB1SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 416: TXB1SIDH = (unsigned char) tamp;
 "416
 [e = _TXB1SIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 418: tamp = identifier & 0x00000007;
+[; ;can\CANlib.h: 418: tamp = identifier & 0x00000007;
 "418
 [e = _tamp & _identifier -> -> -> 7 `i `l `ul ]
-[; ;inc\CANlib.h: 419: tamp = tamp << 5;
+[; ;can\CANlib.h: 419: tamp = tamp << 5;
 "419
 [e = _tamp << _tamp -> 5 `i ]
-[; ;inc\CANlib.h: 420: TXB1SIDL = TXB1SIDL & 0b00011111;
+[; ;can\CANlib.h: 420: TXB1SIDL = TXB1SIDL & 0b00011111;
 "420
 [e = _TXB1SIDL -> & -> _TXB1SIDL `i -> 31 `i `uc ]
-[; ;inc\CANlib.h: 421: TXB1SIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 421: TXB1SIDL = (unsigned char) tamp;
 "421
 [e = _TXB1SIDL -> _tamp `uc ]
 "422
 }
 [e :U 2194 ]
-[; ;inc\CANlib.h: 422: }
-[; ;inc\CANlib.h: 424: if (0b00000001 & flags)
+[; ;can\CANlib.h: 422: }
+[; ;can\CANlib.h: 424: if (0b00000001 & flags)
 "424
 [e $ ! != & -> 1 `i -> _flags `i -> 0 `i 2195  ]
-[; ;inc\CANlib.h: 425: TXB1CONbits.TXPRI0 = 0x01;
+[; ;can\CANlib.h: 425: TXB1CONbits.TXPRI0 = 0x01;
 "425
 [e = . . _TXB1CONbits 0 0 -> -> 1 `i `uc ]
 [e $U 2196  ]
 "426
 [e :U 2195 ]
-[; ;inc\CANlib.h: 426: else
-[; ;inc\CANlib.h: 427: TXB1CONbits.TXPRI0 = 0x00;
+[; ;can\CANlib.h: 426: else
+[; ;can\CANlib.h: 427: TXB1CONbits.TXPRI0 = 0x00;
 "427
 [e = . . _TXB1CONbits 0 0 -> -> 0 `i `uc ]
 [e :U 2196 ]
-[; ;inc\CANlib.h: 428: if (0b00000010 & flags)
+[; ;can\CANlib.h: 428: if (0b00000010 & flags)
 "428
 [e $ ! != & -> 2 `i -> _flags `i -> 0 `i 2197  ]
-[; ;inc\CANlib.h: 429: TXB1CONbits.TXPRI1 = 0x01;
+[; ;can\CANlib.h: 429: TXB1CONbits.TXPRI1 = 0x01;
 "429
 [e = . . _TXB1CONbits 0 1 -> -> 1 `i `uc ]
 [e $U 2198  ]
 "430
 [e :U 2197 ]
-[; ;inc\CANlib.h: 430: else
-[; ;inc\CANlib.h: 431: TXB1CONbits.TXPRI1 = 0x00;
+[; ;can\CANlib.h: 430: else
+[; ;can\CANlib.h: 431: TXB1CONbits.TXPRI1 = 0x00;
 "431
 [e = . . _TXB1CONbits 0 1 -> -> 0 `i `uc ]
 [e :U 2198 ]
-[; ;inc\CANlib.h: 433: TXB1D0 = data[0];
+[; ;can\CANlib.h: 433: TXB1D0 = data[0];
 "433
 [e = _TXB1D0 *U + _data * -> -> 0 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 434: TXB1D1 = data[1];
+[; ;can\CANlib.h: 434: TXB1D1 = data[1];
 "434
 [e = _TXB1D1 *U + _data * -> -> 1 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 435: TXB1D2 = data[2];
+[; ;can\CANlib.h: 435: TXB1D2 = data[2];
 "435
 [e = _TXB1D2 *U + _data * -> -> 2 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 436: TXB1D3 = data[3];
+[; ;can\CANlib.h: 436: TXB1D3 = data[3];
 "436
 [e = _TXB1D3 *U + _data * -> -> 3 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 437: TXB1D4 = data[4];
+[; ;can\CANlib.h: 437: TXB1D4 = data[4];
 "437
 [e = _TXB1D4 *U + _data * -> -> 4 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 438: TXB1D5 = data[5];
+[; ;can\CANlib.h: 438: TXB1D5 = data[5];
 "438
 [e = _TXB1D5 *U + _data * -> -> 5 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 439: TXB1D6 = data[6];
+[; ;can\CANlib.h: 439: TXB1D6 = data[6];
 "439
 [e = _TXB1D6 *U + _data * -> -> 6 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 440: TXB1D7 = data[7];
+[; ;can\CANlib.h: 440: TXB1D7 = data[7];
 "440
 [e = _TXB1D7 *U + _data * -> -> 7 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 442: TXB1CONbits.TXREQ = 0x01;
+[; ;can\CANlib.h: 442: TXB1CONbits.TXREQ = 0x01;
 "442
 [e = . . _TXB1CONbits 0 3 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 444: return;
+[; ;can\CANlib.h: 444: return;
 "444
 [e $UE 2170  ]
 "445
 }
 [e :U 2185 ]
-[; ;inc\CANlib.h: 445: }
-[; ;inc\CANlib.h: 449: if (TXB2CONbits.TXREQ == 0)
+[; ;can\CANlib.h: 445: }
+[; ;can\CANlib.h: 449: if (TXB2CONbits.TXREQ == 0)
 "449
 [e $ ! == -> . . _TXB2CONbits 0 3 `i -> 0 `i 2199  ]
-[; ;inc\CANlib.h: 450: { TXB2DLC = dataLength;
+[; ;can\CANlib.h: 450: { TXB2DLC = dataLength;
 "450
 {
 [e = _TXB2DLC _dataLength ]
-[; ;inc\CANlib.h: 452: if (0b01000000 & flags)
+[; ;can\CANlib.h: 452: if (0b01000000 & flags)
 "452
 [e $ ! != & -> 64 `i -> _flags `i -> 0 `i 2200  ]
-[; ;inc\CANlib.h: 453: TXB2DLCbits.TXRTR = 0x01;
+[; ;can\CANlib.h: 453: TXB2DLCbits.TXRTR = 0x01;
 "453
 [e = . . _TXB2DLCbits 0 5 -> -> 1 `i `uc ]
 [e $U 2201  ]
 "454
 [e :U 2200 ]
-[; ;inc\CANlib.h: 454: else
-[; ;inc\CANlib.h: 455: TXB2DLCbits.TXRTR = 0x00;
+[; ;can\CANlib.h: 454: else
+[; ;can\CANlib.h: 455: TXB2DLCbits.TXRTR = 0x00;
 "455
 [e = . . _TXB2DLCbits 0 5 -> -> 0 `i `uc ]
 [e :U 2201 ]
-[; ;inc\CANlib.h: 457: if (CAN_TX_FRAME_MASK & flags)
+[; ;can\CANlib.h: 457: if (CAN_TX_FRAME_MASK & flags)
 "457
 [e $ ! != & -> . `E16866 5 `i -> _flags `i -> 0 `i 2202  ]
-[; ;inc\CANlib.h: 458: {
+[; ;can\CANlib.h: 458: {
 "458
 {
-[; ;inc\CANlib.h: 459: tamp = identifier & 0x000000FF;
+[; ;can\CANlib.h: 459: tamp = identifier & 0x000000FF;
 "459
 [e = _tamp & _identifier -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 460: TXB2EIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 460: TXB2EIDL = (unsigned char) tamp;
 "460
 [e = _TXB2EIDL -> _tamp `uc ]
-[; ;inc\CANlib.h: 462: tamp = identifier & 0x0000FF00;
+[; ;can\CANlib.h: 462: tamp = identifier & 0x0000FF00;
 "462
 [e = _tamp & _identifier -> -> 65280 `ui `ul ]
-[; ;inc\CANlib.h: 463: tamp = tamp >> 8;
+[; ;can\CANlib.h: 463: tamp = tamp >> 8;
 "463
 [e = _tamp >> _tamp -> 8 `i ]
-[; ;inc\CANlib.h: 464: TXB2EIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 464: TXB2EIDH = (unsigned char) tamp;
 "464
 [e = _TXB2EIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 466: TXB2SIDL = 0x00;
+[; ;can\CANlib.h: 466: TXB2SIDL = 0x00;
 "466
 [e = _TXB2SIDL -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 467: TXB2SIDLbits.EXIDE = 0x01;
+[; ;can\CANlib.h: 467: TXB2SIDLbits.EXIDE = 0x01;
 "467
 [e = . . _TXB2SIDLbits 0 3 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 469: if (identifier & 0x00010000)
+[; ;can\CANlib.h: 469: if (identifier & 0x00010000)
 "469
 [e $ ! != & _identifier -> -> 65536 `l `ul -> -> 0 `i `ul 2203  ]
-[; ;inc\CANlib.h: 470: TXB2SIDLbits.EID16 = 0x01;
+[; ;can\CANlib.h: 470: TXB2SIDLbits.EID16 = 0x01;
 "470
 [e = . . _TXB2SIDLbits 0 0 -> -> 1 `i `uc ]
 [e :U 2203 ]
-[; ;inc\CANlib.h: 471: if (identifier & 0x00020000)
+[; ;can\CANlib.h: 471: if (identifier & 0x00020000)
 "471
 [e $ ! != & _identifier -> -> 131072 `l `ul -> -> 0 `i `ul 2204  ]
-[; ;inc\CANlib.h: 472: TXB2SIDLbits.EID17 = 0x01;
+[; ;can\CANlib.h: 472: TXB2SIDLbits.EID17 = 0x01;
 "472
 [e = . . _TXB2SIDLbits 0 1 -> -> 1 `i `uc ]
 [e :U 2204 ]
-[; ;inc\CANlib.h: 473: if (identifier & 0x00040000)
+[; ;can\CANlib.h: 473: if (identifier & 0x00040000)
 "473
 [e $ ! != & _identifier -> -> 262144 `l `ul -> -> 0 `i `ul 2205  ]
-[; ;inc\CANlib.h: 474: TXB2SIDLbits.SID0 = 0x01;
+[; ;can\CANlib.h: 474: TXB2SIDLbits.SID0 = 0x01;
 "474
 [e = . . _TXB2SIDLbits 0 5 -> -> 1 `i `uc ]
 [e :U 2205 ]
-[; ;inc\CANlib.h: 475: if (identifier & 0x00080000)
+[; ;can\CANlib.h: 475: if (identifier & 0x00080000)
 "475
 [e $ ! != & _identifier -> -> 524288 `l `ul -> -> 0 `i `ul 2206  ]
-[; ;inc\CANlib.h: 476: TXB2SIDLbits.SID1 = 0x01;
+[; ;can\CANlib.h: 476: TXB2SIDLbits.SID1 = 0x01;
 "476
 [e = . . _TXB2SIDLbits 0 6 -> -> 1 `i `uc ]
 [e :U 2206 ]
-[; ;inc\CANlib.h: 477: if (identifier & 0x00100000)
+[; ;can\CANlib.h: 477: if (identifier & 0x00100000)
 "477
 [e $ ! != & _identifier -> -> 1048576 `l `ul -> -> 0 `i `ul 2207  ]
-[; ;inc\CANlib.h: 478: TXB2SIDLbits.SID2 = 0x01;
+[; ;can\CANlib.h: 478: TXB2SIDLbits.SID2 = 0x01;
 "478
 [e = . . _TXB2SIDLbits 0 7 -> -> 1 `i `uc ]
 [e :U 2207 ]
-[; ;inc\CANlib.h: 480: tamp = (identifier >> 21);
+[; ;can\CANlib.h: 480: tamp = (identifier >> 21);
 "480
 [e = _tamp >> _identifier -> 21 `i ]
-[; ;inc\CANlib.h: 481: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 481: tamp = tamp & 0x000000FF;
 "481
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 482: TXB2SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 482: TXB2SIDH = (unsigned char) tamp;
 "482
 [e = _TXB2SIDH -> _tamp `uc ]
 "483
 }
-[; ;inc\CANlib.h: 483: }
+[; ;can\CANlib.h: 483: }
 [e $U 2208  ]
 "485
 [e :U 2202 ]
-[; ;inc\CANlib.h: 485: else
-[; ;inc\CANlib.h: 487: {
+[; ;can\CANlib.h: 485: else
+[; ;can\CANlib.h: 487: {
 "487
 {
-[; ;inc\CANlib.h: 488: TXB2SIDLbits.EXIDE = 0x00;
+[; ;can\CANlib.h: 488: TXB2SIDLbits.EXIDE = 0x00;
 "488
 [e = . . _TXB2SIDLbits 0 3 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 490: tamp = (identifier >> 3);
+[; ;can\CANlib.h: 490: tamp = (identifier >> 3);
 "490
 [e = _tamp >> _identifier -> 3 `i ]
-[; ;inc\CANlib.h: 491: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 491: tamp = tamp & 0x000000FF;
 "491
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 492: TXB2SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 492: TXB2SIDH = (unsigned char) tamp;
 "492
 [e = _TXB2SIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 494: tamp = identifier & 0x00000007;
+[; ;can\CANlib.h: 494: tamp = identifier & 0x00000007;
 "494
 [e = _tamp & _identifier -> -> -> 7 `i `l `ul ]
-[; ;inc\CANlib.h: 495: tamp = tamp << 5;
+[; ;can\CANlib.h: 495: tamp = tamp << 5;
 "495
 [e = _tamp << _tamp -> 5 `i ]
-[; ;inc\CANlib.h: 496: TXB2SIDL = TXB2SIDL & 0b00011111;
+[; ;can\CANlib.h: 496: TXB2SIDL = TXB2SIDL & 0b00011111;
 "496
 [e = _TXB2SIDL -> & -> _TXB2SIDL `i -> 31 `i `uc ]
-[; ;inc\CANlib.h: 497: TXB2SIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 497: TXB2SIDL = (unsigned char) tamp;
 "497
 [e = _TXB2SIDL -> _tamp `uc ]
 "498
 }
 [e :U 2208 ]
-[; ;inc\CANlib.h: 498: }
-[; ;inc\CANlib.h: 500: if (0b00000001 & flags)
+[; ;can\CANlib.h: 498: }
+[; ;can\CANlib.h: 500: if (0b00000001 & flags)
 "500
 [e $ ! != & -> 1 `i -> _flags `i -> 0 `i 2209  ]
-[; ;inc\CANlib.h: 501: TXB2CONbits.TXPRI0 = 0x01;
+[; ;can\CANlib.h: 501: TXB2CONbits.TXPRI0 = 0x01;
 "501
 [e = . . _TXB2CONbits 0 0 -> -> 1 `i `uc ]
 [e $U 2210  ]
 "502
 [e :U 2209 ]
-[; ;inc\CANlib.h: 502: else
-[; ;inc\CANlib.h: 503: TXB2CONbits.TXPRI0 = 0x00;
+[; ;can\CANlib.h: 502: else
+[; ;can\CANlib.h: 503: TXB2CONbits.TXPRI0 = 0x00;
 "503
 [e = . . _TXB2CONbits 0 0 -> -> 0 `i `uc ]
 [e :U 2210 ]
-[; ;inc\CANlib.h: 504: if (0b00000010 & flags)
+[; ;can\CANlib.h: 504: if (0b00000010 & flags)
 "504
 [e $ ! != & -> 2 `i -> _flags `i -> 0 `i 2211  ]
-[; ;inc\CANlib.h: 505: TXB2CONbits.TXPRI1 = 0x01;
+[; ;can\CANlib.h: 505: TXB2CONbits.TXPRI1 = 0x01;
 "505
 [e = . . _TXB2CONbits 0 1 -> -> 1 `i `uc ]
 [e $U 2212  ]
 "506
 [e :U 2211 ]
-[; ;inc\CANlib.h: 506: else
-[; ;inc\CANlib.h: 507: TXB2CONbits.TXPRI1 = 0x00;
+[; ;can\CANlib.h: 506: else
+[; ;can\CANlib.h: 507: TXB2CONbits.TXPRI1 = 0x00;
 "507
 [e = . . _TXB2CONbits 0 1 -> -> 0 `i `uc ]
 [e :U 2212 ]
-[; ;inc\CANlib.h: 509: TXB2D0 = data[0];
+[; ;can\CANlib.h: 509: TXB2D0 = data[0];
 "509
 [e = _TXB2D0 *U + _data * -> -> 0 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 510: TXB2D1 = data[1];
+[; ;can\CANlib.h: 510: TXB2D1 = data[1];
 "510
 [e = _TXB2D1 *U + _data * -> -> 1 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 511: TXB2D2 = data[2];
+[; ;can\CANlib.h: 511: TXB2D2 = data[2];
 "511
 [e = _TXB2D2 *U + _data * -> -> 2 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 512: TXB2D3 = data[3];
+[; ;can\CANlib.h: 512: TXB2D3 = data[3];
 "512
 [e = _TXB2D3 *U + _data * -> -> 3 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 513: TXB2D4 = data[4];
+[; ;can\CANlib.h: 513: TXB2D4 = data[4];
 "513
 [e = _TXB2D4 *U + _data * -> -> 4 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 514: TXB2D5 = data[5];
+[; ;can\CANlib.h: 514: TXB2D5 = data[5];
 "514
 [e = _TXB2D5 *U + _data * -> -> 5 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 515: TXB2D6 = data[6];
+[; ;can\CANlib.h: 515: TXB2D6 = data[6];
 "515
 [e = _TXB2D6 *U + _data * -> -> 6 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 516: TXB2D7 = data[7];
+[; ;can\CANlib.h: 516: TXB2D7 = data[7];
 "516
 [e = _TXB2D7 *U + _data * -> -> 7 `i `x -> -> # *U _data `i `x ]
-[; ;inc\CANlib.h: 518: TXB2CONbits.TXREQ = 0x01;
+[; ;can\CANlib.h: 518: TXB2CONbits.TXREQ = 0x01;
 "518
 [e = . . _TXB2CONbits 0 3 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 520: return;
+[; ;can\CANlib.h: 520: return;
 "520
 [e $UE 2170  ]
 "521
 }
 [e :U 2199 ]
-[; ;inc\CANlib.h: 521: }
-[; ;inc\CANlib.h: 522: }
+[; ;can\CANlib.h: 521: }
+[; ;can\CANlib.h: 522: }
 "522
 [e :UE 2170 ]
 }
@@ -17400,8 +17400,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANreceiveMessage `(uc ~T0 @X0 1 ef1`*S2155 ]
 "529
 {
-[; ;inc\CANlib.h: 528: BYTE CANreceiveMessage (CANmessage *msg)
-[; ;inc\CANlib.h: 529: {
+[; ;can\CANlib.h: 528: BYTE CANreceiveMessage (CANmessage *msg)
+[; ;can\CANlib.h: 529: {
 [e :U _CANreceiveMessage ]
 "528
 [v _msg `*S2155 ~T0 @X0 1 r1 ]
@@ -17411,276 +17411,276 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _tamp `uc ~T0 @X0 1 a ]
 "531
 [v _error `uc ~T0 @X0 1 a ]
-[; ;inc\CANlib.h: 530: BYTE tamp;
-[; ;inc\CANlib.h: 531: BYTE error = 0;
+[; ;can\CANlib.h: 530: BYTE tamp;
+[; ;can\CANlib.h: 531: BYTE error = 0;
 [e = _error -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 533: if (COMSTATbits.RXB0OVFL == 0x01)
+[; ;can\CANlib.h: 533: if (COMSTATbits.RXB0OVFL == 0x01)
 "533
 [e $ ! == -> . . _COMSTATbits 3 2 `i -> 1 `i 2214  ]
-[; ;inc\CANlib.h: 534: error |= CAN_RX_BUFFER_1_OVFL;
+[; ;can\CANlib.h: 534: error |= CAN_RX_BUFFER_1_OVFL;
 "534
 [e =| _error -> . `E16888 0 `uc ]
 [e :U 2214 ]
-[; ;inc\CANlib.h: 536: if (COMSTATbits.RXB1OVFL == 0x01)
+[; ;can\CANlib.h: 536: if (COMSTATbits.RXB1OVFL == 0x01)
 "536
 [e $ ! == -> . . _COMSTATbits 3 1 `i -> 1 `i 2215  ]
-[; ;inc\CANlib.h: 537: error |= CAN_RX_BUFFER_2_OVFL;
+[; ;can\CANlib.h: 537: error |= CAN_RX_BUFFER_2_OVFL;
 "537
 [e =| _error -> . `E16888 1 `uc ]
 [e :U 2215 ]
-[; ;inc\CANlib.h: 540: if (RXB1CONbits.RXFUL ==0x01)
+[; ;can\CANlib.h: 540: if (RXB1CONbits.RXFUL ==0x01)
 "540
 [e $ ! == -> . . _RXB1CONbits 0 7 `i -> 1 `i 2216  ]
-[; ;inc\CANlib.h: 541: {
+[; ;can\CANlib.h: 541: {
 "541
 {
-[; ;inc\CANlib.h: 542: msg->identifier = 0;
+[; ;can\CANlib.h: 542: msg->identifier = 0;
 "542
 [e = . *U _msg 0 -> -> -> 0 `i `l `ul ]
-[; ;inc\CANlib.h: 543: msg->data[0] =RXB1D0;
+[; ;can\CANlib.h: 543: msg->data[0] =RXB1D0;
 "543
 [e = *U + &U . *U _msg 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB1D0 ]
-[; ;inc\CANlib.h: 544: msg->data[1] =RXB1D1;
+[; ;can\CANlib.h: 544: msg->data[1] =RXB1D1;
 "544
 [e = *U + &U . *U _msg 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB1D1 ]
-[; ;inc\CANlib.h: 545: msg->data[2] =RXB1D2;
+[; ;can\CANlib.h: 545: msg->data[2] =RXB1D2;
 "545
 [e = *U + &U . *U _msg 1 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB1D2 ]
-[; ;inc\CANlib.h: 546: msg->data[3] =RXB1D3;
+[; ;can\CANlib.h: 546: msg->data[3] =RXB1D3;
 "546
 [e = *U + &U . *U _msg 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB1D3 ]
-[; ;inc\CANlib.h: 547: msg->data[4] =RXB1D4;
+[; ;can\CANlib.h: 547: msg->data[4] =RXB1D4;
 "547
 [e = *U + &U . *U _msg 1 * -> -> -> 4 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB1D4 ]
-[; ;inc\CANlib.h: 548: msg->data[5] =RXB1D5;
+[; ;can\CANlib.h: 548: msg->data[5] =RXB1D5;
 "548
 [e = *U + &U . *U _msg 1 * -> -> -> 5 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB1D5 ]
-[; ;inc\CANlib.h: 549: msg->data[6] =RXB1D6;
+[; ;can\CANlib.h: 549: msg->data[6] =RXB1D6;
 "549
 [e = *U + &U . *U _msg 1 * -> -> -> 6 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB1D6 ]
-[; ;inc\CANlib.h: 550: msg->data[7] =RXB1D7;
+[; ;can\CANlib.h: 550: msg->data[7] =RXB1D7;
 "550
 [e = *U + &U . *U _msg 1 * -> -> -> 7 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB1D7 ]
-[; ;inc\CANlib.h: 552: msg->RTR = RXB1DLCbits.RXRTR;
+[; ;can\CANlib.h: 552: msg->RTR = RXB1DLCbits.RXRTR;
 "552
 [e = . *U _msg 4 . . _RXB1DLCbits 0 6 ]
-[; ;inc\CANlib.h: 554: msg->length = RXB1DLC & 0x0F;
+[; ;can\CANlib.h: 554: msg->length = RXB1DLC & 0x0F;
 "554
 [e = . *U _msg 3 -> & -> _RXB1DLC `i -> 15 `i `uc ]
-[; ;inc\CANlib.h: 556: msg->type = RXB1SIDLbits.EXID;
+[; ;can\CANlib.h: 556: msg->type = RXB1SIDLbits.EXID;
 "556
 [e = . *U _msg 2 . . _RXB1SIDLbits 0 3 ]
-[; ;inc\CANlib.h: 558: if (RXB1SIDLbits.EXID == 0)
+[; ;can\CANlib.h: 558: if (RXB1SIDLbits.EXID == 0)
 "558
 [e $ ! == -> . . _RXB1SIDLbits 0 3 `i -> 0 `i 2217  ]
-[; ;inc\CANlib.h: 559: {
+[; ;can\CANlib.h: 559: {
 "559
 {
-[; ;inc\CANlib.h: 560: msg->identifier = ((unsigned long)RXB1SIDH)<< 3;
+[; ;can\CANlib.h: 560: msg->identifier = ((unsigned long)RXB1SIDH)<< 3;
 "560
 [e = . *U _msg 0 << -> _RXB1SIDH `ul -> 3 `i ]
-[; ;inc\CANlib.h: 561: tamp = (RXB1SIDL >> 5 ) & 0x07;
+[; ;can\CANlib.h: 561: tamp = (RXB1SIDL >> 5 ) & 0x07;
 "561
 [e = _tamp -> & >> -> _RXB1SIDL `i -> 5 `i -> 7 `i `uc ]
-[; ;inc\CANlib.h: 562: msg->identifier = msg->identifier + tamp;
+[; ;can\CANlib.h: 562: msg->identifier = msg->identifier + tamp;
 "562
 [e = . *U _msg 0 + . *U _msg 0 -> _tamp `ul ]
 "563
 }
-[; ;inc\CANlib.h: 563: }
+[; ;can\CANlib.h: 563: }
 [e $U 2218  ]
 "564
 [e :U 2217 ]
-[; ;inc\CANlib.h: 564: else
-[; ;inc\CANlib.h: 565: {
+[; ;can\CANlib.h: 564: else
+[; ;can\CANlib.h: 565: {
 "565
 {
-[; ;inc\CANlib.h: 566: msg->identifier = (unsigned long) RXB1EIDL;
+[; ;can\CANlib.h: 566: msg->identifier = (unsigned long) RXB1EIDL;
 "566
 [e = . *U _msg 0 -> _RXB1EIDL `ul ]
-[; ;inc\CANlib.h: 567: msg->identifier += ((unsigned long) RXB1EIDH) << 8;
+[; ;can\CANlib.h: 567: msg->identifier += ((unsigned long) RXB1EIDH) << 8;
 "567
 [e =+ . *U _msg 0 << -> _RXB1EIDH `ul -> 8 `i ]
-[; ;inc\CANlib.h: 569: if (RXB1SIDLbits.EID16)
+[; ;can\CANlib.h: 569: if (RXB1SIDLbits.EID16)
 "569
 [e $ ! != -> . . _RXB1SIDLbits 0 0 `i -> -> -> 0 `i `Vuc `i 2219  ]
-[; ;inc\CANlib.h: 570: msg->identifier |= 0x00010000;
+[; ;can\CANlib.h: 570: msg->identifier |= 0x00010000;
 "570
 [e =| . *U _msg 0 -> -> 65536 `l `ul ]
 [e :U 2219 ]
-[; ;inc\CANlib.h: 571: if (RXB1SIDLbits.EID17)
+[; ;can\CANlib.h: 571: if (RXB1SIDLbits.EID17)
 "571
 [e $ ! != -> . . _RXB1SIDLbits 0 1 `i -> -> -> 0 `i `Vuc `i 2220  ]
-[; ;inc\CANlib.h: 572: msg->identifier |= 0x00020000;
+[; ;can\CANlib.h: 572: msg->identifier |= 0x00020000;
 "572
 [e =| . *U _msg 0 -> -> 131072 `l `ul ]
 [e :U 2220 ]
-[; ;inc\CANlib.h: 573: if (RXB1SIDLbits.SID0)
+[; ;can\CANlib.h: 573: if (RXB1SIDLbits.SID0)
 "573
 [e $ ! != -> . . _RXB1SIDLbits 0 5 `i -> -> -> 0 `i `Vuc `i 2221  ]
-[; ;inc\CANlib.h: 574: msg->identifier |= 0x00040000;
+[; ;can\CANlib.h: 574: msg->identifier |= 0x00040000;
 "574
 [e =| . *U _msg 0 -> -> 262144 `l `ul ]
 [e :U 2221 ]
-[; ;inc\CANlib.h: 575: if (RXB1SIDLbits.SID1)
+[; ;can\CANlib.h: 575: if (RXB1SIDLbits.SID1)
 "575
 [e $ ! != -> . . _RXB1SIDLbits 0 6 `i -> -> -> 0 `i `Vuc `i 2222  ]
-[; ;inc\CANlib.h: 576: msg->identifier |= 0x00080000;
+[; ;can\CANlib.h: 576: msg->identifier |= 0x00080000;
 "576
 [e =| . *U _msg 0 -> -> 524288 `l `ul ]
 [e :U 2222 ]
-[; ;inc\CANlib.h: 577: if (RXB1SIDLbits.SID2)
+[; ;can\CANlib.h: 577: if (RXB1SIDLbits.SID2)
 "577
 [e $ ! != -> . . _RXB1SIDLbits 0 7 `i -> -> -> 0 `i `Vuc `i 2223  ]
-[; ;inc\CANlib.h: 578: msg->identifier |= 0x00100000;
+[; ;can\CANlib.h: 578: msg->identifier |= 0x00100000;
 "578
 [e =| . *U _msg 0 -> -> 1048576 `l `ul ]
 [e :U 2223 ]
-[; ;inc\CANlib.h: 580: msg->identifier |= ((unsigned long) RXB1SIDH) << 21;
+[; ;can\CANlib.h: 580: msg->identifier |= ((unsigned long) RXB1SIDH) << 21;
 "580
 [e =| . *U _msg 0 << -> _RXB1SIDH `ul -> 21 `i ]
 "581
 }
 [e :U 2218 ]
-[; ;inc\CANlib.h: 581: }
-[; ;inc\CANlib.h: 583: RXB1CONbits.RXFUL = 0x00;
+[; ;can\CANlib.h: 581: }
+[; ;can\CANlib.h: 583: RXB1CONbits.RXFUL = 0x00;
 "583
 [e = . . _RXB1CONbits 0 7 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 584: return (error);
+[; ;can\CANlib.h: 584: return (error);
 "584
 [e ) _error ]
 [e $UE 2213  ]
 "585
 }
 [e :U 2216 ]
-[; ;inc\CANlib.h: 585: }
-[; ;inc\CANlib.h: 587: if (RXB0CONbits.RXFUL ==0x01)
+[; ;can\CANlib.h: 585: }
+[; ;can\CANlib.h: 587: if (RXB0CONbits.RXFUL ==0x01)
 "587
 [e $ ! == -> . . _RXB0CONbits 0 7 `i -> 1 `i 2224  ]
-[; ;inc\CANlib.h: 588: {
+[; ;can\CANlib.h: 588: {
 "588
 {
-[; ;inc\CANlib.h: 589: msg->identifier = 0;
+[; ;can\CANlib.h: 589: msg->identifier = 0;
 "589
 [e = . *U _msg 0 -> -> -> 0 `i `l `ul ]
-[; ;inc\CANlib.h: 590: msg->data[0] =RXB0D0;
+[; ;can\CANlib.h: 590: msg->data[0] =RXB0D0;
 "590
 [e = *U + &U . *U _msg 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB0D0 ]
-[; ;inc\CANlib.h: 591: msg->data[1] =RXB0D1;
+[; ;can\CANlib.h: 591: msg->data[1] =RXB0D1;
 "591
 [e = *U + &U . *U _msg 1 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB0D1 ]
-[; ;inc\CANlib.h: 592: msg->data[2] =RXB0D2;
+[; ;can\CANlib.h: 592: msg->data[2] =RXB0D2;
 "592
 [e = *U + &U . *U _msg 1 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB0D2 ]
-[; ;inc\CANlib.h: 593: msg->data[3] =RXB0D3;
+[; ;can\CANlib.h: 593: msg->data[3] =RXB0D3;
 "593
 [e = *U + &U . *U _msg 1 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB0D3 ]
-[; ;inc\CANlib.h: 594: msg->data[4] =RXB0D4;
+[; ;can\CANlib.h: 594: msg->data[4] =RXB0D4;
 "594
 [e = *U + &U . *U _msg 1 * -> -> -> 4 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB0D4 ]
-[; ;inc\CANlib.h: 595: msg->data[5] =RXB0D5;
+[; ;can\CANlib.h: 595: msg->data[5] =RXB0D5;
 "595
 [e = *U + &U . *U _msg 1 * -> -> -> 5 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB0D5 ]
-[; ;inc\CANlib.h: 596: msg->data[6] =RXB0D6;
+[; ;can\CANlib.h: 596: msg->data[6] =RXB0D6;
 "596
 [e = *U + &U . *U _msg 1 * -> -> -> 6 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB0D6 ]
-[; ;inc\CANlib.h: 597: msg->data[7] =RXB0D7;
+[; ;can\CANlib.h: 597: msg->data[7] =RXB0D7;
 "597
 [e = *U + &U . *U _msg 1 * -> -> -> 7 `i `ui `ux -> -> # *U &U . *U _msg 1 `ui `ux _RXB0D7 ]
-[; ;inc\CANlib.h: 599: msg->RTR = RXB0DLCbits.RXRTR;
+[; ;can\CANlib.h: 599: msg->RTR = RXB0DLCbits.RXRTR;
 "599
 [e = . *U _msg 4 . . _RXB0DLCbits 0 6 ]
-[; ;inc\CANlib.h: 601: msg->length = RXB0DLC & 0x0F;
+[; ;can\CANlib.h: 601: msg->length = RXB0DLC & 0x0F;
 "601
 [e = . *U _msg 3 -> & -> _RXB0DLC `i -> 15 `i `uc ]
-[; ;inc\CANlib.h: 603: msg->type = RXB0SIDLbits.EXID;
+[; ;can\CANlib.h: 603: msg->type = RXB0SIDLbits.EXID;
 "603
 [e = . *U _msg 2 . . _RXB0SIDLbits 0 3 ]
-[; ;inc\CANlib.h: 605: if (RXB0SIDLbits.EXID == 0)
+[; ;can\CANlib.h: 605: if (RXB0SIDLbits.EXID == 0)
 "605
 [e $ ! == -> . . _RXB0SIDLbits 0 3 `i -> 0 `i 2225  ]
-[; ;inc\CANlib.h: 606: {
+[; ;can\CANlib.h: 606: {
 "606
 {
-[; ;inc\CANlib.h: 607: msg->identifier = ((unsigned long)RXB0SIDH)<< 3;
+[; ;can\CANlib.h: 607: msg->identifier = ((unsigned long)RXB0SIDH)<< 3;
 "607
 [e = . *U _msg 0 << -> _RXB0SIDH `ul -> 3 `i ]
-[; ;inc\CANlib.h: 608: tamp = (RXB0SIDL >> 5 ) & 0x07;
+[; ;can\CANlib.h: 608: tamp = (RXB0SIDL >> 5 ) & 0x07;
 "608
 [e = _tamp -> & >> -> _RXB0SIDL `i -> 5 `i -> 7 `i `uc ]
-[; ;inc\CANlib.h: 609: msg->identifier = msg->identifier + tamp;
+[; ;can\CANlib.h: 609: msg->identifier = msg->identifier + tamp;
 "609
 [e = . *U _msg 0 + . *U _msg 0 -> _tamp `ul ]
 "610
 }
-[; ;inc\CANlib.h: 610: }
+[; ;can\CANlib.h: 610: }
 [e $U 2226  ]
 "611
 [e :U 2225 ]
-[; ;inc\CANlib.h: 611: else
-[; ;inc\CANlib.h: 612: {
+[; ;can\CANlib.h: 611: else
+[; ;can\CANlib.h: 612: {
 "612
 {
-[; ;inc\CANlib.h: 613: msg->identifier = (unsigned long) RXB0EIDL;
+[; ;can\CANlib.h: 613: msg->identifier = (unsigned long) RXB0EIDL;
 "613
 [e = . *U _msg 0 -> _RXB0EIDL `ul ]
-[; ;inc\CANlib.h: 614: msg->identifier += ((unsigned long) RXB0EIDH) << 8;
+[; ;can\CANlib.h: 614: msg->identifier += ((unsigned long) RXB0EIDH) << 8;
 "614
 [e =+ . *U _msg 0 << -> _RXB0EIDH `ul -> 8 `i ]
-[; ;inc\CANlib.h: 616: if (RXB0SIDLbits.EID16)
+[; ;can\CANlib.h: 616: if (RXB0SIDLbits.EID16)
 "616
 [e $ ! != -> . . _RXB0SIDLbits 0 0 `i -> -> -> 0 `i `Vuc `i 2227  ]
-[; ;inc\CANlib.h: 617: msg->identifier |= 0x00010000;
+[; ;can\CANlib.h: 617: msg->identifier |= 0x00010000;
 "617
 [e =| . *U _msg 0 -> -> 65536 `l `ul ]
 [e :U 2227 ]
-[; ;inc\CANlib.h: 618: if (RXB0SIDLbits.EID17)
+[; ;can\CANlib.h: 618: if (RXB0SIDLbits.EID17)
 "618
 [e $ ! != -> . . _RXB0SIDLbits 0 1 `i -> -> -> 0 `i `Vuc `i 2228  ]
-[; ;inc\CANlib.h: 619: msg->identifier |= 0x00020000;
+[; ;can\CANlib.h: 619: msg->identifier |= 0x00020000;
 "619
 [e =| . *U _msg 0 -> -> 131072 `l `ul ]
 [e :U 2228 ]
-[; ;inc\CANlib.h: 620: if (RXB0SIDLbits.SID0)
+[; ;can\CANlib.h: 620: if (RXB0SIDLbits.SID0)
 "620
 [e $ ! != -> . . _RXB0SIDLbits 0 5 `i -> -> -> 0 `i `Vuc `i 2229  ]
-[; ;inc\CANlib.h: 621: msg->identifier |= 0x00040000;
+[; ;can\CANlib.h: 621: msg->identifier |= 0x00040000;
 "621
 [e =| . *U _msg 0 -> -> 262144 `l `ul ]
 [e :U 2229 ]
-[; ;inc\CANlib.h: 622: if (RXB0SIDLbits.SID1)
+[; ;can\CANlib.h: 622: if (RXB0SIDLbits.SID1)
 "622
 [e $ ! != -> . . _RXB0SIDLbits 0 6 `i -> -> -> 0 `i `Vuc `i 2230  ]
-[; ;inc\CANlib.h: 623: msg->identifier |= 0x00080000;
+[; ;can\CANlib.h: 623: msg->identifier |= 0x00080000;
 "623
 [e =| . *U _msg 0 -> -> 524288 `l `ul ]
 [e :U 2230 ]
-[; ;inc\CANlib.h: 624: if (RXB0SIDLbits.SID2)
+[; ;can\CANlib.h: 624: if (RXB0SIDLbits.SID2)
 "624
 [e $ ! != -> . . _RXB0SIDLbits 0 7 `i -> -> -> 0 `i `Vuc `i 2231  ]
-[; ;inc\CANlib.h: 625: msg->identifier |= 0x00100000;
+[; ;can\CANlib.h: 625: msg->identifier |= 0x00100000;
 "625
 [e =| . *U _msg 0 -> -> 1048576 `l `ul ]
 [e :U 2231 ]
-[; ;inc\CANlib.h: 627: msg->identifier |= ((unsigned long) RXB0SIDH) << 21;
+[; ;can\CANlib.h: 627: msg->identifier |= ((unsigned long) RXB0SIDH) << 21;
 "627
 [e =| . *U _msg 0 << -> _RXB0SIDH `ul -> 21 `i ]
 "629
 }
 [e :U 2226 ]
-[; ;inc\CANlib.h: 629: }
-[; ;inc\CANlib.h: 630: RXB0CONbits.RXFUL = 0x00;
+[; ;can\CANlib.h: 629: }
+[; ;can\CANlib.h: 630: RXB0CONbits.RXFUL = 0x00;
 "630
 [e = . . _RXB0CONbits 0 7 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 632: return (error);
+[; ;can\CANlib.h: 632: return (error);
 "632
 [e ) _error ]
 [e $UE 2213  ]
 "633
 }
 [e :U 2224 ]
-[; ;inc\CANlib.h: 633: }
-[; ;inc\CANlib.h: 634: }
+[; ;can\CANlib.h: 633: }
+[; ;can\CANlib.h: 634: }
 "634
 [e :UE 2213 ]
 }
@@ -17688,8 +17688,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANSetMask `(v ~T0 @X0 1 ef3`E16878`ul`E16844 ]
 "641
 {
-[; ;inc\CANlib.h: 640: void CANSetMask(enum CAN_MASK numBuffer, unsigned long mask, enum CAN_CONFIG_FLAGS type)
-[; ;inc\CANlib.h: 641: { unsigned long tamp;
+[; ;can\CANlib.h: 640: void CANSetMask(enum CAN_MASK numBuffer, unsigned long mask, enum CAN_CONFIG_FLAGS type)
+[; ;can\CANlib.h: 641: { unsigned long tamp;
 [e :U _CANSetMask ]
 "640
 [v _numBuffer `E16878 ~T0 @X0 1 r1 ]
@@ -17698,271 +17698,271 @@ Version 3.2 HI-TECH Software Intermediate Code
 "641
 [f ]
 [v _tamp `ul ~T0 @X0 1 a ]
-[; ;inc\CANlib.h: 643: if ((numBuffer ==CAN_MASK_B1) && (type == CAN_CONFIG_STD_MSG))
+[; ;can\CANlib.h: 643: if ((numBuffer ==CAN_MASK_B1) && (type == CAN_CONFIG_STD_MSG))
 "643
 [e $ ! && == -> _numBuffer `i -> . `E16878 0 `i == -> _type `i -> . `E16844 11 `i 2233  ]
-[; ;inc\CANlib.h: 644: {
+[; ;can\CANlib.h: 644: {
 "644
 {
-[; ;inc\CANlib.h: 645: tamp = (mask >> 3);
+[; ;can\CANlib.h: 645: tamp = (mask >> 3);
 "645
 [e = _tamp >> _mask -> 3 `i ]
-[; ;inc\CANlib.h: 646: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 646: tamp = tamp & 0x000000FF;
 "646
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 647: RXM0SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 647: RXM0SIDH = (unsigned char) tamp;
 "647
 [e = _RXM0SIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 649: tamp = mask & 0x00000007;
+[; ;can\CANlib.h: 649: tamp = mask & 0x00000007;
 "649
 [e = _tamp & _mask -> -> -> 7 `i `l `ul ]
-[; ;inc\CANlib.h: 650: tamp = tamp << 5;
+[; ;can\CANlib.h: 650: tamp = tamp << 5;
 "650
 [e = _tamp << _tamp -> 5 `i ]
-[; ;inc\CANlib.h: 651: RXM0SIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 651: RXM0SIDL = (unsigned char) tamp;
 "651
 [e = _RXM0SIDL -> _tamp `uc ]
 "652
 }
 [e :U 2233 ]
-[; ;inc\CANlib.h: 652: }
-[; ;inc\CANlib.h: 654: if ((numBuffer ==CAN_MASK_B2) && (type == CAN_CONFIG_STD_MSG))
+[; ;can\CANlib.h: 652: }
+[; ;can\CANlib.h: 654: if ((numBuffer ==CAN_MASK_B2) && (type == CAN_CONFIG_STD_MSG))
 "654
 [e $ ! && == -> _numBuffer `i -> . `E16878 1 `i == -> _type `i -> . `E16844 11 `i 2234  ]
-[; ;inc\CANlib.h: 655: {
+[; ;can\CANlib.h: 655: {
 "655
 {
-[; ;inc\CANlib.h: 656: tamp = (mask >> 3);
+[; ;can\CANlib.h: 656: tamp = (mask >> 3);
 "656
 [e = _tamp >> _mask -> 3 `i ]
-[; ;inc\CANlib.h: 657: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 657: tamp = tamp & 0x000000FF;
 "657
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 658: RXM1SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 658: RXM1SIDH = (unsigned char) tamp;
 "658
 [e = _RXM1SIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 660: tamp = mask & 0x00000007;
+[; ;can\CANlib.h: 660: tamp = mask & 0x00000007;
 "660
 [e = _tamp & _mask -> -> -> 7 `i `l `ul ]
-[; ;inc\CANlib.h: 661: tamp = tamp << 5;
+[; ;can\CANlib.h: 661: tamp = tamp << 5;
 "661
 [e = _tamp << _tamp -> 5 `i ]
-[; ;inc\CANlib.h: 662: RXM1SIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 662: RXM1SIDL = (unsigned char) tamp;
 "662
 [e = _RXM1SIDL -> _tamp `uc ]
 "663
 }
 [e :U 2234 ]
-[; ;inc\CANlib.h: 663: }
-[; ;inc\CANlib.h: 665: if ((numBuffer ==CAN_MASK_B1) && (type == CAN_CONFIG_XTD_MSG))
+[; ;can\CANlib.h: 663: }
+[; ;can\CANlib.h: 665: if ((numBuffer ==CAN_MASK_B1) && (type == CAN_CONFIG_XTD_MSG))
 "665
 [e $ ! && == -> _numBuffer `i -> . `E16878 0 `i == -> _type `i -> . `E16844 12 `i 2235  ]
-[; ;inc\CANlib.h: 666: {
+[; ;can\CANlib.h: 666: {
 "666
 {
-[; ;inc\CANlib.h: 667: tamp = mask & 0x000000FF;
+[; ;can\CANlib.h: 667: tamp = mask & 0x000000FF;
 "667
 [e = _tamp & _mask -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 668: RXM0EIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 668: RXM0EIDL = (unsigned char) tamp;
 "668
 [e = _RXM0EIDL -> _tamp `uc ]
-[; ;inc\CANlib.h: 670: tamp = mask & 0x0000FF00;
+[; ;can\CANlib.h: 670: tamp = mask & 0x0000FF00;
 "670
 [e = _tamp & _mask -> -> 65280 `ui `ul ]
-[; ;inc\CANlib.h: 671: tamp = tamp >> 8;
+[; ;can\CANlib.h: 671: tamp = tamp >> 8;
 "671
 [e = _tamp >> _tamp -> 8 `i ]
-[; ;inc\CANlib.h: 672: RXM0EIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 672: RXM0EIDH = (unsigned char) tamp;
 "672
 [e = _RXM0EIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 674: if (mask & 0x00010000)
+[; ;can\CANlib.h: 674: if (mask & 0x00010000)
 "674
 [e $ ! != & _mask -> -> 65536 `l `ul -> -> 0 `i `ul 2236  ]
-[; ;inc\CANlib.h: 675: RXM0SIDLbits.EID16 = 0x01;
+[; ;can\CANlib.h: 675: RXM0SIDLbits.EID16 = 0x01;
 "675
 [e = . . _RXM0SIDLbits 0 0 -> -> 1 `i `uc ]
 [e $U 2237  ]
 "676
 [e :U 2236 ]
-[; ;inc\CANlib.h: 676: else
-[; ;inc\CANlib.h: 677: RXM0SIDLbits.EID16 = 0x00;
+[; ;can\CANlib.h: 676: else
+[; ;can\CANlib.h: 677: RXM0SIDLbits.EID16 = 0x00;
 "677
 [e = . . _RXM0SIDLbits 0 0 -> -> 0 `i `uc ]
 [e :U 2237 ]
-[; ;inc\CANlib.h: 679: if (mask & 0x00020000)
+[; ;can\CANlib.h: 679: if (mask & 0x00020000)
 "679
 [e $ ! != & _mask -> -> 131072 `l `ul -> -> 0 `i `ul 2238  ]
-[; ;inc\CANlib.h: 680: RXM0SIDLbits.EID17 = 0x01;
+[; ;can\CANlib.h: 680: RXM0SIDLbits.EID17 = 0x01;
 "680
 [e = . . _RXM0SIDLbits 0 1 -> -> 1 `i `uc ]
 [e $U 2239  ]
 "681
 [e :U 2238 ]
-[; ;inc\CANlib.h: 681: else
-[; ;inc\CANlib.h: 682: RXM0SIDLbits.EID17 = 0x00;
+[; ;can\CANlib.h: 681: else
+[; ;can\CANlib.h: 682: RXM0SIDLbits.EID17 = 0x00;
 "682
 [e = . . _RXM0SIDLbits 0 1 -> -> 0 `i `uc ]
 [e :U 2239 ]
-[; ;inc\CANlib.h: 684: if (mask & 0x00040000)
+[; ;can\CANlib.h: 684: if (mask & 0x00040000)
 "684
 [e $ ! != & _mask -> -> 262144 `l `ul -> -> 0 `i `ul 2240  ]
-[; ;inc\CANlib.h: 685: RXM0SIDLbits.SID0 = 0x01;
+[; ;can\CANlib.h: 685: RXM0SIDLbits.SID0 = 0x01;
 "685
 [e = . . _RXM0SIDLbits 0 5 -> -> 1 `i `uc ]
 [e $U 2241  ]
 "686
 [e :U 2240 ]
-[; ;inc\CANlib.h: 686: else
-[; ;inc\CANlib.h: 687: RXM0SIDLbits.SID0 = 0x00;
+[; ;can\CANlib.h: 686: else
+[; ;can\CANlib.h: 687: RXM0SIDLbits.SID0 = 0x00;
 "687
 [e = . . _RXM0SIDLbits 0 5 -> -> 0 `i `uc ]
 [e :U 2241 ]
-[; ;inc\CANlib.h: 689: if (mask & 0x00080000)
+[; ;can\CANlib.h: 689: if (mask & 0x00080000)
 "689
 [e $ ! != & _mask -> -> 524288 `l `ul -> -> 0 `i `ul 2242  ]
-[; ;inc\CANlib.h: 690: RXM0SIDLbits.SID1 = 0x01;
+[; ;can\CANlib.h: 690: RXM0SIDLbits.SID1 = 0x01;
 "690
 [e = . . _RXM0SIDLbits 0 6 -> -> 1 `i `uc ]
 [e $U 2243  ]
 "691
 [e :U 2242 ]
-[; ;inc\CANlib.h: 691: else
-[; ;inc\CANlib.h: 692: RXM0SIDLbits.SID1 = 0x00;
+[; ;can\CANlib.h: 691: else
+[; ;can\CANlib.h: 692: RXM0SIDLbits.SID1 = 0x00;
 "692
 [e = . . _RXM0SIDLbits 0 6 -> -> 0 `i `uc ]
 [e :U 2243 ]
-[; ;inc\CANlib.h: 694: if (mask & 0x00100000)
+[; ;can\CANlib.h: 694: if (mask & 0x00100000)
 "694
 [e $ ! != & _mask -> -> 1048576 `l `ul -> -> 0 `i `ul 2244  ]
-[; ;inc\CANlib.h: 695: RXM0SIDLbits.SID2 = 0x01 ;
+[; ;can\CANlib.h: 695: RXM0SIDLbits.SID2 = 0x01 ;
 "695
 [e = . . _RXM0SIDLbits 0 7 -> -> 1 `i `uc ]
 [e $U 2245  ]
 "696
 [e :U 2244 ]
-[; ;inc\CANlib.h: 696: else
-[; ;inc\CANlib.h: 697: RXM0SIDLbits.SID2 = 0x00 ;
+[; ;can\CANlib.h: 696: else
+[; ;can\CANlib.h: 697: RXM0SIDLbits.SID2 = 0x00 ;
 "697
 [e = . . _RXM0SIDLbits 0 7 -> -> 0 `i `uc ]
 [e :U 2245 ]
-[; ;inc\CANlib.h: 699: tamp = (mask >> 21);
+[; ;can\CANlib.h: 699: tamp = (mask >> 21);
 "699
 [e = _tamp >> _mask -> 21 `i ]
-[; ;inc\CANlib.h: 700: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 700: tamp = tamp & 0x000000FF;
 "700
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 701: RXM0SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 701: RXM0SIDH = (unsigned char) tamp;
 "701
 [e = _RXM0SIDH -> _tamp `uc ]
 "702
 }
 [e :U 2235 ]
-[; ;inc\CANlib.h: 702: }
-[; ;inc\CANlib.h: 704: if ((numBuffer ==CAN_MASK_B2) && (type == CAN_CONFIG_XTD_MSG))
+[; ;can\CANlib.h: 702: }
+[; ;can\CANlib.h: 704: if ((numBuffer ==CAN_MASK_B2) && (type == CAN_CONFIG_XTD_MSG))
 "704
 [e $ ! && == -> _numBuffer `i -> . `E16878 1 `i == -> _type `i -> . `E16844 12 `i 2246  ]
-[; ;inc\CANlib.h: 705: {
+[; ;can\CANlib.h: 705: {
 "705
 {
-[; ;inc\CANlib.h: 706: tamp = mask & 0x000000FF;
+[; ;can\CANlib.h: 706: tamp = mask & 0x000000FF;
 "706
 [e = _tamp & _mask -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 707: RXM1EIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 707: RXM1EIDL = (unsigned char) tamp;
 "707
 [e = _RXM1EIDL -> _tamp `uc ]
-[; ;inc\CANlib.h: 709: tamp = mask & 0x0000FF00;
+[; ;can\CANlib.h: 709: tamp = mask & 0x0000FF00;
 "709
 [e = _tamp & _mask -> -> 65280 `ui `ul ]
-[; ;inc\CANlib.h: 710: tamp = tamp >> 8;
+[; ;can\CANlib.h: 710: tamp = tamp >> 8;
 "710
 [e = _tamp >> _tamp -> 8 `i ]
-[; ;inc\CANlib.h: 711: RXM1EIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 711: RXM1EIDH = (unsigned char) tamp;
 "711
 [e = _RXM1EIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 713: if (mask & 0x00010000)
+[; ;can\CANlib.h: 713: if (mask & 0x00010000)
 "713
 [e $ ! != & _mask -> -> 65536 `l `ul -> -> 0 `i `ul 2247  ]
-[; ;inc\CANlib.h: 714: RXM1SIDLbits.EID16 = 0x01;
+[; ;can\CANlib.h: 714: RXM1SIDLbits.EID16 = 0x01;
 "714
 [e = . . _RXM1SIDLbits 0 0 -> -> 1 `i `uc ]
 [e $U 2248  ]
 "715
 [e :U 2247 ]
-[; ;inc\CANlib.h: 715: else
-[; ;inc\CANlib.h: 716: RXM1SIDLbits.EID16 = 0x00;
+[; ;can\CANlib.h: 715: else
+[; ;can\CANlib.h: 716: RXM1SIDLbits.EID16 = 0x00;
 "716
 [e = . . _RXM1SIDLbits 0 0 -> -> 0 `i `uc ]
 [e :U 2248 ]
-[; ;inc\CANlib.h: 718: if (mask & 0x00020000)
+[; ;can\CANlib.h: 718: if (mask & 0x00020000)
 "718
 [e $ ! != & _mask -> -> 131072 `l `ul -> -> 0 `i `ul 2249  ]
-[; ;inc\CANlib.h: 719: RXM1SIDLbits.EID17 = 0x01;
+[; ;can\CANlib.h: 719: RXM1SIDLbits.EID17 = 0x01;
 "719
 [e = . . _RXM1SIDLbits 0 1 -> -> 1 `i `uc ]
 [e $U 2250  ]
 "720
 [e :U 2249 ]
-[; ;inc\CANlib.h: 720: else
-[; ;inc\CANlib.h: 721: RXM1SIDLbits.EID17 = 0x00;
+[; ;can\CANlib.h: 720: else
+[; ;can\CANlib.h: 721: RXM1SIDLbits.EID17 = 0x00;
 "721
 [e = . . _RXM1SIDLbits 0 1 -> -> 0 `i `uc ]
 [e :U 2250 ]
-[; ;inc\CANlib.h: 723: if (mask & 0x00040000)
+[; ;can\CANlib.h: 723: if (mask & 0x00040000)
 "723
 [e $ ! != & _mask -> -> 262144 `l `ul -> -> 0 `i `ul 2251  ]
-[; ;inc\CANlib.h: 724: RXM1SIDLbits.SID0 = 0x01;
+[; ;can\CANlib.h: 724: RXM1SIDLbits.SID0 = 0x01;
 "724
 [e = . . _RXM1SIDLbits 0 5 -> -> 1 `i `uc ]
 [e $U 2252  ]
 "725
 [e :U 2251 ]
-[; ;inc\CANlib.h: 725: else
-[; ;inc\CANlib.h: 726: RXM1SIDLbits.SID0 = 0x00;
+[; ;can\CANlib.h: 725: else
+[; ;can\CANlib.h: 726: RXM1SIDLbits.SID0 = 0x00;
 "726
 [e = . . _RXM1SIDLbits 0 5 -> -> 0 `i `uc ]
 [e :U 2252 ]
-[; ;inc\CANlib.h: 728: if (mask & 0x00080000)
+[; ;can\CANlib.h: 728: if (mask & 0x00080000)
 "728
 [e $ ! != & _mask -> -> 524288 `l `ul -> -> 0 `i `ul 2253  ]
-[; ;inc\CANlib.h: 729: RXM1SIDLbits.SID1 = 0x01;
+[; ;can\CANlib.h: 729: RXM1SIDLbits.SID1 = 0x01;
 "729
 [e = . . _RXM1SIDLbits 0 6 -> -> 1 `i `uc ]
 [e $U 2254  ]
 "730
 [e :U 2253 ]
-[; ;inc\CANlib.h: 730: else
-[; ;inc\CANlib.h: 731: RXM1SIDLbits.SID1 = 0x00;
+[; ;can\CANlib.h: 730: else
+[; ;can\CANlib.h: 731: RXM1SIDLbits.SID1 = 0x00;
 "731
 [e = . . _RXM1SIDLbits 0 6 -> -> 0 `i `uc ]
 [e :U 2254 ]
-[; ;inc\CANlib.h: 733: if (mask & 0x00100000)
+[; ;can\CANlib.h: 733: if (mask & 0x00100000)
 "733
 [e $ ! != & _mask -> -> 1048576 `l `ul -> -> 0 `i `ul 2255  ]
-[; ;inc\CANlib.h: 734: RXM1SIDLbits.SID2 = 0x01 ;
+[; ;can\CANlib.h: 734: RXM1SIDLbits.SID2 = 0x01 ;
 "734
 [e = . . _RXM1SIDLbits 0 7 -> -> 1 `i `uc ]
 [e $U 2256  ]
 "735
 [e :U 2255 ]
-[; ;inc\CANlib.h: 735: else
-[; ;inc\CANlib.h: 736: RXM1SIDLbits.SID2 = 0x00 ;
+[; ;can\CANlib.h: 735: else
+[; ;can\CANlib.h: 736: RXM1SIDLbits.SID2 = 0x00 ;
 "736
 [e = . . _RXM1SIDLbits 0 7 -> -> 0 `i `uc ]
 [e :U 2256 ]
-[; ;inc\CANlib.h: 738: tamp = (mask >> 21);
+[; ;can\CANlib.h: 738: tamp = (mask >> 21);
 "738
 [e = _tamp >> _mask -> 21 `i ]
-[; ;inc\CANlib.h: 739: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 739: tamp = tamp & 0x000000FF;
 "739
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 740: RXM1SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 740: RXM1SIDH = (unsigned char) tamp;
 "740
 [e = _RXM1SIDH -> _tamp `uc ]
 "741
 }
 [e :U 2246 ]
-[; ;inc\CANlib.h: 741: }
-[; ;inc\CANlib.h: 742: }
+[; ;can\CANlib.h: 741: }
+[; ;can\CANlib.h: 742: }
 "742
 [e :UE 2232 ]
 }
@@ -17970,8 +17970,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANSetFilter `(v ~T0 @X0 1 ef3`E16881`ul`E16844 ]
 "749
 {
-[; ;inc\CANlib.h: 748: void CANSetFilter(enum CAN_FILTER numBuffer, unsigned long filter, enum CAN_CONFIG_FLAGS type)
-[; ;inc\CANlib.h: 749: {
+[; ;can\CANlib.h: 748: void CANSetFilter(enum CAN_FILTER numBuffer, unsigned long filter, enum CAN_CONFIG_FLAGS type)
+[; ;can\CANlib.h: 749: {
 [e :U _CANSetFilter ]
 "748
 [v _numBuffer `E16881 ~T0 @X0 1 r1 ]
@@ -17981,836 +17981,836 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 "750
 [v _tamp `ul ~T0 @X0 1 a ]
-[; ;inc\CANlib.h: 750: unsigned long tamp;
-[; ;inc\CANlib.h: 752: if ((numBuffer ==CAN_FILTER_B1_F1) && (type == CAN_CONFIG_STD_MSG))
+[; ;can\CANlib.h: 750: unsigned long tamp;
+[; ;can\CANlib.h: 752: if ((numBuffer ==CAN_FILTER_B1_F1) && (type == CAN_CONFIG_STD_MSG))
 "752
 [e $ ! && == -> _numBuffer `i -> . `E16881 0 `i == -> _type `i -> . `E16844 11 `i 2258  ]
-[; ;inc\CANlib.h: 753: {
+[; ;can\CANlib.h: 753: {
 "753
 {
-[; ;inc\CANlib.h: 754: RXF0SIDLbits.EXIDEN = 0x00;
+[; ;can\CANlib.h: 754: RXF0SIDLbits.EXIDEN = 0x00;
 "754
 [e = . . _RXF0SIDLbits 0 3 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 756: tamp = (filter >> 3);
+[; ;can\CANlib.h: 756: tamp = (filter >> 3);
 "756
 [e = _tamp >> _filter -> 3 `i ]
-[; ;inc\CANlib.h: 757: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 757: tamp = tamp & 0x000000FF;
 "757
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 758: RXF0SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 758: RXF0SIDH = (unsigned char) tamp;
 "758
 [e = _RXF0SIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 760: tamp = filter & 0x00000007;
+[; ;can\CANlib.h: 760: tamp = filter & 0x00000007;
 "760
 [e = _tamp & _filter -> -> -> 7 `i `l `ul ]
-[; ;inc\CANlib.h: 761: tamp = tamp << 5;
+[; ;can\CANlib.h: 761: tamp = tamp << 5;
 "761
 [e = _tamp << _tamp -> 5 `i ]
-[; ;inc\CANlib.h: 762: RXF0SIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 762: RXF0SIDL = (unsigned char) tamp;
 "762
 [e = _RXF0SIDL -> _tamp `uc ]
 "763
 }
 [e :U 2258 ]
-[; ;inc\CANlib.h: 763: }
-[; ;inc\CANlib.h: 765: if ((numBuffer ==CAN_FILTER_B1_F2) && (type == CAN_CONFIG_STD_MSG))
+[; ;can\CANlib.h: 763: }
+[; ;can\CANlib.h: 765: if ((numBuffer ==CAN_FILTER_B1_F2) && (type == CAN_CONFIG_STD_MSG))
 "765
 [e $ ! && == -> _numBuffer `i -> . `E16881 1 `i == -> _type `i -> . `E16844 11 `i 2259  ]
-[; ;inc\CANlib.h: 766: {
+[; ;can\CANlib.h: 766: {
 "766
 {
-[; ;inc\CANlib.h: 767: RXF1SIDLbits.EXIDEN = 0x00;
+[; ;can\CANlib.h: 767: RXF1SIDLbits.EXIDEN = 0x00;
 "767
 [e = . . _RXF1SIDLbits 0 3 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 769: tamp = (filter >> 3);
+[; ;can\CANlib.h: 769: tamp = (filter >> 3);
 "769
 [e = _tamp >> _filter -> 3 `i ]
-[; ;inc\CANlib.h: 770: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 770: tamp = tamp & 0x000000FF;
 "770
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 771: RXF1SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 771: RXF1SIDH = (unsigned char) tamp;
 "771
 [e = _RXF1SIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 773: tamp = filter & 0x00000007;
+[; ;can\CANlib.h: 773: tamp = filter & 0x00000007;
 "773
 [e = _tamp & _filter -> -> -> 7 `i `l `ul ]
-[; ;inc\CANlib.h: 774: tamp = tamp << 5;
+[; ;can\CANlib.h: 774: tamp = tamp << 5;
 "774
 [e = _tamp << _tamp -> 5 `i ]
-[; ;inc\CANlib.h: 775: RXF1SIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 775: RXF1SIDL = (unsigned char) tamp;
 "775
 [e = _RXF1SIDL -> _tamp `uc ]
 "776
 }
 [e :U 2259 ]
-[; ;inc\CANlib.h: 776: }
-[; ;inc\CANlib.h: 778: if ((numBuffer ==CAN_FILTER_B2_F1) && (type == CAN_CONFIG_STD_MSG))
+[; ;can\CANlib.h: 776: }
+[; ;can\CANlib.h: 778: if ((numBuffer ==CAN_FILTER_B2_F1) && (type == CAN_CONFIG_STD_MSG))
 "778
 [e $ ! && == -> _numBuffer `i -> . `E16881 2 `i == -> _type `i -> . `E16844 11 `i 2260  ]
-[; ;inc\CANlib.h: 779: {
+[; ;can\CANlib.h: 779: {
 "779
 {
-[; ;inc\CANlib.h: 780: RXF2SIDLbits.EXIDEN = 0x00;
+[; ;can\CANlib.h: 780: RXF2SIDLbits.EXIDEN = 0x00;
 "780
 [e = . . _RXF2SIDLbits 0 3 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 782: tamp = (filter >> 3);
+[; ;can\CANlib.h: 782: tamp = (filter >> 3);
 "782
 [e = _tamp >> _filter -> 3 `i ]
-[; ;inc\CANlib.h: 783: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 783: tamp = tamp & 0x000000FF;
 "783
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 784: RXF2SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 784: RXF2SIDH = (unsigned char) tamp;
 "784
 [e = _RXF2SIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 786: tamp = filter & 0x00000007;
+[; ;can\CANlib.h: 786: tamp = filter & 0x00000007;
 "786
 [e = _tamp & _filter -> -> -> 7 `i `l `ul ]
-[; ;inc\CANlib.h: 787: tamp = tamp << 5;
+[; ;can\CANlib.h: 787: tamp = tamp << 5;
 "787
 [e = _tamp << _tamp -> 5 `i ]
-[; ;inc\CANlib.h: 788: RXF2SIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 788: RXF2SIDL = (unsigned char) tamp;
 "788
 [e = _RXF2SIDL -> _tamp `uc ]
 "789
 }
 [e :U 2260 ]
-[; ;inc\CANlib.h: 789: }
-[; ;inc\CANlib.h: 791: if ((numBuffer ==CAN_FILTER_B2_F2) && (type == CAN_CONFIG_STD_MSG))
+[; ;can\CANlib.h: 789: }
+[; ;can\CANlib.h: 791: if ((numBuffer ==CAN_FILTER_B2_F2) && (type == CAN_CONFIG_STD_MSG))
 "791
 [e $ ! && == -> _numBuffer `i -> . `E16881 3 `i == -> _type `i -> . `E16844 11 `i 2261  ]
-[; ;inc\CANlib.h: 792: {
+[; ;can\CANlib.h: 792: {
 "792
 {
-[; ;inc\CANlib.h: 793: RXF3SIDLbits.EXIDEN = 0x00;
+[; ;can\CANlib.h: 793: RXF3SIDLbits.EXIDEN = 0x00;
 "793
 [e = . . _RXF3SIDLbits 0 3 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 795: tamp = (filter >> 3);
+[; ;can\CANlib.h: 795: tamp = (filter >> 3);
 "795
 [e = _tamp >> _filter -> 3 `i ]
-[; ;inc\CANlib.h: 796: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 796: tamp = tamp & 0x000000FF;
 "796
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 797: RXF3SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 797: RXF3SIDH = (unsigned char) tamp;
 "797
 [e = _RXF3SIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 799: tamp = filter & 0x00000007;
+[; ;can\CANlib.h: 799: tamp = filter & 0x00000007;
 "799
 [e = _tamp & _filter -> -> -> 7 `i `l `ul ]
-[; ;inc\CANlib.h: 800: tamp = tamp << 5;
+[; ;can\CANlib.h: 800: tamp = tamp << 5;
 "800
 [e = _tamp << _tamp -> 5 `i ]
-[; ;inc\CANlib.h: 801: RXF3SIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 801: RXF3SIDL = (unsigned char) tamp;
 "801
 [e = _RXF3SIDL -> _tamp `uc ]
 "802
 }
 [e :U 2261 ]
-[; ;inc\CANlib.h: 802: }
-[; ;inc\CANlib.h: 804: if ((numBuffer ==CAN_FILTER_B2_F3) && (type == CAN_CONFIG_STD_MSG))
+[; ;can\CANlib.h: 802: }
+[; ;can\CANlib.h: 804: if ((numBuffer ==CAN_FILTER_B2_F3) && (type == CAN_CONFIG_STD_MSG))
 "804
 [e $ ! && == -> _numBuffer `i -> . `E16881 4 `i == -> _type `i -> . `E16844 11 `i 2262  ]
-[; ;inc\CANlib.h: 805: {
+[; ;can\CANlib.h: 805: {
 "805
 {
-[; ;inc\CANlib.h: 806: RXF4SIDLbits.EXIDEN = 0x00;
+[; ;can\CANlib.h: 806: RXF4SIDLbits.EXIDEN = 0x00;
 "806
 [e = . . _RXF4SIDLbits 0 3 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 808: tamp = (filter >> 3);
+[; ;can\CANlib.h: 808: tamp = (filter >> 3);
 "808
 [e = _tamp >> _filter -> 3 `i ]
-[; ;inc\CANlib.h: 809: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 809: tamp = tamp & 0x000000FF;
 "809
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 810: RXF4SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 810: RXF4SIDH = (unsigned char) tamp;
 "810
 [e = _RXF4SIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 812: tamp = filter & 0x00000007;
+[; ;can\CANlib.h: 812: tamp = filter & 0x00000007;
 "812
 [e = _tamp & _filter -> -> -> 7 `i `l `ul ]
-[; ;inc\CANlib.h: 813: tamp = tamp << 5;
+[; ;can\CANlib.h: 813: tamp = tamp << 5;
 "813
 [e = _tamp << _tamp -> 5 `i ]
-[; ;inc\CANlib.h: 814: RXF4SIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 814: RXF4SIDL = (unsigned char) tamp;
 "814
 [e = _RXF4SIDL -> _tamp `uc ]
 "815
 }
 [e :U 2262 ]
-[; ;inc\CANlib.h: 815: }
-[; ;inc\CANlib.h: 817: if ((numBuffer ==CAN_FILTER_B2_F4) && (type == CAN_CONFIG_STD_MSG))
+[; ;can\CANlib.h: 815: }
+[; ;can\CANlib.h: 817: if ((numBuffer ==CAN_FILTER_B2_F4) && (type == CAN_CONFIG_STD_MSG))
 "817
 [e $ ! && == -> _numBuffer `i -> . `E16881 5 `i == -> _type `i -> . `E16844 11 `i 2263  ]
-[; ;inc\CANlib.h: 818: {
+[; ;can\CANlib.h: 818: {
 "818
 {
-[; ;inc\CANlib.h: 819: RXF5SIDLbits.EXIDEN = 0x00;
+[; ;can\CANlib.h: 819: RXF5SIDLbits.EXIDEN = 0x00;
 "819
 [e = . . _RXF5SIDLbits 0 3 -> -> 0 `i `uc ]
-[; ;inc\CANlib.h: 821: tamp = (filter >> 3);
+[; ;can\CANlib.h: 821: tamp = (filter >> 3);
 "821
 [e = _tamp >> _filter -> 3 `i ]
-[; ;inc\CANlib.h: 822: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 822: tamp = tamp & 0x000000FF;
 "822
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 823: RXF5SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 823: RXF5SIDH = (unsigned char) tamp;
 "823
 [e = _RXF5SIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 825: tamp = filter & 0x00000007;
+[; ;can\CANlib.h: 825: tamp = filter & 0x00000007;
 "825
 [e = _tamp & _filter -> -> -> 7 `i `l `ul ]
-[; ;inc\CANlib.h: 826: tamp = tamp << 5;
+[; ;can\CANlib.h: 826: tamp = tamp << 5;
 "826
 [e = _tamp << _tamp -> 5 `i ]
-[; ;inc\CANlib.h: 827: RXF5SIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 827: RXF5SIDL = (unsigned char) tamp;
 "827
 [e = _RXF5SIDL -> _tamp `uc ]
 "828
 }
 [e :U 2263 ]
-[; ;inc\CANlib.h: 828: }
-[; ;inc\CANlib.h: 831: if ((numBuffer ==CAN_FILTER_B1_F1) && (type == CAN_CONFIG_XTD_MSG))
+[; ;can\CANlib.h: 828: }
+[; ;can\CANlib.h: 831: if ((numBuffer ==CAN_FILTER_B1_F1) && (type == CAN_CONFIG_XTD_MSG))
 "831
 [e $ ! && == -> _numBuffer `i -> . `E16881 0 `i == -> _type `i -> . `E16844 12 `i 2264  ]
-[; ;inc\CANlib.h: 832: {
+[; ;can\CANlib.h: 832: {
 "832
 {
-[; ;inc\CANlib.h: 833: RXF0SIDLbits.EXIDEN = 0x01;
+[; ;can\CANlib.h: 833: RXF0SIDLbits.EXIDEN = 0x01;
 "833
 [e = . . _RXF0SIDLbits 0 3 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 835: tamp = filter & 0x000000FF;
+[; ;can\CANlib.h: 835: tamp = filter & 0x000000FF;
 "835
 [e = _tamp & _filter -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 836: RXF0EIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 836: RXF0EIDL = (unsigned char) tamp;
 "836
 [e = _RXF0EIDL -> _tamp `uc ]
-[; ;inc\CANlib.h: 838: tamp = filter & 0x0000FF00;
+[; ;can\CANlib.h: 838: tamp = filter & 0x0000FF00;
 "838
 [e = _tamp & _filter -> -> 65280 `ui `ul ]
-[; ;inc\CANlib.h: 839: tamp = tamp >> 8;
+[; ;can\CANlib.h: 839: tamp = tamp >> 8;
 "839
 [e = _tamp >> _tamp -> 8 `i ]
-[; ;inc\CANlib.h: 840: RXF0EIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 840: RXF0EIDH = (unsigned char) tamp;
 "840
 [e = _RXF0EIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 842: if (filter & 0x00010000)
+[; ;can\CANlib.h: 842: if (filter & 0x00010000)
 "842
 [e $ ! != & _filter -> -> 65536 `l `ul -> -> 0 `i `ul 2265  ]
-[; ;inc\CANlib.h: 843: RXF0SIDLbits.EID16 = 0x01;
+[; ;can\CANlib.h: 843: RXF0SIDLbits.EID16 = 0x01;
 "843
 [e = . . _RXF0SIDLbits 0 0 -> -> 1 `i `uc ]
 [e $U 2266  ]
 "844
 [e :U 2265 ]
-[; ;inc\CANlib.h: 844: else
-[; ;inc\CANlib.h: 845: RXF0SIDLbits.EID16 = 0x00;
+[; ;can\CANlib.h: 844: else
+[; ;can\CANlib.h: 845: RXF0SIDLbits.EID16 = 0x00;
 "845
 [e = . . _RXF0SIDLbits 0 0 -> -> 0 `i `uc ]
 [e :U 2266 ]
-[; ;inc\CANlib.h: 847: if (filter & 0x00020000)
+[; ;can\CANlib.h: 847: if (filter & 0x00020000)
 "847
 [e $ ! != & _filter -> -> 131072 `l `ul -> -> 0 `i `ul 2267  ]
-[; ;inc\CANlib.h: 848: RXF0SIDLbits.EID17 = 0x01;
+[; ;can\CANlib.h: 848: RXF0SIDLbits.EID17 = 0x01;
 "848
 [e = . . _RXF0SIDLbits 0 1 -> -> 1 `i `uc ]
 [e $U 2268  ]
 "849
 [e :U 2267 ]
-[; ;inc\CANlib.h: 849: else
-[; ;inc\CANlib.h: 850: RXF0SIDLbits.EID17 = 0x00;
+[; ;can\CANlib.h: 849: else
+[; ;can\CANlib.h: 850: RXF0SIDLbits.EID17 = 0x00;
 "850
 [e = . . _RXF0SIDLbits 0 1 -> -> 0 `i `uc ]
 [e :U 2268 ]
-[; ;inc\CANlib.h: 852: if (filter & 0x00040000)
+[; ;can\CANlib.h: 852: if (filter & 0x00040000)
 "852
 [e $ ! != & _filter -> -> 262144 `l `ul -> -> 0 `i `ul 2269  ]
-[; ;inc\CANlib.h: 853: RXF0SIDLbits.SID0 = 0x01;
+[; ;can\CANlib.h: 853: RXF0SIDLbits.SID0 = 0x01;
 "853
 [e = . . _RXF0SIDLbits 0 5 -> -> 1 `i `uc ]
 [e $U 2270  ]
 "854
 [e :U 2269 ]
-[; ;inc\CANlib.h: 854: else
-[; ;inc\CANlib.h: 855: RXF0SIDLbits.SID0 = 0x00;
+[; ;can\CANlib.h: 854: else
+[; ;can\CANlib.h: 855: RXF0SIDLbits.SID0 = 0x00;
 "855
 [e = . . _RXF0SIDLbits 0 5 -> -> 0 `i `uc ]
 [e :U 2270 ]
-[; ;inc\CANlib.h: 857: if (filter & 0x00080000)
+[; ;can\CANlib.h: 857: if (filter & 0x00080000)
 "857
 [e $ ! != & _filter -> -> 524288 `l `ul -> -> 0 `i `ul 2271  ]
-[; ;inc\CANlib.h: 858: RXF0SIDLbits.SID1 = 0x01;
+[; ;can\CANlib.h: 858: RXF0SIDLbits.SID1 = 0x01;
 "858
 [e = . . _RXF0SIDLbits 0 6 -> -> 1 `i `uc ]
 [e $U 2272  ]
 "859
 [e :U 2271 ]
-[; ;inc\CANlib.h: 859: else
-[; ;inc\CANlib.h: 860: RXF0SIDLbits.SID1 = 0x00;
+[; ;can\CANlib.h: 859: else
+[; ;can\CANlib.h: 860: RXF0SIDLbits.SID1 = 0x00;
 "860
 [e = . . _RXF0SIDLbits 0 6 -> -> 0 `i `uc ]
 [e :U 2272 ]
-[; ;inc\CANlib.h: 862: if (filter & 0x00100000)
+[; ;can\CANlib.h: 862: if (filter & 0x00100000)
 "862
 [e $ ! != & _filter -> -> 1048576 `l `ul -> -> 0 `i `ul 2273  ]
-[; ;inc\CANlib.h: 863: RXF0SIDLbits.SID2 = 0x01 ;
+[; ;can\CANlib.h: 863: RXF0SIDLbits.SID2 = 0x01 ;
 "863
 [e = . . _RXF0SIDLbits 0 7 -> -> 1 `i `uc ]
 [e $U 2274  ]
 "864
 [e :U 2273 ]
-[; ;inc\CANlib.h: 864: else
-[; ;inc\CANlib.h: 865: RXF0SIDLbits.SID2 = 0x00 ;
+[; ;can\CANlib.h: 864: else
+[; ;can\CANlib.h: 865: RXF0SIDLbits.SID2 = 0x00 ;
 "865
 [e = . . _RXF0SIDLbits 0 7 -> -> 0 `i `uc ]
 [e :U 2274 ]
-[; ;inc\CANlib.h: 867: tamp = (filter >> 21);
+[; ;can\CANlib.h: 867: tamp = (filter >> 21);
 "867
 [e = _tamp >> _filter -> 21 `i ]
-[; ;inc\CANlib.h: 868: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 868: tamp = tamp & 0x000000FF;
 "868
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 869: RXF0SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 869: RXF0SIDH = (unsigned char) tamp;
 "869
 [e = _RXF0SIDH -> _tamp `uc ]
 "870
 }
 [e :U 2264 ]
-[; ;inc\CANlib.h: 870: }
-[; ;inc\CANlib.h: 872: if ((numBuffer ==CAN_FILTER_B1_F2) && (type == CAN_CONFIG_XTD_MSG))
+[; ;can\CANlib.h: 870: }
+[; ;can\CANlib.h: 872: if ((numBuffer ==CAN_FILTER_B1_F2) && (type == CAN_CONFIG_XTD_MSG))
 "872
 [e $ ! && == -> _numBuffer `i -> . `E16881 1 `i == -> _type `i -> . `E16844 12 `i 2275  ]
-[; ;inc\CANlib.h: 873: {
+[; ;can\CANlib.h: 873: {
 "873
 {
-[; ;inc\CANlib.h: 874: RXF1SIDLbits.EXIDEN = 0x01;
+[; ;can\CANlib.h: 874: RXF1SIDLbits.EXIDEN = 0x01;
 "874
 [e = . . _RXF1SIDLbits 0 3 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 876: tamp = filter & 0x000000FF;
+[; ;can\CANlib.h: 876: tamp = filter & 0x000000FF;
 "876
 [e = _tamp & _filter -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 877: RXF1EIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 877: RXF1EIDL = (unsigned char) tamp;
 "877
 [e = _RXF1EIDL -> _tamp `uc ]
-[; ;inc\CANlib.h: 879: tamp = filter & 0x0000FF00;
+[; ;can\CANlib.h: 879: tamp = filter & 0x0000FF00;
 "879
 [e = _tamp & _filter -> -> 65280 `ui `ul ]
-[; ;inc\CANlib.h: 880: tamp = tamp >> 8;
+[; ;can\CANlib.h: 880: tamp = tamp >> 8;
 "880
 [e = _tamp >> _tamp -> 8 `i ]
-[; ;inc\CANlib.h: 881: RXF1EIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 881: RXF1EIDH = (unsigned char) tamp;
 "881
 [e = _RXF1EIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 883: if (filter & 0x00010000)
+[; ;can\CANlib.h: 883: if (filter & 0x00010000)
 "883
 [e $ ! != & _filter -> -> 65536 `l `ul -> -> 0 `i `ul 2276  ]
-[; ;inc\CANlib.h: 884: RXF1SIDLbits.EID16 = 0x01;
+[; ;can\CANlib.h: 884: RXF1SIDLbits.EID16 = 0x01;
 "884
 [e = . . _RXF1SIDLbits 0 0 -> -> 1 `i `uc ]
 [e $U 2277  ]
 "885
 [e :U 2276 ]
-[; ;inc\CANlib.h: 885: else
-[; ;inc\CANlib.h: 886: RXF1SIDLbits.EID16 = 0x00;
+[; ;can\CANlib.h: 885: else
+[; ;can\CANlib.h: 886: RXF1SIDLbits.EID16 = 0x00;
 "886
 [e = . . _RXF1SIDLbits 0 0 -> -> 0 `i `uc ]
 [e :U 2277 ]
-[; ;inc\CANlib.h: 888: if (filter & 0x00020000)
+[; ;can\CANlib.h: 888: if (filter & 0x00020000)
 "888
 [e $ ! != & _filter -> -> 131072 `l `ul -> -> 0 `i `ul 2278  ]
-[; ;inc\CANlib.h: 889: RXF1SIDLbits.EID17 = 0x01;
+[; ;can\CANlib.h: 889: RXF1SIDLbits.EID17 = 0x01;
 "889
 [e = . . _RXF1SIDLbits 0 1 -> -> 1 `i `uc ]
 [e $U 2279  ]
 "890
 [e :U 2278 ]
-[; ;inc\CANlib.h: 890: else
-[; ;inc\CANlib.h: 891: RXF1SIDLbits.EID17 = 0x00;
+[; ;can\CANlib.h: 890: else
+[; ;can\CANlib.h: 891: RXF1SIDLbits.EID17 = 0x00;
 "891
 [e = . . _RXF1SIDLbits 0 1 -> -> 0 `i `uc ]
 [e :U 2279 ]
-[; ;inc\CANlib.h: 893: if (filter & 0x00040000)
+[; ;can\CANlib.h: 893: if (filter & 0x00040000)
 "893
 [e $ ! != & _filter -> -> 262144 `l `ul -> -> 0 `i `ul 2280  ]
-[; ;inc\CANlib.h: 894: RXF1SIDLbits.SID0 = 0x01;
+[; ;can\CANlib.h: 894: RXF1SIDLbits.SID0 = 0x01;
 "894
 [e = . . _RXF1SIDLbits 0 5 -> -> 1 `i `uc ]
 [e $U 2281  ]
 "895
 [e :U 2280 ]
-[; ;inc\CANlib.h: 895: else
-[; ;inc\CANlib.h: 896: RXF1SIDLbits.SID0 = 0x00;
+[; ;can\CANlib.h: 895: else
+[; ;can\CANlib.h: 896: RXF1SIDLbits.SID0 = 0x00;
 "896
 [e = . . _RXF1SIDLbits 0 5 -> -> 0 `i `uc ]
 [e :U 2281 ]
-[; ;inc\CANlib.h: 898: if (filter & 0x00080000)
+[; ;can\CANlib.h: 898: if (filter & 0x00080000)
 "898
 [e $ ! != & _filter -> -> 524288 `l `ul -> -> 0 `i `ul 2282  ]
-[; ;inc\CANlib.h: 899: RXF1SIDLbits.SID1 = 0x01;
+[; ;can\CANlib.h: 899: RXF1SIDLbits.SID1 = 0x01;
 "899
 [e = . . _RXF1SIDLbits 0 6 -> -> 1 `i `uc ]
 [e $U 2283  ]
 "900
 [e :U 2282 ]
-[; ;inc\CANlib.h: 900: else
-[; ;inc\CANlib.h: 901: RXF1SIDLbits.SID1 = 0x00;
+[; ;can\CANlib.h: 900: else
+[; ;can\CANlib.h: 901: RXF1SIDLbits.SID1 = 0x00;
 "901
 [e = . . _RXF1SIDLbits 0 6 -> -> 0 `i `uc ]
 [e :U 2283 ]
-[; ;inc\CANlib.h: 903: if (filter & 0x00100000)
+[; ;can\CANlib.h: 903: if (filter & 0x00100000)
 "903
 [e $ ! != & _filter -> -> 1048576 `l `ul -> -> 0 `i `ul 2284  ]
-[; ;inc\CANlib.h: 904: RXF1SIDLbits.SID2 = 0x01 ;
+[; ;can\CANlib.h: 904: RXF1SIDLbits.SID2 = 0x01 ;
 "904
 [e = . . _RXF1SIDLbits 0 7 -> -> 1 `i `uc ]
 [e $U 2285  ]
 "905
 [e :U 2284 ]
-[; ;inc\CANlib.h: 905: else
-[; ;inc\CANlib.h: 906: RXF1SIDLbits.SID2 = 0x00 ;
+[; ;can\CANlib.h: 905: else
+[; ;can\CANlib.h: 906: RXF1SIDLbits.SID2 = 0x00 ;
 "906
 [e = . . _RXF1SIDLbits 0 7 -> -> 0 `i `uc ]
 [e :U 2285 ]
-[; ;inc\CANlib.h: 908: tamp = (filter >> 21);
+[; ;can\CANlib.h: 908: tamp = (filter >> 21);
 "908
 [e = _tamp >> _filter -> 21 `i ]
-[; ;inc\CANlib.h: 909: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 909: tamp = tamp & 0x000000FF;
 "909
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 910: RXF1SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 910: RXF1SIDH = (unsigned char) tamp;
 "910
 [e = _RXF1SIDH -> _tamp `uc ]
 "911
 }
 [e :U 2275 ]
-[; ;inc\CANlib.h: 911: }
-[; ;inc\CANlib.h: 914: if ((numBuffer ==CAN_FILTER_B2_F1) && (type == CAN_CONFIG_XTD_MSG))
+[; ;can\CANlib.h: 911: }
+[; ;can\CANlib.h: 914: if ((numBuffer ==CAN_FILTER_B2_F1) && (type == CAN_CONFIG_XTD_MSG))
 "914
 [e $ ! && == -> _numBuffer `i -> . `E16881 2 `i == -> _type `i -> . `E16844 12 `i 2286  ]
-[; ;inc\CANlib.h: 915: {
+[; ;can\CANlib.h: 915: {
 "915
 {
-[; ;inc\CANlib.h: 916: RXF2SIDLbits.EXIDEN = 0x01;
+[; ;can\CANlib.h: 916: RXF2SIDLbits.EXIDEN = 0x01;
 "916
 [e = . . _RXF2SIDLbits 0 3 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 918: tamp = filter & 0x000000FF;
+[; ;can\CANlib.h: 918: tamp = filter & 0x000000FF;
 "918
 [e = _tamp & _filter -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 919: RXF2EIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 919: RXF2EIDL = (unsigned char) tamp;
 "919
 [e = _RXF2EIDL -> _tamp `uc ]
-[; ;inc\CANlib.h: 921: tamp = filter & 0x0000FF00;
+[; ;can\CANlib.h: 921: tamp = filter & 0x0000FF00;
 "921
 [e = _tamp & _filter -> -> 65280 `ui `ul ]
-[; ;inc\CANlib.h: 922: tamp = tamp >> 8;
+[; ;can\CANlib.h: 922: tamp = tamp >> 8;
 "922
 [e = _tamp >> _tamp -> 8 `i ]
-[; ;inc\CANlib.h: 923: RXF2EIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 923: RXF2EIDH = (unsigned char) tamp;
 "923
 [e = _RXF2EIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 925: if (filter & 0x00010000)
+[; ;can\CANlib.h: 925: if (filter & 0x00010000)
 "925
 [e $ ! != & _filter -> -> 65536 `l `ul -> -> 0 `i `ul 2287  ]
-[; ;inc\CANlib.h: 926: RXF2SIDLbits.EID16 = 0x01;
+[; ;can\CANlib.h: 926: RXF2SIDLbits.EID16 = 0x01;
 "926
 [e = . . _RXF2SIDLbits 0 0 -> -> 1 `i `uc ]
 [e $U 2288  ]
 "927
 [e :U 2287 ]
-[; ;inc\CANlib.h: 927: else
-[; ;inc\CANlib.h: 928: RXF2SIDLbits.EID16 = 0x00;
+[; ;can\CANlib.h: 927: else
+[; ;can\CANlib.h: 928: RXF2SIDLbits.EID16 = 0x00;
 "928
 [e = . . _RXF2SIDLbits 0 0 -> -> 0 `i `uc ]
 [e :U 2288 ]
-[; ;inc\CANlib.h: 930: if (filter & 0x00020000)
+[; ;can\CANlib.h: 930: if (filter & 0x00020000)
 "930
 [e $ ! != & _filter -> -> 131072 `l `ul -> -> 0 `i `ul 2289  ]
-[; ;inc\CANlib.h: 931: RXF2SIDLbits.EID17 = 0x01;
+[; ;can\CANlib.h: 931: RXF2SIDLbits.EID17 = 0x01;
 "931
 [e = . . _RXF2SIDLbits 0 1 -> -> 1 `i `uc ]
 [e $U 2290  ]
 "932
 [e :U 2289 ]
-[; ;inc\CANlib.h: 932: else
-[; ;inc\CANlib.h: 933: RXF2SIDLbits.EID17 = 0x00;
+[; ;can\CANlib.h: 932: else
+[; ;can\CANlib.h: 933: RXF2SIDLbits.EID17 = 0x00;
 "933
 [e = . . _RXF2SIDLbits 0 1 -> -> 0 `i `uc ]
 [e :U 2290 ]
-[; ;inc\CANlib.h: 935: if (filter & 0x00040000)
+[; ;can\CANlib.h: 935: if (filter & 0x00040000)
 "935
 [e $ ! != & _filter -> -> 262144 `l `ul -> -> 0 `i `ul 2291  ]
-[; ;inc\CANlib.h: 936: RXF2SIDLbits.SID0 = 0x01;
+[; ;can\CANlib.h: 936: RXF2SIDLbits.SID0 = 0x01;
 "936
 [e = . . _RXF2SIDLbits 0 5 -> -> 1 `i `uc ]
 [e $U 2292  ]
 "937
 [e :U 2291 ]
-[; ;inc\CANlib.h: 937: else
-[; ;inc\CANlib.h: 938: RXF2SIDLbits.SID0 = 0x00;
+[; ;can\CANlib.h: 937: else
+[; ;can\CANlib.h: 938: RXF2SIDLbits.SID0 = 0x00;
 "938
 [e = . . _RXF2SIDLbits 0 5 -> -> 0 `i `uc ]
 [e :U 2292 ]
-[; ;inc\CANlib.h: 940: if (filter & 0x00080000)
+[; ;can\CANlib.h: 940: if (filter & 0x00080000)
 "940
 [e $ ! != & _filter -> -> 524288 `l `ul -> -> 0 `i `ul 2293  ]
-[; ;inc\CANlib.h: 941: RXF2SIDLbits.SID1 = 0x01;
+[; ;can\CANlib.h: 941: RXF2SIDLbits.SID1 = 0x01;
 "941
 [e = . . _RXF2SIDLbits 0 6 -> -> 1 `i `uc ]
 [e $U 2294  ]
 "942
 [e :U 2293 ]
-[; ;inc\CANlib.h: 942: else
-[; ;inc\CANlib.h: 943: RXF2SIDLbits.SID1 = 0x00;
+[; ;can\CANlib.h: 942: else
+[; ;can\CANlib.h: 943: RXF2SIDLbits.SID1 = 0x00;
 "943
 [e = . . _RXF2SIDLbits 0 6 -> -> 0 `i `uc ]
 [e :U 2294 ]
-[; ;inc\CANlib.h: 945: if (filter & 0x00100000)
+[; ;can\CANlib.h: 945: if (filter & 0x00100000)
 "945
 [e $ ! != & _filter -> -> 1048576 `l `ul -> -> 0 `i `ul 2295  ]
-[; ;inc\CANlib.h: 946: RXF2SIDLbits.SID2 = 0x01 ;
+[; ;can\CANlib.h: 946: RXF2SIDLbits.SID2 = 0x01 ;
 "946
 [e = . . _RXF2SIDLbits 0 7 -> -> 1 `i `uc ]
 [e $U 2296  ]
 "947
 [e :U 2295 ]
-[; ;inc\CANlib.h: 947: else
-[; ;inc\CANlib.h: 948: RXF2SIDLbits.SID2 = 0x00 ;
+[; ;can\CANlib.h: 947: else
+[; ;can\CANlib.h: 948: RXF2SIDLbits.SID2 = 0x00 ;
 "948
 [e = . . _RXF2SIDLbits 0 7 -> -> 0 `i `uc ]
 [e :U 2296 ]
-[; ;inc\CANlib.h: 950: tamp = (filter >> 21);
+[; ;can\CANlib.h: 950: tamp = (filter >> 21);
 "950
 [e = _tamp >> _filter -> 21 `i ]
-[; ;inc\CANlib.h: 951: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 951: tamp = tamp & 0x000000FF;
 "951
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 952: RXF2SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 952: RXF2SIDH = (unsigned char) tamp;
 "952
 [e = _RXF2SIDH -> _tamp `uc ]
 "953
 }
 [e :U 2286 ]
-[; ;inc\CANlib.h: 953: }
-[; ;inc\CANlib.h: 955: if ((numBuffer ==CAN_FILTER_B2_F2) && (type == CAN_CONFIG_XTD_MSG))
+[; ;can\CANlib.h: 953: }
+[; ;can\CANlib.h: 955: if ((numBuffer ==CAN_FILTER_B2_F2) && (type == CAN_CONFIG_XTD_MSG))
 "955
 [e $ ! && == -> _numBuffer `i -> . `E16881 3 `i == -> _type `i -> . `E16844 12 `i 2297  ]
-[; ;inc\CANlib.h: 956: {
+[; ;can\CANlib.h: 956: {
 "956
 {
-[; ;inc\CANlib.h: 957: RXF3SIDLbits.EXIDEN = 0x01;
+[; ;can\CANlib.h: 957: RXF3SIDLbits.EXIDEN = 0x01;
 "957
 [e = . . _RXF3SIDLbits 0 3 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 959: tamp = filter & 0x000000FF;
+[; ;can\CANlib.h: 959: tamp = filter & 0x000000FF;
 "959
 [e = _tamp & _filter -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 960: RXF3EIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 960: RXF3EIDL = (unsigned char) tamp;
 "960
 [e = _RXF3EIDL -> _tamp `uc ]
-[; ;inc\CANlib.h: 962: tamp = filter & 0x0000FF00;
+[; ;can\CANlib.h: 962: tamp = filter & 0x0000FF00;
 "962
 [e = _tamp & _filter -> -> 65280 `ui `ul ]
-[; ;inc\CANlib.h: 963: tamp = tamp >> 8;
+[; ;can\CANlib.h: 963: tamp = tamp >> 8;
 "963
 [e = _tamp >> _tamp -> 8 `i ]
-[; ;inc\CANlib.h: 964: RXF3EIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 964: RXF3EIDH = (unsigned char) tamp;
 "964
 [e = _RXF3EIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 966: if (filter & 0x00010000)
+[; ;can\CANlib.h: 966: if (filter & 0x00010000)
 "966
 [e $ ! != & _filter -> -> 65536 `l `ul -> -> 0 `i `ul 2298  ]
-[; ;inc\CANlib.h: 967: RXF3SIDLbits.EID16 = 0x01;
+[; ;can\CANlib.h: 967: RXF3SIDLbits.EID16 = 0x01;
 "967
 [e = . . _RXF3SIDLbits 0 0 -> -> 1 `i `uc ]
 [e $U 2299  ]
 "968
 [e :U 2298 ]
-[; ;inc\CANlib.h: 968: else
-[; ;inc\CANlib.h: 969: RXF3SIDLbits.EID16 = 0x00;
+[; ;can\CANlib.h: 968: else
+[; ;can\CANlib.h: 969: RXF3SIDLbits.EID16 = 0x00;
 "969
 [e = . . _RXF3SIDLbits 0 0 -> -> 0 `i `uc ]
 [e :U 2299 ]
-[; ;inc\CANlib.h: 971: if (filter & 0x00020000)
+[; ;can\CANlib.h: 971: if (filter & 0x00020000)
 "971
 [e $ ! != & _filter -> -> 131072 `l `ul -> -> 0 `i `ul 2300  ]
-[; ;inc\CANlib.h: 972: RXF3SIDLbits.EID17 = 0x01;
+[; ;can\CANlib.h: 972: RXF3SIDLbits.EID17 = 0x01;
 "972
 [e = . . _RXF3SIDLbits 0 1 -> -> 1 `i `uc ]
 [e $U 2301  ]
 "973
 [e :U 2300 ]
-[; ;inc\CANlib.h: 973: else
-[; ;inc\CANlib.h: 974: RXF3SIDLbits.EID17 = 0x00;
+[; ;can\CANlib.h: 973: else
+[; ;can\CANlib.h: 974: RXF3SIDLbits.EID17 = 0x00;
 "974
 [e = . . _RXF3SIDLbits 0 1 -> -> 0 `i `uc ]
 [e :U 2301 ]
-[; ;inc\CANlib.h: 976: if (filter & 0x00040000)
+[; ;can\CANlib.h: 976: if (filter & 0x00040000)
 "976
 [e $ ! != & _filter -> -> 262144 `l `ul -> -> 0 `i `ul 2302  ]
-[; ;inc\CANlib.h: 977: RXF3SIDLbits.SID0 = 0x01;
+[; ;can\CANlib.h: 977: RXF3SIDLbits.SID0 = 0x01;
 "977
 [e = . . _RXF3SIDLbits 0 5 -> -> 1 `i `uc ]
 [e $U 2303  ]
 "978
 [e :U 2302 ]
-[; ;inc\CANlib.h: 978: else
-[; ;inc\CANlib.h: 979: RXF3SIDLbits.SID0 = 0x00;
+[; ;can\CANlib.h: 978: else
+[; ;can\CANlib.h: 979: RXF3SIDLbits.SID0 = 0x00;
 "979
 [e = . . _RXF3SIDLbits 0 5 -> -> 0 `i `uc ]
 [e :U 2303 ]
-[; ;inc\CANlib.h: 981: if (filter & 0x00080000)
+[; ;can\CANlib.h: 981: if (filter & 0x00080000)
 "981
 [e $ ! != & _filter -> -> 524288 `l `ul -> -> 0 `i `ul 2304  ]
-[; ;inc\CANlib.h: 982: RXF3SIDLbits.SID1 = 0x01;
+[; ;can\CANlib.h: 982: RXF3SIDLbits.SID1 = 0x01;
 "982
 [e = . . _RXF3SIDLbits 0 6 -> -> 1 `i `uc ]
 [e $U 2305  ]
 "983
 [e :U 2304 ]
-[; ;inc\CANlib.h: 983: else
-[; ;inc\CANlib.h: 984: RXF3SIDLbits.SID1 = 0x00;
+[; ;can\CANlib.h: 983: else
+[; ;can\CANlib.h: 984: RXF3SIDLbits.SID1 = 0x00;
 "984
 [e = . . _RXF3SIDLbits 0 6 -> -> 0 `i `uc ]
 [e :U 2305 ]
-[; ;inc\CANlib.h: 986: if (filter & 0x00100000)
+[; ;can\CANlib.h: 986: if (filter & 0x00100000)
 "986
 [e $ ! != & _filter -> -> 1048576 `l `ul -> -> 0 `i `ul 2306  ]
-[; ;inc\CANlib.h: 987: RXF3SIDLbits.SID2 = 0x01 ;
+[; ;can\CANlib.h: 987: RXF3SIDLbits.SID2 = 0x01 ;
 "987
 [e = . . _RXF3SIDLbits 0 7 -> -> 1 `i `uc ]
 [e $U 2307  ]
 "988
 [e :U 2306 ]
-[; ;inc\CANlib.h: 988: else
-[; ;inc\CANlib.h: 989: RXF3SIDLbits.SID2 = 0x00 ;
+[; ;can\CANlib.h: 988: else
+[; ;can\CANlib.h: 989: RXF3SIDLbits.SID2 = 0x00 ;
 "989
 [e = . . _RXF3SIDLbits 0 7 -> -> 0 `i `uc ]
 [e :U 2307 ]
-[; ;inc\CANlib.h: 991: tamp = (filter >> 21);
+[; ;can\CANlib.h: 991: tamp = (filter >> 21);
 "991
 [e = _tamp >> _filter -> 21 `i ]
-[; ;inc\CANlib.h: 992: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 992: tamp = tamp & 0x000000FF;
 "992
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 993: RXF3SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 993: RXF3SIDH = (unsigned char) tamp;
 "993
 [e = _RXF3SIDH -> _tamp `uc ]
 "994
 }
 [e :U 2297 ]
-[; ;inc\CANlib.h: 994: }
-[; ;inc\CANlib.h: 996: if ((numBuffer ==CAN_FILTER_B2_F3) && (type == CAN_CONFIG_XTD_MSG))
+[; ;can\CANlib.h: 994: }
+[; ;can\CANlib.h: 996: if ((numBuffer ==CAN_FILTER_B2_F3) && (type == CAN_CONFIG_XTD_MSG))
 "996
 [e $ ! && == -> _numBuffer `i -> . `E16881 4 `i == -> _type `i -> . `E16844 12 `i 2308  ]
-[; ;inc\CANlib.h: 997: {
+[; ;can\CANlib.h: 997: {
 "997
 {
-[; ;inc\CANlib.h: 998: RXF4SIDLbits.EXIDEN = 0x01;
+[; ;can\CANlib.h: 998: RXF4SIDLbits.EXIDEN = 0x01;
 "998
 [e = . . _RXF4SIDLbits 0 3 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 1000: tamp = filter & 0x000000FF;
+[; ;can\CANlib.h: 1000: tamp = filter & 0x000000FF;
 "1000
 [e = _tamp & _filter -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 1001: RXF4EIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 1001: RXF4EIDL = (unsigned char) tamp;
 "1001
 [e = _RXF4EIDL -> _tamp `uc ]
-[; ;inc\CANlib.h: 1003: tamp = filter & 0x0000FF00;
+[; ;can\CANlib.h: 1003: tamp = filter & 0x0000FF00;
 "1003
 [e = _tamp & _filter -> -> 65280 `ui `ul ]
-[; ;inc\CANlib.h: 1004: tamp = tamp >> 8;
+[; ;can\CANlib.h: 1004: tamp = tamp >> 8;
 "1004
 [e = _tamp >> _tamp -> 8 `i ]
-[; ;inc\CANlib.h: 1005: RXF4EIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 1005: RXF4EIDH = (unsigned char) tamp;
 "1005
 [e = _RXF4EIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 1007: if (filter & 0x00010000)
+[; ;can\CANlib.h: 1007: if (filter & 0x00010000)
 "1007
 [e $ ! != & _filter -> -> 65536 `l `ul -> -> 0 `i `ul 2309  ]
-[; ;inc\CANlib.h: 1008: RXF4SIDLbits.EID16 = 0x01;
+[; ;can\CANlib.h: 1008: RXF4SIDLbits.EID16 = 0x01;
 "1008
 [e = . . _RXF4SIDLbits 0 0 -> -> 1 `i `uc ]
 [e $U 2310  ]
 "1009
 [e :U 2309 ]
-[; ;inc\CANlib.h: 1009: else
-[; ;inc\CANlib.h: 1010: RXF4SIDLbits.EID16 = 0x00;
+[; ;can\CANlib.h: 1009: else
+[; ;can\CANlib.h: 1010: RXF4SIDLbits.EID16 = 0x00;
 "1010
 [e = . . _RXF4SIDLbits 0 0 -> -> 0 `i `uc ]
 [e :U 2310 ]
-[; ;inc\CANlib.h: 1012: if (filter & 0x00020000)
+[; ;can\CANlib.h: 1012: if (filter & 0x00020000)
 "1012
 [e $ ! != & _filter -> -> 131072 `l `ul -> -> 0 `i `ul 2311  ]
-[; ;inc\CANlib.h: 1013: RXF4SIDLbits.EID17 = 0x01;
+[; ;can\CANlib.h: 1013: RXF4SIDLbits.EID17 = 0x01;
 "1013
 [e = . . _RXF4SIDLbits 0 1 -> -> 1 `i `uc ]
 [e $U 2312  ]
 "1014
 [e :U 2311 ]
-[; ;inc\CANlib.h: 1014: else
-[; ;inc\CANlib.h: 1015: RXF4SIDLbits.EID17 = 0x00;
+[; ;can\CANlib.h: 1014: else
+[; ;can\CANlib.h: 1015: RXF4SIDLbits.EID17 = 0x00;
 "1015
 [e = . . _RXF4SIDLbits 0 1 -> -> 0 `i `uc ]
 [e :U 2312 ]
-[; ;inc\CANlib.h: 1017: if (filter & 0x00040000)
+[; ;can\CANlib.h: 1017: if (filter & 0x00040000)
 "1017
 [e $ ! != & _filter -> -> 262144 `l `ul -> -> 0 `i `ul 2313  ]
-[; ;inc\CANlib.h: 1018: RXF4SIDLbits.SID0 = 0x01;
+[; ;can\CANlib.h: 1018: RXF4SIDLbits.SID0 = 0x01;
 "1018
 [e = . . _RXF4SIDLbits 0 5 -> -> 1 `i `uc ]
 [e $U 2314  ]
 "1019
 [e :U 2313 ]
-[; ;inc\CANlib.h: 1019: else
-[; ;inc\CANlib.h: 1020: RXF4SIDLbits.SID0 = 0x00;
+[; ;can\CANlib.h: 1019: else
+[; ;can\CANlib.h: 1020: RXF4SIDLbits.SID0 = 0x00;
 "1020
 [e = . . _RXF4SIDLbits 0 5 -> -> 0 `i `uc ]
 [e :U 2314 ]
-[; ;inc\CANlib.h: 1022: if (filter & 0x00080000)
+[; ;can\CANlib.h: 1022: if (filter & 0x00080000)
 "1022
 [e $ ! != & _filter -> -> 524288 `l `ul -> -> 0 `i `ul 2315  ]
-[; ;inc\CANlib.h: 1023: RXF4SIDLbits.SID1 = 0x01;
+[; ;can\CANlib.h: 1023: RXF4SIDLbits.SID1 = 0x01;
 "1023
 [e = . . _RXF4SIDLbits 0 6 -> -> 1 `i `uc ]
 [e $U 2316  ]
 "1024
 [e :U 2315 ]
-[; ;inc\CANlib.h: 1024: else
-[; ;inc\CANlib.h: 1025: RXF4SIDLbits.SID1 = 0x00;
+[; ;can\CANlib.h: 1024: else
+[; ;can\CANlib.h: 1025: RXF4SIDLbits.SID1 = 0x00;
 "1025
 [e = . . _RXF4SIDLbits 0 6 -> -> 0 `i `uc ]
 [e :U 2316 ]
-[; ;inc\CANlib.h: 1027: if (filter & 0x00100000)
+[; ;can\CANlib.h: 1027: if (filter & 0x00100000)
 "1027
 [e $ ! != & _filter -> -> 1048576 `l `ul -> -> 0 `i `ul 2317  ]
-[; ;inc\CANlib.h: 1028: RXF4SIDLbits.SID2 = 0x01 ;
+[; ;can\CANlib.h: 1028: RXF4SIDLbits.SID2 = 0x01 ;
 "1028
 [e = . . _RXF4SIDLbits 0 7 -> -> 1 `i `uc ]
 [e $U 2318  ]
 "1029
 [e :U 2317 ]
-[; ;inc\CANlib.h: 1029: else
-[; ;inc\CANlib.h: 1030: RXF4SIDLbits.SID2 = 0x00 ;
+[; ;can\CANlib.h: 1029: else
+[; ;can\CANlib.h: 1030: RXF4SIDLbits.SID2 = 0x00 ;
 "1030
 [e = . . _RXF4SIDLbits 0 7 -> -> 0 `i `uc ]
 [e :U 2318 ]
-[; ;inc\CANlib.h: 1032: tamp = (filter >> 21);
+[; ;can\CANlib.h: 1032: tamp = (filter >> 21);
 "1032
 [e = _tamp >> _filter -> 21 `i ]
-[; ;inc\CANlib.h: 1033: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 1033: tamp = tamp & 0x000000FF;
 "1033
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 1034: RXF4SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 1034: RXF4SIDH = (unsigned char) tamp;
 "1034
 [e = _RXF4SIDH -> _tamp `uc ]
 "1035
 }
 [e :U 2308 ]
-[; ;inc\CANlib.h: 1035: }
-[; ;inc\CANlib.h: 1037: if ((numBuffer ==CAN_FILTER_B2_F4) && (type == CAN_CONFIG_XTD_MSG))
+[; ;can\CANlib.h: 1035: }
+[; ;can\CANlib.h: 1037: if ((numBuffer ==CAN_FILTER_B2_F4) && (type == CAN_CONFIG_XTD_MSG))
 "1037
 [e $ ! && == -> _numBuffer `i -> . `E16881 5 `i == -> _type `i -> . `E16844 12 `i 2319  ]
-[; ;inc\CANlib.h: 1038: {
+[; ;can\CANlib.h: 1038: {
 "1038
 {
-[; ;inc\CANlib.h: 1039: RXF5SIDLbits.EXIDEN = 0x01;
+[; ;can\CANlib.h: 1039: RXF5SIDLbits.EXIDEN = 0x01;
 "1039
 [e = . . _RXF5SIDLbits 0 3 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 1041: tamp = filter & 0x000000FF;
+[; ;can\CANlib.h: 1041: tamp = filter & 0x000000FF;
 "1041
 [e = _tamp & _filter -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 1042: RXF5EIDL = (unsigned char) tamp;
+[; ;can\CANlib.h: 1042: RXF5EIDL = (unsigned char) tamp;
 "1042
 [e = _RXF5EIDL -> _tamp `uc ]
-[; ;inc\CANlib.h: 1044: tamp = filter & 0x0000FF00;
+[; ;can\CANlib.h: 1044: tamp = filter & 0x0000FF00;
 "1044
 [e = _tamp & _filter -> -> 65280 `ui `ul ]
-[; ;inc\CANlib.h: 1045: tamp = tamp >> 8;
+[; ;can\CANlib.h: 1045: tamp = tamp >> 8;
 "1045
 [e = _tamp >> _tamp -> 8 `i ]
-[; ;inc\CANlib.h: 1046: RXF5EIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 1046: RXF5EIDH = (unsigned char) tamp;
 "1046
 [e = _RXF5EIDH -> _tamp `uc ]
-[; ;inc\CANlib.h: 1048: if (filter & 0x00010000)
+[; ;can\CANlib.h: 1048: if (filter & 0x00010000)
 "1048
 [e $ ! != & _filter -> -> 65536 `l `ul -> -> 0 `i `ul 2320  ]
-[; ;inc\CANlib.h: 1049: RXF5SIDLbits.EID16 = 0x01;
+[; ;can\CANlib.h: 1049: RXF5SIDLbits.EID16 = 0x01;
 "1049
 [e = . . _RXF5SIDLbits 0 0 -> -> 1 `i `uc ]
 [e $U 2321  ]
 "1050
 [e :U 2320 ]
-[; ;inc\CANlib.h: 1050: else
-[; ;inc\CANlib.h: 1051: RXF5SIDLbits.EID16 = 0x00;
+[; ;can\CANlib.h: 1050: else
+[; ;can\CANlib.h: 1051: RXF5SIDLbits.EID16 = 0x00;
 "1051
 [e = . . _RXF5SIDLbits 0 0 -> -> 0 `i `uc ]
 [e :U 2321 ]
-[; ;inc\CANlib.h: 1053: if (filter & 0x00020000)
+[; ;can\CANlib.h: 1053: if (filter & 0x00020000)
 "1053
 [e $ ! != & _filter -> -> 131072 `l `ul -> -> 0 `i `ul 2322  ]
-[; ;inc\CANlib.h: 1054: RXF5SIDLbits.EID17 = 0x01;
+[; ;can\CANlib.h: 1054: RXF5SIDLbits.EID17 = 0x01;
 "1054
 [e = . . _RXF5SIDLbits 0 1 -> -> 1 `i `uc ]
 [e $U 2323  ]
 "1055
 [e :U 2322 ]
-[; ;inc\CANlib.h: 1055: else
-[; ;inc\CANlib.h: 1056: RXF5SIDLbits.EID17 = 0x00;
+[; ;can\CANlib.h: 1055: else
+[; ;can\CANlib.h: 1056: RXF5SIDLbits.EID17 = 0x00;
 "1056
 [e = . . _RXF5SIDLbits 0 1 -> -> 0 `i `uc ]
 [e :U 2323 ]
-[; ;inc\CANlib.h: 1058: if (filter & 0x00040000)
+[; ;can\CANlib.h: 1058: if (filter & 0x00040000)
 "1058
 [e $ ! != & _filter -> -> 262144 `l `ul -> -> 0 `i `ul 2324  ]
-[; ;inc\CANlib.h: 1059: RXF5SIDLbits.SID0 = 0x01;
+[; ;can\CANlib.h: 1059: RXF5SIDLbits.SID0 = 0x01;
 "1059
 [e = . . _RXF5SIDLbits 0 5 -> -> 1 `i `uc ]
 [e $U 2325  ]
 "1060
 [e :U 2324 ]
-[; ;inc\CANlib.h: 1060: else
-[; ;inc\CANlib.h: 1061: RXF5SIDLbits.SID0 = 0x00;
+[; ;can\CANlib.h: 1060: else
+[; ;can\CANlib.h: 1061: RXF5SIDLbits.SID0 = 0x00;
 "1061
 [e = . . _RXF5SIDLbits 0 5 -> -> 0 `i `uc ]
 [e :U 2325 ]
-[; ;inc\CANlib.h: 1063: if (filter & 0x00080000)
+[; ;can\CANlib.h: 1063: if (filter & 0x00080000)
 "1063
 [e $ ! != & _filter -> -> 524288 `l `ul -> -> 0 `i `ul 2326  ]
-[; ;inc\CANlib.h: 1064: RXF5SIDLbits.SID1 = 0x01;
+[; ;can\CANlib.h: 1064: RXF5SIDLbits.SID1 = 0x01;
 "1064
 [e = . . _RXF5SIDLbits 0 6 -> -> 1 `i `uc ]
 [e $U 2327  ]
 "1065
 [e :U 2326 ]
-[; ;inc\CANlib.h: 1065: else
-[; ;inc\CANlib.h: 1066: RXF5SIDLbits.SID1 = 0x00;
+[; ;can\CANlib.h: 1065: else
+[; ;can\CANlib.h: 1066: RXF5SIDLbits.SID1 = 0x00;
 "1066
 [e = . . _RXF5SIDLbits 0 6 -> -> 0 `i `uc ]
 [e :U 2327 ]
-[; ;inc\CANlib.h: 1068: if (filter & 0x00100000)
+[; ;can\CANlib.h: 1068: if (filter & 0x00100000)
 "1068
 [e $ ! != & _filter -> -> 1048576 `l `ul -> -> 0 `i `ul 2328  ]
-[; ;inc\CANlib.h: 1069: RXF5SIDLbits.SID2 = 0x01 ;
+[; ;can\CANlib.h: 1069: RXF5SIDLbits.SID2 = 0x01 ;
 "1069
 [e = . . _RXF5SIDLbits 0 7 -> -> 1 `i `uc ]
 [e $U 2329  ]
 "1070
 [e :U 2328 ]
-[; ;inc\CANlib.h: 1070: else
-[; ;inc\CANlib.h: 1071: RXF5SIDLbits.SID2 = 0x00 ;
+[; ;can\CANlib.h: 1070: else
+[; ;can\CANlib.h: 1071: RXF5SIDLbits.SID2 = 0x00 ;
 "1071
 [e = . . _RXF5SIDLbits 0 7 -> -> 0 `i `uc ]
 [e :U 2329 ]
-[; ;inc\CANlib.h: 1073: tamp = (filter >> 21);
+[; ;can\CANlib.h: 1073: tamp = (filter >> 21);
 "1073
 [e = _tamp >> _filter -> 21 `i ]
-[; ;inc\CANlib.h: 1074: tamp = tamp & 0x000000FF;
+[; ;can\CANlib.h: 1074: tamp = tamp & 0x000000FF;
 "1074
 [e = _tamp & _tamp -> -> -> 255 `i `l `ul ]
-[; ;inc\CANlib.h: 1075: RXF5SIDH = (unsigned char) tamp;
+[; ;can\CANlib.h: 1075: RXF5SIDH = (unsigned char) tamp;
 "1075
 [e = _RXF5SIDH -> _tamp `uc ]
 "1076
 }
 [e :U 2319 ]
-[; ;inc\CANlib.h: 1076: }
-[; ;inc\CANlib.h: 1078: }
+[; ;can\CANlib.h: 1076: }
+[; ;can\CANlib.h: 1078: }
 "1078
 [e :UE 2257 ]
 }
@@ -18818,14 +18818,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANAbortMessages `(v ~T0 @X0 1 ef ]
 "1086
 {
-[; ;inc\CANlib.h: 1085: void CANAbortMessages (void)
-[; ;inc\CANlib.h: 1086: {
+[; ;can\CANlib.h: 1085: void CANAbortMessages (void)
+[; ;can\CANlib.h: 1086: {
 [e :U _CANAbortMessages ]
 [f ]
-[; ;inc\CANlib.h: 1087: CANCONbits.ABAT = 1;
+[; ;can\CANlib.h: 1087: CANCONbits.ABAT = 1;
 "1087
 [e = . . _CANCONbits 0 4 -> -> 1 `i `uc ]
-[; ;inc\CANlib.h: 1088: }
+[; ;can\CANlib.h: 1088: }
 "1088
 [e :UE 2330 ]
 }
@@ -18833,15 +18833,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANisBusOFF `(uc ~T0 @X0 1 ef ]
 "1095
 {
-[; ;inc\CANlib.h: 1094: BYTE CANisBusOFF (void)
-[; ;inc\CANlib.h: 1095: {
+[; ;can\CANlib.h: 1094: BYTE CANisBusOFF (void)
+[; ;can\CANlib.h: 1095: {
 [e :U _CANisBusOFF ]
 [f ]
-[; ;inc\CANlib.h: 1096: return (COMSTATbits.TXBO);
+[; ;can\CANlib.h: 1096: return (COMSTATbits.TXBO);
 "1096
 [e ) . . _COMSTATbits 1 5 ]
 [e $UE 2331  ]
-[; ;inc\CANlib.h: 1097: }
+[; ;can\CANlib.h: 1097: }
 "1097
 [e :UE 2331 ]
 }
@@ -18849,15 +18849,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANisTXpassive `(uc ~T0 @X0 1 ef ]
 "1103
 {
-[; ;inc\CANlib.h: 1102: BYTE CANisTXpassive (void)
-[; ;inc\CANlib.h: 1103: {
+[; ;can\CANlib.h: 1102: BYTE CANisTXpassive (void)
+[; ;can\CANlib.h: 1103: {
 [e :U _CANisTXpassive ]
 [f ]
-[; ;inc\CANlib.h: 1104: return (COMSTATbits.TXBP);
+[; ;can\CANlib.h: 1104: return (COMSTATbits.TXBP);
 "1104
 [e ) . . _COMSTATbits 1 4 ]
 [e $UE 2332  ]
-[; ;inc\CANlib.h: 1105: }
+[; ;can\CANlib.h: 1105: }
 "1105
 [e :UE 2332 ]
 }
@@ -18865,15 +18865,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANisRXpassive `(uc ~T0 @X0 1 ef ]
 "1112
 {
-[; ;inc\CANlib.h: 1111: BYTE CANisRXpassive (void)
-[; ;inc\CANlib.h: 1112: {
+[; ;can\CANlib.h: 1111: BYTE CANisRXpassive (void)
+[; ;can\CANlib.h: 1112: {
 [e :U _CANisRXpassive ]
 [f ]
-[; ;inc\CANlib.h: 1113: return (COMSTATbits.RXBP);
+[; ;can\CANlib.h: 1113: return (COMSTATbits.RXBP);
 "1113
 [e ) . . _COMSTATbits 1 3 ]
 [e $UE 2333  ]
-[; ;inc\CANlib.h: 1114: }
+[; ;can\CANlib.h: 1114: }
 "1114
 [e :UE 2333 ]
 }
@@ -18881,15 +18881,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANisTXwarningON `(uc ~T0 @X0 1 ef ]
 "1120
 {
-[; ;inc\CANlib.h: 1119: BYTE CANisTXwarningON (void)
-[; ;inc\CANlib.h: 1120: {
+[; ;can\CANlib.h: 1119: BYTE CANisTXwarningON (void)
+[; ;can\CANlib.h: 1120: {
 [e :U _CANisTXwarningON ]
 [f ]
-[; ;inc\CANlib.h: 1121: return (COMSTATbits.TXWARN);
+[; ;can\CANlib.h: 1121: return (COMSTATbits.TXWARN);
 "1121
 [e ) . . _COMSTATbits 1 2 ]
 [e $UE 2334  ]
-[; ;inc\CANlib.h: 1122: }
+[; ;can\CANlib.h: 1122: }
 "1122
 [e :UE 2334 ]
 }
@@ -18897,15 +18897,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANisRXwarningON `(uc ~T0 @X0 1 ef ]
 "1128
 {
-[; ;inc\CANlib.h: 1127: BYTE CANisRXwarningON (void)
-[; ;inc\CANlib.h: 1128: {
+[; ;can\CANlib.h: 1127: BYTE CANisRXwarningON (void)
+[; ;can\CANlib.h: 1128: {
 [e :U _CANisRXwarningON ]
 [f ]
-[; ;inc\CANlib.h: 1129: return (COMSTATbits.RXWARN);
+[; ;can\CANlib.h: 1129: return (COMSTATbits.RXWARN);
 "1129
 [e ) . . _COMSTATbits 1 1 ]
 [e $UE 2335  ]
-[; ;inc\CANlib.h: 1130: }
+[; ;can\CANlib.h: 1130: }
 "1130
 [e :UE 2335 ]
 }
@@ -18913,15 +18913,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANgetTXerrorCount `(uc ~T0 @X0 1 ef ]
 "1137
 {
-[; ;inc\CANlib.h: 1136: BYTE CANgetTXerrorCount (void)
-[; ;inc\CANlib.h: 1137: {
+[; ;can\CANlib.h: 1136: BYTE CANgetTXerrorCount (void)
+[; ;can\CANlib.h: 1137: {
 [e :U _CANgetTXerrorCount ]
 [f ]
-[; ;inc\CANlib.h: 1138: return (TXERRCNT);
+[; ;can\CANlib.h: 1138: return (TXERRCNT);
 "1138
 [e ) _TXERRCNT ]
 [e $UE 2336  ]
-[; ;inc\CANlib.h: 1139: }
+[; ;can\CANlib.h: 1139: }
 "1139
 [e :UE 2336 ]
 }
@@ -18929,15 +18929,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANgetRXerrorCount `(uc ~T0 @X0 1 ef ]
 "1146
 {
-[; ;inc\CANlib.h: 1145: BYTE CANgetRXerrorCount (void)
-[; ;inc\CANlib.h: 1146: {
+[; ;can\CANlib.h: 1145: BYTE CANgetRXerrorCount (void)
+[; ;can\CANlib.h: 1146: {
 [e :U _CANgetRXerrorCount ]
 [f ]
-[; ;inc\CANlib.h: 1147: return (RXERRCNT);
+[; ;can\CANlib.h: 1147: return (RXERRCNT);
 "1147
 [e ) _RXERRCNT ]
 [e $UE 2337  ]
-[; ;inc\CANlib.h: 1148: }
+[; ;can\CANlib.h: 1148: }
 "1148
 [e :UE 2337 ]
 }
@@ -18945,15 +18945,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANisTxReady `(uc ~T0 @X0 1 ef ]
 "1155
 {
-[; ;inc\CANlib.h: 1154: BYTE CANisTxReady (void)
-[; ;inc\CANlib.h: 1155: {
+[; ;can\CANlib.h: 1154: BYTE CANisTxReady (void)
+[; ;can\CANlib.h: 1155: {
 [e :U _CANisTxReady ]
 [f ]
-[; ;inc\CANlib.h: 1156: return (!TXB0CONbits.TXREQ || !TXB1CONbits.TXREQ || !TXB2CONbits.TXREQ);
+[; ;can\CANlib.h: 1156: return (!TXB0CONbits.TXREQ || !TXB1CONbits.TXREQ || !TXB2CONbits.TXREQ);
 "1156
 [e ) -> -> || || ! != -> . . _TXB0CONbits 0 3 `i -> -> -> 0 `i `Vuc `i ! != -> . . _TXB1CONbits 0 3 `i -> -> -> 0 `i `Vuc `i ! != -> . . _TXB2CONbits 0 3 `i -> -> -> 0 `i `Vuc `i `i `uc ]
 [e $UE 2338  ]
-[; ;inc\CANlib.h: 1157: }
+[; ;can\CANlib.h: 1157: }
 "1157
 [e :UE 2338 ]
 }
@@ -18961,27 +18961,27 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _CANisRxReady `(uc ~T0 @X0 1 ef ]
 "1164
 {
-[; ;inc\CANlib.h: 1163: BYTE CANisRxReady (void)
-[; ;inc\CANlib.h: 1164: {
+[; ;can\CANlib.h: 1163: BYTE CANisRxReady (void)
+[; ;can\CANlib.h: 1164: {
 [e :U _CANisRxReady ]
 [f ]
-[; ;inc\CANlib.h: 1165: return (RXB0CONbits.RXFUL || RXB1CONbits.RXFUL);
+[; ;can\CANlib.h: 1165: return (RXB0CONbits.RXFUL || RXB1CONbits.RXFUL);
 "1165
 [e ) -> -> || != -> . . _RXB0CONbits 0 7 `i -> -> -> 0 `i `Vuc `i != -> . . _RXB1CONbits 0 7 `i -> -> -> 0 `i `Vuc `i `i `uc ]
 [e $UE 2339  ]
-[; ;inc\CANlib.h: 1166: }
+[; ;can\CANlib.h: 1166: }
 "1166
 [e :UE 2339 ]
 }
 [; ;inc\delay.h: 74: void delay_ms (unsigned int value_ms);
 [; ;inc\delay.h: 88: void delay_s (unsigned char value_s);
 [; ;inc\delay.h: 102: void delay_set_quartz (unsigned char frequency);
-"49 F:/Tesina/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+"49 ../../Scuola/Triennio/sistemi/4^/PIC/librerie/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
 [v _delay_quartz_frequency_value `Vuc ~T0 @X0 1 e ]
 [i _delay_quartz_frequency_value
--> -> 16 `i `uc
+-> -> 20 `i `uc
 ]
-[; ;src\delay.c: 49: volatile unsigned char delay_quartz_frequency_value = 16;
+[; ;src\delay.c: 49: volatile unsigned char delay_quartz_frequency_value = 20;
 "50
 [v _clock_counter_reference `Vui ~T0 @X0 1 e ]
 [i _clock_counter_reference
@@ -19140,544 +19140,533 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdlib.h: 101: extern char * ltoa(char * buf, long val, int base);
 [; ;stdlib.h: 102: extern char * ultoa(char * buf, unsigned long val, int base);
 [; ;stdlib.h: 104: extern char * ftoa(float f, int * status);
-[; ;newmain.c: 37: void configurazione_iniziale(void);
-[; ;newmain.c: 38: void send_data(void);
-[; ;newmain.c: 39: void calibrazione(void);
-"40 newmain.c
+[; ;newmain.c: 36: void configurazione_iniziale(void);
+[; ;newmain.c: 37: void send_data(void);
+[; ;newmain.c: 38: void calibrazione(void);
+"39 newmain.c
 [v _msg `S2155 ~T0 @X0 1 e ]
-[; ;newmain.c: 40: CANmessage msg;
-"46
+[; ;newmain.c: 39: CANmessage msg;
+"45
 [v _limiteDx `ui ~T0 @X0 1 e ]
 [i _limiteDx
 -> -> 120 `i `ui
 ]
-[; ;newmain.c: 46: unsigned int limiteDx = 120;
-"47
+[; ;newmain.c: 45: unsigned int limiteDx = 120;
+"46
 [v _remote_frame `b ~T0 @X0 1 e ]
 [i _remote_frame
 -> 0 `i
 ]
-[; ;newmain.c: 47: bit remote_frame = 0;
-"48
+[; ;newmain.c: 46: bit remote_frame = 0;
+"47
 [v _noChange `b ~T0 @X0 1 e ]
 [i _noChange
 -> 0 `i
 ]
-[; ;newmain.c: 48: bit noChange = 0;
-"49
+[; ;newmain.c: 47: bit noChange = 0;
+"48
 [v _currentSteering `uc ~T0 @X0 1 e ]
 [i _currentSteering
 -> -> 180 `i `uc
 ]
-[; ;newmain.c: 49: char currentSteering = 180;
-"50
+[; ;newmain.c: 48: char currentSteering = 180;
+"49
 [v _pastSteering `uc ~T0 @X0 1 e ]
 [i _pastSteering
 -> -> 1 `i `uc
 ]
-[; ;newmain.c: 50: char pastSteering = 1;
-"51
+[; ;newmain.c: 49: char pastSteering = 1;
+"50
 [v _theorySteering `uc ~T0 @X0 1 e ]
 [i _theorySteering
 -> -> 0 `i `uc
 ]
-[; ;newmain.c: 51: char theorySteering = 0;
-"52
+[; ;newmain.c: 50: char theorySteering = 0;
+"51
 [v _counter `ul ~T0 @X0 1 e ]
 [i _counter
 -> -> -> 0 `i `l `ul
 ]
-[; ;newmain.c: 52: unsigned long counter = 0;
-"53
+[; ;newmain.c: 51: unsigned long counter = 0;
+"52
 [v _id `ul ~T0 @X0 1 e ]
 [i _id
 -> -> -> 0 `i `l `ul
 ]
-[; ;newmain.c: 53: unsigned long id = 0;
-"54
+[; ;newmain.c: 52: unsigned long id = 0;
+"53
 [v _timeCounter `ul ~T0 @X0 1 e ]
 [i _timeCounter
 -> -> -> 0 `i `l `ul
 ]
-[; ;newmain.c: 54: unsigned long timeCounter = 0;
-"55
+[; ;newmain.c: 53: unsigned long timeCounter = 0;
+"54
 [v _previousTimeCounter `ul ~T0 @X0 1 e ]
 [i _previousTimeCounter
 -> -> -> 0 `i `l `ul
 ]
-[; ;newmain.c: 55: unsigned long previousTimeCounter = 0;
-"56
+[; ;newmain.c: 54: unsigned long previousTimeCounter = 0;
+"55
 [v _duty_cycle `ul ~T0 @X0 1 e ]
 [i _duty_cycle
 -> -> -> 0 `i `l `ul
 ]
-[; ;newmain.c: 56: unsigned long duty_cycle = 0;
-"57
+[; ;newmain.c: 55: unsigned long duty_cycle = 0;
+"56
 [v _calibration `i ~T0 @X0 1 e ]
 [i _calibration
 -> 0 `i
 ]
-[; ;newmain.c: 57: int calibration = 0;
-"58
+[; ;newmain.c: 56: int calibration = 0;
+"57
 [v _timer `ul ~T0 @X0 1 e ]
 [i _timer
 -> -> -> 0 `i `l `ul
 ]
-[; ;newmain.c: 58: unsigned long timer = 0;
-"59
+[; ;newmain.c: 57: unsigned long timer = 0;
+"58
 [v _Ton `ui ~T0 @X0 1 e ]
 [i _Ton
 -> -> 0 `i `ui
 ]
-[; ;newmain.c: 59: unsigned int Ton = 0;
-"60
+[; ;newmain.c: 58: unsigned int Ton = 0;
+"59
 [v _ADCResult `ui ~T0 @X0 1 e ]
 [i _ADCResult
 -> -> 0 `i `ui
 ]
-[; ;newmain.c: 60: unsigned int ADCResult = 0;
-"61
+[; ;newmain.c: 59: unsigned int ADCResult = 0;
+"60
 [v _Toff `ui ~T0 @X0 1 e ]
 [i _Toff
 -> -> 0 `i `ui
 ]
-[; ;newmain.c: 61: unsigned int Toff = 0;
-"62
+[; ;newmain.c: 60: unsigned int Toff = 0;
+"61
 [v _errore `i ~T0 @X0 1 e ]
 [i _errore
 -> 0 `i
 ]
-[; ;newmain.c: 62: int errore = 0;
-"63
+[; ;newmain.c: 61: int errore = 0;
+"62
 [v _correzione `i ~T0 @X0 1 e ]
 [i _correzione
 -> 0 `i
 ]
-[; ;newmain.c: 63: int correzione = 0;
-"64
+[; ;newmain.c: 62: int correzione = 0;
+"63
 [v _potenza `i ~T0 @X0 1 e ]
 [i _potenza
 -> 2 `i
 ]
-[; ;newmain.c: 64: int potenza = 2;
-"65
+[; ;newmain.c: 63: int potenza = 2;
+"64
 [v _counter_array `uc ~T0 @X0 -> 8 `i e ]
 [i _counter_array
 :U ..
 -> -> 0 `i `uc
 ..
 ]
-[; ;newmain.c: 65: BYTE counter_array [8] = 0;
-"66
+[; ;newmain.c: 64: BYTE counter_array [8] = 0;
+"65
 [v _currentSteering_array `uc ~T0 @X0 -> 8 `i e ]
 [i _currentSteering_array
 :U ..
 -> -> 0 `i `uc
 ..
 ]
-[; ;newmain.c: 66: BYTE currentSteering_array [8] = 0;
-"67
+[; ;newmain.c: 65: BYTE currentSteering_array [8] = 0;
+"66
 [v _data_array `uc ~T0 @X0 -> 8 `i e ]
 [i _data_array
 :U ..
 -> -> 0 `i `uc
 ..
 ]
-[; ;newmain.c: 67: BYTE data_array [8] = 0;
+[; ;newmain.c: 66: BYTE data_array [8] = 0;
 [v F17254 `(v ~T0 @X0 1 tf ]
-"73
+"72
 [v _ISR_alta `IF17254 ~T51 @X0 1 e ]
 {
-[; ;newmain.c: 73: __attribute__((interrupt("__high_priority"))) void ISR_alta(void) {
+[; ;newmain.c: 72: __attribute__((interrupt("__high_priority"))) void ISR_alta(void) {
 [e :U _ISR_alta ]
 [f ]
-[; ;newmain.c: 74: if (noChange == 1) {
-"74
+[; ;newmain.c: 73: if (noChange == 1) {
+"73
 [e $ ! == -> _noChange `i -> 1 `i 2355  ]
 {
-[; ;newmain.c: 75: PORTCbits.RC0 = ~PORTCbits.RC0;
-"75
+[; ;newmain.c: 74: PORTCbits.RC0 = ~PORTCbits.RC0;
+"74
 [e = . . _PORTCbits 0 0 -> ~ -> . . _PORTCbits 0 0 `i `uc ]
-[; ;newmain.c: 76: T0CONbits.TMR0ON = 0;
-"76
+[; ;newmain.c: 75: T0CONbits.TMR0ON = 0;
+"75
 [e = . . _T0CONbits 0 5 -> -> 0 `i `uc ]
-[; ;newmain.c: 77: if (PORTCbits.RC0 == 1) {
-"77
+[; ;newmain.c: 76: if (PORTCbits.RC0 == 1) {
+"76
 [e $ ! == -> . . _PORTCbits 0 0 `i -> 1 `i 2356  ]
 {
-[; ;newmain.c: 78: WriteTimer0(Ton);
-"78
+[; ;newmain.c: 77: WriteTimer0(Ton);
+"77
 [e ( _WriteTimer0 (1 _Ton ]
-[; ;newmain.c: 79: T0CONbits.TMR0ON = 1;
-"79
+[; ;newmain.c: 78: T0CONbits.TMR0ON = 1;
+"78
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
-"80
+"79
 }
 [e :U 2356 ]
-[; ;newmain.c: 80: }
-[; ;newmain.c: 81: if (PORTCbits.RC0 == 0) {
-"81
+[; ;newmain.c: 79: }
+[; ;newmain.c: 80: if (PORTCbits.RC0 == 0) {
+"80
 [e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 2357  ]
 {
-[; ;newmain.c: 82: WriteTimer0(Toff);
-"82
+[; ;newmain.c: 81: WriteTimer0(Toff);
+"81
 [e ( _WriteTimer0 (1 _Toff ]
-[; ;newmain.c: 83: T0CONbits.TMR0ON = 1;
-"83
+[; ;newmain.c: 82: T0CONbits.TMR0ON = 1;
+"82
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
-"84
+"83
 }
 [e :U 2357 ]
-"85
+"84
 }
 [e :U 2355 ]
+[; ;newmain.c: 83: }
 [; ;newmain.c: 84: }
-[; ;newmain.c: 85: }
-[; ;newmain.c: 86: INTCONbits.TMR0IF = 0;
-"86
+[; ;newmain.c: 85: INTCONbits.TMR0IF = 0;
+"85
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;newmain.c: 88: }
-"88
+[; ;newmain.c: 87: }
+"87
 [e :UE 2354 ]
 }
 [v F17257 `(v ~T0 @X0 1 tf ]
-"93
+"92
 [v _ISR_bassa `IF17257 ~T52 @X0 1 e ]
 {
-[; ;newmain.c: 93: __attribute__((interrupt("__low_priority"))) void ISR_bassa(void) {
+[; ;newmain.c: 92: __attribute__((interrupt("__low_priority"))) void ISR_bassa(void) {
 [e :U _ISR_bassa ]
 [f ]
-[; ;newmain.c: 94: if ((PIR3bits.RXB0IF == 1) || (PIR3bits.RXB1IF == 1)) {
-"94
+[; ;newmain.c: 93: if ((PIR3bits.RXB0IF == 1) || (PIR3bits.RXB1IF == 1)) {
+"93
 [e $ ! || == -> . . _PIR3bits 0 0 `i -> 1 `i == -> . . _PIR3bits 0 1 `i -> 1 `i 2359  ]
 {
-[; ;newmain.c: 95: if (CANisRxReady()) {
-"95
+[; ;newmain.c: 94: if (CANisRxReady()) {
+"94
 [e $ ! != -> ( _CANisRxReady ..  `i -> -> -> 0 `i `uc `i 2360  ]
 {
-[; ;newmain.c: 96: CANreceiveMessage(&msg);
-"96
+[; ;newmain.c: 95: CANreceiveMessage(&msg);
+"95
 [e ( _CANreceiveMessage (1 &U _msg ]
-[; ;newmain.c: 97: if (msg.RTR == 1) {
-"97
+[; ;newmain.c: 96: if (msg.RTR == 1) {
+"96
 [e $ ! == -> . _msg 4 `i -> 1 `i 2361  ]
 {
-[; ;newmain.c: 98: id = msg.identifier;
-"98
+[; ;newmain.c: 97: id = msg.identifier;
+"97
 [e = _id . _msg 0 ]
-[; ;newmain.c: 99: remote_frame = msg.RTR;
-"99
+[; ;newmain.c: 98: remote_frame = msg.RTR;
+"98
 [e = _remote_frame -> . _msg 4 `b ]
-"100
+"99
 }
 [e :U 2361 ]
-[; ;newmain.c: 100: }
-[; ;newmain.c: 101: if (msg.identifier == 0b10000000000000000000000000000) {
+[; ;newmain.c: 99: }
+[; ;newmain.c: 101: if (msg.identifier == 0b00000000000000000000000000110) {
 "101
-[e $ ! == . _msg 0 -> -> 268435456 `l `ul 2362  ]
+[e $ ! == . _msg 0 -> -> -> 6 `i `l `ul 2362  ]
 {
-[; ;newmain.c: 102: data_array[0] = theorySteering;
-"102
-[e = *U + &U _data_array * -> -> -> 0 `i `ui `ux -> -> # *U &U _data_array `ui `ux _theorySteering ]
+[; ;newmain.c: 103: theorySteering = msg.data[0];
+"103
+[e = _theorySteering *U + &U . _msg 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _msg 1 `ui `ux ]
+[; ;newmain.c: 104: currentSteering = theorySteering + calibration;
 "104
+[e = _currentSteering -> + -> _theorySteering `i _calibration `uc ]
+[; ;newmain.c: 105: currentSteering = (limiteDx * currentSteering) / 180;
+"105
+[e = _currentSteering -> / * _limiteDx -> _currentSteering `ui -> -> 180 `i `ui `uc ]
+[; ;newmain.c: 106: noChange = 1;
+"106
+[e = _noChange -> -> 1 `i `b ]
+"107
 }
 [e :U 2362 ]
-[; ;newmain.c: 104: }
-[; ;newmain.c: 105: if (msg.identifier == 0b00000000000000000000000000110) {
-"105
-[e $ ! == . _msg 0 -> -> -> 6 `i `l `ul 2363  ]
-{
-[; ;newmain.c: 107: theorySteering = msg.data[0];
-"107
-[e = _theorySteering *U + &U . _msg 1 * -> -> -> 0 `i `ui `ux -> -> # *U &U . _msg 1 `ui `ux ]
-[; ;newmain.c: 108: currentSteering = theorySteering + calibration;
 "108
-[e = _currentSteering -> + -> _theorySteering `i _calibration `uc ]
-[; ;newmain.c: 109: currentSteering = (limiteDx * currentSteering) / 180;
-"109
-[e = _currentSteering -> / * _limiteDx -> _currentSteering `ui -> -> 180 `i `ui `uc ]
-[; ;newmain.c: 110: noChange = 1;
-"110
-[e = _noChange -> -> 1 `i `b ]
-"111
-}
-[e :U 2363 ]
-"112
 }
 [e :U 2360 ]
-[; ;newmain.c: 111: }
-[; ;newmain.c: 112: }
-[; ;newmain.c: 113: PIR3bits.RXB0IF = 0;
-"113
+[; ;newmain.c: 107: }
+[; ;newmain.c: 108: }
+[; ;newmain.c: 109: PIR3bits.RXB0IF = 0;
+"109
 [e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[; ;newmain.c: 114: PIR3bits.RXB1IF = 0;
-"114
+[; ;newmain.c: 110: PIR3bits.RXB1IF = 0;
+"110
 [e = . . _PIR3bits 0 1 -> -> 0 `i `uc ]
-"115
+"111
 }
 [e :U 2359 ]
-[; ;newmain.c: 115: }
-[; ;newmain.c: 116: if (PIR2bits.TMR3IF) {
-"116
-[e $ ! != -> . . _PIR2bits 0 1 `i -> -> -> 0 `i `Vuc `i 2364  ]
+[; ;newmain.c: 111: }
+[; ;newmain.c: 112: if (PIR2bits.TMR3IF) {
+"112
+[e $ ! != -> . . _PIR2bits 0 1 `i -> -> -> 0 `i `Vuc `i 2363  ]
 {
-[; ;newmain.c: 117: timeCounter++;
-"117
+[; ;newmain.c: 113: timeCounter++;
+"113
 [e ++ _timeCounter -> -> -> 1 `i `l `ul ]
-[; ;newmain.c: 118: TMR3H = 0x63;
-"118
+[; ;newmain.c: 114: TMR3H = 0x63;
+"114
 [e = _TMR3H -> -> 99 `i `uc ]
-[; ;newmain.c: 119: TMR3L = 0xC0;
-"119
+[; ;newmain.c: 115: TMR3L = 0xC0;
+"115
 [e = _TMR3L -> -> 192 `i `uc ]
-[; ;newmain.c: 120: PIR2bits.TMR3IF = 0;
-"120
+[; ;newmain.c: 116: PIR2bits.TMR3IF = 0;
+"116
 [e = . . _PIR2bits 0 1 -> -> 0 `i `uc ]
-"121
+"117
 }
-[e :U 2364 ]
-[; ;newmain.c: 121: }
-[; ;newmain.c: 122: }
-"122
+[e :U 2363 ]
+[; ;newmain.c: 117: }
+[; ;newmain.c: 118: }
+"118
 [e :UE 2358 ]
 }
-"128
+"124
 [v _main `(i ~T0 @X0 1 ef ]
 {
-[; ;newmain.c: 128: int main(void) {
+[; ;newmain.c: 124: int main(void) {
 [e :U _main ]
 [f ]
-[; ;newmain.c: 129: configurazione_iniziale();
-"129
+[; ;newmain.c: 125: configurazione_iniziale();
+"125
 [e ( _configurazione_iniziale ..  ]
-[; ;newmain.c: 130: while (1) {
-"130
-[e :U 2367 ]
+[; ;newmain.c: 126: while (1) {
+"126
+[e :U 2366 ]
 {
-[; ;newmain.c: 131: calibrazione();
-"131
+[; ;newmain.c: 127: calibrazione();
+"127
 [e ( _calibrazione ..  ]
-[; ;newmain.c: 132: duty_cycle = currentSteering;
-"132
+[; ;newmain.c: 128: duty_cycle = currentSteering;
+"128
 [e = _duty_cycle -> _currentSteering `ul ]
-[; ;newmain.c: 133: if (PORTCbits.RC0 == 0) {
-"133
-[e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 2369  ]
+[; ;newmain.c: 129: if (PORTCbits.RC0 == 0) {
+"129
+[e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 2368  ]
 {
-[; ;newmain.c: 134: timer = (((duty_cycle * 700) / 90) + 800) *2;
-"134
+[; ;newmain.c: 130: timer = (((duty_cycle * 700) / 90) + 800) *2;
+"130
 [e = _timer * + / * _duty_cycle -> -> -> 700 `i `l `ul -> -> -> 90 `i `l `ul -> -> -> 800 `i `l `ul -> -> -> 2 `i `l `ul ]
-[; ;newmain.c: 135: Ton = 65536 - timer;
-"135
+[; ;newmain.c: 131: Ton = 65536 - timer;
+"131
 [e = _Ton -> - -> -> 65536 `l `ul _timer `ui ]
-[; ;newmain.c: 136: Toff = 20000 - (timer / 2);
-"136
+[; ;newmain.c: 132: Toff = 20000 - (timer / 2);
+"132
 [e = _Toff -> - -> -> -> 20000 `i `l `ul / _timer -> -> -> 2 `i `l `ul `ui ]
-[; ;newmain.c: 137: Toff = (65536 - (Toff * 2));
-"137
+[; ;newmain.c: 133: Toff = (65536 - (Toff * 2));
+"133
 [e = _Toff -> - -> 65536 `l -> * _Toff -> -> 2 `i `ui `l `ui ]
+"134
+}
+[e :U 2368 ]
+"135
+}
+[e :U 2365 ]
+"126
+[e $U 2366  ]
+[e :U 2367 ]
+[; ;newmain.c: 134: }
+[; ;newmain.c: 135: }
+[; ;newmain.c: 136: if (remote_frame == 1) {
+"136
+[e $ ! == -> _remote_frame `i -> 1 `i 2369  ]
+{
+[; ;newmain.c: 137: send_data();
+"137
+[e ( _send_data ..  ]
 "138
 }
 [e :U 2369 ]
-"139
-}
-[e :U 2366 ]
-"130
-[e $U 2367  ]
-[e :U 2368 ]
 [; ;newmain.c: 138: }
-[; ;newmain.c: 139: }
-[; ;newmain.c: 140: if (remote_frame == 1) {
-"140
-[e $ ! == -> _remote_frame `i -> 1 `i 2370  ]
+[; ;newmain.c: 139: if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
+"139
+[e $ ! || == -> ( _CANisTXwarningON ..  `i -> 1 `i == -> ( _CANisRXwarningON ..  `i -> 1 `i 2370  ]
 {
-[; ;newmain.c: 141: send_data();
+[; ;newmain.c: 140: PORTAbits.RA5 = 1;
+"140
+[e = . . _PORTAbits 0 5 -> -> 1 `i `uc ]
 "141
-[e ( _send_data ..  ]
-"142
 }
 [e :U 2370 ]
-[; ;newmain.c: 142: }
-[; ;newmain.c: 143: if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
-"143
-[e $ ! || == -> ( _CANisTXwarningON ..  `i -> 1 `i == -> ( _CANisRXwarningON ..  `i -> 1 `i 2371  ]
-{
-[; ;newmain.c: 144: PORTAbits.RA5 = 1;
-"144
-[e = . . _PORTAbits 0 5 -> -> 1 `i `uc ]
-"145
-}
-[e :U 2371 ]
+[; ;newmain.c: 141: }
 [; ;newmain.c: 145: }
-[; ;newmain.c: 149: }
-"149
-[e :UE 2365 ]
+"145
+[e :UE 2364 ]
 }
-"155
+"151
 [v _send_data `(v ~T0 @X0 1 ef ]
 {
-[; ;newmain.c: 155: void send_data(void) {
+[; ;newmain.c: 151: void send_data(void) {
 [e :U _send_data ]
 [f ]
-[; ;newmain.c: 156: if (CANisTxReady()) {
+[; ;newmain.c: 152: if (CANisTxReady()) {
+"152
+[e $ ! != -> ( _CANisTxReady ..  `i -> -> -> 0 `i `uc `i 2372  ]
+{
+[; ;newmain.c: 153: if (remote_frame == 1) {
+"153
+[e $ ! == -> _remote_frame `i -> 1 `i 2373  ]
+{
+[; ;newmain.c: 155: CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG &
+[; ;newmain.c: 156: CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
 "156
-[e $ ! != -> ( _CANisTxReady ..  `i -> -> -> 0 `i `uc `i 2373  ]
-{
-[; ;newmain.c: 157: if (remote_frame == 1) {
-"157
-[e $ ! == -> _remote_frame `i -> 1 `i 2374  ]
-{
-[; ;newmain.c: 159: CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG &
-[; ;newmain.c: 160: CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
-"160
 [e ( _CANsendMessage (4 , , , _id &U _data_array -> -> 8 `i `uc -> & & -> . `E16844 11 `i -> . `E16866 10 `i -> . `E16866 1 `i `E16866 ]
-"165
-}
-[e :U 2374 ]
-[; ;newmain.c: 165: }
-[; ;newmain.c: 166: remote_frame = 0;
-"166
-[e = _remote_frame -> -> 0 `i `b ]
-"167
+"161
 }
 [e :U 2373 ]
-[; ;newmain.c: 167: }
-[; ;newmain.c: 168: }
-"168
-[e :UE 2372 ]
+[; ;newmain.c: 161: }
+[; ;newmain.c: 162: remote_frame = 0;
+"162
+[e = _remote_frame -> -> 0 `i `b ]
+"163
 }
-"174
+[e :U 2372 ]
+[; ;newmain.c: 163: }
+[; ;newmain.c: 164: }
+"164
+[e :UE 2371 ]
+}
+"170
 [v _calibrazione `(v ~T0 @X0 1 ef ]
 {
-[; ;newmain.c: 174: void calibrazione(void) {
+[; ;newmain.c: 170: void calibrazione(void) {
 [e :U _calibrazione ]
 [f ]
-[; ;newmain.c: 175: ConvertADC();
-"175
+[; ;newmain.c: 171: ConvertADC();
+"171
 [e ( _ConvertADC ..  ]
-[; ;newmain.c: 176: while (BusyADC());
-"176
-[e $U 2376  ]
-[e :U 2377 ]
+[; ;newmain.c: 172: while (BusyADC());
+"172
+[e $U 2375  ]
 [e :U 2376 ]
-[e $ != -> ( _BusyADC ..  `i -> -> -> 0 `i `uc `i 2377  ]
-[e :U 2378 ]
-[; ;newmain.c: 177: ADCResult = ReadADC();
-"177
+[e :U 2375 ]
+[e $ != -> ( _BusyADC ..  `i -> -> -> 0 `i `uc `i 2376  ]
+[e :U 2377 ]
+[; ;newmain.c: 173: ADCResult = ReadADC();
+"173
 [e = _ADCResult -> ( _ReadADC ..  `ui ]
-[; ;newmain.c: 178: calibration = (ADCResult - 511) / 45;
-"178
+[; ;newmain.c: 174: calibration = (ADCResult - 511) / 45;
+"174
 [e = _calibration -> / - _ADCResult -> -> 511 `i `ui -> -> 45 `i `ui `i ]
-[; ;newmain.c: 179: }
-"179
-[e :UE 2375 ]
+[; ;newmain.c: 175: }
+"175
+[e :UE 2374 ]
 }
-"185
+"181
 [v _configurazione_iniziale `(v ~T0 @X0 1 ef ]
 {
-[; ;newmain.c: 185: void configurazione_iniziale(void) {
+[; ;newmain.c: 181: void configurazione_iniziale(void) {
 [e :U _configurazione_iniziale ]
 [f ]
-[; ;newmain.c: 190: CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
-"190
+[; ;newmain.c: 186: CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
+"186
 [e ( _CANInitialize (4 , , , , , -> -> 4 `i `uc -> -> 6 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc -> -> 3 `i `uc -> & & & -> . `E16844 6 `i -> . `E16844 8 `i -> . `E16844 20 `i -> . `E16844 14 `i `E16844 ]
-[; ;newmain.c: 195: PIR3bits.RXB1IF = 0;
-"195
+[; ;newmain.c: 191: PIR3bits.RXB1IF = 0;
+"191
 [e = . . _PIR3bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 196: PIR3bits.RXB0IF = 0;
-"196
+[; ;newmain.c: 192: PIR3bits.RXB0IF = 0;
+"192
 [e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[; ;newmain.c: 197: INTCONbits.TMR0IF = 0;
-"197
+[; ;newmain.c: 193: INTCONbits.TMR0IF = 0;
+"193
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;newmain.c: 198: PIR2bits.TMR3IF = 0;
-"198
+[; ;newmain.c: 194: PIR2bits.TMR3IF = 0;
+"194
 [e = . . _PIR2bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 203: IPR3bits.RXB1IP = 0;
-"203
+[; ;newmain.c: 199: IPR3bits.RXB1IP = 0;
+"199
 [e = . . _IPR3bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 204: IPR3bits.RXB0IP = 0;
-"204
+[; ;newmain.c: 200: IPR3bits.RXB0IP = 0;
+"200
 [e = . . _IPR3bits 0 0 -> -> 0 `i `uc ]
-[; ;newmain.c: 205: INTCON2bits.TMR0IP = 1;
-"205
+[; ;newmain.c: 201: INTCON2bits.TMR0IP = 1;
+"201
 [e = . . _INTCON2bits 1 2 -> -> 1 `i `uc ]
-[; ;newmain.c: 206: IPR2bits.TMR3IP = 0;
-"206
+[; ;newmain.c: 202: IPR2bits.TMR3IP = 0;
+"202
 [e = . . _IPR2bits 0 1 -> -> 0 `i `uc ]
-[; ;newmain.c: 211: RCONbits.IPEN = 1;
-"211
+[; ;newmain.c: 207: RCONbits.IPEN = 1;
+"207
 [e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
-[; ;newmain.c: 212: PIE3bits.RXB1IE = 1;
-"212
+[; ;newmain.c: 208: PIE3bits.RXB1IE = 1;
+"208
 [e = . . _PIE3bits 0 1 -> -> 1 `i `uc ]
-[; ;newmain.c: 213: PIE3bits.RXB0IE = 1;
-"213
+[; ;newmain.c: 209: PIE3bits.RXB0IE = 1;
+"209
 [e = . . _PIE3bits 0 0 -> -> 1 `i `uc ]
-[; ;newmain.c: 214: INTCONbits.TMR0IE = 1;
-"214
+[; ;newmain.c: 210: INTCONbits.TMR0IE = 1;
+"210
 [e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-[; ;newmain.c: 215: PIE2bits.TMR3IE = 1;
-"215
+[; ;newmain.c: 211: PIE2bits.TMR3IE = 1;
+"211
 [e = . . _PIE2bits 0 1 -> -> 1 `i `uc ]
-[; ;newmain.c: 216: INTCONbits.GIEH = 1;
-"216
+[; ;newmain.c: 212: INTCONbits.GIEH = 1;
+"212
 [e = . . _INTCONbits 2 7 -> -> 1 `i `uc ]
-[; ;newmain.c: 217: INTCONbits.GIEL = 1;
-"217
+[; ;newmain.c: 213: INTCONbits.GIEL = 1;
+"213
 [e = . . _INTCONbits 2 6 -> -> 1 `i `uc ]
-[; ;newmain.c: 222: T0CON = 0x80;
-"222
+[; ;newmain.c: 218: T0CON = 0x80;
+"218
 [e = _T0CON -> -> 128 `i `uc ]
-[; ;newmain.c: 227: TMR3H = 0x63;
-"227
+[; ;newmain.c: 223: TMR3H = 0x63;
+"223
 [e = _TMR3H -> -> 99 `i `uc ]
-[; ;newmain.c: 228: TMR3L = 0xC0;
-"228
+[; ;newmain.c: 224: TMR3L = 0xC0;
+"224
 [e = _TMR3L -> -> 192 `i `uc ]
-[; ;newmain.c: 229: T3CON = 0x01;
-"229
+[; ;newmain.c: 225: T3CON = 0x01;
+"225
 [e = _T3CON -> -> 1 `i `uc ]
-[; ;newmain.c: 230: OpenADC(0b11011111 & 0b11111111 & 0b11111101, 0b10001111 & 0b11111100 & 0b01111111, 0b11111101);
-"230
+[; ;newmain.c: 226: OpenADC(0b11011111 & 0b11111111 & 0b11111101, 0b10001111 & 0b11111100 & 0b01111111, 0b11111101);
+"226
 [e ( _OpenADC (3 , , -> & & -> 223 `i -> 255 `i -> 253 `i `uc -> & & -> 143 `i -> 252 `i -> 127 `i `uc -> -> 253 `i `uc ]
-[; ;newmain.c: 241: T0CONbits.TMR0ON = 1;
-"241
+[; ;newmain.c: 237: T0CONbits.TMR0ON = 1;
+"237
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
-[; ;newmain.c: 243: PORTCbits.RC0 = 0;
-"243
+[; ;newmain.c: 239: PORTCbits.RC0 = 0;
+"239
 [e = . . _PORTCbits 0 0 -> -> 0 `i `uc ]
-[; ;newmain.c: 247: LATA = 0x00;
-"247
+[; ;newmain.c: 243: LATA = 0x00;
+"243
 [e = _LATA -> -> 0 `i `uc ]
-[; ;newmain.c: 248: TRISA = 0b11111100;
-"248
+[; ;newmain.c: 244: TRISA = 0b11111100;
+"244
 [e = _TRISA -> -> 252 `i `uc ]
-[; ;newmain.c: 250: LATB = 0x00;
-"250
+[; ;newmain.c: 246: LATB = 0x00;
+"246
 [e = _LATB -> -> 0 `i `uc ]
-[; ;newmain.c: 251: TRISB = 0b11111011;
-"251
+[; ;newmain.c: 247: TRISB = 0b11111011;
+"247
 [e = _TRISB -> -> 251 `i `uc ]
-[; ;newmain.c: 253: LATC = 0x00;
-"253
+[; ;newmain.c: 249: LATC = 0x00;
+"249
 [e = _LATC -> -> 0 `i `uc ]
-[; ;newmain.c: 254: TRISC = 0x00;
-"254
+[; ;newmain.c: 250: TRISC = 0x00;
+"250
 [e = _TRISC -> -> 0 `i `uc ]
-[; ;newmain.c: 256: LATD = 0x00;
-"256
+[; ;newmain.c: 252: LATD = 0x00;
+"252
 [e = _LATD -> -> 0 `i `uc ]
-[; ;newmain.c: 257: TRISD = 0x00;
-"257
+[; ;newmain.c: 253: TRISD = 0x00;
+"253
 [e = _TRISD -> -> 0 `i `uc ]
-[; ;newmain.c: 259: LATE = 0x00;
-"259
+[; ;newmain.c: 255: LATE = 0x00;
+"255
 [e = _LATE -> -> 0 `i `uc ]
-[; ;newmain.c: 260: TRISE = 0xFF;
-"260
+[; ;newmain.c: 256: TRISE = 0xFF;
+"256
 [e = _TRISE -> -> 255 `i `uc ]
-[; ;newmain.c: 261: }
-"261
-[e :UE 2379 ]
+[; ;newmain.c: 257: }
+"257
+[e :UE 2378 ]
 }

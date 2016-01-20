@@ -30,7 +30,6 @@
 //==============================================================================
 
 #define _XTAL_FREQ 16000000
-#define Steering_info 0b10000000000000000000000000000
 #define Steering_change 0b00000000000000000000000000110
 #define emergency 0b00000000000000000000000000001
 
@@ -98,10 +97,7 @@ __interrupt(low_priority) void ISR_bassa(void) {
                 id = msg.identifier;
                 remote_frame = msg.RTR;
             }
-            if (msg.identifier == Steering_info) { //richiesta informazioni
-                data_array[0] = theorySteering;
 
-            }
             if (msg.identifier == Steering_change) { //cambio angolatura sterzo
                 //pastSteering = currentSteering;
                 theorySteering = msg.data[0];
