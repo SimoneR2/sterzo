@@ -30,7 +30,7 @@
 //==============================================================================
 
 #define _XTAL_FREQ 16000000
-#define Steering_change 0b00000000000000000000000000110
+#define Steering_change 0b00000000000000000000000000101
 #define emergency 0b00000000000000000000000000001
 
 void configurazione_iniziale(void);
