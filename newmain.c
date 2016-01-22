@@ -22,9 +22,7 @@
 #include <pwm.h>
 #include "timers.h"
 #include "adc.h"
-#include "math.h"
-#include "stdlib.h"
-
+#include "idCan.h"
 //==============================================================================
 //Dichiarazione frequenza clock e codici centraline
 //==============================================================================
