@@ -26,10 +26,7 @@
 //==============================================================================
 //Dichiarazione frequenza clock e codici centraline
 //==============================================================================
-
 #define _XTAL_FREQ 16000000
-#define Steering_change 0b00000000000000000000000000101
-#define emergency 0b00000000000000000000000000001
 
 void configurazione_iniziale(void);
 void send_data(void);
@@ -39,7 +36,6 @@ CANmessage msg;
 //==============================================================================
 //Dichiarazione variabili
 //==============================================================================
-
 unsigned int limiteDx = 120; //da variare per limitare l'angolo di sterzata
 bit remote_frame = 0;
 bit noChange = 0; //tiene fermo il servo finchè non arriva la prima impostazione
@@ -80,8 +76,8 @@ __interrupt(high_priority) void ISR_alta(void) {
             T0CONbits.TMR0ON = 1;
         }
     }
-        INTCONbits.TMR0IF = 0; //reset flag
-    
+    INTCONbits.TMR0IF = 0; //reset flag
+
 }
 //==============================================================================
 //ISR Bassa priorità (gestione can bus)
@@ -91,17 +87,18 @@ __interrupt(low_priority) void ISR_bassa(void) {
     if ((PIR3bits.RXB0IF == 1) || (PIR3bits.RXB1IF == 1)) { //se arriva messaggio sul CAN BUS
         if (CANisRxReady()) {
             CANreceiveMessage(&msg);
-            if (msg.RTR == 1) {
+            if (msg.identifier == STEERING_CHANGE) { //cambio angolatura sterzo
                 id = msg.identifier;
                 remote_frame = msg.RTR;
-            }
-
-            if (msg.identifier == Steering_change) { //cambio angolatura sterzo
-                //pastSteering = currentSteering;
                 theorySteering = msg.data[0];
                 currentSteering = theorySteering + calibration; //aggiunta calibrazione
                 currentSteering = (limiteDx * currentSteering) / 180;
                 noChange = 1;
+            }
+            if (msg.identifier == ECU_STATE) {
+                id = msg.identifier;
+                remote_grame = msg.RTR;
+                data_array [0] = 2;
             }
         }
         PIR3bits.RXB0IF = 0; //reset flag
@@ -152,10 +149,6 @@ void send_data(void) {
             //avere lo stesso id della richiesta
             CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG &
                     CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
-
-            //  delay_ms(5);
-            //  CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG &
-            //         CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
         }
         remote_frame = 0;
     }
