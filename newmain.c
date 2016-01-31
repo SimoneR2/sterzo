@@ -1,4 +1,4 @@
-#define USE_AND_MASKS
+#define USE_OR_MASKS
 //==============================================================================
 // PROGRAMM : STERZO
 // WRITTEN BY : MOSER & RIGHETTI & CLEMENTI & GALVAGNI
@@ -58,6 +58,7 @@ int potenza = 2;
 BYTE counter_array [8] = 0; //variabili per il CAN BUS
 BYTE currentSteering_array [8] = 0;
 BYTE data_array [8] = 0;
+BYTE data_array_1 [8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x05};
 
 //==============================================================================
 //ISR Alta priorità (creazione PWM a 50 Hz)
@@ -84,7 +85,13 @@ __interrupt(high_priority) void ISR_alta(void) {
 //==============================================================================
 
 __interrupt(low_priority) void ISR_bassa(void) {
+
     if ((PIR3bits.RXB0IF == 1) || (PIR3bits.RXB1IF == 1)) { //se arriva messaggio sul CAN BUS
+        PORTCbits.RC1 = 1;
+        delay_ms(100);
+        PORTCbits.RC1 = 0;
+        delay_ms(100);
+
         if (CANisRxReady()) {
             CANreceiveMessage(&msg);
             if (msg.identifier == STEERING_CHANGE) { //cambio angolatura sterzo
@@ -97,19 +104,15 @@ __interrupt(low_priority) void ISR_bassa(void) {
             }
             if (msg.identifier == ECU_STATE) {
                 id = msg.identifier;
-                remote_grame = msg.RTR;
-                data_array [0] = 2;
+                remote_frame = msg.RTR;
+                data_array [0] = 0x02;
+
             }
         }
         PIR3bits.RXB0IF = 0; //reset flag
         PIR3bits.RXB1IF = 0; //reset flag
     }
-    if (PIR2bits.TMR3IF) { //conteggio timer3 per contatore
-        timeCounter++;
-        TMR3H = 0x63;
-        TMR3L = 0xC0;
-        PIR2bits.TMR3IF = 0;
-    }
+   
 }
 
 //==============================================================================
@@ -118,7 +121,15 @@ __interrupt(low_priority) void ISR_bassa(void) {
 
 int main(void) {
     configurazione_iniziale();
+    PORTAbits.RA1 = 1;
+    PORTCbits.RC1 = 1;
+    delay_ms(500);
+    PORTAbits.RA1 = 0;
+    PORTCbits.RC1 = 0;
+    delay_ms(100);
     while (1) {
+        
+        delay_ms(100);
         calibrazione();
         duty_cycle = currentSteering;
         if (PORTCbits.RC0 == 0) {
@@ -208,12 +219,6 @@ void configurazione_iniziale(void) {
     //==========================================================================
     T0CON = 0x80; //imposta timer0, prescaler 1:2
 
-    //==========================================================================
-    //impostazione timer3 per contatore (interrput ogni 10ms)
-    //==========================================================================
-    TMR3H = 0x63;
-    TMR3L = 0xC0;
-    T3CON = 0x01; //abilita timer
     OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH1 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_2ANA); //re2
 
     //==========================================================================
