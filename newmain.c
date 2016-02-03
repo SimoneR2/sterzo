@@ -87,11 +87,6 @@ __interrupt(high_priority) void ISR_alta(void) {
 __interrupt(low_priority) void ISR_bassa(void) {
 
     if ((PIR3bits.RXB0IF == 1) || (PIR3bits.RXB1IF == 1)) { //se arriva messaggio sul CAN BUS
-        PORTCbits.RC1 = 1;
-        delay_ms(100);
-        PORTCbits.RC1 = 0;
-        delay_ms(100);
-
         if (CANisRxReady()) {
             CANreceiveMessage(&msg);
             if (msg.identifier == STEERING_CHANGE) { //cambio angolatura sterzo
@@ -112,7 +107,7 @@ __interrupt(low_priority) void ISR_bassa(void) {
         PIR3bits.RXB0IF = 0; //reset flag
         PIR3bits.RXB1IF = 0; //reset flag
     }
-   
+
 }
 
 //==============================================================================
@@ -128,7 +123,7 @@ int main(void) {
     PORTCbits.RC1 = 0;
     delay_ms(100);
     while (1) {
-        
+
         delay_ms(100);
         calibrazione();
         duty_cycle = currentSteering;
@@ -145,9 +140,6 @@ int main(void) {
     if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
         PORTAbits.RA5 = 1;
     }
-    //if ((timeCounter - previousTimeCounter) > 100) {
-    //     PORTAbits.RA5 = 1;
-    //  }
 }
 
 //==============================================================================
@@ -219,25 +211,19 @@ void configurazione_iniziale(void) {
     //==========================================================================
     T0CON = 0x80; //imposta timer0, prescaler 1:2
 
-    OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH1 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_2ANA); //re2
+    OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH0 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_1ANA); //re2
 
     //==========================================================================
     //impostazione periodo timer prima volta
     //==========================================================================
 
-    //timer = (((0 * 700) / 90) + 800) *2;
-    //Ton = 65536 - timer;
-    //Toff = 20000 - (timer / 2);
-    //Toff = (65536 - (Toff * 2));
-    //WriteTimer0(Ton);
     T0CONbits.TMR0ON = 1;
-    //Toff = 0x4588;
     PORTCbits.RC0 = 0;
     //==========================================================================
     //impostazione uscite/ingressi
     //==========================================================================
     LATA = 0x00;
-    TRISA = 0b11111100;
+    TRISA = 0b11111101;
 
     LATB = 0x00;
     TRISB = 0b11111011;
