@@ -1,4 +1,4 @@
-#define USE_OR_MASKS
+#define USE_AND_MASKS
 //==============================================================================
 // PROGRAMM : STERZO
 // WRITTEN BY : MOSER & RIGHETTI & CLEMENTI & GALVAGNI
@@ -16,10 +16,9 @@
 
 #include <xc.h>
 #include "newfile.h"
-#include <CANlib.h>
+#include "CANlib.h"
 #include "delay.h"
 #include "delay.c"
-#include <pwm.h>
 #include "timers.h"
 #include "adc.h"
 #include "idCan.h"
@@ -58,7 +57,6 @@ int potenza = 2;
 BYTE counter_array [8] = 0; //variabili per il CAN BUS
 BYTE currentSteering_array [8] = 0;
 BYTE data_array [8] = 0;
-BYTE data_array_1 [8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x05};
 
 //==============================================================================
 //ISR Alta priorità (creazione PWM a 50 Hz)
@@ -86,33 +84,32 @@ __interrupt(high_priority) void ISR_alta(void) {
 
 __interrupt(low_priority) void ISR_bassa(void) {
 
-    if ((PIR3bits.RXB0IF == 1) || (PIR3bits.RXB1IF == 1)) { //se arriva messaggio sul CAN BUS
-        PORTCbits.RC1 = 1;
-        delay_ms(100);
-        PORTCbits.RC1 = 0;
-        delay_ms(100);
+    // if ((PIR3bits.RXB0IF == 1) || (PIR3bits.RXB1IF == 1)) { //se arriva messaggio sul CAN BUS
 
-        if (CANisRxReady()) {
-            CANreceiveMessage(&msg);
-            if (msg.identifier == STEERING_CHANGE) { //cambio angolatura sterzo
-                id = msg.identifier;
-                remote_frame = msg.RTR;
-                theorySteering = msg.data[0];
-                currentSteering = theorySteering + calibration; //aggiunta calibrazione
-                currentSteering = (limiteDx * currentSteering) / 180;
-                noChange = 1;
-            }
-            if (msg.identifier == ECU_STATE) {
-                id = msg.identifier;
-                remote_frame = msg.RTR;
-                data_array [0] = 0x02;
+    if (CANisRxReady()) {
+        CANreceiveMessage(&msg);
+        if (msg.identifier == STEERING_CHANGE) { //cambio angolatura sterzo
+            id = msg.identifier;
+            remote_frame = msg.RTR;
+            theorySteering = msg.data[0];
 
-            }
+            currentSteering = theorySteering + calibration; //aggiunta calibrazione
+            currentSteering = (limiteDx * currentSteering) / 180;
+            noChange = 1;
         }
-        PIR3bits.RXB0IF = 0; //reset flag
-        PIR3bits.RXB1IF = 0; //reset flag
+        if ((msg.identifier == ECU_STATE)&&(msg.RTR == 1)) {
+            PORTCbits.RC1 = ~PORTCbits.RC1; //debug
+            id = msg.identifier;
+            remote_frame = 1;
+            data_array [0] = 0x02;
+            CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG & CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0); //DEBUG
+
+        }
     }
-   
+    PIR3bits.RXB0IF = 0; //reset flag
+    PIR3bits.RXB1IF = 0; //reset flag
+    //  }
+
 }
 
 //==============================================================================
@@ -128,7 +125,7 @@ int main(void) {
     PORTCbits.RC1 = 0;
     delay_ms(100);
     while (1) {
-        
+
         delay_ms(100);
         calibrazione();
         duty_cycle = currentSteering;
@@ -143,7 +140,7 @@ int main(void) {
         send_data();
     }
     if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
-        PORTAbits.RA5 = 1;
+        PORTAbits.RA1 = 1;
     }
     //if ((timeCounter - previousTimeCounter) > 100) {
     //     PORTAbits.RA5 = 1;
@@ -185,6 +182,7 @@ void configurazione_iniziale(void) {
     //==========================================================================
     //configurazione CAN BUS
     //==========================================================================
+    RCONbits.IPEN = 1; //abilita priorità interrupt
     CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
 
     //==========================================================================
@@ -193,7 +191,7 @@ void configurazione_iniziale(void) {
     PIR3bits.RXB1IF = 0; //azzera flag interrupt can bus buffer1
     PIR3bits.RXB0IF = 0; //azzera flag interrupt can bus buffer0
     INTCONbits.TMR0IF = 0; //azzera flag timer0
-    PIR2bits.TMR3IF = 0; //resetta flag interrupt timer 3
+    //PIR2bits.TMR3IF = 0; //resetta flag interrupt timer 3
 
     //==========================================================================
     //configurazione priorità
@@ -201,7 +199,7 @@ void configurazione_iniziale(void) {
     IPR3bits.RXB1IP = 0; //interrupt bassa priorità per can
     IPR3bits.RXB0IP = 0; //interrupt bassa priorità per can
     INTCON2bits.TMR0IP = 1; //interrupt alta priorità timer0
-    IPR2bits.TMR3IP = 0; //interrupt bassa priorità timer 3
+    // IPR2bits.TMR3IP = 0; //interrupt bassa priorità timer 3
 
     //==========================================================================
     //Enable interrupts
@@ -210,16 +208,16 @@ void configurazione_iniziale(void) {
     PIE3bits.RXB1IE = 1; //abilita interrupt ricezione can bus buffer1
     PIE3bits.RXB0IE = 1; //abilita interrupt ricezione can bus buffer0
     INTCONbits.TMR0IE = 1; //abilita interrupt timer0
-    PIE2bits.TMR3IE = 1; //abilita interrupt timer 3
+    // PIE2bits.TMR3IE = 0; //abilita interrupt timer 3
     INTCONbits.GIEH = 1; //abilita interrupt alta priorità
     INTCONbits.GIEL = 1; //abilita interrupt bassa priorità periferiche
 
     //==========================================================================
     //impostazione timer0 per PWM
     //==========================================================================
-    T0CON = 0x80; //imposta timer0, prescaler 1:2
 
-    OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH1 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_2ANA); //re2
+
+    OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH0 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_1ANA); //re2
 
     //==========================================================================
     //impostazione periodo timer prima volta
@@ -237,7 +235,7 @@ void configurazione_iniziale(void) {
     //impostazione uscite/ingressi
     //==========================================================================
     LATA = 0x00;
-    TRISA = 0b11111100;
+    TRISA = 0b11111101;
 
     LATB = 0x00;
     TRISB = 0b11111011;
@@ -250,4 +248,5 @@ void configurazione_iniziale(void) {
 
     LATE = 0x00;
     TRISE = 0xFF;
+    T0CON = 0x80; //imposta timer0, prescaler 1:2
 }
