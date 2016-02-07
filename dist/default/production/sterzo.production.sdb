@@ -133,13 +133,13 @@ CAN_RX_BUFFER_2_OVFL 2
 [v _ISR_alta ISR_alta `IIH(v  1 e 0 0 ]
 "85
 [v _ISR_bassa ISR_bassa `IIL(v  1 e 0 0 ]
-"119
+"115
 [v _main main `(i  1 e 2 0 ]
-"154
+"147
 [v _send_data send_data `(v  1 e 0 0 ]
-"169
+"162
 [v _calibrazione calibrazione `(v  1 e 0 0 ]
-"180
+"173
 [v _configurazione_iniziale configurazione_iniziale `(v  1 e 0 0 ]
 "49 D:\Documenti/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
 [v _delay_quartz_frequency_value delay_quartz_frequency_value `VEuc  1 e 1 0 ]
@@ -1471,15 +1471,15 @@ CAN_RX_BUFFER_2_OVFL 2
 [v _Toff Toff `ui  1 e 2 0 ]
 "59
 [v _data_array data_array `[8]uc  1 e 8 0 ]
-"119
+"115
 [v _main main `(i  1 e 2 0 ]
 {
-"148
+"141
 } 0
-"154
+"147
 [v _send_data send_data `(v  1 e 0 0 ]
 {
-"163
+"156
 } 0
 "295 D:\Documenti/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 [v _CANsendMessage CANsendMessage `(v  1 e 0 0 ]
@@ -1514,10 +1514,10 @@ CAN_RX_BUFFER_2_OVFL 2
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 21 ]
 "53
 } 0
-"180 D:\Documenti\GitHub\sterzo\newmain.c
+"173 D:\Documenti\GitHub\sterzo\newmain.c
 [v _configurazione_iniziale configurazione_iniziale `(v  1 e 0 0 ]
 {
-"252
+"239
 } 0
 "68 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
 [v _OpenADC OpenADC `(v  1 e 0 0 ]
@@ -1588,10 +1588,10 @@ CAN_RX_BUFFER_2_OVFL 2
 [v CANOperationMode@mode mode `E16838  1 a 1 19 ]
 "212
 } 0
-"169 D:\Documenti\GitHub\sterzo\newmain.c
+"162 D:\Documenti\GitHub\sterzo\newmain.c
 [v _calibrazione calibrazione `(v  1 e 0 0 ]
 {
-"174
+"167
 } 0
 "8 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
@@ -1655,7 +1655,7 @@ CAN_RX_BUFFER_2_OVFL 2
 "85 D:\Documenti\GitHub\sterzo\newmain.c
 [v _ISR_bassa ISR_bassa `IIL(v  1 e 0 0 ]
 {
-"113
+"109
 } 0
 "15 C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
 [v i1___wmul __wmul `(ui  1 e 2 0 ]

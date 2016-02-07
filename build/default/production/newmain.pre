@@ -20517,9 +20517,6 @@ INTCONbits.TMR0IF = 0;
 
 
 __attribute__((interrupt("__low_priority"))) void ISR_bassa(void) {
-
-
-
 if (CANisRxReady()) {
 CANreceiveMessage(&msg);
 if (msg.identifier == 0b00000000000000000000000000101) {
@@ -20537,16 +20534,15 @@ id = msg.identifier;
 remote_frame = 1;
 data_array [0] = 0x02;
 CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG & CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
-
-}
 }
 PIR3bits.RXB0IF = 0;
 PIR3bits.RXB1IF = 0;
 
 
 }
+}
 
-# 119
+# 115
 int main(void) {
 configurazione_iniziale();
 PORTAbits.RA1 = 1;
@@ -20573,12 +20569,9 @@ send_data();
 if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
 PORTAbits.RA1 = 1;
 }
-
-
-
 }
 
-# 154
+# 147
 void send_data(void) {
 if (CANisTxReady()) {
 if (remote_frame == 1) {
@@ -20590,7 +20583,7 @@ remote_frame = 0;
 }
 }
 
-# 169
+# 162
 void calibrazione(void) {
 ConvertADC();
 while (BusyADC());
@@ -20598,7 +20591,7 @@ ADCResult = ReadADC();
 calibration = (ADCResult - 511) / 45;
 }
 
-# 180
+# 173
 void configurazione_iniziale(void) {
 
 
@@ -20614,12 +20607,12 @@ PIR3bits.RXB1IF = 0;
 PIR3bits.RXB0IF = 0;
 INTCONbits.TMR0IF = 0;
 
-# 199
+# 192
 IPR3bits.RXB1IP = 0;
 IPR3bits.RXB0IP = 0;
 INTCON2bits.TMR0IP = 1;
 
-# 207
+# 200
 RCONbits.IPEN = 1;
 PIE3bits.RXB1IE = 1;
 PIE3bits.RXB0IE = 1;
@@ -20628,12 +20621,11 @@ INTCONbits.TMR0IE = 1;
 INTCONbits.GIEH = 1;
 INTCONbits.GIEL = 1;
 
-# 220
+# 213
 OpenADC(0b11011111 & 0b11111111 & 0b11111101, 0b10000111 & 0b11111100 & 0b01111111, 0b11111110);
 
-# 231
+# 219
 T0CONbits.TMR0ON = 1;
-
 PORTCbits.RC0 = 0;
 
 

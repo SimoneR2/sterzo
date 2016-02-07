@@ -11,11 +11,6 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Simone\AppData\Local\Temp\sao8.obj
-idloc IDLOC 0 200000 200000 8 1
-reset_vec CODE 0 0 0 4 1
-end_init CODE 0 188 188 4 1
-config CONFIG 0 300000 300000 E 1
 $dist/default/production\sterzo.production.obj
 intcodelo CODE 0 18 18 170 1
 cinit CODE 0 29CE 29CE 5A 1
@@ -58,6 +53,11 @@ idataBANK0 CODE 0 2C36 2C36 1 1
 dataBANK0 BANK0 1 BD BD 1 1
 dataCOMRAM COMRAM 1 45 45 6 1
 bssCOMRAM COMRAM 1 1 1 22 1
+$C:\Users\Simone\AppData\Local\Temp\s768.obj
+idloc IDLOC 0 200000 200000 8 1
+reset_vec CODE 0 0 0 4 1
+end_init CODE 0 188 188 4 1
+config CONFIG 0 300000 300000 E 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -98,24 +98,24 @@ MEDIUMCONST 2C37-3FFF 1
 $dist/default/production\sterzo.production.obj
 18 intcodelo CODE >1131:D:\Documenti/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 18 intcodelo CODE >85:D:\Documenti\GitHub\sterzo\newmain.c
-5E intcodelo CODE >89:D:\Documenti\GitHub\sterzo\newmain.c
-68 intcodelo CODE >90:D:\Documenti\GitHub\sterzo\newmain.c
-74 intcodelo CODE >91:D:\Documenti\GitHub\sterzo\newmain.c
-82 intcodelo CODE >92:D:\Documenti\GitHub\sterzo\newmain.c
-92 intcodelo CODE >93:D:\Documenti\GitHub\sterzo\newmain.c
-9C intcodelo CODE >94:D:\Documenti\GitHub\sterzo\newmain.c
-A0 intcodelo CODE >96:D:\Documenti\GitHub\sterzo\newmain.c
-A6 intcodelo CODE >97:D:\Documenti\GitHub\sterzo\newmain.c
-D0 intcodelo CODE >98:D:\Documenti\GitHub\sterzo\newmain.c
-D2 intcodelo CODE >100:D:\Documenti\GitHub\sterzo\newmain.c
-E6 intcodelo CODE >101:D:\Documenti\GitHub\sterzo\newmain.c
-100 intcodelo CODE >102:D:\Documenti\GitHub\sterzo\newmain.c
-110 intcodelo CODE >103:D:\Documenti\GitHub\sterzo\newmain.c
-112 intcodelo CODE >104:D:\Documenti\GitHub\sterzo\newmain.c
-118 intcodelo CODE >105:D:\Documenti\GitHub\sterzo\newmain.c
-13C intcodelo CODE >109:D:\Documenti\GitHub\sterzo\newmain.c
-13E intcodelo CODE >110:D:\Documenti\GitHub\sterzo\newmain.c
-140 intcodelo CODE >113:D:\Documenti\GitHub\sterzo\newmain.c
+5E intcodelo CODE >86:D:\Documenti\GitHub\sterzo\newmain.c
+68 intcodelo CODE >87:D:\Documenti\GitHub\sterzo\newmain.c
+74 intcodelo CODE >88:D:\Documenti\GitHub\sterzo\newmain.c
+82 intcodelo CODE >89:D:\Documenti\GitHub\sterzo\newmain.c
+92 intcodelo CODE >90:D:\Documenti\GitHub\sterzo\newmain.c
+9C intcodelo CODE >91:D:\Documenti\GitHub\sterzo\newmain.c
+A0 intcodelo CODE >93:D:\Documenti\GitHub\sterzo\newmain.c
+A6 intcodelo CODE >94:D:\Documenti\GitHub\sterzo\newmain.c
+D0 intcodelo CODE >95:D:\Documenti\GitHub\sterzo\newmain.c
+D2 intcodelo CODE >97:D:\Documenti\GitHub\sterzo\newmain.c
+E6 intcodelo CODE >98:D:\Documenti\GitHub\sterzo\newmain.c
+100 intcodelo CODE >99:D:\Documenti\GitHub\sterzo\newmain.c
+110 intcodelo CODE >100:D:\Documenti\GitHub\sterzo\newmain.c
+112 intcodelo CODE >101:D:\Documenti\GitHub\sterzo\newmain.c
+118 intcodelo CODE >102:D:\Documenti\GitHub\sterzo\newmain.c
+13C intcodelo CODE >104:D:\Documenti\GitHub\sterzo\newmain.c
+13E intcodelo CODE >105:D:\Documenti\GitHub\sterzo\newmain.c
+140 intcodelo CODE >109:D:\Documenti\GitHub\sterzo\newmain.c
 8 intcode CODE >1167:D:\Documenti/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 8 intcode CODE >65:D:\Documenti\GitHub\sterzo\newmain.c
 2BF6 text28 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c
@@ -454,12 +454,12 @@ E6 intcodelo CODE >101:D:\Documenti\GitHub\sterzo\newmain.c
 294E text13 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
 294E text13 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
 2956 text13 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
-2A7A text12 CODE >169:D:\Documenti\GitHub\sterzo\newmain.c
-2A7A text12 CODE >170:D:\Documenti\GitHub\sterzo\newmain.c
-2A7E text12 CODE >171:D:\Documenti\GitHub\sterzo\newmain.c
-2A88 text12 CODE >172:D:\Documenti\GitHub\sterzo\newmain.c
-2A94 text12 CODE >173:D:\Documenti\GitHub\sterzo\newmain.c
-2ABE text12 CODE >174:D:\Documenti\GitHub\sterzo\newmain.c
+2A7A text12 CODE >162:D:\Documenti\GitHub\sterzo\newmain.c
+2A7A text12 CODE >163:D:\Documenti\GitHub\sterzo\newmain.c
+2A7E text12 CODE >164:D:\Documenti\GitHub\sterzo\newmain.c
+2A88 text12 CODE >165:D:\Documenti\GitHub\sterzo\newmain.c
+2A94 text12 CODE >166:D:\Documenti\GitHub\sterzo\newmain.c
+2ABE text12 CODE >167:D:\Documenti\GitHub\sterzo\newmain.c
 2BB8 text11 CODE >207:D:\Documenti/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 2BBC text11 CODE >209:D:\Documenti/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 2BC0 text11 CODE >211:D:\Documenti/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
@@ -821,36 +821,36 @@ C8C text10 CODE >1076:D:\Documenti/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 28DC text7 CODE >87:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
 28DC text7 CODE >88:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
 28DE text7 CODE >89:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
-27E4 text6 CODE >180:D:\Documenti\GitHub\sterzo\newmain.c
-27E4 text6 CODE >185:D:\Documenti\GitHub\sterzo\newmain.c
-27E6 text6 CODE >186:D:\Documenti\GitHub\sterzo\newmain.c
-280A text6 CODE >191:D:\Documenti\GitHub\sterzo\newmain.c
-280C text6 CODE >192:D:\Documenti\GitHub\sterzo\newmain.c
-280E text6 CODE >193:D:\Documenti\GitHub\sterzo\newmain.c
-2810 text6 CODE >199:D:\Documenti\GitHub\sterzo\newmain.c
-2812 text6 CODE >200:D:\Documenti\GitHub\sterzo\newmain.c
-2814 text6 CODE >201:D:\Documenti\GitHub\sterzo\newmain.c
-2816 text6 CODE >207:D:\Documenti\GitHub\sterzo\newmain.c
-2818 text6 CODE >208:D:\Documenti\GitHub\sterzo\newmain.c
-281A text6 CODE >209:D:\Documenti\GitHub\sterzo\newmain.c
-281C text6 CODE >210:D:\Documenti\GitHub\sterzo\newmain.c
-281E text6 CODE >212:D:\Documenti\GitHub\sterzo\newmain.c
-2820 text6 CODE >213:D:\Documenti\GitHub\sterzo\newmain.c
-2822 text6 CODE >220:D:\Documenti\GitHub\sterzo\newmain.c
-2834 text6 CODE >231:D:\Documenti\GitHub\sterzo\newmain.c
-2836 text6 CODE >233:D:\Documenti\GitHub\sterzo\newmain.c
-2838 text6 CODE >237:D:\Documenti\GitHub\sterzo\newmain.c
-283C text6 CODE >238:D:\Documenti\GitHub\sterzo\newmain.c
-2840 text6 CODE >240:D:\Documenti\GitHub\sterzo\newmain.c
-2844 text6 CODE >241:D:\Documenti\GitHub\sterzo\newmain.c
-2848 text6 CODE >243:D:\Documenti\GitHub\sterzo\newmain.c
-284C text6 CODE >244:D:\Documenti\GitHub\sterzo\newmain.c
-2850 text6 CODE >246:D:\Documenti\GitHub\sterzo\newmain.c
-2854 text6 CODE >247:D:\Documenti\GitHub\sterzo\newmain.c
-2858 text6 CODE >249:D:\Documenti\GitHub\sterzo\newmain.c
-285C text6 CODE >250:D:\Documenti\GitHub\sterzo\newmain.c
-285E text6 CODE >251:D:\Documenti\GitHub\sterzo\newmain.c
-2862 text6 CODE >252:D:\Documenti\GitHub\sterzo\newmain.c
+27E4 text6 CODE >173:D:\Documenti\GitHub\sterzo\newmain.c
+27E4 text6 CODE >178:D:\Documenti\GitHub\sterzo\newmain.c
+27E6 text6 CODE >179:D:\Documenti\GitHub\sterzo\newmain.c
+280A text6 CODE >184:D:\Documenti\GitHub\sterzo\newmain.c
+280C text6 CODE >185:D:\Documenti\GitHub\sterzo\newmain.c
+280E text6 CODE >186:D:\Documenti\GitHub\sterzo\newmain.c
+2810 text6 CODE >192:D:\Documenti\GitHub\sterzo\newmain.c
+2812 text6 CODE >193:D:\Documenti\GitHub\sterzo\newmain.c
+2814 text6 CODE >194:D:\Documenti\GitHub\sterzo\newmain.c
+2816 text6 CODE >200:D:\Documenti\GitHub\sterzo\newmain.c
+2818 text6 CODE >201:D:\Documenti\GitHub\sterzo\newmain.c
+281A text6 CODE >202:D:\Documenti\GitHub\sterzo\newmain.c
+281C text6 CODE >203:D:\Documenti\GitHub\sterzo\newmain.c
+281E text6 CODE >205:D:\Documenti\GitHub\sterzo\newmain.c
+2820 text6 CODE >206:D:\Documenti\GitHub\sterzo\newmain.c
+2822 text6 CODE >213:D:\Documenti\GitHub\sterzo\newmain.c
+2834 text6 CODE >219:D:\Documenti\GitHub\sterzo\newmain.c
+2836 text6 CODE >220:D:\Documenti\GitHub\sterzo\newmain.c
+2838 text6 CODE >224:D:\Documenti\GitHub\sterzo\newmain.c
+283C text6 CODE >225:D:\Documenti\GitHub\sterzo\newmain.c
+2840 text6 CODE >227:D:\Documenti\GitHub\sterzo\newmain.c
+2844 text6 CODE >228:D:\Documenti\GitHub\sterzo\newmain.c
+2848 text6 CODE >230:D:\Documenti\GitHub\sterzo\newmain.c
+284C text6 CODE >231:D:\Documenti\GitHub\sterzo\newmain.c
+2850 text6 CODE >233:D:\Documenti\GitHub\sterzo\newmain.c
+2854 text6 CODE >234:D:\Documenti\GitHub\sterzo\newmain.c
+2858 text6 CODE >236:D:\Documenti\GitHub\sterzo\newmain.c
+285C text6 CODE >237:D:\Documenti\GitHub\sterzo\newmain.c
+285E text6 CODE >238:D:\Documenti\GitHub\sterzo\newmain.c
+2862 text6 CODE >239:D:\Documenti\GitHub\sterzo\newmain.c
 2B38 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
 2B38 text5 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
 2B48 text5 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
@@ -1033,73 +1033,73 @@ FE0 text2 CODE >405:D:\Documenti/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 1404 text2 CODE >517:D:\Documenti/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 1418 text2 CODE >519:D:\Documenti/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
 141C text2 CODE >521:D:\Documenti/LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
-2AC0 text1 CODE >154:D:\Documenti\GitHub\sterzo\newmain.c
-2AC0 text1 CODE >155:D:\Documenti\GitHub\sterzo\newmain.c
-2ACA text1 CODE >156:D:\Documenti\GitHub\sterzo\newmain.c
-2ACE text1 CODE >159:D:\Documenti\GitHub\sterzo\newmain.c
-2AFA text1 CODE >161:D:\Documenti\GitHub\sterzo\newmain.c
-251E text0 CODE >119:D:\Documenti\GitHub\sterzo\newmain.c
-251E text0 CODE >120:D:\Documenti\GitHub\sterzo\newmain.c
-2522 text0 CODE >121:D:\Documenti\GitHub\sterzo\newmain.c
-2524 text0 CODE >122:D:\Documenti\GitHub\sterzo\newmain.c
-2526 text0 CODE >123:D:\Documenti\GitHub\sterzo\newmain.c
-2534 text0 CODE >124:D:\Documenti\GitHub\sterzo\newmain.c
-2536 text0 CODE >125:D:\Documenti\GitHub\sterzo\newmain.c
-2538 text0 CODE >126:D:\Documenti\GitHub\sterzo\newmain.c
-2546 text0 CODE >129:D:\Documenti\GitHub\sterzo\newmain.c
-2554 text0 CODE >130:D:\Documenti\GitHub\sterzo\newmain.c
-2558 text0 CODE >131:D:\Documenti\GitHub\sterzo\newmain.c
-2564 text0 CODE >132:D:\Documenti\GitHub\sterzo\newmain.c
-2568 text0 CODE >133:D:\Documenti\GitHub\sterzo\newmain.c
-25FE text0 CODE >134:D:\Documenti\GitHub\sterzo\newmain.c
-2618 text0 CODE >135:D:\Documenti\GitHub\sterzo\newmain.c
-264E text0 CODE >136:D:\Documenti\GitHub\sterzo\newmain.c
-2670 text0 CODE >127:D:\Documenti\GitHub\sterzo\newmain.c
-29CE cinit CODE >1435:C:\Users\Simone\AppData\Local\Temp\sao8.
-29CE cinit CODE >1437:C:\Users\Simone\AppData\Local\Temp\sao8.
-29CE cinit CODE >1440:C:\Users\Simone\AppData\Local\Temp\sao8.
-29CE cinit CODE >1558:C:\Users\Simone\AppData\Local\Temp\sao8.
-29D2 cinit CODE >1559:C:\Users\Simone\AppData\Local\Temp\sao8.
-29D4 cinit CODE >1560:C:\Users\Simone\AppData\Local\Temp\sao8.
-29D4 cinit CODE >1561:C:\Users\Simone\AppData\Local\Temp\sao8.
-29D6 cinit CODE >1562:C:\Users\Simone\AppData\Local\Temp\sao8.
-29D8 cinit CODE >1563:C:\Users\Simone\AppData\Local\Temp\sao8.
-29DA cinit CODE >1566:C:\Users\Simone\AppData\Local\Temp\sao8.
-29DC cinit CODE >1569:C:\Users\Simone\AppData\Local\Temp\sao8.
-29E0 cinit CODE >1570:C:\Users\Simone\AppData\Local\Temp\sao8.
-29E2 cinit CODE >1571:C:\Users\Simone\AppData\Local\Temp\sao8.
-29E2 cinit CODE >1572:C:\Users\Simone\AppData\Local\Temp\sao8.
-29E4 cinit CODE >1573:C:\Users\Simone\AppData\Local\Temp\sao8.
-29E6 cinit CODE >1574:C:\Users\Simone\AppData\Local\Temp\sao8.
-29E8 cinit CODE >1579:C:\Users\Simone\AppData\Local\Temp\sao8.
-29EA cinit CODE >1580:C:\Users\Simone\AppData\Local\Temp\sao8.
-29EC cinit CODE >1581:C:\Users\Simone\AppData\Local\Temp\sao8.
-29EE cinit CODE >1582:C:\Users\Simone\AppData\Local\Temp\sao8.
-29F0 cinit CODE >1583:C:\Users\Simone\AppData\Local\Temp\sao8.
-29F2 cinit CODE >1584:C:\Users\Simone\AppData\Local\Temp\sao8.
-29F4 cinit CODE >1585:C:\Users\Simone\AppData\Local\Temp\sao8.
-29F6 cinit CODE >1586:C:\Users\Simone\AppData\Local\Temp\sao8.
-29FA cinit CODE >1590:C:\Users\Simone\AppData\Local\Temp\sao8.
-29FC cinit CODE >1591:C:\Users\Simone\AppData\Local\Temp\sao8.
-29FE cinit CODE >1592:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A00 cinit CODE >1593:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A02 cinit CODE >1594:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A04 cinit CODE >1595:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A06 cinit CODE >1596:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A0A cinit CODE >1597:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A0E cinit CODE >1598:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A0E cinit CODE >1599:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A10 cinit CODE >1600:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A14 cinit CODE >1601:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A16 cinit CODE >1602:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A18 cinit CODE >1603:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A1A cinit CODE >1609:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A1A cinit CODE >1611:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A1C cinit CODE >1612:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A1E cinit CODE >1614:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A20 cinit CODE >1615:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A22 cinit CODE >1616:C:\Users\Simone\AppData\Local\Temp\sao8.
-2A24 cinit CODE >1617:C:\Users\Simone\AppData\Local\Temp\sao8.
+2AC0 text1 CODE >147:D:\Documenti\GitHub\sterzo\newmain.c
+2AC0 text1 CODE >148:D:\Documenti\GitHub\sterzo\newmain.c
+2ACA text1 CODE >149:D:\Documenti\GitHub\sterzo\newmain.c
+2ACE text1 CODE >152:D:\Documenti\GitHub\sterzo\newmain.c
+2AFA text1 CODE >154:D:\Documenti\GitHub\sterzo\newmain.c
+251E text0 CODE >115:D:\Documenti\GitHub\sterzo\newmain.c
+251E text0 CODE >116:D:\Documenti\GitHub\sterzo\newmain.c
+2522 text0 CODE >117:D:\Documenti\GitHub\sterzo\newmain.c
+2524 text0 CODE >118:D:\Documenti\GitHub\sterzo\newmain.c
+2526 text0 CODE >119:D:\Documenti\GitHub\sterzo\newmain.c
+2534 text0 CODE >120:D:\Documenti\GitHub\sterzo\newmain.c
+2536 text0 CODE >121:D:\Documenti\GitHub\sterzo\newmain.c
+2538 text0 CODE >122:D:\Documenti\GitHub\sterzo\newmain.c
+2546 text0 CODE >125:D:\Documenti\GitHub\sterzo\newmain.c
+2554 text0 CODE >126:D:\Documenti\GitHub\sterzo\newmain.c
+2558 text0 CODE >127:D:\Documenti\GitHub\sterzo\newmain.c
+2564 text0 CODE >128:D:\Documenti\GitHub\sterzo\newmain.c
+2568 text0 CODE >129:D:\Documenti\GitHub\sterzo\newmain.c
+25FE text0 CODE >130:D:\Documenti\GitHub\sterzo\newmain.c
+2618 text0 CODE >131:D:\Documenti\GitHub\sterzo\newmain.c
+264E text0 CODE >132:D:\Documenti\GitHub\sterzo\newmain.c
+2670 text0 CODE >123:D:\Documenti\GitHub\sterzo\newmain.c
+29CE cinit CODE >1435:C:\Users\Simone\AppData\Local\Temp\s768.
+29CE cinit CODE >1437:C:\Users\Simone\AppData\Local\Temp\s768.
+29CE cinit CODE >1440:C:\Users\Simone\AppData\Local\Temp\s768.
+29CE cinit CODE >1558:C:\Users\Simone\AppData\Local\Temp\s768.
+29D2 cinit CODE >1559:C:\Users\Simone\AppData\Local\Temp\s768.
+29D4 cinit CODE >1560:C:\Users\Simone\AppData\Local\Temp\s768.
+29D4 cinit CODE >1561:C:\Users\Simone\AppData\Local\Temp\s768.
+29D6 cinit CODE >1562:C:\Users\Simone\AppData\Local\Temp\s768.
+29D8 cinit CODE >1563:C:\Users\Simone\AppData\Local\Temp\s768.
+29DA cinit CODE >1566:C:\Users\Simone\AppData\Local\Temp\s768.
+29DC cinit CODE >1569:C:\Users\Simone\AppData\Local\Temp\s768.
+29E0 cinit CODE >1570:C:\Users\Simone\AppData\Local\Temp\s768.
+29E2 cinit CODE >1571:C:\Users\Simone\AppData\Local\Temp\s768.
+29E2 cinit CODE >1572:C:\Users\Simone\AppData\Local\Temp\s768.
+29E4 cinit CODE >1573:C:\Users\Simone\AppData\Local\Temp\s768.
+29E6 cinit CODE >1574:C:\Users\Simone\AppData\Local\Temp\s768.
+29E8 cinit CODE >1579:C:\Users\Simone\AppData\Local\Temp\s768.
+29EA cinit CODE >1580:C:\Users\Simone\AppData\Local\Temp\s768.
+29EC cinit CODE >1581:C:\Users\Simone\AppData\Local\Temp\s768.
+29EE cinit CODE >1582:C:\Users\Simone\AppData\Local\Temp\s768.
+29F0 cinit CODE >1583:C:\Users\Simone\AppData\Local\Temp\s768.
+29F2 cinit CODE >1584:C:\Users\Simone\AppData\Local\Temp\s768.
+29F4 cinit CODE >1585:C:\Users\Simone\AppData\Local\Temp\s768.
+29F6 cinit CODE >1586:C:\Users\Simone\AppData\Local\Temp\s768.
+29FA cinit CODE >1590:C:\Users\Simone\AppData\Local\Temp\s768.
+29FC cinit CODE >1591:C:\Users\Simone\AppData\Local\Temp\s768.
+29FE cinit CODE >1592:C:\Users\Simone\AppData\Local\Temp\s768.
+2A00 cinit CODE >1593:C:\Users\Simone\AppData\Local\Temp\s768.
+2A02 cinit CODE >1594:C:\Users\Simone\AppData\Local\Temp\s768.
+2A04 cinit CODE >1595:C:\Users\Simone\AppData\Local\Temp\s768.
+2A06 cinit CODE >1596:C:\Users\Simone\AppData\Local\Temp\s768.
+2A0A cinit CODE >1597:C:\Users\Simone\AppData\Local\Temp\s768.
+2A0E cinit CODE >1598:C:\Users\Simone\AppData\Local\Temp\s768.
+2A0E cinit CODE >1599:C:\Users\Simone\AppData\Local\Temp\s768.
+2A10 cinit CODE >1600:C:\Users\Simone\AppData\Local\Temp\s768.
+2A14 cinit CODE >1601:C:\Users\Simone\AppData\Local\Temp\s768.
+2A16 cinit CODE >1602:C:\Users\Simone\AppData\Local\Temp\s768.
+2A18 cinit CODE >1603:C:\Users\Simone\AppData\Local\Temp\s768.
+2A1A cinit CODE >1609:C:\Users\Simone\AppData\Local\Temp\s768.
+2A1A cinit CODE >1611:C:\Users\Simone\AppData\Local\Temp\s768.
+2A1C cinit CODE >1612:C:\Users\Simone\AppData\Local\Temp\s768.
+2A1E cinit CODE >1614:C:\Users\Simone\AppData\Local\Temp\s768.
+2A20 cinit CODE >1615:C:\Users\Simone\AppData\Local\Temp\s768.
+2A22 cinit CODE >1616:C:\Users\Simone\AppData\Local\Temp\s768.
+2A24 cinit CODE >1617:C:\Users\Simone\AppData\Local\Temp\s768.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1136,7 +1136,7 @@ __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\sterzo.production.obj
 __size_of_ISR_bassa 0 0 ABS 0 - dist/default/production\sterzo.production.obj
 __end_of_WriteTimer0 2C08 0 CODE 0 text28 dist/default/production\sterzo.production.obj
 _RXB1DLCbits F55 0 ABS 0 - dist/default/production\sterzo.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Simone\AppData\Local\Temp\sao8.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Simone\AppData\Local\Temp\s768.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\sterzo.production.obj
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\sterzo.production.obj
 __size_of_CANInitialize 0 0 ABS 0 - dist/default/production\sterzo.production.obj
@@ -1150,11 +1150,11 @@ _LATC F8B 0 ABS 0 - dist/default/production\sterzo.production.obj
 _LATD F8C 0 ABS 0 - dist/default/production\sterzo.production.obj
 _LATE F8D 0 ABS 0 - dist/default/production\sterzo.production.obj
 _Toff 9 0 COMRAM 1 bssCOMRAM dist/default/production\sterzo.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Simone\AppData\Local\Temp\sao8.obj
+___sp 0 0 STACK 2 stack C:\Users\Simone\AppData\Local\Temp\s768.obj
 _main 251E 0 CODE 0 text0 dist/default/production\sterzo.production.obj
 btemp 4C 0 COMRAM 1 temp dist/default/production\sterzo.production.obj
 __end_of_ConvertADC 2C36 0 CODE 0 text15 dist/default/production\sterzo.production.obj
-start 188 0 CODE 0 init C:\Users\Simone\AppData\Local\Temp\sao8.obj
+start 188 0 CODE 0 init C:\Users\Simone\AppData\Local\Temp\s768.obj
 _CANisTxReady 2B94 0 CODE 0 text3 dist/default/production\sterzo.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\sterzo.production.obj
 __size_of___lldiv 0 0 ABS 0 - dist/default/production\sterzo.production.obj
@@ -1176,11 +1176,11 @@ __pbitbssCOMRAM 258 -20D COMRAM 1 bitbssCOMRAM dist/default/production\sterzo.pr
 _T0CONbits FD5 0 ABS 0 - dist/default/production\sterzo.production.obj
 __end_of_CANInitialize 251E 0 CODE 0 text8 dist/default/production\sterzo.production.obj
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\sterzo.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\Simone\AppData\Local\Temp\sao8.obj
-intlevel0 0 0 CODE 0 text C:\Users\Simone\AppData\Local\Temp\sao8.obj
-intlevel1 0 0 CODE 0 text C:\Users\Simone\AppData\Local\Temp\sao8.obj
-intlevel2 0 0 CODE 0 text C:\Users\Simone\AppData\Local\Temp\sao8.obj
-intlevel3 0 0 CODE 0 text C:\Users\Simone\AppData\Local\Temp\sao8.obj
+__accesstop 60 0 ABS 0 - C:\Users\Simone\AppData\Local\Temp\s768.obj
+intlevel0 0 0 CODE 0 text C:\Users\Simone\AppData\Local\Temp\s768.obj
+intlevel1 0 0 CODE 0 text C:\Users\Simone\AppData\Local\Temp\s768.obj
+intlevel2 0 0 CODE 0 text C:\Users\Simone\AppData\Local\Temp\s768.obj
+intlevel3 0 0 CODE 0 text C:\Users\Simone\AppData\Local\Temp\s768.obj
 i1___lwdiv@quotient 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\sterzo.production.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\sterzo.production.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\sterzo.production.obj
@@ -1207,8 +1207,8 @@ _calibration D 0 COMRAM 1 bssCOMRAM dist/default/production\sterzo.production.ob
 _currentSteering 49 0 COMRAM 1 dataCOMRAM dist/default/production\sterzo.production.obj
 CANSetFilter@tamp 7D 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
 CANSetFilter@type 77 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\Simone\AppData\Local\Temp\sao8.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\Simone\AppData\Local\Temp\sao8.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Simone\AppData\Local\Temp\s768.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Simone\AppData\Local\Temp\s768.obj
 __end_of_send_data 2AFE 0 CODE 0 text1 dist/default/production\sterzo.production.obj
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\sterzo.production.obj
 _CANCON F6F 0 ABS 0 - dist/default/production\sterzo.production.obj
@@ -1340,7 +1340,7 @@ __size_of_OpenADC 0 0 ABS 0 - dist/default/production\sterzo.production.obj
 ___lwdiv@counter 79 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\sterzo.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\sterzo.production.obj
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Simone\AppData\Local\Temp\sao8.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Simone\AppData\Local\Temp\s768.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\sterzo.production.obj
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production\sterzo.production.obj
 __end_ofi1___wmul 2B94 0 CODE 0 text22 dist/default/production\sterzo.production.obj
@@ -1504,8 +1504,8 @@ __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\sterzo.production.obj
 ___lwdiv@divisor 75 0 BANK0 1 cstackBANK0 dist/default/production\sterzo.production.obj
 ?i1___wmul 23 0 COMRAM 1 cstackCOMRAM dist/default/production\sterzo.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\sterzo.production.obj
-stackhi 2FF 0 ABS 0 - C:\Users\Simone\AppData\Local\Temp\sao8.obj
-stacklo BE 0 ABS 0 - C:\Users\Simone\AppData\Local\Temp\sao8.obj
+stackhi 2FF 0 ABS 0 - C:\Users\Simone\AppData\Local\Temp\s768.obj
+stacklo BE 0 ABS 0 - C:\Users\Simone\AppData\Local\Temp\s768.obj
 __Lintcode 8 0 CODE 0 intcode dist/default/production\sterzo.production.obj
 __Lintret 0 0 ABS 0 intret dist/default/production\sterzo.production.obj
 __Lirdata 0 0 CODE 0 irdata dist/default/production\sterzo.production.obj
@@ -1593,7 +1593,7 @@ __Ltext24 0 0 ABS 0 text24 dist/default/production\sterzo.production.obj
 __Ltext25 0 0 ABS 0 text25 dist/default/production\sterzo.production.obj
 __Ltext26 0 0 ABS 0 text26 dist/default/production\sterzo.production.obj
 __Ltext28 0 0 ABS 0 text28 dist/default/production\sterzo.production.obj
-__ramtop 300 0 RAM 0 ramtop C:\Users\Simone\AppData\Local\Temp\sao8.obj
+__ramtop 300 0 RAM 0 ramtop C:\Users\Simone\AppData\Local\Temp\s768.obj
 _CANOperationMode 2BB8 0 CODE 0 text11 dist/default/production\sterzo.production.obj
 __Lpowerup 188 0 CODE 0 powerup dist/default/production\sterzo.production.obj
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\sterzo.production.obj
