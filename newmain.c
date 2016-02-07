@@ -84,6 +84,7 @@ __interrupt(high_priority) void ISR_alta(void) {
 
 __interrupt(low_priority) void ISR_bassa(void) {
 
+<<<<<<< HEAD
     // if ((PIR3bits.RXB0IF == 1) || (PIR3bits.RXB1IF == 1)) { //se arriva messaggio sul CAN BUS
 
     if (CANisRxReady()) {
@@ -104,11 +105,33 @@ __interrupt(low_priority) void ISR_bassa(void) {
             data_array [0] = 0x02;
             CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG & CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0); //DEBUG
 
+=======
+    if ((PIR3bits.RXB0IF == 1) || (PIR3bits.RXB1IF == 1)) { //se arriva messaggio sul CAN BUS
+        if (CANisRxReady()) {
+            CANreceiveMessage(&msg);
+            if (msg.identifier == STEERING_CHANGE) { //cambio angolatura sterzo
+                id = msg.identifier;
+                remote_frame = msg.RTR;
+                theorySteering = msg.data[0];
+                currentSteering = theorySteering + calibration; //aggiunta calibrazione
+                currentSteering = (limiteDx * currentSteering) / 180;
+                noChange = 1;
+            }
+            if (msg.identifier == ECU_STATE) {
+                id = msg.identifier;
+                remote_frame = msg.RTR;
+                data_array [0] = 0x02;
+
+            }
+>>>>>>> origin/master
         }
     }
+<<<<<<< HEAD
     PIR3bits.RXB0IF = 0; //reset flag
     PIR3bits.RXB1IF = 0; //reset flag
     //  }
+=======
+>>>>>>> origin/master
 
 }
 
@@ -142,9 +165,6 @@ int main(void) {
     if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
         PORTAbits.RA1 = 1;
     }
-    //if ((timeCounter - previousTimeCounter) > 100) {
-    //     PORTAbits.RA5 = 1;
-    //  }
 }
 
 //==============================================================================
@@ -216,20 +236,17 @@ void configurazione_iniziale(void) {
     //impostazione timer0 per PWM
     //==========================================================================
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
     OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH0 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_1ANA); //re2
 
     //==========================================================================
     //impostazione periodo timer prima volta
     //==========================================================================
 
-    //timer = (((0 * 700) / 90) + 800) *2;
-    //Ton = 65536 - timer;
-    //Toff = 20000 - (timer / 2);
-    //Toff = (65536 - (Toff * 2));
-    //WriteTimer0(Ton);
     T0CONbits.TMR0ON = 1;
-    //Toff = 0x4588;
     PORTCbits.RC0 = 0;
     //==========================================================================
     //impostazione uscite/ingressi
