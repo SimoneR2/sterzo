@@ -29,7 +29,7 @@
 
 void configurazione_iniziale(void);
 void send_data(void);
-void calibrazione(void);
+//void calibrazione(void);
 CANmessage msg;
 
 //==============================================================================
@@ -39,21 +39,21 @@ unsigned int limiteDx = 120; //da variare per limitare l'angolo di sterzata
 bit remote_frame = 0;
 bit noChange = 0; //tiene fermo il servo finchè non arriva la prima impostazione
 char currentSteering = 180;
-char pastSteering = 1;
+//char pastSteering = 1;
 char theorySteering = 0;
-unsigned long counter = 0;
+//unsigned long counter = 0;
 unsigned long id = 0;
-unsigned long timeCounter = 0; //1 = 10mS
-unsigned long previousTimeCounter = 0;
+//unsigned long timeCounter = 0; //1 = 10mS
+//unsigned long previousTimeCounter = 0;
 unsigned long duty_cycle = 0; //da controllare
-int calibration = 0;
+//int calibration = 0;
 unsigned long timer = 0;
 unsigned int Ton = 0;
-unsigned int ADCResult = 0;
+//unsigned int ADCResult = 0;
 unsigned int Toff = 0;
-int errore = 0;
-int correzione = 0;
-int potenza = 2;
+//int errore = 0;
+//int correzione = 0;
+//int potenza = 2;
 BYTE counter_array [8] = 0; //variabili per il CAN BUS
 BYTE currentSteering_array [8] = 0;
 BYTE data_array [8] = 0;
@@ -90,8 +90,9 @@ __interrupt(low_priority) void ISR_bassa(void) {
             remote_frame = msg.RTR;
             theorySteering = msg.data[0];
 
-            currentSteering = theorySteering + calibration; //aggiunta calibrazione
-            currentSteering = (limiteDx * currentSteering) / 180;
+//            currentSteering = theorySteering + calibration; //aggiunta calibrazione
+//            currentSteering = (limiteDx * currentSteering) / 180;
+            currentSteering = (limiteDx * theorySteering) / 180;
             noChange = 1;
         }
         if ((msg.identifier == ECU_STATE)&&(msg.RTR == 1)) {
@@ -123,7 +124,7 @@ int main(void) {
     while (1) {
 
         delay_ms(100);
-        calibrazione();
+//        calibrazione();
         duty_cycle = currentSteering;
         if (PORTCbits.RC0 == 0) {
             timer = (((duty_cycle * 700) / 90) + 800) *2;
@@ -159,12 +160,12 @@ void send_data(void) {
 //Lettura tramite ADC del potenziometro (per calibrare lo sterzo)
 //==============================================================================
 
-void calibrazione(void) { //lettura ADC calibrazione
-    ConvertADC();
-    while (BusyADC());
-    ADCResult = ReadADC();
-    calibration = (ADCResult - 511) / 45;
-}
+//void calibrazione(void) { //lettura ADC calibrazione
+//    ConvertADC();
+//    while (BusyADC());
+//    ADCResult = ReadADC();
+//    calibration = (ADCResult - 511) / 45;
+//}
 
 //==============================================================================
 //Configurazione bit
@@ -209,8 +210,7 @@ void configurazione_iniziale(void) {
     //impostazione timer0 per PWM
     //==========================================================================
 
-
-    OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH0 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_1ANA); //re2
+//    OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH0 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_1ANA); //re2
 
     //==========================================================================
     //impostazione periodo timer prima volta
