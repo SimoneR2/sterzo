@@ -2,10 +2,10 @@ Microchip MPLAB XC8 Compiler V1.35 ()
 
 Linker command line:
 
---edf=C:\Program Files (x86)\Microchip\xc8\v1.35\dat\en_msgs.txt -cs \
+--edf=P:\Programmi\Microchip\xc8\v1.35\dat\en_msgs.txt -cs \
   -h+dist/default/production\sterzo.production.sym \
   --cmf=dist/default/production\sterzo.production.cmf -z -Q18F4480 \
-  -oC:\Users\Simone\AppData\Local\Temp\s768.2 \
+  -oC:\Users\GIANLO~1\AppData\Local\Temp\s4ig.2 \
   -Mdist/default/production/sterzo.production.map -E1 -ver=XC8 --acfsm=1493 \
   -ASTACK=0BEh-02ffh -pstack=STACK -ACODE=00h-03FFFh -ACONST=00h-03FFFh \
   -ASMALLCONST=0300h-03FFhx61 -AMEDIUMCONST=0300h-03FFFh -ACOMRAM=01h-05Fh \
@@ -21,7 +21,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -pparam0=BANK0 \
-  C:\Users\Simone\AppData\Local\Temp\s768.obj \
+  C:\Users\GIANLO~1\AppData\Local\Temp\s4ig.obj \
   dist/default/production\sterzo.production.obj 
 
 Object code version is 3.11
@@ -34,7 +34,7 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Simone\AppData\Local\Temp\s768.obj
+C:\Users\GIANLO~1\AppData\Local\Temp\s4ig.obj
                 end_init                            188      188        4        C       0
                 reset_vec                             0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
@@ -818,7 +818,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 115 in file "newmain.c"
+		line 115 in file "sterzo.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -854,7 +854,7 @@ Total ram usage:        4 bytes
 
  *************** function _send_data *****************
  Defined at:
-		line 147 in file "newmain.c"
+		line 147 in file "sterzo.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -885,7 +885,7 @@ Total ram usage:        0 bytes
 
  *************** function _CANsendMessage *****************
  Defined at:
-		line 295 in file "../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+		line 294 in file "../../Scuola/Triennio/Tesina/can\CANlib.h"
  Parameters:    Size  Location     Type
   identifier      4   19[BANK0 ] unsigned long 
   data            2   23[BANK0 ] PTR unsigned char 
@@ -919,7 +919,7 @@ Total ram usage:       16 bytes
 
  *************** function _CANisTxReady *****************
  Defined at:
-		line 1155 in file "../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+		line 1154 in file "../../Scuola/Triennio/Tesina/can\CANlib.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -949,7 +949,7 @@ Total ram usage:        1 bytes
 
  *************** function _delay_ms *****************
  Defined at:
-		line 61 in file "../../LaurTec_PIC_libraries_v_3.3.0/src\delay.c"
+		line 61 in file "../../Scuola/Triennio/sistemi/4^/PIC/librerie/LaurTec_PIC_libraries_v_3.3.0/src\delay.c"
  Parameters:    Size  Location     Type
   value_ms        2   25[BANK0 ] unsigned int 
  Auto vars:     Size  Location     Type
@@ -980,7 +980,7 @@ Total ram usage:        2 bytes
 
  *************** function ___wmul *****************
  Defined at:
-		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c"
+		line 15 in file "P:\Programmi\Microchip\xc8\v1.35\sources\common\Umul16.c"
  Parameters:    Size  Location     Type
   multiplier      2   19[BANK0 ] unsigned int 
   multiplicand    2   21[BANK0 ] unsigned int 
@@ -1011,7 +1011,7 @@ Total ram usage:        6 bytes
 
  *************** function _configurazione_iniziale *****************
  Defined at:
-		line 173 in file "newmain.c"
+		line 173 in file "sterzo.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1042,7 +1042,7 @@ Total ram usage:        0 bytes
 
  *************** function _OpenADC *****************
  Defined at:
-		line 68 in file "C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c"
+		line 68 in file "P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c"
  Parameters:    Size  Location     Type
   config          1    wreg     unsigned char 
   config2         1   19[BANK0 ] unsigned char 
@@ -1074,7 +1074,7 @@ Total ram usage:        5 bytes
 
  *************** function _CANInitialize *****************
  Defined at:
-		line 219 in file "../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+		line 218 in file "../../Scuola/Triennio/Tesina/can\CANlib.h"
  Parameters:    Size  Location     Type
   propSeg         1    wreg     unsigned char 
   phaseSeg1       1   33[BANK0 ] unsigned char 
@@ -1113,7 +1113,7 @@ Total ram usage:       12 bytes
 
  *************** function _CANSetMask *****************
  Defined at:
-		line 641 in file "../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+		line 640 in file "../../Scuola/Triennio/Tesina/can\CANlib.h"
  Parameters:    Size  Location     Type
   numBuffer       1    wreg     enum E16878
   mask            4   19[BANK0 ] unsigned long 
@@ -1146,7 +1146,7 @@ Total ram usage:       14 bytes
 
  *************** function _CANSetFilter *****************
  Defined at:
-		line 749 in file "../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+		line 748 in file "../../Scuola/Triennio/Tesina/can\CANlib.h"
  Parameters:    Size  Location     Type
   numBuffer       1    wreg     enum E16881
   filter          4   19[BANK0 ] unsigned long 
@@ -1179,7 +1179,7 @@ Total ram usage:       14 bytes
 
  *************** function _CANOperationMode *****************
  Defined at:
-		line 207 in file "../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+		line 206 in file "../../Scuola/Triennio/Tesina/can\CANlib.h"
  Parameters:    Size  Location     Type
   mode            1    wreg     enum E16838
  Auto vars:     Size  Location     Type
@@ -1209,7 +1209,7 @@ Total ram usage:        1 bytes
 
  *************** function _calibrazione *****************
  Defined at:
-		line 162 in file "newmain.c"
+		line 162 in file "sterzo.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1242,7 +1242,7 @@ Total ram usage:        0 bytes
 
  *************** function ___lwdiv *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c"
+		line 8 in file "P:\Programmi\Microchip\xc8\v1.35\sources\common\lwdiv.c"
  Parameters:    Size  Location     Type
   dividend        2   19[BANK0 ] unsigned int 
   divisor         2   21[BANK0 ] unsigned int 
@@ -1274,7 +1274,7 @@ Total ram usage:        7 bytes
 
  *************** function _ReadADC *****************
  Defined at:
-		line 24 in file "C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcread.c"
+		line 24 in file "P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcread.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1304,7 +1304,7 @@ Total ram usage:        4 bytes
 
  *************** function _ConvertADC *****************
  Defined at:
-		line 22 in file "C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c"
+		line 22 in file "P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1334,7 +1334,7 @@ Total ram usage:        0 bytes
 
  *************** function _BusyADC *****************
  Defined at:
-		line 26 in file "C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcbusy.c"
+		line 26 in file "P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcbusy.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1364,7 +1364,7 @@ Total ram usage:        0 bytes
 
  *************** function ___lmul *****************
  Defined at:
-		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c"
+		line 15 in file "P:\Programmi\Microchip\xc8\v1.35\sources\common\Umul32.c"
  Parameters:    Size  Location     Type
   multiplier      4   19[BANK0 ] unsigned long 
   multiplicand    4   23[BANK0 ] unsigned long 
@@ -1395,7 +1395,7 @@ Total ram usage:       12 bytes
 
  *************** function ___lldiv *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c"
+		line 8 in file "P:\Programmi\Microchip\xc8\v1.35\sources\common\lldiv.c"
  Parameters:    Size  Location     Type
   dividend        4   31[BANK0 ] unsigned long 
   divisor         4   35[BANK0 ] unsigned long 
@@ -1427,7 +1427,7 @@ Total ram usage:       13 bytes
 
  *************** function _CANisTXwarningON *****************
  Defined at:
-		line 1120 in file "../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+		line 1119 in file "../../Scuola/Triennio/Tesina/can\CANlib.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1457,7 +1457,7 @@ Total ram usage:        0 bytes
 
  *************** function _CANisRXwarningON *****************
  Defined at:
-		line 1128 in file "../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+		line 1127 in file "../../Scuola/Triennio/Tesina/can\CANlib.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1487,7 +1487,7 @@ Total ram usage:        0 bytes
 
  *************** function _ISR_bassa *****************
  Defined at:
-		line 85 in file "newmain.c"
+		line 85 in file "sterzo.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1521,7 +1521,7 @@ Total ram usage:       18 bytes
 
  *************** function i1___wmul *****************
  Defined at:
-		line 15 in file "C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c"
+		line 15 in file "P:\Programmi\Microchip\xc8\v1.35\sources\common\Umul16.c"
  Parameters:    Size  Location     Type
   multiplier      2    0[COMRAM] unsigned int 
   multiplicand    2    2[COMRAM] unsigned int 
@@ -1552,7 +1552,7 @@ Total ram usage:        6 bytes
 
  *************** function i1___lwdiv *****************
  Defined at:
-		line 8 in file "C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c"
+		line 8 in file "P:\Programmi\Microchip\xc8\v1.35\sources\common\lwdiv.c"
  Parameters:    Size  Location     Type
   dividend        2    6[COMRAM] unsigned int 
   divisor         2    8[COMRAM] unsigned int 
@@ -1584,7 +1584,7 @@ Total ram usage:        7 bytes
 
  *************** function i1_CANsendMessage *****************
  Defined at:
-		line 295 in file "../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+		line 294 in file "../../Scuola/Triennio/Tesina/can\CANlib.h"
  Parameters:    Size  Location     Type
   identifier      4    0[COMRAM] unsigned long 
   data            2    4[COMRAM] PTR unsigned char 
@@ -1618,7 +1618,7 @@ Total ram usage:       16 bytes
 
  *************** function _CANreceiveMessage *****************
  Defined at:
-		line 529 in file "../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+		line 528 in file "../../Scuola/Triennio/Tesina/can\CANlib.h"
  Parameters:    Size  Location     Type
   msg             2    0[COMRAM] PTR struct .
 		 -> msg(15), 
@@ -1650,7 +1650,7 @@ Total ram usage:       12 bytes
 
  *************** function _CANisRxReady *****************
  Defined at:
-		line 1164 in file "../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h"
+		line 1163 in file "../../Scuola/Triennio/Tesina/can\CANlib.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1680,7 +1680,7 @@ Total ram usage:        1 bytes
 
  *************** function _ISR_alta *****************
  Defined at:
-		line 65 in file "newmain.c"
+		line 65 in file "sterzo.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1710,7 +1710,7 @@ Total ram usage:       15 bytes
 
  *************** function _WriteTimer0 *****************
  Defined at:
-		line 16 in file "C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c"
+		line 16 in file "P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c"
  Parameters:    Size  Location     Type
   timer0          2    0[BANK0 ] unsigned int 
  Auto vars:     Size  Location     Type
@@ -1741,22 +1741,17 @@ Total ram usage:        4 bytes
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcbusy.c
-		_BusyADC       		CODE           	2C08	0000	13
+P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c
+		_ConvertADC    		CODE           	2C32	0000	5
 
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcbusy.c estimated size: 13
+P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c estimated size: 5
 
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c
-		___lmul        		CODE           	2958	0000	119
+P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c
+		_WriteTimer0   		CODE           	2BF6	0000	19
 
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul32.c estimated size: 119
+P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c estimated size: 19
 
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcread.c
-		_ReadADC       		CODE           	2BE4	0000	19
-
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcread.c estimated size: 19
-
-newmain.c
+sterzo.c
 		_configurazione_iniziale		CODE           	27E4	0000	129
 		_send_data     		CODE           	2AC0	0000	63
 		_main          		CODE           	251E	0000	341
@@ -1764,17 +1759,17 @@ newmain.c
 		_calibrazione  		CODE           	2A7A	0000	71
 		_ISR_alta      		CODE           	0008	0000	197
 
-newmain.c estimated size: 1170
+sterzo.c estimated size: 1170
 
-../../LaurTec_PIC_libraries_v_3.3.0/src\delay.c
-		_delay_ms      		CODE           	2AFE	0000	59
+P:\Programmi\Microchip\xc8\v1.35\sources\common\Umul16.c
+		___wmul        		CODE           	2B38	0000	55
 
-../../LaurTec_PIC_libraries_v_3.3.0/src\delay.c estimated size: 59
+P:\Programmi\Microchip\xc8\v1.35\sources\common\Umul16.c estimated size: 55
 
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c
-		_ConvertADC    		CODE           	2C32	0000	5
+P:\Programmi\Microchip\xc8\v1.35\sources\common\lwdiv.c
+		___lwdiv       		CODE           	28E0	0000	121
 
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcconv.c estimated size: 5
+P:\Programmi\Microchip\xc8\v1.35\sources\common\lwdiv.c estimated size: 121
 
 shared
 		i1___lwdiv     		CODE           	2A28	0000	83
@@ -1784,7 +1779,37 @@ shared
 
 shared estimated size: 1880
 
-../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h
+P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcbusy.c
+		_BusyADC       		CODE           	2C08	0000	13
+
+P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcbusy.c estimated size: 13
+
+P:\Programmi\Microchip\xc8\v1.35\sources\common\lldiv.c
+		___lldiv       		CODE           	2672	0000	189
+
+P:\Programmi\Microchip\xc8\v1.35\sources\common\lldiv.c estimated size: 189
+
+P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
+		_OpenADC       		CODE           	2864	0000	125
+
+P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c estimated size: 125
+
+P:\Programmi\Microchip\xc8\v1.35\sources\common\Umul32.c
+		___lmul        		CODE           	2958	0000	119
+
+P:\Programmi\Microchip\xc8\v1.35\sources\common\Umul32.c estimated size: 119
+
+../../Scuola/Triennio/sistemi/4^/PIC/librerie/LaurTec_PIC_libraries_v_3.3.0/src\delay.c
+		_delay_ms      		CODE           	2AFE	0000	59
+
+../../Scuola/Triennio/sistemi/4^/PIC/librerie/LaurTec_PIC_libraries_v_3.3.0/src\delay.c estimated size: 59
+
+P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcread.c
+		_ReadADC       		CODE           	2BE4	0000	19
+
+P:\Programmi\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcread.c estimated size: 19
+
+../../Scuola/Triennio/Tesina/can\CANlib.h
 		_CANisRXwarningON		CODE           	2C20	0000	13
 		_CANSetFilter  		CODE           	018C	0000	2823
 		_CANisRxReady  		CODE           	2BCE	0000	23
@@ -1796,30 +1821,5 @@ shared estimated size: 1880
 		_CANisTxReady  		CODE           	2B94	0000	37
 		_CANSetMask    		CODE           	1FBA	0000	927
 
-../../LaurTec_PIC_libraries_v_3.3.0/inc\CANlib.h estimated size: 7540
-
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c
-		_WriteTimer0   		CODE           	2BF6	0000	19
-
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\Timers\t0write.c estimated size: 19
-
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c
-		___lwdiv       		CODE           	28E0	0000	121
-
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lwdiv.c estimated size: 121
-
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c
-		___wmul        		CODE           	2B38	0000	55
-
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\Umul16.c estimated size: 55
-
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c
-		___lldiv       		CODE           	2672	0000	189
-
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\common\lldiv.c estimated size: 189
-
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c
-		_OpenADC       		CODE           	2864	0000	125
-
-C:\Program Files (x86)\Microchip\xc8\v1.35\sources\pic18\plib\ADC\adcopen.c estimated size: 125
+../../Scuola/Triennio/Tesina/can\CANlib.h estimated size: 7540
 
