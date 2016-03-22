@@ -1,7 +1,7 @@
 #define USE_AND_MASKS
 //==============================================================================
 // PROGRAMM : STERZO
-// WRITTEN BY : MOSER & RIGHETTI & CLEMENTI & GALVAGNI
+// WRITTEN BY : MOSER & RIGHETTI & CLEMENTI
 // DATA : 08/12/2015
 // VERSION : 1.0
 // FILE SAVED AS : STERZO.C
