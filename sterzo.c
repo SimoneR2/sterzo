@@ -29,7 +29,7 @@
 
 void configurazione_iniziale(void);
 void send_data(void);
-//void calibrazione(void);
+void calibrazione(void);
 CANmessage msg;
 
 //==============================================================================
@@ -38,7 +38,7 @@ CANmessage msg;
 unsigned int limiteDx = 120; //da variare per limitare l'angolo di sterzata
 bit remote_frame = 0;
 bit noChange = 0; //tiene fermo il servo finchè non arriva la prima impostazione
-char currentSteering = 180;
+signed int currentSteering = 90;
 //char pastSteering = 1;
 char theorySteering = 0;
 //unsigned long counter = 0;
@@ -46,16 +46,16 @@ unsigned long id = 0;
 //unsigned long timeCounter = 0; //1 = 10mS
 //unsigned long previousTimeCounter = 0;
 unsigned long duty_cycle = 0; //da controllare
-//int calibration = 0;
+signed int calibration = 0;
 unsigned long timer = 0;
 unsigned int Ton = 0;
-//unsigned int ADCResult = 0;
+signed long ADCResult = 0;
 unsigned int Toff = 0;
 //int errore = 0;
 //int correzione = 0;
 //int potenza = 2;
-BYTE counter_array [8] = 0; //variabili per il CAN BUS
-BYTE currentSteering_array [8] = 0;
+//BYTE counter_array [8] = 0; //variabili per il CAN BUS
+//BYTE currentSteering_array [8] = 0;
 BYTE data_array [8] = 0;
 
 //==============================================================================
@@ -89,10 +89,20 @@ __interrupt(low_priority) void ISR_bassa(void) {
             id = msg.identifier;
             remote_frame = msg.RTR;
             theorySteering = msg.data[0];
-
-//            currentSteering = theorySteering + calibration; //aggiunta calibrazione
-//            currentSteering = (limiteDx * currentSteering) / 180;
-            currentSteering = (limiteDx * theorySteering) / 180;
+            if (theorySteering < calibration) {
+                currentSteering = 0;
+            }
+            currentSteering = theorySteering + calibration; //aggiunta calibrazione
+            if (currentSteering > 180) {
+                currentSteering = 180;
+            }
+            if (currentSteering < 1) {
+                currentSteering = 0;
+            }
+            currentSteering = (limiteDx * currentSteering) / 180;
+            
+            
+            //            currentSteering = (limiteDx * theorySteering) / 180;
             noChange = 1;
         }
         if ((msg.identifier == ECU_STATE)&&(msg.RTR == 1)) {
@@ -102,11 +112,11 @@ __interrupt(low_priority) void ISR_bassa(void) {
             data_array [0] = 0x02;
             CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG & CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0); //DEBUG
         }
-    PIR3bits.RXB0IF = 0; //reset flag
-    PIR3bits.RXB1IF = 0; //reset flag
-    //  }
+        PIR3bits.RXB0IF = 0; //reset flag
+        PIR3bits.RXB1IF = 0; //reset flag
+        //  }
 
-}
+    }
 }
 
 //==============================================================================
@@ -115,16 +125,15 @@ __interrupt(low_priority) void ISR_bassa(void) {
 
 int main(void) {
     configurazione_iniziale();
-    PORTAbits.RA1 = 1;
-    PORTCbits.RC1 = 1;
-    delay_ms(500);
-    PORTAbits.RA1 = 0;
-    PORTCbits.RC1 = 0;
-    delay_ms(100);
+    //    PORTAbits.RA1 = 1;
+    //    PORTCbits.RC1 = 1;
+    //    delay_ms(500);
+    //    PORTAbits.RA1 = 0;
+    //    PORTCbits.RC1 = 0;
+    //    delay_ms(100);
     while (1) {
-
-        delay_ms(100);
-//        calibrazione();
+ delay_ms(10);
+        calibrazione();
         duty_cycle = currentSteering;
         if (PORTCbits.RC0 == 0) {
             timer = (((duty_cycle * 700) / 90) + 800) *2;
@@ -160,12 +169,12 @@ void send_data(void) {
 //Lettura tramite ADC del potenziometro (per calibrare lo sterzo)
 //==============================================================================
 
-//void calibrazione(void) { //lettura ADC calibrazione
-//    ConvertADC();
-//    while (BusyADC());
-//    ADCResult = ReadADC();
-//    calibration = (ADCResult - 511) / 45;
-//}
+void calibrazione(void) { //lettura ADC calibrazione
+    ConvertADC();
+    while (BusyADC());
+    ADCResult = ReadADC();
+    calibration = (ADCResult - 511) / 30;
+}
 
 //==============================================================================
 //Configurazione bit
@@ -210,7 +219,7 @@ void configurazione_iniziale(void) {
     //impostazione timer0 per PWM
     //==========================================================================
 
-//    OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH0 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_1ANA); //re2
+    OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH0 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_1ANA); //re2
 
     //==========================================================================
     //impostazione periodo timer prima volta
