@@ -105,12 +105,10 @@ __interrupt(low_priority) void ISR_bassa(void) {
             //            currentSteering = (limiteDx * theorySteering) / 180;
             noChange = 1;
         }
-        if ((msg.identifier == ECU_STATE)&&(msg.RTR == 1)) {
+        if (msg.identifier == ECU_STATE_EPS) {
             PORTCbits.RC1 = ~PORTCbits.RC1; //debug
-            id = msg.identifier;
-            remote_frame = 1;
             data_array [0] = 0x02;
-            CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG & CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0); //DEBUG
+            CANsendMessage(ECU_STATE_EPS, data_array, 8, CAN_CONFIG_STD_MSG & CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0); //DEBUG
         }
         PIR3bits.RXB0IF = 0; //reset flag
         PIR3bits.RXB1IF = 0; //reset flag
