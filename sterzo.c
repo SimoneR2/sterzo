@@ -92,15 +92,15 @@ __interrupt(low_priority) void ISR_bassa(void) {
             if (theorySteering < calibration) {
                 currentSteering = 0;
             }
-            currentSteering = theorySteering + calibration; //aggiunta calibrazione
+            currentSteering = theorySteering;
+            
+            currentSteering = ((limiteDx * currentSteering) / 180)+calibration;
             if (currentSteering > 180) {
                 currentSteering = 180;
             }
             if (currentSteering < 1) {
                 currentSteering = 0;
             }
-            currentSteering = (limiteDx * currentSteering) / 180;
-            
             
             //            currentSteering = (limiteDx * theorySteering) / 180;
             noChange = 1;
