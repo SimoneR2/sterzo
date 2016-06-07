@@ -1062,8 +1062,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _configurazione_iniziale `(v ~T0 @X0 0 ef ]
 "32
 [v _calibrazione `(v ~T0 @X0 0 ef ]
-"31
-[v _send_data `(v ~T0 @X0 0 ef ]
 "28009 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic18f4480.h
 [s S1752 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S1752 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
@@ -16481,7 +16479,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "22
 [p x WDTPS=32768 ]
 "25
-[p x PBADEN=ON ]
+[p x PBADEN=OFF ]
 "26
 [p x LPT1OSC=OFF ]
 "27
@@ -19080,9 +19078,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "38
 [v _limiteDx `ui ~T0 @X0 1 e ]
 [i _limiteDx
--> -> 120 `i `ui
+-> -> 110 `i `ui
 ]
-[; ;sterzo.c: 38: unsigned int limiteDx = 120;
+[; ;sterzo.c: 38: unsigned int limiteDx = 110;
 "39
 [v _remote_frame `b ~T0 @X0 1 e ]
 [i _remote_frame
@@ -19254,7 +19252,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;sterzo.c: 95: currentSteering = theorySteering;
 "95
 [e = _currentSteering -> _theorySteering `i ]
-[; ;sterzo.c: 97: currentSteering = ((limiteDx * currentSteering) / 180)+calibration;
+[; ;sterzo.c: 97: currentSteering = ((limiteDx * currentSteering) / 180) + calibration;
 "97
 [e = _currentSteering -> + / * _limiteDx -> _currentSteering `ui -> -> 180 `i `ui -> _calibration `ui `i ]
 [; ;sterzo.c: 98: if (currentSteering > 180) {
@@ -19330,9 +19328,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 "132
 [e :U 2364 ]
 {
-[; ;sterzo.c: 133: delay_ms(10);
+[; ;sterzo.c: 133: delay_ms(5);
 "133
-[e ( _delay_ms (1 -> -> 10 `i `ui ]
+[e ( _delay_ms (1 -> -> 5 `i `ui ]
 [; ;sterzo.c: 134: calibrazione();
 "134
 [e ( _calibrazione ..  ]
@@ -19358,190 +19356,179 @@ Version 3.2 HI-TECH Software Intermediate Code
 "141
 }
 [e :U 2366 ]
+[; ;sterzo.c: 141: }
+[; ;sterzo.c: 142: if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
 "142
+[e $ ! || == -> ( _CANisTXwarningON ..  `i -> 1 `i == -> ( _CANisRXwarningON ..  `i -> 1 `i 2367  ]
+{
+[; ;sterzo.c: 143: PORTAbits.RA1 = 1;
+"143
+[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
+"144
+}
+[e :U 2367 ]
+"145
 }
 [e :U 2363 ]
 "132
 [e $U 2364  ]
 [e :U 2365 ]
-[; ;sterzo.c: 141: }
-[; ;sterzo.c: 142: }
-[; ;sterzo.c: 143: if (remote_frame == 1) {
-"143
-[e $ ! == -> _remote_frame `i -> 1 `i 2367  ]
-{
-[; ;sterzo.c: 144: send_data();
-"144
-[e ( _send_data ..  ]
-"145
-}
-[e :U 2367 ]
+[; ;sterzo.c: 144: }
 [; ;sterzo.c: 145: }
-[; ;sterzo.c: 146: if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
+[; ;sterzo.c: 146: }
 "146
-[e $ ! || == -> ( _CANisTXwarningON ..  `i -> 1 `i == -> ( _CANisRXwarningON ..  `i -> 1 `i 2368  ]
-{
-[; ;sterzo.c: 147: PORTAbits.RA1 = 1;
-"147
-[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
-"148
-}
-[e :U 2368 ]
-[; ;sterzo.c: 148: }
-[; ;sterzo.c: 149: }
-"149
 [e :UE 2362 ]
 }
-"155
+"151
 [v _send_data `(v ~T0 @X0 1 ef ]
 {
-[; ;sterzo.c: 155: void send_data(void) {
+[; ;sterzo.c: 151: void send_data(void) {
 [e :U _send_data ]
 [f ]
-[; ;sterzo.c: 156: if (CANisTxReady()) {
+[; ;sterzo.c: 152: if (CANisTxReady()) {
+"152
+[e $ ! != -> ( _CANisTxReady ..  `i -> -> -> 0 `i `uc `i 2369  ]
+{
+[; ;sterzo.c: 153: if (remote_frame == 1) {
+"153
+[e $ ! == -> _remote_frame `i -> 1 `i 2370  ]
+{
+[; ;sterzo.c: 155: CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG &
+[; ;sterzo.c: 156: CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
 "156
-[e $ ! != -> ( _CANisTxReady ..  `i -> -> -> 0 `i `uc `i 2370  ]
-{
-[; ;sterzo.c: 157: if (remote_frame == 1) {
-"157
-[e $ ! == -> _remote_frame `i -> 1 `i 2371  ]
-{
-[; ;sterzo.c: 159: CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG &
-[; ;sterzo.c: 160: CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
-"160
 [e ( _CANsendMessage (4 , , , _id &U _data_array -> -> 8 `i `uc -> & & -> . `E16885 11 `i -> . `E16907 10 `i -> . `E16907 1 `i `E16907 ]
-"161
-}
-[e :U 2371 ]
-[; ;sterzo.c: 161: }
-[; ;sterzo.c: 162: remote_frame = 0;
-"162
-[e = _remote_frame -> -> 0 `i `b ]
-"163
+"157
 }
 [e :U 2370 ]
-[; ;sterzo.c: 163: }
-[; ;sterzo.c: 164: }
-"164
-[e :UE 2369 ]
+[; ;sterzo.c: 157: }
+[; ;sterzo.c: 158: remote_frame = 0;
+"158
+[e = _remote_frame -> -> 0 `i `b ]
+"159
 }
-"170
+[e :U 2369 ]
+[; ;sterzo.c: 159: }
+[; ;sterzo.c: 160: }
+"160
+[e :UE 2368 ]
+}
+"166
 [v _calibrazione `(v ~T0 @X0 1 ef ]
 {
-[; ;sterzo.c: 170: void calibrazione(void) {
+[; ;sterzo.c: 166: void calibrazione(void) {
 [e :U _calibrazione ]
 [f ]
-[; ;sterzo.c: 171: ConvertADC();
-"171
+[; ;sterzo.c: 167: ConvertADC();
+"167
 [e ( _ConvertADC ..  ]
-[; ;sterzo.c: 172: while (BusyADC());
-"172
-[e $U 2373  ]
-[e :U 2374 ]
+[; ;sterzo.c: 168: while (BusyADC());
+"168
+[e $U 2372  ]
 [e :U 2373 ]
-[e $ != -> ( _BusyADC ..  `i -> -> -> 0 `i `uc `i 2374  ]
-[e :U 2375 ]
-[; ;sterzo.c: 173: ADCResult = ReadADC();
-"173
+[e :U 2372 ]
+[e $ != -> ( _BusyADC ..  `i -> -> -> 0 `i `uc `i 2373  ]
+[e :U 2374 ]
+[; ;sterzo.c: 169: ADCResult = ReadADC();
+"169
 [e = _ADCResult -> ( _ReadADC ..  `l ]
-[; ;sterzo.c: 174: calibration = (ADCResult - 511) / 30;
-"174
+[; ;sterzo.c: 170: calibration = (ADCResult - 511) / 30;
+"170
 [e = _calibration -> / - _ADCResult -> -> 511 `i `l -> -> 30 `i `l `i ]
-[; ;sterzo.c: 175: }
-"175
-[e :UE 2372 ]
+[; ;sterzo.c: 171: }
+"171
+[e :UE 2371 ]
 }
-"181
+"177
 [v _configurazione_iniziale `(v ~T0 @X0 1 ef ]
 {
-[; ;sterzo.c: 181: void configurazione_iniziale(void) {
+[; ;sterzo.c: 177: void configurazione_iniziale(void) {
 [e :U _configurazione_iniziale ]
 [f ]
-[; ;sterzo.c: 186: RCONbits.IPEN = 1;
-"186
+[; ;sterzo.c: 182: RCONbits.IPEN = 1;
+"182
 [e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
-[; ;sterzo.c: 187: CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
-"187
+[; ;sterzo.c: 183: CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
+"183
 [e ( _CANInitialize (4 , , , , , -> -> 4 `i `uc -> -> 6 `i `uc -> -> 5 `i `uc -> -> 1 `i `uc -> -> 3 `i `uc -> & & & -> . `E16885 6 `i -> . `E16885 8 `i -> . `E16885 20 `i -> . `E16885 14 `i `E16885 ]
-[; ;sterzo.c: 192: PIR3bits.RXB1IF = 0;
-"192
+[; ;sterzo.c: 188: PIR3bits.RXB1IF = 0;
+"188
 [e = . . _PIR3bits 0 1 -> -> 0 `i `uc ]
-[; ;sterzo.c: 193: PIR3bits.RXB0IF = 0;
-"193
+[; ;sterzo.c: 189: PIR3bits.RXB0IF = 0;
+"189
 [e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
-[; ;sterzo.c: 194: INTCONbits.TMR0IF = 0;
-"194
+[; ;sterzo.c: 190: INTCONbits.TMR0IF = 0;
+"190
 [e = . . _INTCONbits 0 2 -> -> 0 `i `uc ]
-[; ;sterzo.c: 200: IPR3bits.RXB1IP = 0;
-"200
+[; ;sterzo.c: 196: IPR3bits.RXB1IP = 0;
+"196
 [e = . . _IPR3bits 0 1 -> -> 0 `i `uc ]
-[; ;sterzo.c: 201: IPR3bits.RXB0IP = 0;
-"201
+[; ;sterzo.c: 197: IPR3bits.RXB0IP = 0;
+"197
 [e = . . _IPR3bits 0 0 -> -> 0 `i `uc ]
-[; ;sterzo.c: 202: INTCON2bits.TMR0IP = 1;
-"202
+[; ;sterzo.c: 198: INTCON2bits.TMR0IP = 1;
+"198
 [e = . . _INTCON2bits 1 2 -> -> 1 `i `uc ]
-[; ;sterzo.c: 208: RCONbits.IPEN = 1;
-"208
+[; ;sterzo.c: 204: RCONbits.IPEN = 1;
+"204
 [e = . . _RCONbits 5 7 -> -> 1 `i `uc ]
-[; ;sterzo.c: 209: PIE3bits.RXB1IE = 1;
-"209
+[; ;sterzo.c: 205: PIE3bits.RXB1IE = 1;
+"205
 [e = . . _PIE3bits 0 1 -> -> 1 `i `uc ]
-[; ;sterzo.c: 210: PIE3bits.RXB0IE = 1;
-"210
+[; ;sterzo.c: 206: PIE3bits.RXB0IE = 1;
+"206
 [e = . . _PIE3bits 0 0 -> -> 1 `i `uc ]
-[; ;sterzo.c: 211: INTCONbits.TMR0IE = 1;
-"211
+[; ;sterzo.c: 207: INTCONbits.TMR0IE = 1;
+"207
 [e = . . _INTCONbits 0 5 -> -> 1 `i `uc ]
-[; ;sterzo.c: 213: INTCONbits.GIEH = 1;
-"213
+[; ;sterzo.c: 209: INTCONbits.GIEH = 1;
+"209
 [e = . . _INTCONbits 2 7 -> -> 1 `i `uc ]
-[; ;sterzo.c: 214: INTCONbits.GIEL = 1;
-"214
+[; ;sterzo.c: 210: INTCONbits.GIEL = 1;
+"210
 [e = . . _INTCONbits 2 6 -> -> 1 `i `uc ]
-[; ;sterzo.c: 220: OpenADC(0b11011111 & 0b11111111 & 0b11111101, 0b10000111 & 0b11111100 & 0b01111111, 0b11111110);
-"220
+[; ;sterzo.c: 216: OpenADC(0b11011111 & 0b11111111 & 0b11111101, 0b10000111 & 0b11111100 & 0b01111111, 0b11111110);
+"216
 [e ( _OpenADC (3 , , -> & & -> 223 `i -> 255 `i -> 253 `i `uc -> & & -> 135 `i -> 252 `i -> 127 `i `uc -> -> 254 `i `uc ]
-[; ;sterzo.c: 226: T0CONbits.TMR0ON = 1;
-"226
+[; ;sterzo.c: 222: T0CONbits.TMR0ON = 1;
+"222
 [e = . . _T0CONbits 0 5 -> -> 1 `i `uc ]
-[; ;sterzo.c: 227: PORTCbits.RC0 = 0;
-"227
+[; ;sterzo.c: 223: PORTCbits.RC0 = 0;
+"223
 [e = . . _PORTCbits 0 0 -> -> 0 `i `uc ]
-[; ;sterzo.c: 231: LATA = 0x00;
-"231
+[; ;sterzo.c: 227: LATA = 0x00;
+"227
 [e = _LATA -> -> 0 `i `uc ]
-[; ;sterzo.c: 232: TRISA = 0b11111101;
-"232
+[; ;sterzo.c: 228: TRISA = 0b11111101;
+"228
 [e = _TRISA -> -> 253 `i `uc ]
-[; ;sterzo.c: 234: LATB = 0x00;
-"234
+[; ;sterzo.c: 230: LATB = 0x00;
+"230
 [e = _LATB -> -> 0 `i `uc ]
-[; ;sterzo.c: 235: TRISB = 0b11111011;
-"235
+[; ;sterzo.c: 231: TRISB = 0b11111011;
+"231
 [e = _TRISB -> -> 251 `i `uc ]
-[; ;sterzo.c: 237: LATC = 0x00;
-"237
+[; ;sterzo.c: 233: LATC = 0x00;
+"233
 [e = _LATC -> -> 0 `i `uc ]
-[; ;sterzo.c: 238: TRISC = 0x00;
-"238
+[; ;sterzo.c: 234: TRISC = 0x00;
+"234
 [e = _TRISC -> -> 0 `i `uc ]
-[; ;sterzo.c: 240: LATD = 0x00;
-"240
+[; ;sterzo.c: 236: LATD = 0x00;
+"236
 [e = _LATD -> -> 0 `i `uc ]
-[; ;sterzo.c: 241: TRISD = 0x00;
-"241
+[; ;sterzo.c: 237: TRISD = 0x00;
+"237
 [e = _TRISD -> -> 0 `i `uc ]
-[; ;sterzo.c: 243: LATE = 0x00;
-"243
+[; ;sterzo.c: 239: LATE = 0x00;
+"239
 [e = _LATE -> -> 0 `i `uc ]
-[; ;sterzo.c: 244: TRISE = 0xFF;
-"244
+[; ;sterzo.c: 240: TRISE = 0xFF;
+"240
 [e = _TRISE -> -> 255 `i `uc ]
-[; ;sterzo.c: 245: T0CON = 0x80;
-"245
+[; ;sterzo.c: 241: T0CON = 0x80;
+"241
 [e = _T0CON -> -> 128 `i `uc ]
-[; ;sterzo.c: 246: }
-"246
-[e :UE 2376 ]
+[; ;sterzo.c: 242: }
+"242
+[e :UE 2375 ]
 }

@@ -19379,7 +19379,7 @@ extern __nonreentrant void _delay3(unsigned char);
 #pragma config WDTPS = 32768
 
 
-#pragma config PBADEN = ON
+#pragma config PBADEN = OFF
 #pragma config LPT1OSC = OFF
 #pragma config MCLRE = ON
 
@@ -20520,7 +20520,7 @@ CANmessage msg;
 
 
 
-unsigned int limiteDx = 120;
+unsigned int limiteDx = 110;
 bit remote_frame = 0;
 bit noChange = 0;
 signed int currentSteering = 90;
@@ -20573,7 +20573,7 @@ currentSteering = 0;
 }
 currentSteering = theorySteering;
 
-currentSteering = ((limiteDx * currentSteering) / 180)+calibration;
+currentSteering = ((limiteDx * currentSteering) / 180) + calibration;
 if (currentSteering > 180) {
 currentSteering = 180;
 }
@@ -20602,7 +20602,7 @@ configurazione_iniziale();
 
 # 132
 while (1) {
-delay_ms(10);
+delay_ms(5);
 calibrazione();
 duty_cycle = currentSteering;
 if (PORTCbits.RC0 == 0) {
@@ -20611,16 +20611,15 @@ Ton = 65536 - timer;
 Toff = 20000 - (timer / 2);
 Toff = (65536 - (Toff * 2));
 }
-}
-if (remote_frame == 1) {
-send_data();
-}
 if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
 PORTAbits.RA1 = 1;
 }
 }
+}
 
-# 155
+
+
+
 void send_data(void) {
 if (CANisTxReady()) {
 if (remote_frame == 1) {
@@ -20632,7 +20631,7 @@ remote_frame = 0;
 }
 }
 
-# 170
+# 166
 void calibrazione(void) {
 ConvertADC();
 while (BusyADC());
@@ -20640,7 +20639,7 @@ ADCResult = ReadADC();
 calibration = (ADCResult - 511) / 30;
 }
 
-# 181
+# 177
 void configurazione_iniziale(void) {
 
 
@@ -20656,12 +20655,12 @@ PIR3bits.RXB1IF = 0;
 PIR3bits.RXB0IF = 0;
 INTCONbits.TMR0IF = 0;
 
-# 200
+# 196
 IPR3bits.RXB1IP = 0;
 IPR3bits.RXB0IP = 0;
 INTCON2bits.TMR0IP = 1;
 
-# 208
+# 204
 RCONbits.IPEN = 1;
 PIE3bits.RXB1IE = 1;
 PIE3bits.RXB0IE = 1;
@@ -20670,10 +20669,10 @@ INTCONbits.TMR0IE = 1;
 INTCONbits.GIEH = 1;
 INTCONbits.GIEL = 1;
 
-# 220
+# 216
 OpenADC(0b11011111 & 0b11111111 & 0b11111101, 0b10000111 & 0b11111100 & 0b01111111, 0b11111110);
 
-# 226
+# 222
 T0CONbits.TMR0ON = 1;
 PORTCbits.RC0 = 0;
 

@@ -35,7 +35,7 @@ CANmessage msg;
 //==============================================================================
 //Dichiarazione variabili
 //==============================================================================
-unsigned int limiteDx = 120; //da variare per limitare l'angolo di sterzata
+unsigned int limiteDx = 110; //da variare per limitare l'angolo di sterzata
 bit remote_frame = 0;
 bit noChange = 0; //tiene fermo il servo finchè non arriva la prima impostazione
 signed int currentSteering = 90;
@@ -93,15 +93,15 @@ __interrupt(low_priority) void ISR_bassa(void) {
                 currentSteering = 0;
             }
             currentSteering = theorySteering;
-            
-            currentSteering = ((limiteDx * currentSteering) / 180)+calibration;
+
+            currentSteering = ((limiteDx * currentSteering) / 180) + calibration;
             if (currentSteering > 180) {
                 currentSteering = 180;
             }
             if (currentSteering < 1) {
                 currentSteering = 0;
             }
-            
+
             //            currentSteering = (limiteDx * theorySteering) / 180;
             noChange = 1;
         }
@@ -130,7 +130,7 @@ int main(void) {
     //    PORTCbits.RC1 = 0;
     //    delay_ms(100);
     while (1) {
- delay_ms(10);
+        delay_ms(5);
         calibrazione();
         duty_cycle = currentSteering;
         if (PORTCbits.RC0 == 0) {
@@ -139,108 +139,104 @@ int main(void) {
             Toff = 20000 - (timer / 2);
             Toff = (65536 - (Toff * 2));
         }
-    }
-    if (remote_frame == 1) {
-        send_data();
-    }
-    if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
-        PORTAbits.RA1 = 1;
-    }
-}
-
-//==============================================================================
-//Settaggi per invio dati sul CAN BUS
-//==============================================================================
-
-void send_data(void) {
-    if (CANisTxReady()) {
-        if (remote_frame == 1) {
-            //avere lo stesso id della richiesta
-            CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG &
-                    CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
+        if ((CANisTXwarningON() == 1) || (CANisRXwarningON() == 1)) {
+            PORTAbits.RA1 = 1;
         }
-        remote_frame = 0;
     }
 }
+    //==============================================================================
+    //Settaggi per invio dati sul CAN BUS
+    //==============================================================================
 
-//==============================================================================
-//Lettura tramite ADC del potenziometro (per calibrare lo sterzo)
-//==============================================================================
+    void send_data(void) {
+        if (CANisTxReady()) {
+            if (remote_frame == 1) {
+                //avere lo stesso id della richiesta
+                CANsendMessage(id, data_array, 8, CAN_CONFIG_STD_MSG &
+                        CAN_NORMAL_TX_FRAME & CAN_TX_PRIORITY_0);
+            }
+            remote_frame = 0;
+        }
+    }
 
-void calibrazione(void) { //lettura ADC calibrazione
-    ConvertADC();
-    while (BusyADC());
-    ADCResult = ReadADC();
-    calibration = (ADCResult - 511) / 30;
-}
+    //==============================================================================
+    //Lettura tramite ADC del potenziometro (per calibrare lo sterzo)
+    //==============================================================================
 
-//==============================================================================
-//Configurazione bit
-//==============================================================================
+    void calibrazione(void) { //lettura ADC calibrazione
+        ConvertADC();
+        while (BusyADC());
+        ADCResult = ReadADC();
+        calibration = (ADCResult - 511) / 30;
+    }
 
-void configurazione_iniziale(void) {
+    //==============================================================================
+    //Configurazione bit
+    //==============================================================================
 
-    //==========================================================================
-    //configurazione CAN BUS
-    //==========================================================================
-    RCONbits.IPEN = 1; //abilita priorità interrupt
-    CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
+    void configurazione_iniziale(void) {
 
-    //==========================================================================
-    //azzeramento flag
-    //==========================================================================
-    PIR3bits.RXB1IF = 0; //azzera flag interrupt can bus buffer1
-    PIR3bits.RXB0IF = 0; //azzera flag interrupt can bus buffer0
-    INTCONbits.TMR0IF = 0; //azzera flag timer0
-    //PIR2bits.TMR3IF = 0; //resetta flag interrupt timer 3
+        //==========================================================================
+        //configurazione CAN BUS
+        //==========================================================================
+        RCONbits.IPEN = 1; //abilita priorità interrupt
+        CANInitialize(4, 6, 5, 1, 3, CAN_CONFIG_LINE_FILTER_OFF & CAN_CONFIG_SAMPLE_ONCE & CAN_CONFIG_ALL_VALID_MSG & CAN_CONFIG_DBL_BUFFER_ON);
 
-    //==========================================================================
-    //configurazione priorità
-    //==========================================================================
-    IPR3bits.RXB1IP = 0; //interrupt bassa priorità per can
-    IPR3bits.RXB0IP = 0; //interrupt bassa priorità per can
-    INTCON2bits.TMR0IP = 1; //interrupt alta priorità timer0
-    // IPR2bits.TMR3IP = 0; //interrupt bassa priorità timer 3
+        //==========================================================================
+        //azzeramento flag
+        //==========================================================================
+        PIR3bits.RXB1IF = 0; //azzera flag interrupt can bus buffer1
+        PIR3bits.RXB0IF = 0; //azzera flag interrupt can bus buffer0
+        INTCONbits.TMR0IF = 0; //azzera flag timer0
+        //PIR2bits.TMR3IF = 0; //resetta flag interrupt timer 3
 
-    //==========================================================================
-    //Enable interrupts
-    //==========================================================================
-    RCONbits.IPEN = 1; //abilita priorità interrupt
-    PIE3bits.RXB1IE = 1; //abilita interrupt ricezione can bus buffer1
-    PIE3bits.RXB0IE = 1; //abilita interrupt ricezione can bus buffer0
-    INTCONbits.TMR0IE = 1; //abilita interrupt timer0
-    // PIE2bits.TMR3IE = 0; //abilita interrupt timer 3
-    INTCONbits.GIEH = 1; //abilita interrupt alta priorità
-    INTCONbits.GIEL = 1; //abilita interrupt bassa priorità periferiche
+        //==========================================================================
+        //configurazione priorità
+        //==========================================================================
+        IPR3bits.RXB1IP = 0; //interrupt bassa priorità per can
+        IPR3bits.RXB0IP = 0; //interrupt bassa priorità per can
+        INTCON2bits.TMR0IP = 1; //interrupt alta priorità timer0
+        // IPR2bits.TMR3IP = 0; //interrupt bassa priorità timer 3
 
-    //==========================================================================
-    //impostazione timer0 per PWM
-    //==========================================================================
+        //==========================================================================
+        //Enable interrupts
+        //==========================================================================
+        RCONbits.IPEN = 1; //abilita priorità interrupt
+        PIE3bits.RXB1IE = 1; //abilita interrupt ricezione can bus buffer1
+        PIE3bits.RXB0IE = 1; //abilita interrupt ricezione can bus buffer0
+        INTCONbits.TMR0IE = 1; //abilita interrupt timer0
+        // PIE2bits.TMR3IE = 0; //abilita interrupt timer 3
+        INTCONbits.GIEH = 1; //abilita interrupt alta priorità
+        INTCONbits.GIEL = 1; //abilita interrupt bassa priorità periferiche
 
-    OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH0 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_1ANA); //re2
+        //==========================================================================
+        //impostazione timer0 per PWM
+        //==========================================================================
 
-    //==========================================================================
-    //impostazione periodo timer prima volta
-    //==========================================================================
+        OpenADC(ADC_FOSC_16 & ADC_RIGHT_JUST & ADC_16_TAD, ADC_CH0 & ADC_REF_VDD_VSS & ADC_INT_OFF, ADC_1ANA); //re2
 
-    T0CONbits.TMR0ON = 1;
-    PORTCbits.RC0 = 0;
-    //==========================================================================
-    //impostazione uscite/ingressi
-    //==========================================================================
-    LATA = 0x00;
-    TRISA = 0b11111101;
+        //==========================================================================
+        //impostazione periodo timer prima volta
+        //==========================================================================
 
-    LATB = 0x00;
-    TRISB = 0b11111011;
+        T0CONbits.TMR0ON = 1;
+        PORTCbits.RC0 = 0;
+        //==========================================================================
+        //impostazione uscite/ingressi
+        //==========================================================================
+        LATA = 0x00;
+        TRISA = 0b11111101;
 
-    LATC = 0x00;
-    TRISC = 0x00;
+        LATB = 0x00;
+        TRISB = 0b11111011;
 
-    LATD = 0x00;
-    TRISD = 0x00;
+        LATC = 0x00;
+        TRISC = 0x00;
 
-    LATE = 0x00;
-    TRISE = 0xFF;
-    T0CON = 0x80; //imposta timer0, prescaler 1:2
-}
+        LATD = 0x00;
+        TRISD = 0x00;
+
+        LATE = 0x00;
+        TRISE = 0xFF;
+        T0CON = 0x80; //imposta timer0, prescaler 1:2
+    }
